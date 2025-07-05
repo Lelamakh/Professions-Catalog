@@ -7,6 +7,9 @@ a {
   text-decoration: none;
   all: unset;
 }
+body {
+  background-color: #f4f0f0;
+}
 .maincontainer {
   max-width: 1440px;
   width: 100%;
@@ -23,7 +26,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 48px;
+  background-color: white;
 }
 .navbar ul {
   display: flex;
@@ -34,4 +38,34 @@ a {
 }
 .navbar li:last-child {
   margin-right: 0;
+}
+.lmfirstsection {
+  background-color: #ececec;
+  padding: 176px 48px;
+}
+.lmfirstsecionwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lmfirstsectionimage img {
+  width: 200px;
+  height: 200px;
+  margin-right: 200px;
+}
+.lmfirstsectionleft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.lmmaintitle {
+  font-weight: 600;
+  font-size: 48px;
+}
+.lmfirstsectionleft p {
+  width: 768px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: -1%;
 }
