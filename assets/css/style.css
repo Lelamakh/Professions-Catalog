@@ -14,7 +14,8 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 20px 0px 20px;
+  /* padding: 20px 20px 0px 20px; */
+  background-color: white;
 }
 .wrapper {
   display: flex;
@@ -68,4 +69,67 @@ body {
   font-size: 20px;
   line-height: 2;
   letter-spacing: -1%;
+}
+.lmcards {
+  width: 100%;
+  max-width: 1344px;
+  margin-top: 30px;
+  margin-left: 48px;
+  display: flex;
+  gap: 20px;
+}
+.lmcatname {
+  font-weight: 600;
+  font-size: 32px;
+  margin-left: 48px;
+  margin-top: 40px;
+}
+.lmcategories img {
+  width: 30px;
+  height: 30px;
+}
+.lmcard1 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #ececec;
+}
+.lmcard2 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #ececec;
+}
+.lmcard3 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #ececec;
+}
+.lmcard4 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #ececec;
+}
+.lmcard5 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #ececec;
+}
+.lmcard6 {
+  width: 204px;
+  height: 188px;
+  padding: 75px 90px;
+  background-color: #f2ecec;
+}
+.lmname {
+  width: 204px;
+  border-radius: 18px;
+  background-color: #f4f4f4;
+  box-shadow: black;
+  padding: 20px 70px;
+  margin-top: 12px;
+  margin-bottom: 50px;
 }
