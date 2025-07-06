@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: solid black 1px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  width: 1440px;
+  height: 72px;
+  align-content: center;
+  text-align: center;
+}
+
+.section-1 {
+  /* პროფესიის სახელი */
+  border: solid black 1px;
+  margin: 0 auto;
+  background-color: #c1c1c1;
+  width: 1440px;
+  height: 156px;
+  align-content: center;
+  text-align: center;
+}
+
+.section-2 {
+  /* საჭირო უნარები: */
+  border: solid black 1px;
+  margin: 0 auto;
+  background-color: #eaeaea;
+  width: 1440px;
+  height: 68px;
+  align-content: center;
+  text-align: center;
+}
+
+.section-3 {
+  /* ქვესათაური */
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 1440px;
+  height: 1647px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+.subheaders {
+  border: solid black 1px;
+  /* margin: 0 auto; */
+  width: 1117px;
+  height: 1631px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.subheader-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subheader-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subheader-2 > div {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 24px;
+}
+
+.subheader-2 > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subheader-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subheader-3 > div {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 24px;
+}
+
+.section-4 {
+  /* Roadmap */
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 1440px;
+  height: 662px;
+  align-content: center;
+  text-align: center;
+}
+
+.section-5 {
+  /* რეკომენდირებული კურსები */
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 1440px;
+  height: 300px;
+  align-content: center;
+  text-align: center;
+}
+
+.section-6 {
+  /* რეკომენდირებული ვაკანსიები */
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 1440px;
+  height: 334px;
+  align-content: center;
+  text-align: center;
+}
+
+footer {
+  border: solid black 1px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  width: 1440px;
+  height: 72px;
+  align-content: center;
+  text-align: center;
+}
