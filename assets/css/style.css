@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Noto Sans Georgian;
 }
 
 header {
@@ -16,28 +17,71 @@ header {
 
 .section-1 {
   /* პროფესიის სახელი */
+  padding: 20px;
   border: solid black 1px;
   margin: 0 auto;
   background-color: #c1c1c1;
   width: 1440px;
   height: 156px;
-  align-content: center;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-1-div-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sec-1-div-2 {
+  display: flex;
+  gap: 24px;
+}
+
+.sec-1-div-2 > p {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: solid black 1px;
+  width: 204px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-2 {
+  padding: 20px;
+  gap: 20px;
   /* საჭირო უნარები: */
   border: solid black 1px;
   margin: 0 auto;
   background-color: #eaeaea;
   width: 1440px;
   height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.section-2 > div {
+  display: flex;
+  gap: 12px;
+}
+
+.section-2 > div > p {
+  width: 55px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 10px;
   align-content: center;
   text-align: center;
 }
 
 .section-3 {
   /* ქვესათაური */
+  display: flex;
+  justify-content: space-between;
   border: solid black 1px;
   margin: 0 auto;
   width: 1440px;
@@ -94,34 +138,140 @@ header {
   gap: 24px;
 }
 
+.navigation {
+  background-color: #ffffff;
+  margin: -40px 20px 0 0;
+  padding: 20px;
+  border: solid black 1px;
+  border-radius: 12px;
+  width: 252px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navigation > p {
+  border: solid red 1px;
+  width: 204px;
+  height: 62px;
+  text-align: center;
+  padding: 15px;
+}
+
+.navigation > p:hover {
+  background-color: #f2f2f2;
+}
+
 .section-4 {
   /* Roadmap */
   border: solid black 1px;
   margin: 0 auto;
   width: 1440px;
   height: 662px;
-  align-content: center;
-  text-align: center;
+  padding: 24px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.section-4-name {
+  font-size: 32px;
+}
+
+.section-4-text {
+  /* padding: 0 24px; */
+  /* border: solid black 1px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-4-text > div {
+  border: solid black 1px;
+  width: 365px;
+  height: 144px;
+  padding: 24px;
 }
 
 .section-5 {
   /* რეკომენდირებული კურსები */
   border: solid black 1px;
   margin: 0 auto;
+  padding-left: 24px;
   width: 1440px;
-  height: 300px;
-  align-content: center;
-  text-align: center;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.section-5-name {
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-1 {
+  border: solid black 1px;
+  display: flex;
+  gap: 10px;
+  width: 432px;
+  height: 254px;
+}
+
+.cards img {
+  width: 204px;
+  height: 254px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-button-1 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 73px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.card-button-2 {
+  background-color: rgba(110, 110, 110, 1);
+  width: 202px;
+  height: 44px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .section-6 {
   /* რეკომენდირებული ვაკანსიები */
   border: solid black 1px;
   margin: 0 auto;
+  padding-left: 24px;
   width: 1440px;
   height: 334px;
-  align-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.section-6-name {
+  font-size: 32px;
+}
+
+.vacancies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer {
