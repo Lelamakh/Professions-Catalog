@@ -283,3 +283,147 @@ body {
   width: 150px;
   height: 150px;
 }
+.lmmissionsection {
+  margin-bottom: 50px;
+}
+.lmwrapper4 {
+  display: flex;
+  width: 100%;
+  max-width: 1344px;
+  margin-left: 48px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.lmwrapper4left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.lmwrapper4left h1 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.lmwrapper4left p {
+  width: 722px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #333333;
+}
+.lmwrapper4left button {
+  width: 100%;
+  max-width: 294px;
+  height: 48px;
+  border-radius: 12px;
+  margin-top: 9px;
+  background-color: #6e6e6e;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+.lmwrapper4right {
+  width: 100%;
+  width: 548px;
+  height: 395px;
+  background-color: #ececec;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lmwrapper5 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.lmvissionsection {
+  margin-bottom: 100px;
+}
+.lmwrapper5left {
+  width: 100%;
+  max-width: 548px;
+  height: 395px;
+  background-color: #ececec;
+  margin-left: 48px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.lmwrapper5left img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.lmwrapper5right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 722px;
+  margin-right: 48px;
+  margin-bottom: 0px;
+}
+.lmwrapper5right h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.lmwrapper5right p {
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lmwrapper5right button {
+  width: 100%;
+  max-width: 294px;
+  height: 48px;
+  border-radius: 12px;
+  margin-top: 9px;
+  background-color: #6e6e6e;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+.lmteammembers {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  max-width: 1344px;
+  margin-left: 48px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.lmfullcycle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lmonlycycle {
+  width: 204px;
+  height: 204px;
+  background-color: #ececec;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.lmfullcycle img {
+  width: 50px;
+  height: 50px;
+}
