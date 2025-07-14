@@ -19,6 +19,37 @@ header {
   text-align: center;
 }
 
+/* ლელას კოდის დასაწყისი */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  background-color: white;
+  margin-top: 40px;
+}
+.lmlogo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  margin-right: 30px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+}
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+/* ლელას კოდის დასასრული */
+
 .PS-section-1 {
   background-color: rgba(255, 255, 255, 1);
   /* პროფესიის სახელი */
