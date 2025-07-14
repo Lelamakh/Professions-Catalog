@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans Georgian;
+}
+
+bodY {
+  background-color: rgb(221, 221, 221);
+}
+
+header {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: aquamarine;
+  width: 1440px;
+  height: 72px;
+  align-content: center;
+  text-align: center;
+}
+
+.PS-section-1 {
+  background-color: rgba(255, 255, 255, 1);
+  /* პროფესიის სახელი */
+  padding: 20px;
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: #c1c1c1;
+  width: 1440px;
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PS-sec-1-div-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.PS-sec-1-div-2 {
+  display: flex;
+  gap: 24px;
+}
+
+.PS-sec-1-div-2 > p {
+  background-color: #ffffff;
+  border-radius: 12px;
+  /* border: solid black 1px; */
+  width: 204px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.PS-section-2 {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  gap: 20px;
+  /* საჭირო უნარები: */
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: #eaeaea;
+  width: 1440px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.PS-section-2 > div {
+  display: flex;
+  gap: 12px;
+}
+
+.PS-section-2 > div > p {
+  width: 55px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 10px;
+  align-content: center;
+  text-align: center;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.PS-section-3 {
+  background-color: rgba(255, 255, 255, 1);
+  /* ქვესათაური */
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  width: 1440px;
+  height: 1647px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.PS-subheaders {
+  /* border: solid black 1px; */
+  margin: 0px auto;
+  padding: 24px;
+  /* width: 1117px; */
+  height: 1631px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.PS-subheader-1 {
+  /* border: solid black 1px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.PS-subheader-2 {
+  /* border: solid black 1px; */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.PS-subheader-2 > div {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 24px;
+  align-items: end;
+}
+
+.PS-subheader-2 > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.PS-subheader-3 {
+  /* border: solid black 1px; */
+  display: flex;
+  /* flex-direction: column; */
+  gap: 32px;
+  align-items: end;
+}
+
+.PS-subheader-3 > div {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.PS-section-4 {
+  background-color: rgba(255, 255, 255, 1);
+  /* Roadmap */
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  width: 1440px;
+  height: 662px;
+  padding: 24px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.PS-section-4-name {
+  font-size: 32px;
+}
+
+.PS-section-4-text {
+  /* padding: 0 24px; */
+  /* border: solid black 1px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.PS-section-4-text > div {
+  /* border: solid black 1px; */
+  width: 365px;
+  height: 144px;
+  padding: 24px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.PS-section-5 {
+  background-color: rgba(255, 255, 255, 1);
+  /* რეკომენდირებული კურსები */
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  padding-left: 24px;
+  width: 1440px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* align-content: center; */
+  /* text-align: center; */
+}
+
+.PS-section-5-name {
+  font-size: 32px;
+}
+
+.PS-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PS-card-1 {
+  /* border: solid black 1px; */
+  display: flex;
+  gap: 10px;
+  width: 432px;
+  height: 254px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.PS-cards img {
+  width: 204px;
+  height: 254px;
+}
+
+.PS-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.PS-card-button-1 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 73px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.PS-card-button-2 {
+  background-color: rgba(110, 110, 110, 1);
+  width: 202px;
+  height: 44px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 1);
+}
+
+footer {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: aquamarine;
+  width: 1440px;
+  height: 72px;
+  align-content: center;
+  text-align: center;
+}
