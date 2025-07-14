@@ -5,8 +5,12 @@
   font-family: Noto Sans Georgian;
 }
 
+bodY {
+  background-color: rgb(221, 221, 221);
+}
+
 header {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   background-color: aquamarine;
   width: 1440px;
@@ -15,10 +19,11 @@ header {
   text-align: center;
 }
 
-.section-1 {
+.PS-section-1 {
+  background-color: rgba(255, 255, 255, 1);
   /* პროფესიის სახელი */
   padding: 20px;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   background-color: #c1c1c1;
   width: 1440px;
@@ -28,33 +33,35 @@ header {
   justify-content: space-between;
 }
 
-.sec-1-div-1 {
+.PS-sec-1-div-1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.sec-1-div-2 {
+.PS-sec-1-div-2 {
   display: flex;
   gap: 24px;
 }
 
-.sec-1-div-2 > p {
+.PS-sec-1-div-2 > p {
   background-color: #ffffff;
   border-radius: 12px;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   width: 204px;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
 }
 
-.section-2 {
+.PS-section-2 {
+  background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   gap: 20px;
   /* საჭირო უნარები: */
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   background-color: #eaeaea;
   width: 1440px;
@@ -63,12 +70,12 @@ header {
   align-items: center;
 }
 
-.section-2 > div {
+.PS-section-2 > div {
   display: flex;
   gap: 12px;
 }
 
-.section-2 > div > p {
+.PS-section-2 > div > p {
   width: 55px;
   height: 20px;
   border-radius: 4px;
@@ -76,98 +83,82 @@ header {
   font-size: 10px;
   align-content: center;
   text-align: center;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.section-3 {
+.PS-section-3 {
+  background-color: rgba(255, 255, 255, 1);
   /* ქვესათაური */
   display: flex;
-  justify-content: space-between;
-  border: solid black 1px;
+  /* justify-content: space-between; */
+  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 1647px;
   /* align-content: center; */
   /* text-align: center; */
 }
-.subheaders {
-  border: solid black 1px;
-  /* margin: 0 auto; */
-  padding: 8px 8px 8px 48px;
-  width: 1117px;
+
+.PS-subheaders {
+  /* border: solid black 1px; */
+  margin: 0px auto;
+  padding: 24px;
+  /* width: 1117px; */
   height: 1631px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 38px;
   /* align-content: center; */
   /* text-align: center; */
 }
 
-.subheader-1 {
+.PS-subheader-1 {
+  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.subheader-2 {
+.PS-subheader-2 {
+  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.subheader-2 > div {
+.PS-subheader-2 > div {
   display: flex;
   /* flex-direction: column; */
   gap: 24px;
+  align-items: end;
 }
 
-.subheader-2 > div > div {
+.PS-subheader-2 > div > div {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 20px 0;
 }
 
-.subheader-3 {
+.PS-subheader-3 {
+  /* border: solid black 1px; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 32px;
+  align-items: end;
 }
 
-.subheader-3 > div {
+.PS-subheader-3 > div {
+  padding: 20px 0;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   gap: 24px;
 }
 
-.navigation {
-  background-color: #ffffff;
-  margin: -40px 20px 0 0;
-  padding: 20px;
-  border: solid black 1px;
-  border-radius: 12px;
-  width: 252px;
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-
-.navigation > p {
-  border: solid red 1px;
-  width: 204px;
-  height: 62px;
-  text-align: center;
-  padding: 15px;
-}
-
-.navigation > p:hover {
-  background-color: #f2f2f2;
-}
-
-.section-4 {
+.PS-section-4 {
+  background-color: rgba(255, 255, 255, 1);
   /* Roadmap */
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 662px;
@@ -176,27 +167,29 @@ header {
   /* text-align: center; */
 }
 
-.section-4-name {
+.PS-section-4-name {
   font-size: 32px;
 }
 
-.section-4-text {
+.PS-section-4-text {
   /* padding: 0 24px; */
   /* border: solid black 1px; */
   display: flex;
   justify-content: space-around;
 }
 
-.section-4-text > div {
-  border: solid black 1px;
+.PS-section-4-text > div {
+  /* border: solid black 1px; */
   width: 365px;
   height: 144px;
   padding: 24px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.section-5 {
+.PS-section-5 {
+  background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   padding-left: 24px;
   width: 1440px;
@@ -208,41 +201,42 @@ header {
   /* text-align: center; */
 }
 
-.section-5-name {
+.PS-section-5-name {
   font-size: 32px;
 }
 
-.cards {
+.PS-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.card-1 {
-  border: solid black 1px;
+.PS-card-1 {
+  /* border: solid black 1px; */
   display: flex;
   gap: 10px;
   width: 432px;
   height: 254px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-.cards img {
+.PS-cards img {
   width: 204px;
   height: 254px;
 }
 
-.card-text {
+.PS-card-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.card-button-1 {
+.PS-card-button-1 {
   background-color: rgba(255, 255, 255, 1);
   width: 73px;
   height: 35px;
   border-radius: 4px;
 }
 
-.card-button-2 {
+.PS-card-button-2 {
   background-color: rgba(110, 110, 110, 1);
   width: 202px;
   height: 44px;
@@ -250,32 +244,8 @@ header {
   color: rgba(255, 255, 255, 1);
 }
 
-.section-6 {
-  /* რეკომენდირებული ვაკანსიები */
-  border: solid black 1px;
-  margin: 0 auto;
-  padding-left: 24px;
-  width: 1440px;
-  height: 334px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  /* align-content: center; */
-  /* text-align: center; */
-}
-
-.section-6-name {
-  font-size: 32px;
-}
-
-.vacancies {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 footer {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   background-color: aquamarine;
   width: 1440px;
