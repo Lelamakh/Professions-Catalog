@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
+  font-family: Noto Sans Georgian;
 }
 a {
   text-decoration: none;

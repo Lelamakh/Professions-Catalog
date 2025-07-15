@@ -6,7 +6,7 @@
 }
 
 bodY {
-  background-color: rgb(221, 221, 221);
+  background-color: #f4f0f0;
 }
 
 header {
@@ -20,6 +20,16 @@ header {
 }
 
 /* ლელას კოდის დასაწყისი */
+
+/* * {
+  cursor: pointer;
+} */
+
+a {
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+}
 
 .header {
   display: flex;
