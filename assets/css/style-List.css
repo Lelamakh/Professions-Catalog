@@ -62,7 +62,7 @@ a {
 
 .PS-section-list {
   background-color: white;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   display: flex;
@@ -71,22 +71,148 @@ a {
 }
 
 .PS-search {
-  border: solid black 1px;
+  /* border: solid rgb(255, 0, 0) 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px 0 16px;
+}
+
+.PS-fing-job-you-love {
+  font-family: Noto Sans Georgian;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.PS-find {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.PS-find-button {
+  background-color: #6e6e6e;
+  color: #ffffff;
+  width: 164px;
+  height: 48px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  border-radius: 12px;
 }
 
 .PS-filter-result {
-  border: solid red 1px;
+  /* border: solid red 1px; */
   display: flex;
 }
 
 .PS-filter {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   margin: 0 auto;
   width: 366px;
-  height: 1558px;
+  /* height: 1558px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.PS-filter-name {
+  /* border: solid black 1px; */
+  font-family: Noto Sans Georgian;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.PS-filter-name-content {
+  /* border: solid black 1px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 5px;
+}
+
+.PS-filter-sphere {
+  /* border: solid rgb(182, 32, 32) 1px; */
+  font-family: Noto Sans Georgian;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.PS-filter-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.PS-filter-choice {
+  /* border: solid black 1px; */
+  box-shadow: 1px 1px 4px 0px #0000001a;
+  width: 75;
+  height: 25;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+.PS-filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 294px;
+}
+
+.PS-filter-button-1 {
+  background-color: #6e6e6e;
+  color: #ffffff;
+  width: 141px;
+  height: 42px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  gap: 8px;
+  border-radius: 12px;
+}
+
+.PS-filter-button-2 {
+  border: solid #6e6e6e 1px;
+  width: 141px;
+  height: 42px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  gap: 8px;
+  border-radius: 12px;
+  border-width: 1px;
 }
 
 .PS-result {
