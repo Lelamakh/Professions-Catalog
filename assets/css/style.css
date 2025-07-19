@@ -499,14 +499,50 @@ body {
 }
 .lmfilterleft {
   width: 100%;
-  max-width: 366px;
+  max-width: 320px;
+  border-right: 1px solid #ccc;
+}
+.lmfilterleft h1 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.lmfiltertitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-weight: bold;
+}
+.lmchoices {
+  width: 100%;
+  max-width: 294px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+.lmchoices button {
+  width: 90px;
+  padding: 5px 3px 5px 3px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: white;
+  border-color: #f8f2f2;
+  border-radius: 10px;
+  /* font-weight: bolder; */
 }
 .lmfilterright {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding-left: 40px;
 }
 .lmcardphoto {
   width: 318px;
   height: 260px;
+}
+.lmonlyinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
