@@ -478,3 +478,35 @@ body {
   font-size: 28px;
   font-weight: 700;
 }
+.lmfavsection {
+  margin-left: 46px;
+  margin-right: 46px;
+
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
+}
+.lmfavhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.lmfilterwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.lmfilterleft {
+  width: 100%;
+  max-width: 366px;
+}
+.lmfilterright {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.lmcardphoto {
+  width: 318px;
+  height: 260px;
+}
