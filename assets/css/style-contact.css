@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans Georgian;
+}
+
+bodY {
+  background-color: #f4f0f0;
+}
+
+header {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: aquamarine;
+  width: 1440px;
+  height: 72px;
+  align-content: center;
+  text-align: center;
+}
+
+/* ლელას კოდის დასაწყისი */
+
+/* * {
+  cursor: pointer;
+} */
+
+a {
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  background-color: white;
+  margin-top: 40px;
+}
+.lmlogo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  margin-right: 30px;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+}
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+/* ლელას კოდის დასასრული */
+
+.main {
+  background-color: #ffffff;
+  /* border: solid blue 1px; */
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.PS-section-contact-info {
+  /* border: solid black 1px; */
+  background-color: #c1c1c1;
+  width: 1440px;
+  height: 121px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PS-Contact-header {
+  /* border: solid red 1px; */
+  align-content: center;
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  angle: 0 deg;
+  opacity: 1;
+  border-right-width: 1px;
+
+  /* font-family: Noto Sans Georgian; */
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.PS-Contact-info {
+  /* border: solid greenyellow 1px; */
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+
+.PS-Contact-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.PS-Contact-info h2 {
+  /* font-family: Noto Sans Georgian; */
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.PS-Contact-info h4 {
+  /* font-family: Noto Sans Georgian; */
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.PS-social-networks {
+  /* border: solid red 1px; */
+  display: flex;
+  gap: 16px;
+}
+
+.PS-social-networks > img {
+  width: 24px;
+}
+
+.PS-section-contact-blank {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  margin-top: 48px;
+  display: flex;
+
+  width: 1344px;
+  height: 544px;
+  justify-content: space-between;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.PS-contact-to-us {
+  display: flex;
+  flex-direction: column;
+  width: 546px;
+  height: 544px;
+  gap: 32px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.PS-contact-to-us > h1 {
+  /* border: solid #0a22f4 1px; */
+  font-family: Noto Sans Georgian;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* .PS-contact-form {
+  border: solid red 1px;
+  width: 498px;
+  height: 346px;
+  gap: 16px;
+  angle: 0 deg;
+  opacity: 1;
+} */
+
+/* - - - - - - - - - - - - - - - - - - - */
+
+form {
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  width: 546px;
+  height: 474px;
+  gap: 16px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 1px 1px 4px 0px #00000033;
+}
+
+.PS-input-field {
+  width: 498px;
+  height: 39px;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 6px;
+  border-width: 1px;
+}
+
+.PS-input-field-message {
+  width: 498px;
+  height: 116px;
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 6px;
+  border-width: 1px;
+}
+
+.PS-div-button {
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: row-reverse;
+  width: 498px;
+  height: 48px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+form button {
+  background-color: #6e6e6e;
+  color: #ffffff;
+  width: 190px;
+  height: 48px;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 9px;
+  padding-left: 8px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+  border-radius: 12px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - */
+
+.PS-section-FAQ {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  margin-top: 48px;
+
+  width: 1344px;
+  /* height: 461px; */
+  gap: 32px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.PS-section-FAQ-header {
+  /* font-family: Noto Sans Georgian; */
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.PS-section-FAQ-item {
+  /* border: solid red 1px; */
+  padding: 16px 24px;
+}
+
+.PS-section-FAQ-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* font-family: Helvetica Neue LT GEO; */
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.PS-section-FAQ-answer {
+  display: none;
+  padding: 20px;
+}
+
+.PS-icon {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: solid green 1px; */
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* padding: 20px; */
+}
+
+/* .PS-section-FAQ-question.active .PS-icon {
+  content: "-";
+} */
