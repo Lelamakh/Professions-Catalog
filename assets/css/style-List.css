@@ -12,7 +12,7 @@ bodY {
 header {
   /* border: solid black 1px; */
   margin: 0 auto;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 1440px;
   height: 72px;
   align-content: center;
@@ -36,8 +36,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 48px;
-  background-color: white;
+  background-color: #3366cc;
   margin-top: 40px;
+  height: 70px;
 }
 .lmlogo {
   font-size: 20px;
@@ -51,8 +52,13 @@ a {
 .navbar li {
   margin-right: 30px;
   font-size: 16px;
-  color: #333333;
+  color: #ffffff;
   font-weight: 500;
+  border: solid #3366cc 3px;
+  padding: 16px 16px;
+}
+.navbar li:hover {
+  border-bottom: solid #ffffff 3px;
 }
 .navbar li:last-child {
   margin-right: 0;
@@ -82,13 +88,11 @@ a {
 }
 
 .PS-fing-job-you-love {
-  font-family: Noto Sans Georgian;
   font-weight: 700;
-  font-style: Bold;
+  font-style: 75 Bold;
   font-size: 28px;
-  leading-trim: NONE;
-  line-height: 140%;
-  letter-spacing: 0%;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 
 .PS-find {
@@ -103,7 +107,7 @@ a {
   width: 164px;
   height: 48px;
   gap: 8px;
-  angle: 0 deg;
+
   opacity: 1;
   padding-top: 9px;
   padding-right: 8px;
@@ -134,7 +138,7 @@ a {
   font-weight: 700;
   font-style: Bold;
   font-size: 20px;
-  leading-trim: NONE;
+
   line-height: 140%;
   letter-spacing: 0%;
 }
@@ -153,7 +157,7 @@ a {
   font-weight: 600;
   font-style: SemiBold;
   font-size: 14px;
-  leading-trim: NONE;
+
   line-height: 140%;
   letter-spacing: 0%;
 }
@@ -169,7 +173,7 @@ a {
   box-shadow: 1px 1px 4px 0px #0000001a;
   width: 75;
   height: 25;
-  angle: 0 deg;
+
   opacity: 1;
   padding-top: 4px;
   padding-right: 8px;
@@ -177,6 +181,7 @@ a {
   padding-left: 8px;
   gap: 10px;
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .PS-filter-buttons {
@@ -186,32 +191,34 @@ a {
 }
 
 .PS-filter-button-1 {
-  background-color: #6e6e6e;
+  background-color: #3366cc;
   color: #ffffff;
   width: 141px;
   height: 42px;
-  angle: 0 deg;
+
   opacity: 1;
   padding-top: 9px;
   padding-right: 8px;
   padding-bottom: 9px;
   padding-left: 8px;
   gap: 8px;
-  border-radius: 12px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 .PS-filter-button-2 {
-  border: solid #6e6e6e 1px;
+  background-color: transparent;
+  border: solid #3366cc 1px;
   width: 141px;
   height: 42px;
-  angle: 0 deg;
+
   opacity: 1;
   padding-top: 9px;
   padding-right: 8px;
   padding-bottom: 9px;
   padding-left: 8px;
   gap: 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   border-width: 1px;
 }
 
@@ -222,7 +229,7 @@ a {
   display: flex;
   flex-direction: column;
   /* height: 768px; */
-  gap: 5px;
+  gap: 32px;
 }
 
 .PS-9-results {
@@ -247,30 +254,88 @@ a {
 
 .PS-result-card {
   /* border: solid black 1px; */
+  /* background-color: aquamarine; */
   width: 318px;
-  height: 454px;
+  height: 471px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  align-items: end;
+  /* gap: 15px; */
   box-shadow: 0px 2px 4px 0px #0000001a;
+  border-radius: 12px;
+  position: relative;
+}
+
+.PS-heart-div {
+  /* border: solid black 1px; */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 12px;
 }
 
 .PS-card-info {
   /* margin: -5px 0; */
-  /* border: solid yellow 1px; */
+  /* border: solid red 1px; */
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: end; */
   width: 318px;
   /* height: 194px; */
+  gap: 50px;
+  padding: 12px 0;
 }
 
 .PS-name {
+  /* border: solid blue 1px; */
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  /* gap: 12px; */
+  /* align-items: center; */
+  padding: 0 12px;
+  /* font-size: 20px; */
+}
+
+.PS-card-info-text-button {
+  /* border: solid aqua 1px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.PS-card-info-sub {
+  /* border: solid green 1px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: end;
+  width: 318px;
+}
+
+.PS-sphere {
+  /* border: solid blue 1px; */
   display: flex;
   flex-direction: column;
   gap: 12px;
   align-items: center;
+  padding: 5px;
+}
+
+.PS-request {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
   padding: 5px;
 }
 
@@ -278,68 +343,57 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
-  padding: 5px;
-}
-
-.PS-satisfaction {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
+  align-items: start;
   padding: 5px;
 }
 
 .PS-card-info-button {
-  background-color: #6e6e6e;
+  background-color: #3366cc;
   color: #ffffff;
-  /* margin-top: 15px; */
   width: 294px;
-  height: 40px;
+  height: 36px;
   gap: 8px;
-  border-radius: 12px;
-  padding: 8px;
+  opacity: 1;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 8px;
 }
 
-.PS-card-info h1 {
+.PS-name > h1 {
+  border: solid red 1px;
   font-family: Noto Sans Georgian;
   font-weight: 600;
   font-style: SemiBold;
-  font-size: 18px;
-  leading-trim: NONE;
+  font-size: 20px;
   line-height: 120%;
   letter-spacing: -1%;
-  text-align: center;
+  text-align: start;
 }
 
-.PS-card-info h2 {
-  font-family: Noto Sans Georgian;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 12px;
-  leading-trim: NONE;
-  line-height: 120%;
-  letter-spacing: -1%;
+.PS-name > img {
+  border: solid red 1px;
+  width: 24px;
+  height: 24px;
 }
 
 .PS-card-info h3 {
-  font-family: Noto Sans Georgian;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 12px;
-  leading-trim: NONE;
-  line-height: 120%;
-  letter-spacing: -1%;
-  text-align: center;
+  /* font-family: Helvetica Neue LT GEO; */
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 21px;
+  letter-spacing: 0%;
 }
 
 .PS-card-info h4 {
-  font-family: Noto Sans Georgian;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 10px;
-  leading-trim: NONE;
-  line-height: 120%;
-  letter-spacing: -1%;
-  text-align: center;
+  /* font-family: Helvetica Neue LT GEO; */
+  font-weight: 400;
+  font-style: 55 Roman;
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 18px;
+  letter-spacing: 0%;
 }
