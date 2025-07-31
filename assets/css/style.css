@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Noto Sans Georgian;
+  /* font-family: Noto Sans Georgian; */
 }
 a {
   text-decoration: none;
@@ -25,26 +25,52 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 48px;
-  background-color: white;
+  background-color: #3366cc;
   margin-top: 40px;
 }
-.lmlogo {
+/* .lmlogo {s
   font-size: 20px;
   font-weight: 600;
   color: #333333;
+} */
+
+.lmflagdiv {
+  display: flex;
+  color: white;
+  width: 44.66666793823242px;
+  height: 21px;
+  opacity: 1;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.lmflagdiv img {
+  width: 18.666667938232422 px;
+  height: 14.000000953674316 px;
+  opacity: 1;
+  display: flex;
+  /* margin: 0; */
+}
+.lmge {
+  display: flex;
+  /* gap: 2px; */
+  /* margin: 0; */
+  margin-left: -25px;
 }
 .navbar ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .navbar li {
   margin-right: 30px;
   font-size: 16px;
-  color: #333333;
+  color: white;
   font-weight: 500;
 }
 .navbar li:last-child {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 .lmfirstsection {
   background-color: #ececec;
@@ -65,19 +91,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 34px;
 }
 .lmmaintitle {
-  font-weight: 600;
-  font-size: 48px;
+  font-family: Helvetica Neue LT GEO Caps;
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  /* leading-trim: NONE; */
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 .lmfirstsectionleft p {
   width: 100%;
-  max-width: 768px;
+  max-width: 815px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 2;
-  /* letter-spacing: -1%; */
+  font-size: 18px;
+  line-height: 36px;
+  color: #333333;
+  letter-spacing: 5%;
 }
 .lmbuttons {
   display: flex;
@@ -85,13 +117,15 @@ body {
 }
 .lmfirstbutton {
   font-size: 20px;
+  color: white;
   font-weight: 500;
-  padding: 9px 8px 9px 8px;
+  /* padding: 9px 8px 9px 8px; */
+  border-radius: 9px;
   width: 188px;
   height: 48px;
   border-radius: 12px;
-  background-color: #6e6e6e;
-  border-color: white;
+  background-color: #3366cc;
+  border-color: #3366cc;
 }
 .lmsecondbutton {
   font-size: 20px;
@@ -101,7 +135,13 @@ body {
   height: 48px;
   border-radius: 12px;
   background-color: #ececec;
-  border-color: #6e6e6e;
+  border-color: #3366cc;
+}
+.lmdirections {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 48px;
+  align-items: baseline;
 }
 .lmcards {
   width: 100%;
@@ -114,10 +154,11 @@ body {
   flex-wrap: wrap;
 }
 .lmcatname {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 28px;
   margin-left: 48px;
   margin-top: 40px;
+  font-family: georgian uppercase/bold;
 }
 .lmcategories img {
   width: 30px;
@@ -177,19 +218,102 @@ body {
   justify-content: center;
   align-items: center;
 }
-.lmname {
+.lmname1 {
   width: 204px;
-  border: none;
-  border-radius: 15px;
-  background-color: #6e6e6e;
-  color: white;
+  border-radius: 8px;
+  /* border-radius: 15px; */
+  background-color: white;
+  border-color: #9c58d1;
+  color: black;
   font-size: 16px;
-  font-weight: 600;
-  /* box-shadow: 0 4px 8px rgba(11, 11, 11, 0.2); */
-  padding: 20px 70px;
-  line-height: 120%;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmname2 {
+  width: 204px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #ff944d;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmname3 {
+  width: 204px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #3366cc;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmname4 {
+  width: 204px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #2ca678;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmname5 {
+  width: 204px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #ffc857;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmname6 {
+  width: 204px;
+  border-radius: 8px;
+  background-color: white;
+  border-color: #ff6b6b;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  line-height: 22px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
 }
 .lmwrapper2 {
   margin-top: 30px;
@@ -236,19 +360,23 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-
-.lmwrapper2right button {
+.lmstartquiz {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  max-width: 294px;
+  max-width: 197px;
   height: 48px;
   border-radius: 12px;
+  padding: 10px 20px 10px 20px;
   margin-top: 9px;
-  background-color: #6e6e6e;
+  background-color: #3366cc;
+  border-color: #3366cc;
   color: white;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
 }
+
 .lmhistorysection {
   margin-bottom: 50px;
 }
@@ -267,16 +395,18 @@ body {
   margin-bottom: 40px;
 }
 .lmwrapper3left h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 28px;
-  color: #333333;
-  margin-bottom: 20px;
+  /* margin-left: 48px; */
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-family: georgian uppercase/bold;
 }
 
 .lmwrapper3left p {
-  width: 722px;
-  line-height: 30px;
-  font-size: 20px;
+  width: 726px;
+  line-height: 23px;
+  font-size: 18px;
   color: #333333;
 }
 
@@ -303,6 +433,16 @@ body {
 .historyphoto {
   width: 150px;
   height: 150px;
+}
+.lmdots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 16px;
+  opacity: 1;
+  gap: 8px;
+  margin: 0 auto;
 }
 
 /* --------------page2 ------------------------------------------- */
