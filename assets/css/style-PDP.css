@@ -22,8 +22,8 @@ header {
 /* ლელას კოდის დასაწყისი */
 
 /* * {
-  cursor: pointer;
-} */
+    cursor: pointer;
+  } */
 
 a {
   text-decoration: none;
@@ -36,8 +36,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 48px;
-  background-color: white;
+  background-color: #3366cc;
   margin-top: 40px;
+  height: 70px;
 }
 .lmlogo {
   font-size: 20px;
@@ -51,8 +52,13 @@ a {
 .navbar li {
   margin-right: 30px;
   font-size: 16px;
-  color: #333333;
+  color: #ffffff;
   font-weight: 500;
+  border: solid #3366cc 3px;
+  padding: 16px 16px;
+}
+.navbar li:hover {
+  border-bottom: solid #ffffff 3px;
 }
 .navbar li:last-child {
   margin-right: 0;
@@ -61,12 +67,12 @@ a {
 /* ლელას კოდის დასასრული */
 
 .PS-section-1 {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #f1e6fa;
   /* პროფესიის სახელი */
   padding: 20px;
   /* border: solid black 1px; */
   margin: 0 auto;
-  background-color: #c1c1c1;
+
   width: 1440px;
   height: 156px;
   display: flex;
@@ -86,7 +92,7 @@ a {
 }
 
 .PS-sec-1-div-2 > p {
-  background-color: #ffffff;
+  background-color: #f1e6fa;
   border-radius: 12px;
   /* border: solid black 1px; */
   width: 204px;
@@ -95,16 +101,16 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
+  border: 2px solid #9c58d1;
 }
 
 .PS-section-2 {
-  background-color: rgba(255, 255, 255, 1);
   padding: 20px;
   gap: 20px;
   /* საჭირო უნარები: */
   /* border: solid black 1px; */
   margin: 0 auto;
-  background-color: #eaeaea;
+  background-color: #ffffff;
   width: 1440px;
   height: 68px;
   display: flex;
@@ -113,15 +119,18 @@ a {
 
 .PS-section-2 > div {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
 .PS-section-2 > div > p {
-  width: 55px;
-  height: 20px;
+  /* width: 55px; */
+  /* height: 20px; */
   border-radius: 4px;
-  background-color: #ffffff;
-  font-size: 10px;
+  border: 1px solid #cba6ef;
+  background-color: #f1e6fa;
+  font-size: 14px;
+  padding: 4px 8px;
   align-content: center;
   text-align: center;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
