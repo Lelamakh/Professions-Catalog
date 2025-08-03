@@ -225,6 +225,7 @@ a {
 .PS-result {
   /* border: solid black 1px; */
   margin: 0 auto;
+  padding-bottom: 48px;
   width: 1005px;
   display: flex;
   flex-direction: column;
