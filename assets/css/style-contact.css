@@ -22,8 +22,8 @@ header {
 /* ლელას კოდის დასაწყისი */
 
 /* * {
-  cursor: pointer;
-} */
+    cursor: pointer;
+  } */
 
 a {
   text-decoration: none;
@@ -36,8 +36,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px 48px;
-  background-color: white;
+  background-color: #3366cc;
   margin-top: 40px;
+  height: 70px;
 }
 .lmlogo {
   font-size: 20px;
@@ -51,8 +52,13 @@ a {
 .navbar li {
   margin-right: 30px;
   font-size: 16px;
-  color: #333333;
+  color: #ffffff;
   font-weight: 500;
+  border: solid #3366cc 3px;
+  padding: 16px 16px;
+}
+.navbar li:hover {
+  border-bottom: solid #ffffff 3px;
 }
 .navbar li:last-child {
   margin-right: 0;
@@ -69,7 +75,7 @@ a {
 
 .PS-section-contact-info {
   /* border: solid black 1px; */
-  background-color: #c1c1c1;
+  background-color: #dceeff;
   width: 1440px;
   height: 121px;
   margin: 0 auto;
@@ -138,7 +144,7 @@ a {
 }
 
 .PS-social-networks > img {
-  width: 24px;
+  width: 20px;
 }
 
 .PS-section-contact-blank {
@@ -193,7 +199,7 @@ form {
   width: 546px;
   height: 474px;
   gap: 16px;
-  angle: 0 deg;
+  /* angle: 0 deg; */
   opacity: 1;
   border-radius: 12px;
   padding: 24px;
@@ -210,7 +216,7 @@ form {
   gap: 8px;
   angle: 0 deg;
   opacity: 1;
-  border-radius: 6px;
+  border-radius: 8px;
   border-width: 1px;
 }
 
@@ -230,28 +236,27 @@ form {
 
 .PS-div-button {
   /* border: solid red 1px; */
+  padding: 16px 0;
   display: flex;
   flex-direction: row-reverse;
   width: 498px;
-  height: 48px;
+  /* height: 48px; */
   gap: 8px;
-  angle: 0 deg;
+  /* angle: 0 deg; */
   opacity: 1;
 }
 
 form button {
-  background-color: #6e6e6e;
+  background-color: #3366cc;
   color: #ffffff;
-  width: 190px;
-  height: 48px;
-  padding-top: 9px;
-  padding-right: 8px;
-  padding-bottom: 9px;
-  padding-left: 8px;
-  gap: 8px;
-  angle: 0 deg;
+  width: 126px;
+  height: 42px;
+  /* angle: 0 deg; */
   opacity: 1;
-  border-radius: 12px;
+  gap: 8px;
+  padding: 10px 20px;
+
+  border-radius: 8px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - */
@@ -260,6 +265,7 @@ form button {
   /* border: solid black 1px; */
   margin: 0 auto;
   margin-top: 48px;
+  padding-bottom: 48px;
 
   width: 1344px;
   /* height: 461px; */
@@ -275,10 +281,11 @@ form button {
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
-  leading-trim: NONE;
+  /* leading-trim: NONE; */
   line-height: 100%;
   letter-spacing: 0%;
 }
+
 .PS-section-FAQ-items-group {
   display: flex;
   flex-direction: column;
@@ -287,8 +294,9 @@ form button {
 
 .PS-section-FAQ-item {
   /* border: solid red 1px; */
+  border-radius: 6px;
   padding: 16px 24px;
-  box-shadow: 0px 1px 4px 0px #0000000d;
+  box-shadow: 0px 4px 8px 0px #0000001a;
 }
 
 .PS-section-FAQ-question {
@@ -336,3 +344,51 @@ form button {
 /* .PS-section-FAQ-question.active .PS-icon {
   content: "-";
 } */
+
+footer {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  padding: 24px 48px;
+  background-color: #3366cc;
+  color: #ffffff;
+  width: 1440px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-content: center;
+  text-align: center;
+}
+
+.PS-Footer-div-1 {
+  /* border: solid red 1px; */
+  margin: 0 auto;
+  width: 1344px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PS-Footer-contact-info {
+  /* border: solid red 1px; */
+  padding-left: 88px;
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+}
+
+.PS-Footer-social-networks {
+  display: flex;
+  gap: 16px;
+}
+
+.PS-Footer-div-2 {
+  border-top: solid white 1px;
+  height: 52px;
+  width: 1344px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: end;
+  font-size: 14px;
+}
