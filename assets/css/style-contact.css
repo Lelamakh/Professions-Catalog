@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Noto Sans Georgian;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
 }
 
 bodY {
@@ -90,15 +90,15 @@ a {
   padding-right: 48px;
   padding-bottom: 24px;
   padding-left: 48px;
-  angle: 0 deg;
+  /* angle: 0 deg; */
   opacity: 1;
   border-right-width: 1px;
 
-  /* font-family: Noto Sans Georgian; */
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
-  leading-trim: NONE;
+  /* leading-trim: NONE; */
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -172,7 +172,7 @@ a {
 
 .PS-contact-to-us > h1 {
   /* border: solid #0a22f4 1px; */
-  font-family: Noto Sans Georgian;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
@@ -277,7 +277,7 @@ form button {
 }
 
 .PS-section-FAQ-header {
-  /* font-family: Noto Sans Georgian; */
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
@@ -310,7 +310,7 @@ form button {
   align-items: center;
   justify-content: space-between;
 
-  /* font-family: Helvetica Neue LT GEO; */
+  /* font-family: "Helvetica Neue LT GEO"; */
   font-weight: 500;
   font-style: 65 Medium;
   font-size: 20px;
