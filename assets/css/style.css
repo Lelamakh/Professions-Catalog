@@ -589,12 +589,12 @@ body {
 }
 .lmonlycycle {
   width: 204px;
-  height: 204px;
+  height: 255px;
   background-color: #ececec;
   justify-content: center;
   align-items: center;
   display: flex;
-  border-radius: 100px;
+  /* border-radius: 100px; */
   margin-bottom: 20px;
 }
 .lmfullcycle h6 {
