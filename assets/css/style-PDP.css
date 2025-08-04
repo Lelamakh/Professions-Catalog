@@ -4,7 +4,6 @@
   box-sizing: border-box;
   /* font-family: Noto Sans Georgian; */
   /* outline: 1px aquamarine solid; */
-  font-family: "Helvetica Neue LT GEO 55 Roman";
 }
 
 body {
@@ -90,6 +89,16 @@ a {
 
 .PS-sec-1-div-1 h2 {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.PS-sec-1-div-1 p {
+  font-family: "Helvetica Neue LT GEO 65";
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
 }
 
 .PS-sec-1-div-2 {
@@ -98,6 +107,10 @@ a {
 }
 
 .PS-sec-1-div-2 > p {
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 20px;
+  font-weight: 700;
+  padding: 32px;
   background-color: #f1e6fa;
   border-radius: 12px;
   /* border: solid black 1px; */
@@ -105,7 +118,9 @@ a {
   height: 92px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  /* text-align: center; */
+  color: #1a1a1a;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
   border: 2px solid #9c58d1;
 }
@@ -118,18 +133,27 @@ a {
   margin: 0 auto;
   background-color: #ffffff;
   width: 1440px;
-  height: 68px;
+  /* height: 68px; */
   display: flex;
   align-items: center;
 }
 
 .PS-section-2 > div {
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 20px;
+  font-weight: 700;
+  /* line-height: 26px; */
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  color: #333333;
 }
 
 .PS-section-2 > div > p {
+  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
   /* width: 55px; */
   /* height: 20px; */
   border-radius: 4px;
@@ -173,6 +197,24 @@ a {
   gap: 24px;
 }
 
+.PS-subheader-1 > h1 {
+  /* border: solid black 1px; */
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #333333;
+}
+
+.PS-subheader-1 > p {
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
 .PS-subheader-2 {
   /* border: solid black 1px; */
   display: flex;
@@ -198,6 +240,20 @@ a {
 }
 .PS-subheader-2 > div > div > h1 {
   margin-bottom: 32px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #333333;
+}
+
+.PS-subheader-2 > div > div > p {
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-subheader-3 {
@@ -210,12 +266,11 @@ a {
 }
 
 .PS-subheader-3-header {
-  /* font-family: Helvetica Neue LT GEO Caps; */
-  font-weight: 700;
-  font-style: 75 Bold;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 5%;
+  color: #333333;
 }
 
 .PS-subheader-3-content {
@@ -224,8 +279,8 @@ a {
   padding: 20px 0;
   display: flex;
   /* flex-direction: column; */
-  /* gap: 24px; */
-  justify-content: space-between;
+  gap: 72px;
+  /* justify-content: space-between; */
 }
 
 .PS-subheader-3-content-text {
@@ -237,12 +292,24 @@ a {
 .PS-subheader-3-content-text h1 {
   /* color: red; */
   margin-bottom: 16px;
-  /* font-family: Helvetica Neue LT GEO; */
+  font-family: "Helvetica Neue LT GEO 75 Roman";
   font-weight: 700;
-  font-style: 75 Bold;
+  color: #333333;
+  /* font-style: 75 Bold; */
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0%;
+}
+
+.PS-subheader-3-content-text p {
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  /* font-style: 55 Roman; */
+  font-size: 18px;
+  /* leading-trim: NONE; */
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-section-4 {
@@ -261,8 +328,12 @@ a {
 }
 
 .PS-section-4-name {
-  font-size: 32px;
   margin-bottom: 32px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
 }
 
 .PS-section-4-text {
@@ -270,6 +341,13 @@ a {
   /* border: solid black 1px; */
   display: flex;
   justify-content: space-around;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  /* font-style: 55 Roman; */
+  font-size: 13px;
+  /* leading-trim: NONE; */
+  line-height: 17px;
+  letter-spacing: 0%;
 }
 
 .PS-section-4-text > div {
@@ -308,7 +386,12 @@ a {
 }
 
 .PS-section-5-name {
-  font-size: 32px;
+  margin-bottom: 32px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
 }
 
 .PS-cards {
@@ -333,14 +416,32 @@ a {
 .PS-card-text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .PS-card-text > h3 {
   height: 48px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5%;
+  color: #333333;
+}
+
+.PS-card-text > p {
+  font-family: "Helvetica Neue LT GEO 65";
+
+  font-weight: 500;
+  /* font-style: 65 Medium; */
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-card-button-1 {
+  background-color: white;
   width: 88px;
   height: 31px;
   gap: 8px;
@@ -352,6 +453,13 @@ a {
   padding-left: 16px;
   border-radius: 12px;
   border-width: 0.5px;
+
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-card-button-2 {
@@ -367,6 +475,15 @@ a {
   border-radius: 8px;
   background-color: #3366cc;
   color: #ffffff;
+
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  /* font-style: 75 Bold; */
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 20px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
 }
 
 footer {
@@ -382,6 +499,14 @@ footer {
   gap: 24px;
   align-content: center;
   text-align: center;
+
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  /* font-style: 65 Medium; */
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 
 .PS-Footer-div-1 {
