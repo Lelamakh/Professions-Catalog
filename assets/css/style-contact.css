@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Helvetica Neue LT GEO 55 Roman";
+  /* font-family: "Helvetica Neue LT GEO 55 Roman"; */
 }
 
 bodY {
@@ -32,6 +32,12 @@ a {
 }
 
 .header {
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +72,7 @@ a {
 
 /* ლელას კოდის დასასრული */
 
-.main {
+.PS-main {
   background-color: #ffffff;
   /* border: solid blue 1px; */
   width: 1440px;
@@ -98,9 +104,11 @@ a {
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
+  line-height: 36px;
   /* leading-trim: NONE; */
   line-height: 100%;
   letter-spacing: 0%;
+  color: #1a1a1a;
 }
 
 .PS-Contact-info {
@@ -118,23 +126,21 @@ a {
 }
 
 .PS-Contact-info h2 {
-  /* font-family: Noto Sans Georgian; */
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 20px;
-  leading-trim: NONE;
-  line-height: 100%;
+  line-height: 26px;
   letter-spacing: 0%;
+  color: #1a1a1a;
 }
 
 .PS-Contact-info h4 {
-  /* font-family: Noto Sans Georgian; */
-  font-weight: 500;
-  font-style: Medium;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
   font-size: 16px;
-  leading-trim: NONE;
-  line-height: 100%;
+  line-height: 21px;
   letter-spacing: 0%;
+  color: #1a1a1a;
 }
 
 .PS-social-networks {
@@ -166,7 +172,6 @@ a {
   width: 546px;
   height: 544px;
   gap: 32px;
-  angle: 0 deg;
   opacity: 1;
 }
 
@@ -176,9 +181,10 @@ a {
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
-  leading-trim: NONE;
+  line-height: 36px;
   line-height: 100%;
   letter-spacing: 0%;
+  color: #333333;
 }
 
 /* .PS-contact-form {
@@ -206,6 +212,15 @@ form {
   box-shadow: 1px 1px 4px 0px #00000033;
 }
 
+form label {
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
 .PS-input-field {
   width: 498px;
   height: 39px;
@@ -228,7 +243,7 @@ form {
   padding-bottom: 10px;
   padding-left: 8px;
   gap: 8px;
-  angle: 0 deg;
+
   opacity: 1;
   border-radius: 6px;
   border-width: 1px;
@@ -255,8 +270,13 @@ form button {
   opacity: 1;
   gap: 8px;
   padding: 10px 20px;
-
   border-radius: 8px;
+
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 5%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - */
@@ -279,11 +299,10 @@ form button {
 .PS-section-FAQ-header {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
-  font-style: Bold;
   font-size: 28px;
-  /* leading-trim: NONE; */
-  line-height: 100%;
-  letter-spacing: 0%;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
 }
 
 .PS-section-FAQ-items-group {
@@ -310,19 +329,26 @@ form button {
   align-items: center;
   justify-content: space-between;
 
-  /* font-family: "Helvetica Neue LT GEO"; */
+  font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
-  font-style: 65 Medium;
   font-size: 20px;
-  leading-trim: NONE;
   line-height: 26px;
   letter-spacing: 0%;
-  color: #000000;
+  color: #333333;
 }
 
 .PS-section-FAQ-answer {
   display: none;
   padding: 20px;
+
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+
+  font-size: 16px;
+
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-icon {
@@ -358,6 +384,14 @@ footer {
   gap: 24px;
   align-content: center;
   text-align: center;
+
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  /* font-style: 65 Medium; */
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 
 .PS-Footer-div-1 {
