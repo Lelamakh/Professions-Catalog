@@ -11,9 +11,9 @@ body {
 }
 
 header {
-  /* border: solid black 1px; */
+  /* border: solid red 1px; */
   margin: 0 auto;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 1440px;
   height: 72px;
   align-content: center;
@@ -55,11 +55,18 @@ a {
   font-size: 16px;
   color: #ffffff;
   font-weight: 500;
-  border: solid #3366cc 3px;
+  height: 70px;
   padding: 16px 16px;
 }
-.navbar li:hover {
+
+.PS-active-page {
+  border: solid #3366cc 3px;
   border-bottom: solid #ffffff 3px;
+}
+
+.navbar li:hover {
+  opacity: 0.5;
+  transition-duration: 0.2s;
 }
 .navbar li:last-child {
   margin-right: 0;

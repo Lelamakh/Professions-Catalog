@@ -57,8 +57,15 @@ a {
   border: solid #3366cc 3px;
   padding: 16px 16px;
 }
-.navbar li:hover {
+
+/* .PS-active-page {
+  border: solid #3366cc 3px;
   border-bottom: solid #ffffff 3px;
+} */
+
+.navbar li:hover {
+  opacity: 0.5;
+  transition-duration: 0.2s;
 }
 .navbar li:last-child {
   margin-right: 0;
