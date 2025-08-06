@@ -68,6 +68,13 @@ body {
   font-size: 16px;
   color: white;
   font-weight: 500;
+  font-family: Helvetica Neue LT GEO;
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 21px;
+  letter-spacing: 0%;
 }
 .navbar li:last-child {
   /* margin-right: 0; */
@@ -105,37 +112,72 @@ body {
 .lmfirstsectionleft p {
   width: 100%;
   max-width: 815px;
+
+  font-family: Helvetica Neue LT GEO;
   font-weight: 400;
+  font-style: 55 Roman;
   font-size: 18px;
-  line-height: 36px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
   color: #333333;
-  letter-spacing: 5%;
 }
 .lmbuttons {
   display: flex;
   gap: 18px;
 }
 .lmfirstbutton {
-  font-size: 20px;
   color: white;
-  font-weight: 500;
-  /* padding: 9px 8px 9px 8px; */
-  border-radius: 9px;
-  width: 188px;
-  height: 48px;
-  border-radius: 12px;
+  width: 164;
+  height: 42;
+  angle: 0 deg;
+  opacity: 1;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 8px;
   background-color: #3366cc;
   border-color: #3366cc;
+  font-family: Helvetica Neue LT GEO Caps;
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
 }
 .lmsecondbutton {
-  font-size: 20px;
+  /* font-size: 20px;
   font-weight: 500;
   padding: 9px 8px 9px 8px;
   width: 188px;
   height: 48px;
   border-radius: 12px;
   background-color: #ececec;
-  border-color: #3366cc;
+  border-color: #3366cc; */
+
+  width: 164;
+  height: 42;
+  angle: 0 deg;
+  opacity: 1;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Helvetica Neue LT GEO Caps;
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
 }
 .lmdirections {
   display: flex;
@@ -234,6 +276,8 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: Helvetica Neue LT GEO Caps;
+  font-style: 75 Bold;
 }
 .lmname2 {
   width: 204px;
@@ -354,11 +398,14 @@ body {
   margin-bottom: 30px;
 }
 .lmwrapper2right p {
-  line-height: 25px;
-  margin-bottom: 20px;
-  color: #333333;
+  font-family: Helvetica Neue LT GEO;
   font-weight: 400;
-  font-size: 16px;
+  font-style: 55 Roman;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 .lmstartquiz {
   display: flex;
@@ -387,6 +434,7 @@ body {
   margin-left: 48px;
   justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 40px;
 }
 .lmwrapper3left {
   display: flex;
@@ -399,15 +447,21 @@ body {
   font-size: 28px;
   /* margin-left: 48px; */
   margin-bottom: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
   font-family: georgian uppercase/bold;
 }
 
 .lmwrapper3left p {
-  width: 726px;
+  width: 877px;
   line-height: 23px;
   font-size: 18px;
   color: #333333;
+  font-family: Helvetica Neue LT GEO;
+  font-weight: 400;
+  font-style: 55 Roman;
+  font-size: 18px;
+  leading-trim: NONE;
+  letter-spacing: 0%;
 }
 
 .lmwrapper3left img {
@@ -420,19 +474,35 @@ body {
   margin-bottom: 20px;
 }
 .lmwrapper3right {
-  width: 100%;
-  width: 548px;
-  height: 395px;
-  background-color: #ececec;
-  margin-left: 40px;
-  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: first baseline;
+}
+.lmwrapper3right h1 {
+  font-family: Helvetica Neue LT GEO Caps;
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 20 px;
+  leading-trim: NONE;
+  line-height: 26px;
+  letter-spacing: 5%;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.lmwrapper3right h3 {
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #333333;
 }
 .historyphoto {
-  width: 150px;
-  height: 150px;
+  width: 395px;
+  height: 395px;
 }
 .lmdots {
   display: flex;
