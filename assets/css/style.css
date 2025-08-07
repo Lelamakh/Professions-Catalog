@@ -27,6 +27,7 @@ body {
   padding: 20px 48px;
   background-color: #3366cc;
   margin-top: 40px;
+  gap: 40px;
 }
 /* .lmlogo {s
   font-size: 20px;
@@ -62,6 +63,7 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
+  /* gap: 20px; */
 }
 .navbar li {
   margin-right: 30px;
@@ -76,6 +78,7 @@ body {
   leading-trim: NONE;
   line-height: 21px;
   letter-spacing: 0%;
+  cursor: pointer;
 }
 .navbar li:last-child {
   /* margin-right: 0; */
