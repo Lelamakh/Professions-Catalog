@@ -109,12 +109,13 @@ body {
   /* leading-trim: NONE; */
   line-height: 36px;
   letter-spacing: 5%;
+  color: #333333;
 }
 .lmfirstsectionleft p {
   width: 100%;
   max-width: 815px;
 
-  font-family: "Helvetica Neue LT GEO 65";
+  font-family: "Helvetica Neue LT GEO 55 roman";
   font-weight: 400;
   font-style: 55 Roman;
   font-size: 18px;
@@ -179,6 +180,7 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  color: #333333;
 }
 .lmdirections {
   display: flex;
@@ -201,7 +203,10 @@ body {
   font-size: 28px;
   margin-left: 48px;
   margin-top: 40px;
-  font-family: georgian uppercase/bold;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
 }
 .lmcategories img {
   width: 30px;
@@ -267,7 +272,6 @@ body {
   /* border-radius: 15px; */
   background-color: white;
   border-color: #9c58d1;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -277,7 +281,8 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
-  font-family: Helvetica Neue LT GEO Caps;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
   font-style: 75 Bold;
 }
 .lmname2 {
@@ -285,7 +290,6 @@ body {
   border-radius: 8px;
   background-color: white;
   border-color: #ff944d;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -295,13 +299,14 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
 }
 .lmname3 {
   width: 204px;
   border-radius: 8px;
   background-color: white;
   border-color: #3366cc;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -311,13 +316,14 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
 }
 .lmname4 {
   width: 204px;
   border-radius: 8px;
   background-color: white;
   border-color: #2ca678;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -327,13 +333,14 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
 }
 .lmname5 {
   width: 204px;
   border-radius: 8px;
   background-color: white;
   border-color: #ffc857;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -343,13 +350,14 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
 }
 .lmname6 {
   width: 204px;
   border-radius: 8px;
   background-color: white;
   border-color: #ff6b6b;
-  color: black;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -359,12 +367,15 @@ body {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
 }
 .lmwrapper2 {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+  gap: 40px;
 }
 .lmwrapper2left {
   width: 100%;
@@ -397,9 +408,16 @@ body {
   font-weight: 600;
   color: #333333;
   margin-bottom: 30px;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 .lmwrapper2right p {
-  font-family: Helvetica Neue LT GEO;
+  font-family: "Helvetica Neue LT GEO 55";
   font-weight: 400;
   font-style: 55 Roman;
   font-size: 18px;
@@ -442,12 +460,12 @@ body {
   justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 40px;
+  gap: 40px;
 }
 .lmwrapper3left {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 40px;
 }
 .lmwrapper3left h1 {
   font-weight: 700;
@@ -455,19 +473,25 @@ body {
   /* margin-left: 48px; */
   margin-bottom: 30px;
   margin-top: 50px;
-  font-family: georgian uppercase/bold;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #333333;
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 
 .lmwrapper3left p {
-  width: 877px;
+  width: 100%;
+  max-width: 877px;
   line-height: 23px;
   font-size: 18px;
   color: #333333;
-  font-family: "Helvetica Neue LT GEO";
+  font-family: "Helvetica Neue LT GEO 55 roman";
   font-weight: 400;
-  font-style: 55 Roman;
   font-size: 18px;
-  leading-trim: NONE;
   letter-spacing: 0%;
 }
 
@@ -480,13 +504,36 @@ body {
   gap: 16px;
   margin-bottom: 20px;
 }
+.lmceepreading {
+  width: 231px;
+  background-color: #3366cc;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  gap: 8px;
+  display: flex;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+  margin-top: 23px;
+}
+.lmceepreading img {
+  margin-left: 5px;
+}
+
 .lmwrapper3right {
   display: flex;
   flex-direction: column;
-  align-items: first baseline;
+  /* align-items: first baseline;just */
+  justify-content: flex-end;
 }
 .lmwrapper3right h1 {
-  font-family: "Helvetica Neue LT GEO Caps";
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
   font-weight: 700;
   font-style: 75 Bold;
   font-size: 20 px;
