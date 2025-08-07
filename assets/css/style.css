@@ -448,9 +448,42 @@ body {
   letter-spacing: 5%;
   vertical-align: bottom;
 }
+.lmmainslider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 1344px; */
+  height: 700px;
+}
 
-.lmhistorysection {
+.lmslide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lmslide.lmslideactive {
   margin-bottom: 50px;
+  display: block;
+}
+.lmdots {
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+}
+
+.lmdot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #dceeff;
+  border-radius: 50%;
+}
+.lmdot.lmactivedot {
+  background: #3366cc;
 }
 .lmwrapper3 {
   display: flex;
@@ -841,6 +874,7 @@ body {
 footer {
   /* border: solid black 1px; */
   margin: 0 auto;
+  margin-top: 50px;
   padding: 24px 48px;
   background-color: #3366cc;
   color: #ffffff;
