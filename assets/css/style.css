@@ -581,6 +581,7 @@ body {
   margin-left: 48px;
   justify-content: space-between;
   margin-top: 100px;
+  gap: 40px;
 }
 .lmwrapper4left {
   display: flex;
@@ -589,17 +590,24 @@ body {
   margin-bottom: 40px;
 }
 .lmwrapper4left h1 {
-  font-weight: 600;
   font-size: 28px;
   color: #333333;
   margin-bottom: 20px;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 
 .lmwrapper4left p {
-  width: 722px;
-  line-height: 30px;
-  font-size: 20px;
+  width: 100%;
+  max-width: 722px;
   color: #333333;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0%;
 }
 .lmwrapper4left button {
   width: 100%;
@@ -615,7 +623,7 @@ body {
 }
 .lmwrapper4right {
   width: 100%;
-  width: 548px;
+  max-width: 548px;
   height: 395px;
   background-color: #ececec;
   margin-left: 40px;
@@ -624,23 +632,31 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.lmwrapper4right img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
 .lmwrapper5 {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
+  gap: 40px;
 }
 .lmvissionsection {
   margin-bottom: 100px;
+  /* display: flex; */
 }
 .lmwrapper5left {
   width: 100%;
   max-width: 548px;
-  height: 395px;
+  height: 400px;
   background-color: #ececec;
   margin-left: 48px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -658,20 +674,25 @@ body {
   width: 100%;
   max-width: 722px;
   margin-right: 48px;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
+  margin-top: 35px;
 }
 .lmwrapper5right h1 {
   font-size: 28px;
-  font-weight: 600;
   color: #333333;
   margin-bottom: 30px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 .lmwrapper5right p {
   line-height: 25px;
   margin-bottom: 20px;
   color: #333333;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .lmwrapper5right button {
@@ -689,12 +710,18 @@ body {
 .lmteamsection {
   width: 100%;
   max-width: 1344px;
+  margin-bottom: 30px;
 }
 .lmteamsection h1 {
   margin-left: 46px;
-  font-weight: 600;
   font-size: 28px;
   color: #333333;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
 }
 .lmteamwrapper {
   flex-wrap: wrap;
