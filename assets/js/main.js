@@ -46,4 +46,4 @@ dots.forEach((dot, index) => {
 setInterval(() => {
   current = (current + 1) % slides.length;
   updateSlides();
-}, 2000);
+}, 5000);
