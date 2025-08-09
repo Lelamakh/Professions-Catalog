@@ -48,7 +48,17 @@
       <div class="PS-search">
         <div class="PS-fing-job-you-love">იპოვე შენი პროფესია</div>
         <div class="PS-find">
-          <img src="assets/images/Search.png" alt="Search.png" />
+          <!-- <img src="assets/images/Search.png" alt="Search.png" /> -->
+          <input
+            class="PS-search-bar"
+            type="text"
+            id="mySearchInput"
+            onkeyup="filterContent()"
+            placeholder="მაგ. ციფრული მარკეტერი…"
+          />
+          <button class="PS-clearInput-button" onclick="clearInput()">
+            <img src="assets/images/Left arrow.png" alt="Left arrow.png" />
+          </button>
           <button class="PS-find-button">მოძებნე</button>
         </div>
       </div>

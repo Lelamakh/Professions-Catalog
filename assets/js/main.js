@@ -1,4 +1,10 @@
-/* STSRT for Contact page */
+/* - - - - - - - -
+
+
+STSRT for Contact page
+
+
+- - - - - - - -*/
 
 document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".PS-section-FAQ-question");
@@ -19,7 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* END for Contact page */
+/* - - - - - - - -
+
+
+END for Contact page
+
+
+- - - - - - - - */
 
 /* mainslider______LM START */
 const slides = document.querySelectorAll(".lmslide");
@@ -50,7 +62,45 @@ setInterval(() => {
 
 /* mainslider______LM END */
 
-/* STSRT for List page */
+/* - - - - - - - -
+
+
+STSRT for List page 
+
+
+- - - - - - - -*/
+
+/* ეს კოდი არის ძებნის ველისათვის (დასაწყისი) */
+
+function filterContent() {
+  var input, filter, cards, card, i, txtValue;
+  input = document.getElementById("mySearchInput");
+  filter = input.value.toUpperCase(); // Get input value and convert to uppercase for case-insensitive search
+  cards = document.getElementById("PS-result-cards");
+  card = cards.getElementsByClassName("PS-result-card"); // Get all list items
+
+  // Loop through all list items, and hide those that don't match the search query
+  for (i = 0; i < card.length; i++) {
+    txtValue = card[i].textContent || card[i].innerText; // Get the text content of the list item
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      card[i].style.display = ""; // Show the item if it matches
+    } else {
+      card[i].style.display = "none"; // Hide the item if it doesn't match
+    }
+  }
+}
+
+// function resetInput() {
+//   document.getElementById("mySearchInput").value =
+//     document.getElementById("mySearchInput").defaultValue;
+// }
+
+function clearInput() {
+  document.getElementById("mySearchInput").value = "";
+  filterContent();
+}
+
+/* ეს კოდი არის ძებნის ველისათვის (დასასრული) */
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const parentDiv = document.querySelectorAll(".PS-result-card");
@@ -104,4 +154,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // document.body.appendChild(newItem);
 // updateItemCount(); // Call to update the count after adding the new item
 
-/* END for List page */
+/* - - - - - - - -
+
+
+END for List page 
+
+
+- - - - - - - - */

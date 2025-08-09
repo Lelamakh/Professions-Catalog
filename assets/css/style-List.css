@@ -104,12 +104,62 @@ a {
 }
 
 .PS-find {
+  /* border: solid red 1px; */
   display: flex;
   align-items: center;
-  gap: 32px;
+  /* gap: 32px; */
+}
+
+/* - - - - - - - - */
+/* .mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+} */
+
+/* - - - - - - - - */
+
+.PS-search-bar {
+  width: 302px;
+  height: 37px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  gap: 8px;
+  opacity: 1;
+  border: solid #808080 1px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+  /* border-width: 1px; */
+  outline: none;
+}
+
+.PS-clearInput-button {
+  height: 37px;
+  width: 37px;
+  font-size: 20px;
+  /* align-items: center; */
+  /* justify-content: start; */
+  border: solid #808080 1px;
+  border-left: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: transparent;
+  padding-bottom: 8px;
+}
+
+.PS-clearInput-button > img {
+  width: 24px;
 }
 
 .PS-find-button {
+  /* display: none; */
+  margin-left: 32px;
   background-color: #3366cc;
   color: #ffffff;
   width: 102px;
@@ -286,7 +336,7 @@ a {
 }
 
 .PS-favorite {
-  background-color: green;
+  background-color: greenyellow;
 }
 
 .PS-favorite > .PS-heart-div {
