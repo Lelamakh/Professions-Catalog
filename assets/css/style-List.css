@@ -285,6 +285,14 @@ a {
   gap: 20px;
 }
 
+.PS-favorite {
+  background-color: green;
+}
+
+.PS-favorite > .PS-heart-div {
+  background-color: yellow;
+}
+
 .PS-result-card {
   /* border: solid black 1px; */
   /* background-color: aquamarine; */
