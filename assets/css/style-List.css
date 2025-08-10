@@ -232,6 +232,7 @@ a {
 }
 
 .PS-filter-choices {
+  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
