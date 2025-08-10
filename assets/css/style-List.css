@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: Noto Sans Georgian; */
 }
 
 bodY {
@@ -10,7 +9,6 @@ bodY {
 }
 
 header {
-  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 72px;
@@ -74,7 +72,6 @@ a {
 
 .PS-section-list {
   background-color: white;
-  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   display: flex;
@@ -83,7 +80,6 @@ a {
 }
 
 .PS-search {
-  /* border: solid rgb(255, 0, 0) 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 96px;
@@ -103,10 +99,8 @@ a {
 }
 
 .PS-find {
-  /* border: solid red 1px; */
   display: flex;
   align-items: center;
-  /* gap: 32px; */
 }
 
 /* - - - - - - - - */
@@ -134,14 +128,12 @@ a {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border-right: none;
-  /* border-width: 1px; */
   outline: none;
 
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  /* leading-trim: NONE; */
   line-height: 21px;
   letter-spacing: 0%;
 }
@@ -150,8 +142,6 @@ a {
   height: 37px;
   width: 37px;
   font-size: 20px;
-  /* align-items: center; */
-  /* justify-content: start; */
   border: solid #808080 1px;
   border-left: none;
   border-top-right-radius: 8px;
@@ -165,7 +155,6 @@ a {
 }
 
 .PS-find-button {
-  /* display: none; */
   margin-left: 32px;
   background-color: #3366cc;
   color: #ffffff;
@@ -174,10 +163,6 @@ a {
   gap: 8px;
 
   opacity: 1;
-  /* padding-top: 9px;
-  padding-right: 8px;
-  padding-bottom: 9px;
-  padding-left: 8px; */
   border-radius: 8px;
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -188,16 +173,12 @@ a {
 }
 
 .PS-filter-result {
-  /* border: solid red 1px; */
   display: flex;
 }
 
 .PS-filter {
-  /* border: solid black 1px; */
   margin: 0 auto;
   width: 366px;
-  /* height: 1558px; */
-
   display: flex;
   flex-direction: column;
   gap: 32px;
