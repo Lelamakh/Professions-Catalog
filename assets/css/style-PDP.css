@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: Noto Sans Georgian; */
 }
 
 body {
@@ -10,9 +9,7 @@ body {
 }
 
 header {
-  /* border: solid red 1px; */
   margin: 0 auto;
-  /* background-color: aquamarine; */
   width: 1440px;
   height: 72px;
   align-content: center;
@@ -77,9 +74,7 @@ a {
   background-color: #f1e6fa;
   /* პროფესიის სახელი */
   padding: 20px;
-  /* border: solid black 1px; */
   margin: 0 auto;
-
   width: 1440px;
   height: 156px;
   display: flex;
@@ -119,13 +114,10 @@ a {
   padding: 32px;
   background-color: #f1e6fa;
   border-radius: 12px;
-  /* border: solid black 1px; */
   width: 204px;
   height: 92px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* text-align: center; */
   color: #1a1a1a;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
   border: 2px solid #9c58d1;
@@ -135,11 +127,9 @@ a {
   padding: 20px;
   gap: 20px;
   /* საჭირო უნარები: */
-  /* border: solid black 1px; */
   margin: 0 auto;
   background-color: #ffffff;
   width: 1440px;
-  /* height: 68px; */
   display: flex;
   align-items: center;
 }
@@ -148,7 +138,6 @@ a {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-size: 20px;
   font-weight: 700;
-  /* line-height: 26px; */
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -160,8 +149,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  /* width: 55px; */
-  /* height: 20px; */
   border-radius: 4px;
   border: 1px solid #cba6ef;
   background-color: #f1e6fa;
@@ -173,38 +160,28 @@ a {
 }
 
 .PS-section-3 {
-  /* border: solid aqua 1px; */
   background-color: rgba(255, 255, 255, 1);
   /* ქვესათაური */
   display: flex;
-  /* justify-content: space-between; */
-  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
-
-  /* align-content: center; */
-  /* text-align: center; */
 }
 
 .PS-subheaders {
-  /* border: solid red 1px; */
   margin: 0px auto;
   padding: 24px;
-
   display: flex;
   flex-direction: column;
   gap: 38px;
 }
 
 .PS-subheader-1 {
-  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .PS-subheader-1 > h1 {
-  /* border: solid black 1px; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-size: 28px;
   font-weight: 700;
@@ -222,17 +199,14 @@ a {
 }
 
 .PS-subheader-2 {
-  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
 .PS-subheader-2 > div {
-  /* border: solid 1px red; */
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   gap: 24px;
   align-items: spacr;
   padding-left: 48px;
@@ -242,7 +216,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* gap: 24px; */
   padding: 20px 0;
 }
 .PS-subheader-2 > div > div > h1 {
@@ -274,12 +247,10 @@ a {
 }
 
 .PS-subheader-3 {
-  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-items: start;
-  /* margin-bottom: 50px 0; */
 }
 
 .PS-subheader-3-header {
@@ -291,13 +262,10 @@ a {
 }
 
 .PS-subheader-3-content {
-  /* border: solid green 1px; */
   width: 1344px;
   padding: 20px 0;
   display: flex;
-  /* flex-direction: column; */
   gap: 72px;
-  /* justify-content: space-between; */
 }
 
 .PS-subheader-3-content-text {
@@ -307,12 +275,10 @@ a {
 }
 
 .PS-subheader-3-content-text h1 {
-  /* color: red; */
   margin-bottom: 16px;
   font-family: "Helvetica Neue LT GEO 75 Roman";
   font-weight: 700;
   color: #333333;
-  /* font-style: 75 Bold; */
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0%;
@@ -321,9 +287,7 @@ a {
 .PS-subheader-3-content-text ul {
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
-  /* font-style: 55 Roman; */
   font-size: 18px;
-  /* leading-trim: NONE; */
   line-height: 23px;
   letter-spacing: 0%;
   color: #333333;
@@ -331,19 +295,14 @@ a {
 }
 
 .PS-section-4 {
-  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255, 255, 255, 1);
-  /* Roadmap */
-  /* border: solid black 1px; */
   margin: 0 auto;
   width: 1440px;
   height: 409px;
   padding: 24px;
-  /* align-content: center; */
-  /* text-align: center; */
 }
 
 .PS-section-4-name {
@@ -360,54 +319,40 @@ a {
 }
 
 .PS-section-4-text-1 {
-  /* padding: 0 24px; */
   margin: 0 auto;
   width: 1344px;
-  /* border: solid black 1px; */
   display: flex;
   justify-content: space-between;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
-  /* font-style: 55 Roman; */
   font-size: 13px;
-  /* leading-trim: NONE; */
   line-height: 17px;
   letter-spacing: 0%;
 }
 
 .PS-section-4-text-2 {
-  /* padding: 0 24px; */
   margin: 0 auto;
-  /* width: 1200px; */
-  /* border: solid black 1px; */
   display: flex;
   gap: 348px;
   justify-content: space-around;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
-  /* font-style: 55 Roman; */
   font-size: 13px;
-  /* leading-trim: NONE; */
   line-height: 17px;
   letter-spacing: 0%;
 }
 
 .PS-section-4-text-1 > div,
 .PS-section-4-text-2 > div {
-  /* border: solid black 1px; */
   width: 216px;
-  /* height: 50px; */
   gap: 8px;
-  /* angle: 0 deg; */
   opacity: 1;
   border-radius: 8px;
   padding: 8px;
   box-shadow: 0px 1px 3px 0px #0000001a;
-  /* font-family: Helvetica Neue LT GEO; */
   font-weight: 400;
   font-style: 55 Roman;
   font-size: 13px;
-  /* leading-trim: NONE; */
   line-height: 17px;
   letter-spacing: 0%;
 }
@@ -415,17 +360,12 @@ a {
 .PS-section-5 {
   background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
-  /* border: solid black 1px; */
   margin: 0 auto;
   padding: 0 0 48px 24px;
-
   width: 1440px;
-  /* height: 330px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* align-content: center; */
-  /* text-align: center; */
 }
 
 .PS-section-5-name {
@@ -443,7 +383,6 @@ a {
 }
 
 .PS-card-1 {
-  /* border: solid red 1px; */
   display: flex;
   gap: 10px;
   width: 660px;
@@ -453,7 +392,6 @@ a {
 }
 
 .PS-cards img {
-  /* border: solid red 1px; */
   width: 460px;
   height: 254px;
   border-top-left-radius: 12px;
@@ -462,7 +400,6 @@ a {
 
 .PS-card-text {
   width: 200px;
-  /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -482,11 +419,8 @@ a {
 
 .PS-card-text > p {
   font-family: "Helvetica Neue LT GEO 65";
-
   font-weight: 500;
-  /* font-style: 65 Medium; */
   font-size: 16px;
-  /* leading-trim: NONE; */
   line-height: 21px;
   letter-spacing: 0%;
   color: #333333;
@@ -497,7 +431,6 @@ a {
   width: 88px;
   height: 31px;
   gap: 8px;
-  /* angle: 0 deg; */
   opacity: 1;
   padding-top: 4px;
   padding-right: 16px;
@@ -518,7 +451,6 @@ a {
   width: 176;
   height: 36;
   gap: 8px;
-  /* angle: 0 deg; */
   opacity: 1;
   padding-top: 8px;
   padding-right: 16px;
@@ -530,16 +462,13 @@ a {
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
-  /* font-style: 75 Bold; */
   font-size: 14px;
-  /* leading-trim: NONE; */
   line-height: 20px;
   letter-spacing: 5%;
   vertical-align: bottom;
 }
 
 footer {
-  /* border: solid black 1px; */
   margin: 0 auto;
   padding: 24px 48px;
   background-color: #3366cc;
@@ -553,15 +482,12 @@ footer {
   text-align: center;
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
-  /* font-style: 65 Medium; */
   font-size: 14px;
-  /* leading-trim: NONE; */
   line-height: 20px;
   letter-spacing: 0%;
 }
 
 .PS-Footer-div-1 {
-  /* border: solid red 1px; */
   margin: 0 auto;
   width: 1344px;
   display: flex;
@@ -570,7 +496,6 @@ footer {
 }
 
 .PS-Footer-contact-info {
-  /* border: solid red 1px; */
   padding-left: 88px;
   display: flex;
   gap: 32px;
