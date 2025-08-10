@@ -236,6 +236,7 @@ a {
   /* flex-direction: column; */
   gap: 24px;
   align-items: spacr;
+  padding-left: 48px;
 }
 
 .PS-subheader-2 > div > div {
@@ -254,13 +255,23 @@ a {
   color: #333333;
 }
 
-.PS-subheader-2 > div > div > p {
+/* .PS-subheader-2 > div > div > p {
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0%;
   color: #333333;
+} */
+
+.PS-subheader-2 > div > div > ul {
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
+  padding-left: 28px;
 }
 
 .PS-subheader-3 {
@@ -308,7 +319,7 @@ a {
   letter-spacing: 0%;
 }
 
-.PS-subheader-3-content-text p {
+.PS-subheader-3-content-text ul {
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
   /* font-style: 55 Roman; */
@@ -317,9 +328,11 @@ a {
   line-height: 23px;
   letter-spacing: 0%;
   color: #333333;
+  padding-left: 28px;
 }
 
 .PS-section-4 {
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,10 +356,33 @@ a {
   color: #333333;
 }
 
-.PS-section-4-text {
+.PS-roadmap-arrow {
+  margin: 0 auto;
+}
+
+.PS-section-4-text-1 {
   /* padding: 0 24px; */
+  margin: 0 auto;
+  width: 1344px;
   /* border: solid black 1px; */
   display: flex;
+  justify-content: space-between;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  /* font-style: 55 Roman; */
+  font-size: 13px;
+  /* leading-trim: NONE; */
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+
+.PS-section-4-text-2 {
+  /* padding: 0 24px; */
+  margin: 0 auto;
+  /* width: 1200px; */
+  /* border: solid black 1px; */
+  display: flex;
+  gap: 348px;
   justify-content: space-around;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
@@ -357,7 +393,8 @@ a {
   letter-spacing: 0%;
 }
 
-.PS-section-4-text > div {
+.PS-section-4-text-1 > div,
+.PS-section-4-text-2 > div {
   /* border: solid black 1px; */
   width: 216px;
   /* height: 50px; */
