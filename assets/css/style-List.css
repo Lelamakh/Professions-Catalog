@@ -201,7 +201,7 @@ a {
 }
 
 .PS-filter-sphere {
-  /* font-family: "Helvetica Neue LT GEO 65"; */
+  font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
@@ -210,7 +210,7 @@ a {
 }
 
 .PS-filter-choices {
-  /* font-family: "Helvetica Neue LT GEO Caps 55 Roman"; */
+  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
