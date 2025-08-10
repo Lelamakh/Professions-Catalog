@@ -12,7 +12,6 @@ bodY {
 header {
   /* border: solid black 1px; */
   margin: 0 auto;
-  /* background-color: aquamarine; */
   width: 1440px;
   height: 72px;
   align-content: center;
@@ -516,7 +515,6 @@ footer {
   gap: 24px;
   align-content: center;
   text-align: center;
-
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
   /* font-style: 65 Medium; */

@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: Noto Sans Georgian; */
-  /* outline: 1px aquamarine solid; */
 }
 
 body {
@@ -552,7 +551,6 @@ footer {
   gap: 24px;
   align-content: center;
   text-align: center;
-
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
   /* font-style: 65 Medium; */
