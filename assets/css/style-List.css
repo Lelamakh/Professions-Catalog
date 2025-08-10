@@ -185,7 +185,6 @@ a {
 }
 
 .PS-filter-name {
-  /* border: solid black 1px; */
   font-family: "Helvetica Neue LT GEO 75 Roman";
   font-weight: 700;
   font-size: 24px;
@@ -195,7 +194,6 @@ a {
 }
 
 .PS-filter-name-content {
-  /* border: solid black 1px; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -203,8 +201,7 @@ a {
 }
 
 .PS-filter-sphere {
-  /* border: solid rgb(182, 32, 32) 1px; */
-  font-family: "Helvetica Neue LT GEO 65";
+  /* font-family: "Helvetica Neue LT GEO 65"; */
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
@@ -213,14 +210,13 @@ a {
 }
 
 .PS-filter-choices {
-  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+  /* font-family: "Helvetica Neue LT GEO Caps 55 Roman"; */
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
 .PS-filter-choice {
-  /* border: solid black 1px; */
   box-shadow: 1px 1px 4px 0px #0000001a;
   width: 75;
   height: 25;
@@ -234,7 +230,7 @@ a {
   border-radius: 4px;
   font-size: 12px;
 
-  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+  /* font-family: "Helvetica Neue LT GEO Caps 55 Roman"; */
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -295,18 +291,15 @@ a {
 }
 
 .PS-result {
-  /* border: solid black 1px; */
   margin: 0 auto;
   padding-bottom: 48px;
   width: 1005px;
   display: flex;
   flex-direction: column;
-  /* height: 768px; */
   gap: 32px;
 }
 
 .PS-9-results {
-  /* border: solid black 1px; */
   height: 34px;
 
   font-family: "Helvetica Neue LT GEO 75 Roman";
@@ -318,7 +311,6 @@ a {
 }
 
 .PS-result-cards {
-  /* border: solid aquamarine 1px; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -333,21 +325,17 @@ a {
 }
 
 .PS-result-card {
-  /* border: solid black 1px; */
-  /* background-color: aquamarine; */
   width: 318px;
   height: 497px;
   display: flex;
   flex-direction: column;
   align-items: end;
-  /* gap: 15px; */
   box-shadow: 0px 2px 4px 0px #0000001a;
   border-radius: 12px;
   position: relative;
 }
 
 .PS-heart-div {
-  /* border: solid black 1px; */
   width: 32px;
   height: 32px;
   display: flex;
@@ -362,31 +350,19 @@ a {
 }
 
 .PS-card-info {
-  /* margin: -5px 0; */
-  /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: end; */
   width: 318px;
-  /* height: 194px; */
-  /* gap: 50px; */
   padding: 12px 0;
 }
 
 .PS-name {
-  /* border: solid blue 1px; */
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
-  /* gap: 12px; */
-  /* align-items: center; */
   padding: 0 12px;
-  /* font-size: 20px; */
 }
 
 .PS-card-info-text-button {
-  /* border: solid aqua 1px; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -394,20 +370,16 @@ a {
 }
 
 .PS-card-info-sub {
-  /* border: solid green 1px; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: end;
   width: 318px;
 }
 
 .PS-sphere {
-  /* border: solid blue 1px; */
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* align-items: center; */
   padding: 5px;
 }
 
@@ -434,9 +406,7 @@ a {
   height: 36px;
   gap: 8px;
   opacity: 1;
-  /* padding-top: 8px; */
   padding-right: 16px;
-  /* padding-bottom: 8px; */
   padding-left: 16px;
   border-radius: 8px;
 
@@ -449,7 +419,6 @@ a {
 }
 
 .PS-name > h1 {
-  /* border: solid red 1px; */
   height: 90px;
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -461,7 +430,6 @@ a {
 }
 
 .PS-name > img {
-  /* border: solid red 1px; */
   width: 24px;
   height: 24px;
 }
@@ -485,7 +453,6 @@ a {
 }
 
 footer {
-  /* border: solid black 1px; */
   margin: 0 auto;
   padding: 24px 48px;
   background-color: #3366cc;
@@ -499,15 +466,12 @@ footer {
   text-align: center;
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
-  /* font-style: 65 Medium; */
   font-size: 14px;
-  /* leading-trim: NONE; */
   line-height: 20px;
   letter-spacing: 0%;
 }
 
 .PS-Footer-div-1 {
-  /* border: solid red 1px; */
   margin: 0 auto;
   width: 1344px;
   display: flex;
@@ -516,7 +480,6 @@ footer {
 }
 
 .PS-Footer-contact-info {
-  /* border: solid red 1px; */
   padding-left: 88px;
   display: flex;
   gap: 32px;
