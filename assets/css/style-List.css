@@ -137,6 +137,14 @@ a {
   border-right: none;
   /* border-width: 1px; */
   outline: none;
+
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 21px;
+  letter-spacing: 0%;
 }
 
 .PS-clearInput-button {
