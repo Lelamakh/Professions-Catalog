@@ -317,7 +317,7 @@ a {
 }
 
 .PS-favorite {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .PS-favorite > .PS-heart-div {
