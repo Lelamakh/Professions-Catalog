@@ -131,6 +131,18 @@ a {
   gap: 24px;
 }
 
+.PS-Contact-info > div > div {
+  /* border: solid red 1px; */
+  height: 21px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.PS-Contact-info > div > div > img {
+  width: 16px;
+}
+
 .PS-Contact-info h2 {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 600;
