@@ -92,16 +92,25 @@ a {
   justify-items: start;
 }
 
-.PS-language-selector:hover .PS-Eng {
+.PS-language-selector:hover .PS-def-lang {
   display: block;
 }
 
+.PS-GEO-background {
+  background-image: url(/assets/images/GE-icon.svg);
+}
+
 .PS-Geo {
+  display: none;
 }
 
 .PS-Geo:hover {
   opacity: 0.5;
   transition: 0.3s;
+}
+
+.PS-ENG-background {
+  background-image: url(/assets/images/EN-icon.svg);
 }
 
 .PS-Eng {
