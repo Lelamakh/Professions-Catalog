@@ -228,7 +228,7 @@ a {
 
 .PS-subheaders {
   margin: 0px auto;
-  padding: 24px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
   gap: 38px;
