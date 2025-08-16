@@ -533,3 +533,131 @@ footer {
   align-items: end;
   font-size: 14px;
 }
+
+/* ეს კოდი არის ანაზღაურების ფილტრისათვის (დასაწისი) */
+
+.container {
+  /* border: solid red 1px; */
+  margin-top: 24px;
+  background: #fff;
+  /* padding: 30px; */
+  /* border-radius: 10px; */
+  /* width: min(480px, 90%); */
+  width: 366px;
+  height: 37px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  align-items: center;
+}
+
+/* .container h3 {
+  font-size: 2rem;
+} */
+
+/* range slider styles */
+
+.range-slider {
+  /* border: solid red 1px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* gap: 20px; */
+  /* padding-block: 20px; */
+}
+
+/* .range-slider.dragging {
+  border: solid red 1px;
+  cursor: ew-resize;
+} */
+
+.range-slider > input {
+  border: solid #808080 1px;
+  /* border: none; */
+  /* outline: none; */
+  /* background: var(--gray-color); */
+  /* font-size: 1.5rem; */
+  /* padding: 0.5rem 1rem; */
+  border-radius: 8px;
+  /* max-width: 70px;
+  min-width: 30px; */
+  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+  width: 70px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.range {
+  margin: -25px 0 0 75px;
+  /* border: solid red 1px; */
+  width: 58%;
+  display: grid;
+  position: relative;
+  z-index: 5;
+}
+
+.range input {
+  /* border: solid red 1px; */
+  grid-row: 2;
+  grid-column: 1;
+  pointer-events: none;
+  appearance: none;
+  background: transparent;
+}
+
+.range input::-webkit-slider-thumb,
+.range input::-moz-range-thumb {
+  border: solid red 1px;
+  pointer-events: auto;
+  appearance: none;
+  width: 7px;
+  height: 7px;
+  background: #254b8c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #cccccc;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.progress {
+  position: absolute;
+  height: 100%;
+  background: #3366cc;
+  cursor: ew-resize;
+}
+
+/* For Search Code*/
+
+/* .item {
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+.item.hidden {
+  display: none;
+} */
+
+.PS-result-cards {
+  display: flex;
+  font-size: 10px;
+}
+
+.PS-result-card.hidden {
+  display: none;
+}
+
+/* ეს კოდი არის ანაზღაურების ფილტრისათვის (დასასრული) */
