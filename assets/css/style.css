@@ -917,21 +917,25 @@ body {
 }
 .lmprogressbar ::before {
   content: "";
+  /* flex: auto; */
+  justify-content: space-between;
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 10px;
   background: #ddd;
-  z-index: -2;
+  z-index: -1;
   transform: translateY(50%);
 }
 .lmstep {
   text-align: center;
   position: relative;
   flex: 1;
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: space-between;
   z-index: 1;
-  /* margin-top: px; */
 }
 
 .lmlabel {
@@ -946,11 +950,11 @@ body {
   background-color: #fff;
   border: 4px solid #007b55;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   color: #007b55;
-  z-index: 1;
+  /* z-index: 1; */
   /* position: relative; */
   /* margin-top: 30px; */
 }
