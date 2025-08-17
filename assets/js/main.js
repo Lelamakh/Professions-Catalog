@@ -221,6 +221,7 @@ document.addEventListener("mousemove", (e) => {
     updateProgress();
   }
   slider.classList.toggle("dragging", isDragging);
+  filterItems();
 });
 
 document.addEventListener("mouseup", () => {
