@@ -731,8 +731,9 @@ body {
   align-items: center;
 }
 .lmwrapper4right img {
-  width: 150px;
-  height: 150px;
+  max-width: 548px;
+  width: 100%;
+  height: 367px;
   display: flex;
   align-items: center;
 }
