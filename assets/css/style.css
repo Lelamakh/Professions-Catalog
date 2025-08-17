@@ -5,13 +5,17 @@
   /* cursor: pointer; */
   /* font-family: Noto Sans Georgian; */
 }
+
 a {
   text-decoration: none;
   all: unset;
+  cursor: pointer;
 }
+
 body {
   background-color: #f4f0f0;
 }
+
 .maincontainer {
   max-width: 1440px;
   width: 100%;
@@ -24,16 +28,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 48px;
+  padding: 0 48px;
   background-color: #3366cc;
   margin-top: 40px;
-  gap: 40px;
+  height: 69px;
 }
-/* .lmlogo {s
+/* .lmlogo {
+  border: solid red 1px; 
   font-size: 20px;
   font-weight: 600;
   color: #333333;
 } */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
 .lmflagdiv {
   display: flex;
@@ -58,28 +69,49 @@ body {
   /* margin: 0; */
   margin-left: -25px;
 }
+
 .navbar ul {
+  /* border: solid red 1px; */
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-  /* gap: 20px; */
-}
-.navbar li {
-  margin-right: 30px;
-  font-size: 16px;
-  color: white;
-  font-weight: 500;
-  /* font-family: "Helvetica Neue LT GEO Caps 75 Roman"; */
+  gap: 24px;
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
-  font-style: 65 Medium;
   font-size: 16px;
-  leading-trim: NONE;
   line-height: 21px;
   letter-spacing: 0%;
-  cursor: pointer;
 }
+
+.navbar li {
+  /* border: solid yellow 1px; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* margin-right: 30px; */
+  /* font-size: 16px; */
+  color: #ffffff;
+  font-weight: 500;
+  height: 69px;
+  /* padding: 16px 16px; */
+}
+
+.PS-active-page {
+  border: solid #3366cc 3px;
+  border-bottom: solid #ffffff 3px;
+}
+
+.PS-fav-lang-group {
+  /* border: solid red 1px; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar li:hover {
+  opacity: 0.5;
+  transition-duration: 0.2s;
+}
+
 .navbar li:last-child {
   /* margin-right: 0; */
 }

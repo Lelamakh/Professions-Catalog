@@ -13,7 +13,7 @@
     <header class="header">
       <a href="index.html">
         <div class="lmlogo">
-          <img src="assets/images/Vector.png" alt="" />
+          <img src="assets/images/Vector.svg" alt="Vector.svg" />
         </div>
       </a>
       <nav class="navbar">
@@ -21,11 +21,11 @@
           <li>
             <a href="index.html">მთავარი</a>
           </li>
-          <li>
-            <a href="index-PDP.html">პროფესიები</a>
+          <li class="PS-active-page">
+            <a href="index-List.html">პროფესიები</a>
           </li>
           <li>
-            <a href="quiz.html">კარიერული ქვიზი</a>
+            <a href="quiz.html">ქვიზი</a>
           </li>
           <li>
             <a href="about.html">ჩვენ შესახებ</a>
@@ -33,13 +33,15 @@
           <li>
             <a href="index-Contact.html">კონტაქტი</a>
           </li>
-          <li>
-            <a href="favourites.html"
-              ><img src="assets/images/Heart.png" alt="" />
-              <div id="countDisplay"></div>
-            </a>
-          </li>
         </ul>
+        <div class="PS-fav-lang-group">
+          <a href="favourites.html"
+            ><img src="assets/images/Heart.svg" alt="Heart.svg"
+          /></a>
+          <a class="" href="/index-PDP-ENG.html"
+            ><img src="assets/images/EN-icon.svg" alt="EN-icon.svg"
+          /></a>
+        </div>
       </nav>
     </header>
     <section class="PS-section-list">
@@ -222,7 +224,9 @@
                       <h4>500 - 3000 ₾+</h4>
                     </div>
                   </div>
-                  <button class="PS-card-info-button">გაიგე მეტი</button>
+                  <a href="/index-PDP.html">
+                    <button class="PS-card-info-button">გაიგე მეტი</button></a
+                  >
                 </div>
               </div>
             </div>

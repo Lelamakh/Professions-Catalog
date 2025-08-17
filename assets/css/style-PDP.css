@@ -83,45 +83,6 @@ a {
   gap: 16px;
 }
 
-.PS-language-selector {
-  /* border: solid red 1px; */
-  width: 45px;
-  height: 21px;
-  display: flex;
-  flex-direction: column;
-  justify-items: start;
-}
-
-.PS-language-selector:hover .PS-def-lang {
-  display: block;
-}
-
-.PS-GEO-background {
-  background-image: url(/assets/images/GE-icon.svg);
-}
-
-.PS-Geo {
-  display: none;
-}
-
-.PS-Geo:hover {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.PS-ENG-background {
-  background-image: url(/assets/images/EN-icon.svg);
-}
-
-.PS-Eng {
-  display: none;
-}
-
-.PS-Eng:hover {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
 .PS-active-page {
   border: solid #3366cc 3px;
   border-bottom: solid #ffffff 3px;
