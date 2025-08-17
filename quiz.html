@@ -51,8 +51,46 @@
       </header>
       <section class="lmquizsection">
         <h1>დაიწყე კარიერული ქვიზი</h1>
-        <img src="assets/images/Quiz sections.png" alt="" />
-        <img src="assets/images/Questions.png" alt="" />
+        <div class="lmprogressline">
+          <div class="line-active">ინტერესები</div>
+          <div class="lime">უნარები</div>
+          <div class="lime">სამუშაო სტილი</div>
+          <div class="lime">მოტივაცია</div>
+        </div>
+        <div class="lmmainquestion">
+          <h2>რა საქმიანობა გაფიქრებინებს: „ეს ჩემი საქმეა!“"</h2>
+        </div>
+        <form id="quiz-form">
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />ვიზუალური იდეების
+            ციფრულ სამყაროდ ქცევა
+          </label>
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />კოდის წერა და
+            სისტემების აწყობა
+          </label>
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />ვბრენდის პოპულარიზაცია
+            და აუდიტორიასთან კომუნიკაცია
+          </label>
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />მომხმარებლის
+            საჭიროებების ცოდნა და გაყიდვები
+          </label>
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />ადამიანების მართვა და
+            გუნდური გარემოს შექმნა
+          </label>
+
+          <label class="lmoption">
+            <input type="radio" name="answer" value="1" />პროექტების დაგეგმვა და
+            გუნდის მართვა
+          </label>
+        </form>
+        <div class="lmquizbuttons">
+          <button type="button" onclick="goBack()">დაბრუნდი</button>
+          <button type="button" onclick="submitAnswer()">გაგრძელება</button>
+        </div>
       </section>
 
       <footer>
