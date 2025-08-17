@@ -917,7 +917,7 @@ body {
 }
 .lmprogressbar ::before {
   content: "";
-  /* flex: auto; */
+  display: flex;
   justify-content: space-between;
   position: absolute;
   top: 50%;
@@ -932,8 +932,8 @@ body {
   text-align: center;
   position: relative;
   flex: 1;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   z-index: 1;
 }
@@ -961,6 +961,7 @@ body {
 
 .lmmainquestion h2 {
   margin-bottom: 30px;
+  margin-left: 48px;
 }
 .lmoption {
   display: block;
@@ -969,10 +970,11 @@ body {
   border: 1px solid#ddd;
   border-radius: 6px;
   cursor: pointer;
+  margin-left: 48px;
 }
 /* -----------------fav section ------------------ */
 .lmfavsection {
-  margin-left: 46px;
+  margin-left: 48px;
   margin-right: 46px;
   margin-bottom: 48px;
 
