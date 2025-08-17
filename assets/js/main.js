@@ -65,7 +65,9 @@ setInterval(() => {
 /* - - - - - - - -
 
 
+
 START for List page 
+
 
 
 - - - - - - - -*/
@@ -335,7 +337,9 @@ document.addEventListener("DOMContentLoaded", function () {
 /* - - - - - - - -
 
 
+
 END for List page 
+
 
 
 - - - - - - - - */

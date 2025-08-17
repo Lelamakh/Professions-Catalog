@@ -552,6 +552,7 @@ footer {
 
 /* .container h3 {
   font-size: 2rem;
+
 } */
 
 /* range slider styles */
@@ -562,6 +563,7 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+
   /* gap: 20px; */
   /* padding-block: 20px; */
 }
