@@ -199,7 +199,8 @@ body {
   border-radius: 12px;
   background-color: #ececec;
   border-color: #3366cc; */
-
+  border-color: #3366cc;
+  background-color: white;
   width: 164;
   height: 42;
   angle: 0 deg;
@@ -904,37 +905,36 @@ body {
 }
 .lmprogressbar {
   display: flex;
+  /* margin-left: 40px; */
   justify-content: space-between;
   position: relative;
   align-items: center;
-  padding: 30px 90px 30px 90px;
-  margin-bottom: 50px;
+  padding: 30px 30px;
   /* border-radius: 16px; */
   /* width: 80%; */
   /* padding: 40px;---------- */
   background-color: #daf3ec;
   /* border-radius: 5%; */
 }
-.lmprogressbar ::before {
+.lmprogressbar::before {
   content: "";
-  display: flex;
-  justify-content: space-between;
   position: absolute;
+  /* margin-left: 40px; */
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: 90px;
+  right: 90px;
+  /* width: 100%; */
   height: 10px;
-  background: #ddd;
-  z-index: -1;
+  background: white;
+  z-index: 0;
   transform: translateY(50%);
 }
 .lmstep {
   text-align: center;
   position: relative;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   z-index: 1;
 }
 
@@ -942,36 +942,70 @@ body {
   /* margin-bottom: 20px; */
   font-size: 20px;
   color: #333333;
+  /* margin-bottom: 8px; */
 }
 .lmcircle {
-  width: 28px;
-  height: 30px;
+  width: 29px;
+  height: 28px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #daf3ec;
   border: 4px solid #007b55;
-  margin: 0 auto;
   /* display: flex; */
   /* align-items: center;
   justify-content: center; */
-  color: #007b55;
-  /* z-index: 1; */
+  /* color: #007b55; */
+  z-index: 1;
+  position: relative;
   /* position: relative; */
   /* margin-top: 30px; */
 }
 
 .lmmainquestion h2 {
+  margin-top: 40px;
   margin-bottom: 30px;
   margin-left: 48px;
+  font-family: "Helvetica Neue LT GEO 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 31px;
+  letter-spacing: 0%;
 }
 .lmoption {
+  box-shadow: 0px 4px 8px 0px #0000001a;
+
   display: block;
   margin: 8px 0;
   padding: 15px;
   border: 1px solid#ddd;
+  /* background-color: white; */
+  /* border-color: #f8f2f2; */
+  /* border-radius: 10px; */
   border-radius: 6px;
   cursor: pointer;
   margin-left: 48px;
+  display: flex;
+  gap: 10px;
+  font-family: "Helvetica Neue LT GEO 65 roman";
+  /* font-weight: 500; */
+  font-style: 65 Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: color/neutral/800;
 }
+
+.lmoption input[type="radio"] {
+  accent-color: #007b55;
+}
+.lmquizbuttons {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
 /* -----------------fav section ------------------ */
 .lmfavsection {
   margin-left: 48px;
