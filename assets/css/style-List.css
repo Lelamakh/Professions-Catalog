@@ -299,6 +299,11 @@ label {
   color: #333333;
 }
 
+.PS-active {
+  background-color: #3366cc;
+  color: white;
+}
+
 .PS-filter-buttons {
   display: flex;
   justify-content: space-between;

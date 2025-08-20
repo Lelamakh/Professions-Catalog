@@ -104,6 +104,19 @@ function clearInput() {
 
 /* ეს კოდი არის ძებნის ველისათვის (დასასრული) */
 
+/* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასაწყისი) */
+
+const buttonContainer = document.getElementById("PS-filter-choices");
+const buttons = buttonContainer.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    this.classList.toggle("PS-active");
+  });
+});
+
+/* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასასრული) */
+
 /* 
 
 
