@@ -383,7 +383,7 @@ label {
 
 .PS-favorite > .PS-heart-div {
   /* background-color: yellow; */
-  background-image: url(/assets/images/Card-Heart-Favorite.svg);
+  background-image: url(../images/Card-Heart-Favorite.svg);
   background-position: center;
   background-size: cover;
 }
