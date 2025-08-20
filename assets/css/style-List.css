@@ -382,7 +382,14 @@ label {
 }
 
 .PS-favorite > .PS-heart-div {
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-image: url(/assets/images/Card-Heart-Favorite.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.PS-favorite > .PS-heart-div > img {
+  display: none;
 }
 
 .PS-result-card {
