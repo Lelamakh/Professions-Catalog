@@ -400,7 +400,7 @@ label {
 
 .PS-result-card {
   width: 318px;
-  height: 497px;
+  height: 408px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -424,16 +424,22 @@ label {
 }
 
 .PS-card-info {
+  /* border: solid green 1px; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 318px;
+  height: 148px;
   padding: 12px 0;
 }
 
 .PS-name {
+  /* border: solid red 1px; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-between; */
   padding: 0 12px;
+  gap: 12px;
 }
 
 .PS-card-info-text-button {
@@ -441,6 +447,13 @@ label {
   flex-direction: column;
   gap: 24px;
   align-items: center;
+}
+
+.PS-card-info-text-button-V2 {
+  /* border: solid blue 1px; */
+  display: flex;
+  padding: 0 12px;
+  gap: 12px;
 }
 
 .PS-card-info-sub {
@@ -474,6 +487,7 @@ label {
 }
 
 .PS-card-info-button {
+  display: none;
   background-color: #3366cc;
   color: #ffffff;
   width: 294px;
@@ -493,7 +507,7 @@ label {
 }
 
 .PS-name > h1 {
-  height: 90px;
+  /* height: 90px; */
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
@@ -501,11 +515,6 @@ label {
   line-height: 26px;
   letter-spacing: 5%;
   color: #333333;
-}
-
-.PS-name > img {
-  width: 24px;
-  height: 24px;
 }
 
 .PS-card-info h3 {
@@ -518,6 +527,7 @@ label {
 }
 
 .PS-card-info h4 {
+  /* border: solid red 1px; */
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
   font-size: 14px;
@@ -657,8 +667,8 @@ footer {
   /* border: solid red 1px; */
   pointer-events: auto;
   appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   background: #254b8c;
   border-radius: 50%;
   cursor: pointer;
@@ -666,10 +676,11 @@ footer {
 
 .range input::-moz-range-thumb {
   /* border: solid red 1px; */
+  border: none;
   pointer-events: auto;
   appearance: none;
-  width: 7px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   background: #254b8c;
   border-radius: 50%;
   cursor: pointer;
@@ -677,7 +688,7 @@ footer {
 
 .slider {
   position: absolute;
-  height: 4px;
+  height: 8px;
   width: 100%;
   background: #cccccc;
   top: 50%;
