@@ -968,7 +968,6 @@ body {
   font-weight: 700;
   font-style: 75 Bold;
   font-size: 24px;
-  leading-trim: NONE;
   line-height: 31px;
   letter-spacing: 0%;
 }
@@ -1123,4 +1122,165 @@ footer {
   justify-content: center;
   align-items: end;
   font-size: 14px;
+}
+
+/* results--------------------- */
+.lmbackbutton {
+  /* right: 0; */
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: 900px;
+}
+.lmmodaloverlay {
+  /* position: fixed; */
+  margin-top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba (0, 0, 0, 0.6); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  max-width: 1098px;
+  margin: 0 auto;
+}
+.lmmodal {
+  width: 1002px;
+  background: #bbb4b41a;
+  padding: 48px;
+  padding-top: 20px;
+  margin-top: 30px;
+  /* text-align: center;  */
+  /* box-shadow: 0 8px 30px rgba (0, 0, 0, 0.25); */
+}
+.lmmodal h1 {
+  text-align: center;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.lmmodal p {
+  text-align: center;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  font-style: 55 Roman;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #333333;
+}
+.lmresultpercentages {
+  width: 100%;
+  height: 35px;
+  margin-top: 40px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+.lmpurple {
+  width: 57%;
+  height: 100%;
+  background-color: #9c58d1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue LT GEO 65 roman";
+  font-weight: 500;
+  color: white;
+  font-style: 65 Medium;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.lmblue {
+  width: 32%;
+  height: 100%;
+  background-color: #3366cc;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue LT GEO 65 roman";
+  font-weight: 500;
+  color: white;
+  font-style: 65 Medium;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.lmgreen {
+  width: 11%;
+  height: 100%;
+  background-color: #2ca678;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue LT GEO 65 roman";
+  font-weight: 500;
+  color: white;
+  font-style: 65 Medium;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.lmlefttitle {
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
+}
+.lmlistwithbuttons {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.lmlist1 {
+  display: flex;
+  gap: 7px;
+  color: #9c58d1;
+}
+.lmlist2 {
+  display: flex;
+  gap: 7px;
+  color: #3366cc;
+}
+.lmlist3 {
+  display: flex;
+  gap: 7px;
+  color: #2ca678;
+}
+.lmpurplebutton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #9c58d1;
+}
+.lmbluebutton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #3366cc;
+}
+.lmgreenbutton {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #2ca678;
 }
