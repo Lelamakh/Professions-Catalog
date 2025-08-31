@@ -96,7 +96,7 @@ a {
 
 .PS-fav-lang-group-3 {
   /* border: solid red 1px; */
-  display: flex;
+  display: none;
   align-items: center;
   gap: 16px;
 }
@@ -570,6 +570,10 @@ footer {
   .PS-fav-lang-group-2 {
     /* border: solid red 1px; */
     display: none;
+  }
+
+  .PS-fav-lang-group-3 {
+    display: flex;
   }
 
   .PS-section-contact-info {
