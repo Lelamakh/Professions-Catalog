@@ -6,7 +6,7 @@
   /* outline: solid red 1px; */
 }
 
-bodY {
+body {
   background-color: #f4f0f0;
 }
 
@@ -85,6 +85,24 @@ a {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.PS-fav-lang-group-2 {
+  /* border: solid red 1px; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.PS-fav-lang-group-3 {
+  /* border: solid red 1px; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.PS-fav-lang-group-3:hover {
+  background-color: red;
 }
 
 .PS-active-page {
@@ -496,12 +514,62 @@ footer {
     max-width: 376px;
     width: 100%;
     margin: 0 auto;
+    padding: 16px;
+  }
+
+  .lmlogo {
+    height: 24px;
+  }
+  .lmlogo > img {
+    height: 24px;
   }
 
   .navbar {
+    position: relative;
+  }
+
+  .navbar > ul {
+    /* border: solid red 1px; */
+    background-color: #3366cc;
+    width: 375px;
+    /* width: 100%; */
     display: none;
-    align-items: center;
-    gap: 24px;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 24px; */
+    gap: 0;
+    font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 5%;
+    position: absolute;
+    top: 48px;
+    left: -286px;
+  }
+
+  /* -------------- */
+
+  .navbar li {
+    /* border: solid yellow 1px; */
+    display: flex;
+    align-items: start;
+    gap: 0;
+    /* margin-right: 30px; */
+    color: #ffffff;
+    height: 55px;
+    padding: 16px 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 5%;
+  }
+
+  /* -------------- */
+
+  .PS-fav-lang-group-2 {
+    /* border: solid red 1px; */
+    display: none;
   }
 
   .PS-section-contact-info {
