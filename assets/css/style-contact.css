@@ -80,7 +80,14 @@ a {
   /* padding: 16px 16px; */
 }
 
-.PS-fav-lang-group {
+.PS-fav-lang-group-1-1 {
+  /* border: solid red 1px; */
+  display: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.PS-fav-lang-group-1-2 {
   /* border: solid red 1px; */
   display: flex;
   align-items: center;
@@ -576,6 +583,13 @@ footer {
   }
 
   /* -------------- */
+  .PS-fav-lang-group-1-1 {
+    display: flex;
+  }
+
+  .PS-fav-lang-group-1-2 {
+    display: none;
+  }
 
   .PS-fav-lang-group-2 {
     /* border: solid red 1px; */
