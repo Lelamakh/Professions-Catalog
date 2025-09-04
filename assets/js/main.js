@@ -291,6 +291,36 @@ filterItems();
 
 */
 
+/* 
+
+
+
+ეს კოდი არის ბურგერ მენიუსათვის (დასაწყისი) 
+
+
+
+*/
+
+function toggleElementVisibility() {
+  const element = document.getElementById("PS-mobile-navigation");
+
+  if (element.style.display === "none") {
+    element.style.display = "flex";
+  } else {
+    element.style.display = "none";
+  }
+}
+
+/* 
+
+
+
+ეს კოდი არის ბურგერ მენიუსათვის (დასასრული) 
+
+
+
+*/
+
 /* ეს კოდი არის ფავორიტების ველისათვის (დასაწყისი) */
 
 // document.addEventListener("DOMContentLoaded", function () {

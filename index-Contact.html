@@ -19,7 +19,19 @@
         </div>
       </a>
       <nav class="navbar">
-        <ul>
+        <div class="PS-fav-lang-group">
+          <a class="PS-fav-heart" href="favourites.html"
+            ><img src="assets/images/Heart.svg" alt="Heart.svg"
+          /></a>
+        </div>
+        <div class="PS-fav-lang-group-3" id="PS-fav-lang-group-3">
+          <img
+            src="assets/images/BurgerMenu.svg"
+            alt="BurgerMenu.svg"
+            onclick="toggleElementVisibility()"
+          />
+        </div>
+        <ul id="PS-mobile-navigation">
           <li>
             <a href="index.html">მთავარი</a>
           </li>
@@ -35,19 +47,22 @@
           <li class="PS-active-page">
             <a href="index-Contact.html">კონტაქტი</a>
           </li>
+          <li id="PS-fav-none">
+            <a href="index-Contact.html">ფავორიტები</a>
+          </li>
+          <li>
+            <div class="PS-fav-lang-group-2" id="PS-fav-none">
+              <a class="PS-En-icon" href="#"
+                ><img src="assets/images/EN-icon.svg" alt="EN-icon.svg"
+              /></a>
+            </div>
+          </li>
         </ul>
-        <div class="PS-fav-lang-group">
-          <a class="PS-fav-heart" href="favourites.html"
-            ><img src="assets/images/Heart.svg" alt="Heart.svg"
-          /></a>
-        </div>
+
         <div class="PS-fav-lang-group-2">
           <a class="PS-En-icon" href="#"
             ><img src="assets/images/EN-icon.svg" alt="EN-icon.svg"
           /></a>
-        </div>
-        <div class="PS-fav-lang-group-3">
-          <img src="assets/images/BurgerMenu.svg" alt="BurgerMenu.svg" />
         </div>
       </nav>
     </header>
@@ -55,22 +70,19 @@
       <section class="PS-section-contact-info">
         <div class="PS-Contact-header">საკონტაქტო ინფორმაცია</div>
         <div class="PS-Contact-info">
-          <div>
-            <h2>ელ-ფოსტა</h2>
+          <div class="PS-Contact-info-text">
             <div>
               <img src="assets/images/Envelope.svg" alt="Envelope.svg" />
               <h4>namesurname@gmail.com</h4>
             </div>
-          </div>
-          <div>
-            <h2>ნომერი</h2>
+
             <div>
               <img src="assets/images/Phone.svg" alt="Phone.svg" />
               <h4>+995 599 99 99 99</h4>
             </div>
           </div>
+
           <div>
-            <h2>სოციალური ქსელები</h2>
             <div class="PS-social-networks">
               <img
                 src="assets/images/FacebookLogo.png"

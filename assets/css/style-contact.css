@@ -101,9 +101,9 @@ a {
   gap: 16px;
 }
 
-.PS-fav-lang-group-3:hover {
+/* .PS-fav-lang-group-3:hover {
   background-color: red;
-}
+} */
 
 .PS-active-page {
   border: solid #3366cc 3px;
@@ -117,6 +117,10 @@ a {
 
 .navbar li:last-child {
   margin-right: 0;
+}
+
+#PS-fav-none {
+  display: none;
 }
 
 /* ლელას კოდის დასასრული */
@@ -170,14 +174,15 @@ a {
   gap: 72px;
 }
 
-.PS-Contact-info > div {
+.PS-Contact-info-text {
+  /* border: solid red 1px; */
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  /* flex-direction: column; */
+  gap: 72px;
 }
 
 .PS-Contact-info > div > div {
-  /* border: solid red 1px; */
+  /* border: solid green 1px; */
   height: 21px;
   display: flex;
   align-items: center;
@@ -185,6 +190,7 @@ a {
 }
 
 .PS-Contact-info > div > div > img {
+  /* border: solid red 1px; */
   width: 16px;
 }
 
@@ -548,6 +554,10 @@ footer {
     left: -286px;
   }
 
+  #PS-fav-none {
+    display: flex;
+  }
+
   /* -------------- */
 
   .navbar li {
@@ -575,6 +585,18 @@ footer {
   .PS-fav-lang-group-3 {
     display: flex;
   }
+
+  .PS-mobile-navigation {
+    display: flex;
+  }
+
+  #PS-mobile-navigation {
+    display: none;
+  }
+
+  /* #PS-mobile-navigation-show {
+    display: flex;
+  } */
 
   .PS-section-contact-info {
     max-width: 376px;
@@ -608,9 +630,16 @@ footer {
   .PS-Contact-info {
     /* border: solid red 1px; */
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: start;
     padding: 24px 0;
+    gap: 24px;
+  }
+
+  .PS-Contact-info-text {
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
     gap: 12px;
   }
 
@@ -723,6 +752,7 @@ footer {
   .PS-section-FAQ-header {
     font-size: 20px;
     line-height: 26px;
+    margin: 0 auto;
   }
 
   .PS-section-FAQ-items-group {
@@ -741,8 +771,8 @@ footer {
   }
 
   .PS-section-FAQ-question {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
     height: auto;
     padding: 16px 8px;
   }
@@ -750,8 +780,8 @@ footer {
   .PS-section-FAQ-answer {
     padding: 0;
     font-weight: 400;
-    font-size: 7px;
-    line-height: 13px;
+    font-size: 13px;
+    line-height: 17px;
     letter-spacing: 0%;
   }
 
