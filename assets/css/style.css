@@ -112,11 +112,13 @@ body {
   transition-duration: 0.2s;
 }
 
-.navbar li:last-child {
-  /* margin-right: 0; */
-}
 .lmfirstsection {
-  background-color: #ececec;
+  background: linear-gradient(
+    180deg,
+    #eadafc 0%,
+    rgba(249, 231, 255, 0.1) 100%
+  );
+
   /* padding: 176px 48px; */
 }
 .lmfirstsecionwrapper {
@@ -152,7 +154,7 @@ body {
 }
 .lmscreen {
   position: absolute;
-  right: 138px;
+  right: 137px;
   top: 286px;
   width: 255px;
   height: 203px;
@@ -267,7 +269,7 @@ body {
 }
 .lmfirstbutton {
   color: white;
-  width: 164;
+  width: 247px;
   height: 42;
   angle: 0 deg;
   opacity: 1;
