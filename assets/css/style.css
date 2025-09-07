@@ -849,7 +849,7 @@ body {
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 24px;
   letter-spacing: 0%;
 }
 .lmwrapper4left button {
@@ -896,7 +896,7 @@ body {
 .lmwrapper5left {
   width: 100%;
   max-width: 548px;
-  height: 400px;
+  height: 367px;
   background-color: #ececec;
   margin-left: 48px;
   display: flex;
@@ -906,8 +906,8 @@ body {
   align-items: center;
 }
 .lmwrapper5left img {
-  width: 150px;
-  height: 150px;
+  width: 548px;
+  height: 367px;
   display: flex;
   align-items: center;
 }
@@ -919,12 +919,12 @@ body {
   max-width: 722px;
   margin-right: 48px;
   /* margin-bottom: 0px; */
-  margin-top: 35px;
+  margin-top: 28px;
 }
 .lmwrapper5right h1 {
   font-size: 28px;
   color: #333333;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: 75 Bold;
@@ -932,7 +932,7 @@ body {
   letter-spacing: 5%;
 }
 .lmwrapper5right p {
-  line-height: 25px;
+  line-height: 24px;
   margin-bottom: 20px;
   color: #333333;
   font-weight: 400;
@@ -1116,6 +1116,12 @@ body {
   margin-top: 30px;
   margin-bottom: -30px;
 }
+.screenshotlm {
+  margin-left: 48px;
+  margin-top: 40px;
+  width: 932px;
+  margin-left: 260px;
+}
 
 /* -----------------fav section ------------------ */
 .lmfavsection {
@@ -1259,7 +1265,7 @@ footer {
 }
 .lmmodal {
   width: 1002px;
-  background: #bbb4b41a;
+  background: #d3cccc1a;
   padding: 48px;
   padding-top: 20px;
   margin-top: 30px;
