@@ -583,7 +583,7 @@ footer {
   }
 
   .PS-active-page {
-    border: solid #3366cc 3px;
+    border: solid #3366cc 1px;
     border-left: solid #ffffff 3px;
   }
 
