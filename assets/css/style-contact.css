@@ -572,7 +572,7 @@ footer {
     display: flex;
     align-items: start;
     gap: 0;
-    /* margin-right: 30px; */
+    margin-left: 10px;
     color: #ffffff;
     height: 55px;
     padding: 16px 16px;
