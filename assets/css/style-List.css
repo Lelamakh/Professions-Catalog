@@ -34,7 +34,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 48px;
-  background-color: #3366cc;
+  background-color: #6d5baf;
   margin-top: 40px;
   height: 69px;
 }
@@ -85,7 +85,7 @@ a {
 }
 
 .PS-active-page {
-  border: solid #3366cc 3px;
+  border: solid #6d5baf 3px;
   border-bottom: solid #ffffff 3px;
 }
 
@@ -129,8 +129,9 @@ a {
 }
 
 .PS-find {
+  /* border: solid red 1px; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* - - - - - - - - */
@@ -146,7 +147,8 @@ a {
 /* - - - - - - - - */
 
 .PS-search-bar {
-  width: 302px;
+  /* background-color: yellow; */
+  width: 265px;
   height: 37px;
   padding-top: 8px;
   padding-right: 12px;
@@ -174,26 +176,32 @@ a {
   font-size: 20px;
   border: solid #808080 1px;
   border-left: none;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  /* border-top-right-radius: 8px; */
+  /* border-bottom-right-radius: 8px; */
   background-color: transparent;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
+  /* display: flex; */
+  /* align-content: center; */
+  justify-content: center;
 }
 
 .PS-clearInput-button > img {
-  width: 24px;
+  width: 16px;
 }
 
 .PS-find-button {
-  margin-left: 32px;
-  background-color: #3366cc;
+  /* margin-left: 32px; */
+  /* border: solid red 1px; */
+  background-color: #6d5baf;
   color: #ffffff;
-  width: 102px;
-  height: 36px;
-  gap: 8px;
+  width: 56px;
+  height: 37px;
+  /* gap: 8px; */
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 
   opacity: 1;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
@@ -249,7 +257,7 @@ a {
 label {
   display: inline-block;
   cursor: pointer;
-  color: #3366cc;
+  color: #6d5baf;
 
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
@@ -301,7 +309,7 @@ label {
 }
 
 .PS-active {
-  background-color: #3366cc;
+  background-color: #6d5baf;
   color: white;
 }
 
@@ -312,7 +320,7 @@ label {
 }
 
 .PS-filter-button-1 {
-  background-color: #3366cc;
+  background-color: #6d5baf;
   color: #ffffff;
   width: 141px;
   height: 42px;
@@ -336,7 +344,7 @@ label {
 
 .PS-filter-button-2 {
   background-color: transparent;
-  border: solid #3366cc 1px;
+  border: solid #6d5baf 1px;
   width: 141px;
   height: 42px;
 
@@ -417,8 +425,8 @@ label {
   justify-content: center;
   position: absolute;
 
-  box-shadow: 0px 2px 4px 0px #0000001a;
-  background-color: #ffffff;
+  /* box-shadow: 0px 2px 4px 0px #0000001a; */
+  /* background-color: #ffffff; */
   border-radius: 8px;
   margin: 12px;
 }
@@ -488,7 +496,7 @@ label {
 
 .PS-card-info-button {
   display: none;
-  background-color: #3366cc;
+  background-color: #6d5baf;
   color: #ffffff;
   width: 294px;
   height: 36px;
@@ -539,7 +547,7 @@ label {
 footer {
   margin: 0 auto;
   padding: 24px 48px;
-  background-color: #3366cc;
+  background-color: #6d5baf;
   color: #ffffff;
   width: 1440px;
   height: 160px;
@@ -688,7 +696,7 @@ footer {
 
 .slider {
   position: absolute;
-  height: 8px;
+  height: 4px;
   width: 100%;
   background: #cccccc;
   top: 50%;
@@ -701,7 +709,7 @@ footer {
 .progress {
   position: absolute;
   height: 100%;
-  background: #3366cc;
+  background: #6d5baf;
   cursor: ew-resize;
 }
 

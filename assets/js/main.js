@@ -80,6 +80,7 @@ backButton.addEventListener("click", (e) => {
   modal.style.display = "none";
   quizSection.classList.remove("blur");
 });
+
 /* - - - - - - - -
 
 
