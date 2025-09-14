@@ -455,6 +455,8 @@ a {
 .PS-cards {
   display: flex;
   gap: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .PS-card-1 {
@@ -542,6 +544,31 @@ a {
   letter-spacing: 5%;
   vertical-align: bottom;
 }
+
+/* for SPAN slider START */
+
+.PS-dot-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  /* text-align: center; */
+  /* margin-top: 10px; */
+}
+
+.PS-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #e7e4f5;
+  border-radius: 50%;
+  /* margin: 0 5px; */
+  cursor: pointer;
+}
+
+.PS-dot.PS-dot-active {
+  background-color: #6d5baf;
+}
+
+/* for SPAN slider END */
 
 footer {
   margin: 0 auto;
