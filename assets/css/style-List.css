@@ -252,7 +252,7 @@ a {
   padding-left: 20px;
   /* border: 1px solid #888; */
   width: 724px; /* Could be more or less, depending on screen size */
-  height: 709px;
+  /* height: 709px; */
   overflow: scroll;
   position: absolute;
   top: 0;
