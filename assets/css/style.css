@@ -97,6 +97,7 @@ body {
 
 .PS-active-page {
   border: solid #3366cc 3px;
+
   border-bottom: solid #ffffff 3px;
 }
 
