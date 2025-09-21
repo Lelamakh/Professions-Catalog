@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 body {
@@ -235,6 +236,105 @@ a {
   gap: 24px;
 }
 
+/* ------------
+
+გალერეა START
+
+-------------- */
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.PS-container {
+  border: solid red 1px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.PS-mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.PS-cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.PS-prev,
+.PS-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.PS-caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.PS-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.PS-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.PS-demo {
+  opacity: 0.6;
+}
+
+.active,
+.PS-demo:hover {
+  opacity: 1;
+}
+/* ------------
+
+გალერეა END
+
+-------------- */
+
 .PS-subheader-1-1 > div {
   display: flex;
   flex-direction: column;
@@ -441,6 +541,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
 }
 
 .PS-section-5-name {
@@ -453,6 +554,9 @@ a {
 }
 
 .PS-cards {
+  /* border: solid red 1px; */
+  width: 1392px;
+  /* margin: 0 auto; */
   display: flex;
   gap: 24px;
   overflow-x: scroll;
@@ -467,6 +571,66 @@ a {
   border-radius: 12px;
   box-shadow: 0px 1px 3px 0px #0000001a;
 }
+
+/* 
+
+
+for slider START 
+
+
+*/
+
+/* Next & previous buttons */
+.PS-prev,
+.PS-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  /* padding: 16px; */
+  /* margin-top: -22px; */
+  /* color: white; */
+  /* font-weight: bold; */
+  /* font-size: 18px; */
+  transition: 0.5s ease;
+  /* user-select: none; */
+  border-radius: 50%;
+  background-color: #e7e4f5e5;
+  opacity: 70%;
+}
+
+/* Position the "next button" to the right */
+.PS-next {
+  right: 16px;
+  /*   border-radius: 3px 0 0 3px; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.PS-prev:hover,
+.PS-next:hover {
+  opacity: 70%;
+  background-color: #a69ad1;
+}
+
+.PS-prev:active {
+  background-color: #6d5baf;
+}
+
+.PS-next:active {
+  background-color: #6d5baf;
+}
+
+/* 
+
+
+for slider END 
+
+
+*/
 
 /* .PS-cards img {
   width: 460px;

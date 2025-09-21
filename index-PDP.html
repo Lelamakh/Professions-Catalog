@@ -150,7 +150,118 @@
           </p> -->
         </div>
         <div class="PS-subheader-1-1">
-          <img src="assets/images/Photo-gallery.png" alt="Photo-gallery.png" />
+          <!-- <img src="assets/images/Photo-gallery.png" alt="Photo-gallery.png" /> -->
+          <div class="PS-container">
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-1-big.png"
+                alt="Gallery-1-big.png"
+              />
+            </div>
+
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-2-big.png"
+                alt="Gallery-2-big.png"
+              />
+            </div>
+
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-3-big.png"
+                alt="Gallery-3-big.png"
+              />
+            </div>
+
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-4-big.png"
+                alt="Gallery-4-big.png"
+              />
+            </div>
+
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-5-big.png"
+                alt="Gallery-5-big.png"
+              />
+            </div>
+
+            <div class="PS-mySlides">
+              <img
+                src="/assets/images/Gallery-6-big.png"
+                alt="Gallery-6-big.png"
+              />
+            </div>
+
+            <a class="PS-prev" onclick="plusSlides(-1)" style="display: none"
+              >❮</a
+            >
+            <a class="PS-next" onclick="plusSlides(1)" style="display: none"
+              >❯</a
+            >
+
+            <div class="PS-caption-container" style="display: none">
+              <p id="PS-caption"></p>
+            </div>
+
+            <div class="PS-row">
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-1-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(1)"
+                  alt="Gallery-1-small.png"
+                />
+              </div>
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-2-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(2)"
+                  alt="Gallery-2-small.png"
+                />
+              </div>
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-3-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(3)"
+                  alt="Gallery-3-small.png"
+                />
+              </div>
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-4-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(4)"
+                  alt="Gallery-4-small.png"
+                />
+              </div>
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-5-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(5)"
+                  alt="Gallery-5-small.png"
+                />
+              </div>
+              <div class="PS-column">
+                <img
+                  class="PS-demo PS-cursor"
+                  src="/assets/images/Gallery-6-small.png"
+                  style="width: 100%"
+                  onclick="currentSlide(6)"
+                  alt="Gallery-6-small.png"
+                />
+              </div>
+            </div>
+          </div>
           <div>
             <h1>ვინ არის 3D გრაფიკოსი?</h1>
             <p>
@@ -384,12 +495,30 @@
             <button class="PS-card-button-2">გაიგე მეტი</button>
           </div> -->
         </div>
+
+        <button class="PS-prev">
+          <img
+            src="/assets/images/previous-arrow.svg"
+            alt="previous-arrow.svg"
+          />
+        </button>
+
+        <button class="PS-next" onclick="scrollWin()">
+          <img src="/assets/images/next-arrow.svg" alt="next-arrow.svg" />
+        </button>
       </div>
-      <div class="PS-dot-navigation">
+
+      <!-- <button class="PS-prev left">
+        <img src="/assets/images/previous-arrow.svg" alt="previous-arrow.svg" />
+      </button>
+      <button class="PS-next right" onclick="scrollWin()">
+        <img src="/assets/images/next-arrow.svg" alt="next-arrow.svg" />
+      </button> -->
+      <!-- <div class="PS-dot-navigation">
         <span class="PS-dot PS-dot-active" data-index="0"></span>
         <span class="PS-dot" data-index="1"></span>
         <span class="PS-dot" data-index="2"></span>
-      </div>
+      </div> -->
     </section>
     <footer>
       <div class="PS-Footer-div-1">
@@ -428,5 +557,6 @@
         <p>Cookie Settings</p>
       </div>
     </footer>
+    <script src="./assets/js/main - Paata.js"></script>
   </body>
 </html>
