@@ -241,10 +241,10 @@ a {
 გალერეა START
 
 -------------- */
-
+/* 
 img {
   vertical-align: middle;
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
 .PS-container {
@@ -264,7 +264,7 @@ img {
 }
 
 /* Next & previous buttons */
-.PS-prev,
+/* .PS-prev,
 .PS-next {
   cursor: pointer;
   position: absolute;
@@ -278,7 +278,8 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-}
+} 
+*/
 
 /* Position the "next button" to the right */
 .next {
