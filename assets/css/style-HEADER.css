@@ -77,9 +77,9 @@ nav {
 }
 
 .Heart-div {
+  /* border: solid red 1px; */
   display: flex;
   align-items: center;
-  border: solid red 1px;
 }
 
 .Lang-div {
@@ -118,7 +118,7 @@ nav {
   }
 
   .Main-Menu {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     align-content: center;
     /* margin-top: -2px; */
