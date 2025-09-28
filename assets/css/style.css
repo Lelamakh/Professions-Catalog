@@ -628,6 +628,8 @@ body {
   line-height: 23px;
   letter-spacing: 0%;
   color: #333333;
+  width: 100%;
+  max-width: 820px;
 }
 .lmstartquiz {
   display: flex;
@@ -669,6 +671,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 500px;
+  margin-bottom: -130px;
 }
 .lmprofphotos {
   max-width: 232px;
@@ -682,6 +685,7 @@ body {
   top: 0;
   left: 0;
   display: none;
+  /* margin-bottom: 3px; */
 }
 
 .lmslide.lmslideactive {
@@ -1000,25 +1004,55 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .lmonlycycle {
   width: 204px;
-  height: 255px;
+  height: 204px;
   background-color: #ececec;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* display: flex; */
+  /* border-radius: 100px; */
+  margin-bottom: 10px;
+}
+
+.lmfullcycle span {
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5%;
+  color: #333333;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  color: #1a1a1a;
+}
+.lmiconandprof {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  /* border-radius: 100px; */
-  margin-bottom: 20px;
-}
-.lmfullcycle h6 {
-  margin-top: 10px;
+  gap: 10px;
   margin-bottom: 40px;
+  margin-top: 6px;
 }
-.lmfullcycle img {
-  width: 50px;
-  height: 50px;
+.lmiconandprof h6 {
+  font-weight: 400;
+  font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+  color: #1a1a1a;
+  font-style: 55 Roman;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 16px;
+  letter-spacing: 5%;
+}
+.lmiconandprof img {
+  width: 20px;
+  height: 20px;
+}
+
+.lmonlycycle img {
+  width: 204px;
+  height: 204px;
 }
 
 /* ________________quiz____________________- */
