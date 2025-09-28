@@ -72,8 +72,12 @@ nav {
   }
 
   .Main-Menu {
-    width: 24px;
-    height: 24px;
+    display: flex;
+    align-content: center;
+    margin-top: -16px;
+    margin-right: -16px;
+    width: 56px;
+    height: 56px;
     border: solid red 1px;
     position: relative;
   }
@@ -81,8 +85,8 @@ nav {
   .Burger-Menu {
     display: flex;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 14px;
+    right: 14px;
   }
 
   .Mobile-Menu {
@@ -91,8 +95,8 @@ nav {
     flex-direction: column;
     gap: 16px;
     position: absolute;
-    top: 39px;
-    left: -337px;
+    top: 55px;
+    left: -321px;
     padding: 16px;
   }
 
