@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  /* outline: solid red 1px; */
+}
+
+body {
+  background-color: #f4f0f0;
+}
+
+header {
+  /* border: solid black 1px; */
+  margin: 0 auto;
+  background-color: #6d5baf;
+  width: 1440px;
+  /* align-content: center; */
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  height: 69px;
+}
+
+/* ლელას კოდის დასაწყისი */
+
+a {
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+}
+
+.Logo {
+  /* border: solid red 1px; */
+  /* height: 36px; */
+}
+
+.Burger-Menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+}
+
+.Main-Menu {
+}
+
+.Mobile-Menu {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+/* ლელას კოდის დასასრული */
+
+@media (width<1024px) {
+  header {
+    /* border: solid black 1px; */
+    margin: 0 auto;
+    background-color: #6d5baf;
+    width: 376px;
+    padding: 16px;
+    height: 56px;
+    align-items: start;
+  }
+
+  .Logo {
+    height: 24px;
+  }
+
+  .Main-Menu {
+    width: 24px;
+    height: 24px;
+    border: solid red 1px;
+    position: relative;
+  }
+
+  .Burger-Menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .Mobile-Menu {
+    width: 376px;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 39px;
+    left: -337px;
+    padding: 16px;
+  }
+
+  .Main-Menu:hover .Mobile-Menu {
+    display: flex;
+    background-color: red;
+  }
+}
