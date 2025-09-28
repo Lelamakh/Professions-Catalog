@@ -24,6 +24,11 @@ header {
   height: 69px;
 }
 
+.PS-active-page {
+  border: solid #6d5baf 3px;
+  border-bottom: solid #ffffff 3px;
+}
+
 /* ლელას კოდის დასაწყისი */
 
 a {
@@ -42,7 +47,10 @@ a {
 }
 
 nav {
+  color: #ffffff;
   display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .Main-Menu {
@@ -51,12 +59,49 @@ nav {
 .Mobile-Menu {
   list-style-type: none;
   display: flex;
+  align-items: center;
   gap: 24px;
+
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
 }
 
+.Mobile-Menu > li {
+  display: flex;
+  align-items: center;
+  height: 69px;
+}
+
+.Heart-div {
+  display: flex;
+  align-items: center;
+  border: solid red 1px;
+}
+
+.Lang-div {
+  /* border: solid red 1px; */
+  margin-left: -8px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.Lang-div > img {
+  height: 16px;
+}
+.For-Mobile {
+  display: none;
+}
 /* ლელას კოდის დასასრული */
 
 @media (width<1024px) {
+  .For-Mobile {
+    display: flex;
+  }
+
   header {
     /* border: solid black 1px; */
     margin: 0 auto;
@@ -64,7 +109,7 @@ nav {
     width: 376px;
     padding: 16px;
     height: 56px;
-    align-items: start;
+    align-items: center;
   }
 
   .Logo {
@@ -72,13 +117,13 @@ nav {
   }
 
   .Main-Menu {
+    border: solid red 1px;
     display: flex;
     align-content: center;
-    margin-top: -16px;
+    /* margin-top: -2px; */
     margin-right: -16px;
-    width: 56px;
+    width: 52px;
     height: 56px;
-    border: solid red 1px;
     position: relative;
   }
 
@@ -96,12 +141,42 @@ nav {
     gap: 16px;
     position: absolute;
     top: 55px;
-    left: -321px;
+    left: -325px;
     padding: 16px;
+
+    font-family: "Helvetica Neue LT GEO Caps 55 Roman";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 5%;
+  }
+
+  .Mobile-Menu > li {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    padding-left: 16px;
+  }
+
+  .PS-active-page {
+    border: solid #6d5baf 1px;
+    border-left: solid #ffffff 3px;
   }
 
   .Main-Menu:hover .Mobile-Menu {
     display: flex;
-    background-color: red;
+    align-items: start;
+    background-color: #6d5baf;
+  }
+
+  .Lang-div {
+    /* border: solid red 1px; */
+
+    display: none;
+  }
+
+  .Heart-div {
+    margin-left: -87px;
+    margin-right: 36px;
   }
 }
