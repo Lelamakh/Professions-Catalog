@@ -4,73 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/style-contact.css"
-    />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <a href="index.html">
-        <div class="lmlogo">
-          <img src="assets/images/Vector.svg" alt="Vector.svg" />
-        </div>
+        <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
       </a>
-      <nav class="navbar">
-        <div class="PS-fav-lang-group-1-1">
-          <a class="PS-fav-heart" href="favourites.html"
-            ><img src="assets/images/Heart.svg" alt="Heart.svg"
-          /></a>
-        </div>
-        <div class="PS-fav-lang-group-3" id="PS-fav-lang-group-3">
+      <nav>
+        <div class="Main-Menu">
           <img
             src="assets/images/BurgerMenu.svg"
             alt="BurgerMenu.svg"
-            onclick="toggleElementVisibility()"
+            class="Burger-Menu"
           />
+          <ul class="Mobile-Menu">
+            <li><a href="index.html">მთავარი</a></li>
+            <li>
+              <a href="index-List.html">პროფესიები</a>
+            </li>
+            <li><a href="quiz.html">ქვიზი</a></li>
+            <li>
+              <a href="about.html">ჩვენ შესახებ</a>
+            </li>
+            <li class="PS-active-page">
+              <a href="index-Contact.html">კონტაქტი</a>
+            </li>
+            <li><a href="#" class="For-Mobile">ფავორიტები</a></li>
+            <li>
+              <a href="#">
+                <div class="For-Mobile">
+                  <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" /></div
+              ></a>
+            </li>
+          </ul>
         </div>
-        <ul id="PS-mobile-navigation">
-          <li>
-            <a href="index-HEADER.html">New HEADER</a>
-          </li>
-          <li>
-            <a href="index.html">მთავარი</a>
-          </li>
-          <li>
-            <a href="index-List.html">პროფესიები</a>
-          </li>
-          <li>
-            <a href="quiz.html">ქვიზი</a>
-          </li>
-          <li>
-            <a href="about.html">ჩვენ შესახებ</a>
-          </li>
-          <li class="PS-active-page">
-            <a href="index-Contact.html">კონტაქტი</a>
-          </li>
-          <li id="PS-fav-none">
-            <a href="index-Contact.html">ფავორიტები</a>
-          </li>
-          <li>
-            <div class="PS-fav-lang-group-2" id="PS-fav-none">
-              <a class="PS-En-icon" href="#"
-                ><img src="assets/images/EN-icon.svg" alt="EN-icon.svg"
-              /></a>
-            </div>
-          </li>
-        </ul>
-        <div class="PS-fav-lang-group-1-2">
-          <a class="PS-fav-heart" href="favourites.html"
-            ><img src="assets/images/Heart.svg" alt="Heart.svg"
-          /></a>
+        <div class="Heart-div">
+          <img src="assets/images/Heart.svg" alt="Heart.svg" />
         </div>
-
-        <div class="PS-fav-lang-group-2">
-          <a class="PS-En-icon" href="#"
-            ><img src="assets/images/EN-icon.svg" alt="EN-icon.svg"
-          /></a>
+        <div class="Lang-div">
+          <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" />
         </div>
       </nav>
     </header>
