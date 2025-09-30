@@ -1,47 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-HEADER.css" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style-HEADER.css" />
+
+    <!-- Demo styles -->
   </head>
+
   <body>
-    <header>
-      <a href="index.html">
-        <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
-      </a>
-      <nav>
-        <div class="Main-Menu">
-          <img
-            src="assets/images/BurgerMenu.svg"
-            alt="BurgerMenu.svg"
-            class="Burger-Menu"
-          />
-          <ul class="Mobile-Menu">
-            <li><a href="#">მთავარი</a></li>
-            <li><a href="#">პროფესიები</a></li>
-            <li><a href="#">ქვიზი</a></li>
-            <li><a href="#">ჩვენს შესახებ</a></li>
-            <li class="PS-active-page"><a href="#">კონტაქტი</a></li>
-            <li><a href="#" class="For-Mobile">ფავორიტები</a></li>
-            <li>
-              <a href="#">
-                <div class="For-Mobile">
-                  <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" /></div
-              ></a>
-            </li>
-          </ul>
+    <div class="PS-Gallery">
+      <!-- Swiper -->
+
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
         </div>
-        <div class="Heart-div">
-          <img src="assets/images/Heart.svg" alt="Heart.svg" />
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
         </div>
-        <div class="Lang-div">
-          <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" />
-        </div>
-      </nav>
-    </header>
-    <script src="./assets/js/main.js"></script>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="assets/js/main - Paata.js"></script>
+
+      <!-- Initialize Swiper -->
+    </div>
   </body>
 </html>

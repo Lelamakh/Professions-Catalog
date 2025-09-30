@@ -2699,6 +2699,129 @@ img {
 
 -------------- */
 
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+
+.PS-Gallery {
+  width: 560px;
+  height: 459px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  /* background: #000; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 560px;
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 
+body {
+  background: #000;
+  color: #000;
+} */
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 img {
+  max-width: 560px;
+  width: 100%;
+  height: 363px;
+  border-radius: 12px;
+}
+
+/* .mySwiper .swiper-slide,
+img {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+} */
+
+.swiper-button-next {
+  color: #e7e4f5e5;
+  /* opacity: 50%; */
+}
+
+.swiper-button-next > img {
+  width: 48px;
+}
+
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+
 .PS-subheader-1-1 > div {
   display: flex;
   flex-direction: column;
@@ -2867,6 +2990,7 @@ img {
   font-size: 13px;
   line-height: 17px;
   letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-section-4-text-2 {
@@ -2879,6 +3003,7 @@ img {
   font-size: 13px;
   line-height: 17px;
   letter-spacing: 0%;
+  color: #333333;
 }
 
 .PS-section-4-text-1 > div,

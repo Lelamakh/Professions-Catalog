@@ -1,216 +1,122 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: none;
-  /* outline: solid red 1px; */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
+
+.PS-Gallery {
+  width: 560px;
+  height: 459px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
 body {
-  background-color: #f4f0f0;
+  /* background: #000; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  /* border: solid black 1px; */
-  margin: 0 auto;
-  margin-top: 40px;
-  background-color: #6d5baf;
-  width: 1440px;
-  /* align-content: center; */
-  /* text-align: center; */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 560px;
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 48px;
-  height: 69px;
-}
-
-.PS-active-page {
-  border: solid #6d5baf 3px;
-  border-bottom: solid #ffffff 3px;
-}
-
-/* -------- -------- 
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------
-
-ჰედერის კოდის დასაწყისი 
-
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------*/
-
-a {
-  text-decoration: none;
-  all: unset;
-  cursor: pointer;
-}
-
-.Logo {
-  /* border: solid red 1px; */
-  /* height: 36px; */
-}
-
-.Burger-Menu {
-  display: none;
-}
-
-nav {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.Main-Menu {
-}
-
-.Mobile-Menu {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-right: -48px;
-
-  font-family: "Helvetica Neue LT GEO 65";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 0%;
-}
-
-.Mobile-Menu > li {
-  display: flex;
-  align-items: center;
-  height: 69px;
-}
-
-.Heart-div {
-  /* border: solid red 1px; */
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.Lang-div {
-  /* border: solid red 1px; */
-  margin-left: -8px;
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 
+body {
+  background: #000;
+  color: #000;
+} */
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Lang-div > img {
-  height: 16px;
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
 }
 
-.For-Mobile {
-  display: none;
-  /* border: solid red 1px; */
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
 }
 
-/* -------- -------- 
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------
-
-ჰედერის კოდის დასასრული 
-
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------
--------- --------*/
-
-@media (width<1024px) {
-  .For-Mobile {
-    display: flex;
-  }
-
-  header {
-    /* border: solid black 1px; */
-    margin: 0 auto;
-    background-color: #6d5baf;
-    width: 376px;
-    padding: 16px;
-    height: 56px;
-    align-items: center;
-  }
-
-  .Logo {
-    height: 24px;
-    margin-left: 16px;
-  }
-
-  .Main-Menu {
-    /* border: solid red 1px; */
-    display: flex;
-    align-content: center;
-    /* margin-top: -2px; */
-    margin-right: -16px;
-    width: 52px;
-    height: 56px;
-    position: relative;
-  }
-
-  .Burger-Menu {
-    display: flex;
-    position: absolute;
-    top: 14px;
-    right: 14px;
-  }
-
-  .Mobile-Menu {
-    width: 376px;
-    display: none;
-    flex-direction: column;
-    gap: 16px;
-    position: absolute;
-    top: 55px;
-    left: -326px;
-    padding: 16px;
-
-    font-family: "Helvetica Neue LT GEO Caps 55 Roman";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 5%;
-  }
-
-  .Mobile-Menu > li {
-    display: flex;
-    align-items: center;
-    height: 52px;
-    padding-left: 16px;
-  }
-
-  .PS-active-page {
-    border: solid #6d5baf 1px;
-    border-left: solid #ffffff 3px;
-  }
-
-  .Main-Menu:hover .Mobile-Menu {
-    display: flex;
-    align-items: start;
-    background-color: #6d5baf;
-  }
-
-  .Lang-div {
-    /* border: solid red 1px; */
-
-    display: none;
-  }
-
-  .Heart-div {
-    margin-left: -87px;
-    margin-right: 36px;
-  }
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 img {
+  max-width: 560px;
+  width: 100%;
+  height: 363px;
+  border-radius: 12px;
+}
+
+.mySwiper .swiper-slide,
+img {
+  max-width: 80px;
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.swiper-button-next {
+  color: #e7e4f5e5;
+  /* opacity: 50%; */
+}
+
+.swiper-button-next > img {
+  width: 48px;
+}
+
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
+/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
