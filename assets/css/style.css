@@ -1463,6 +1463,16 @@ footer {
   font-size: 14px;
 }
 
+.PS-Footer-contact-info-div-1 {
+  display: flex;
+  gap: 24px;
+}
+
+.PS-Footer-contact-info-div-2 {
+  display: flex;
+  gap: 24px;
+}
+
 .PS-Footer-social-networks {
   display: flex;
   gap: 16px;
@@ -2257,7 +2267,7 @@ footer {
   line-height: 20px;
   letter-spacing: 0%;
 } */
-
+/* 
 .PS-Footer-div-1 {
   margin: 0 auto;
   width: 1344px;
@@ -2287,7 +2297,7 @@ footer {
   justify-content: center;
   align-items: end;
   font-size: 14px;
-}
+} */
 
 /* ეს კოდი არის ანაზღაურების ფილტრისათვის (დასაწისი) */
 
@@ -2682,6 +2692,7 @@ img {
 .PS-demo:hover {
   opacity: 1;
 }
+
 /* ------------
 
 გალერეა END
@@ -3105,7 +3116,7 @@ for slider END
   line-height: 20px;
   letter-spacing: 0%;
 } */
-
+/* 
 .PS-Footer-div-1 {
   margin: 0 auto;
   width: 1344px;
@@ -3135,7 +3146,7 @@ for slider END
   justify-content: center;
   align-items: end;
   font-size: 14px;
-}
+} */
 
 /*
 ----------------------------------------------------------------------------------------------
@@ -3167,7 +3178,7 @@ for index-Contact.css     START
 
 .PS-section-contact-info {
   /* border: solid black 1px; */
-  background-color: #dceeff;
+  background-color: #e7e4f5;
   max-width: 1440px;
   width: 100%;
   height: 121px;
@@ -3503,9 +3514,9 @@ form button {
   line-height: 20px;
   letter-spacing: 0%;
 } */
-
+/* 
 .PS-Footer-div-1 {
-  /* border: solid red 1px; */
+  /* border: solid red 1px; 
   margin: 0 auto;
   width: 1344px;
   display: flex;
@@ -3514,7 +3525,7 @@ form button {
 }
 
 .PS-Footer-contact-info {
-  /* border: solid red 1px; */
+  /* border: solid red 1px; 
   padding-left: 88px;
   display: flex;
   gap: 32px;
@@ -3535,7 +3546,7 @@ form button {
   justify-content: center;
   align-items: end;
   font-size: 14px;
-}
+} */
 
 @media (width<1024px) {
   body {
@@ -3845,7 +3856,7 @@ form button {
     color: #ffffff;
     max-width: 376px;
     width: 100%;
-    height: 172px;
+    height: 206px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -3877,12 +3888,22 @@ form button {
     max-width: 344px;
     width: 100%;
 
-    padding-left: 28px;
+    padding-left: 0;
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 16px;
     font-size: 10px;
     position: absolute;
-    margin-top: 56px;
+    margin-top: 112px;
+  }
+
+  .PS-Footer-contact-info-div-1 {
+  }
+
+  .PS-Footer-contact-info-div-2 {
+    flex-direction: row-reverse;
   }
 
   .PS-Footer-social-networks {
@@ -3894,14 +3915,15 @@ form button {
   }
 
   .PS-Footer-div-2 {
-    margin-top: 24px;
+    /* border: solid red 1px; */
+    margin-top: 72px;
     border-top: solid white 1px;
     height: 42px;
     width: 344px;
     display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: end;
+    /* gap: 24px; */
+    /* justify-content: center; */
+    /* align-items: end; */
     font-size: 10px;
   }
 }
@@ -3985,7 +4007,7 @@ for index-Contact.css     END
     display: flex;
     align-content: center;
     /* margin-top: -2px; */
-    margin-right: -16px;
+    margin-right: -10px;
     width: 52px;
     height: 56px;
     position: relative;
@@ -4041,7 +4063,7 @@ for index-Contact.css     END
 
   .Heart-div {
     margin-left: -87px;
-    margin-right: 36px;
+    margin-right: 6px;
   }
 }
 

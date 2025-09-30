@@ -101,7 +101,7 @@ START for List page
 var PSmodal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("PS-myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -339,36 +339,6 @@ filterItems();
 
 
 ეს კოდი არის ანაზღაურების ფილტრისათვის (დასასრული) 
-
-
-
-*/
-
-/* 
-
-
-
-ეს კოდი არის ბურგერ მენიუსათვის (დასაწყისი) 
-
-
-
-*/
-
-function toggleElementVisibility() {
-  const element = document.getElementById("PS-mobile-navigation");
-
-  if (element.style.display === "none") {
-    element.style.display = "flex";
-  } else {
-    element.style.display = "none";
-  }
-}
-
-/* 
-
-
-
-ეს კოდი არის ბურგერ მენიუსათვის (დასასრული) 
 
 
 
