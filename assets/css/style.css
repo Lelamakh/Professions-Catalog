@@ -4885,3 +4885,62 @@ for slider END
     background-color: #6d5baf;
   }
 }
+
+/* main page დასაწყისი (376PX) */
+/* main page დასაწყისი (375PX) */
+/* main page დასაწყისი (375PX) */
+/* main page დასაწყისი (375PX) */
+
+.lmmaintitle {
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 5%;
+  margin-left: -17px;
+  margin-top: 30px;
+  color: #333333;
+}
+.lmfirstsection p {
+  max-width: 345px;
+  width: 100%;
+  margin-left: -17px;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  font-style: 55 Roman;
+  font-size: 13px;
+  leading-trim: NONE;
+  line-height: 17px;
+  letter-spacing: 0%;
+  margin-top: -20px;
+  color: #333333;
+}
+.lmfirstbutton {
+  width: 300px;
+  margin-left: -17px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 15px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+}
+.lmfirstsectionright {
+  display: none;
+}
+.lmcategories {
+  display: none;
+}
+.quizsection {
+  display: none;
+}
+.daywrapperright img {
+  width: 324px;
+  margin-left: -17px;
+}
