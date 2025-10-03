@@ -365,6 +365,7 @@ nav {
   width: 100%;
   height: 100%;
   animation: slide 12s infinite;
+  /* margin-bottom: 30px; */
 }
 
 .lmmonslide img {
@@ -463,8 +464,8 @@ nav {
   padding-bottom: 10px;
   padding-left: 20px;
   border-radius: 8px;
-  background-color: #3366cc;
-  border-color: #3366cc;
+  background-color: #6d5baf;
+  border-color: #6d5baf;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: 75 Bold;
@@ -587,7 +588,7 @@ nav {
   border-radius: 8px;
   /* border-radius: 15px; */
   background-color: white;
-  border: solid #9c58d1 5px; /* ამ ფორმით გაუწერე საზღვრის კოდები :) */
+  border: solid #cc33a1 1.5px; /* ამ ფორმით გაუწერე საზღვრის კოდები :) */
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -604,6 +605,8 @@ nav {
 .lmname2 {
   width: 204px;
   border-radius: 8px;
+  border: solid #3366cc 1.5px;
+
   background-color: white;
   border-color: #ff944d;
   font-size: 16px;
@@ -622,7 +625,7 @@ nav {
   width: 204px;
   border-radius: 8px;
   background-color: white;
-  border-color: #3366cc;
+  border: solid #ffc229 1.5px;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -639,7 +642,7 @@ nav {
   width: 204px;
   border-radius: 8px;
   background-color: white;
-  border-color: #2ca678;
+  border: solid #2ca678 1.5px;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -656,7 +659,7 @@ nav {
   width: 204px;
   border-radius: 8px;
   background-color: white;
-  border-color: #ffc857;
+  border: solid #fe8b3f 1.5px;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -673,7 +676,7 @@ nav {
   width: 204px;
   border-radius: 8px;
   background-color: white;
-  border-color: #ff6b6b;
+  border: solid #ff5555 1.5px;
   font-size: 16px;
   font-weight: 700;
   padding: 10px 20px;
@@ -733,22 +736,23 @@ nav {
 }
 .dayprofbtn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 197px;
   height: 48px;
   border-radius: 12px;
   padding: 10px 20px 10px 20px;
   margin-top: 20px;
-  background-color: #3366cc;
-  border-color: #3366cc;
+  background-color: #6d5baf;
+  border-color: #6d5baf;
   color: white;
   font-size: 16px;
   line-height: 150%;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
 }
 .quizsection {
-  background-color: #dceeff;
+  background-color: #e7e4f5;
 }
 .lmwrapper2 {
   padding-top: 50px;
@@ -814,14 +818,15 @@ nav {
 .lmstartquiz {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 197px;
   height: 48px;
   border-radius: 12px;
   padding: 10px 20px 10px 20px;
   margin-top: 30px;
-  background-color: #3366cc;
-  border-color: #3366cc;
+  background-color: #6d5baf;
+  border-color: #6d5baf;
   color: white;
   font-size: 16px;
   line-height: 150%;
@@ -850,7 +855,7 @@ nav {
   overflow: hidden;
   width: 100%;
   height: 500px;
-  margin-bottom: -130px;
+  margin-bottom: -70px;
 }
 .lmprofphotos {
   max-width: 232px;
@@ -864,7 +869,7 @@ nav {
   top: 0;
   left: 0;
   display: none;
-  /* margin-bottom: 3px; */
+  /* margin-bottom: 300px; */
 }
 
 .lmslide.lmslideactive {
@@ -880,6 +885,7 @@ nav {
   gap: 24px;
   width: 100%;
   height: 100%;
+  /* margin-bottom: 90px; */
 }
 .lmwrappernew {
   display: flex;
@@ -974,7 +980,7 @@ nav {
 
 .lmceepreading {
   width: 231px;
-  background-color: #3366cc;
+  background-color: #6d5baf;
   color: white;
   border-radius: 8px;
   padding: 10px 20px;
