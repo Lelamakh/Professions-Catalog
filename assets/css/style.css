@@ -436,6 +436,9 @@ nav {
   letter-spacing: 5%;
   color: #333333;
 }
+.lmmobicon {
+  display: none;
+}
 .lmfirstsectionleft p {
   width: 100%;
   max-width: 815px;
@@ -905,6 +908,9 @@ nav {
   color: #333333;
   margin-bottom: 20px;
 }
+.lmmobname {
+  display: none;
+}
 .lmwrappernew2 h3 {
   font-family: "Helvetica Neue LT GEO 55";
   font-weight: 400;
@@ -924,6 +930,9 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding: 16px;
   border-radius: 15px;
+}
+.lmwrappermob {
+  display: none;
 }
 .lmwrapper3 img {
   display: flex;
@@ -4884,63 +4893,192 @@ for slider END
   .PS-dot.PS-dot-active {
     background-color: #6d5baf;
   }
-}
 
-/* main page დასაწყისი (376PX) */
-/* main page დასაწყისი (375PX) */
-/* main page დასაწყისი (375PX) */
-/* main page დასაწყისი (375PX) */
+  /* main page დასაწყისი (376PX) */
+  /* main page დასაწყისი (375PX) */
+  /* main page დასაწყისი (375PX) */
+  /* main page დასაწყისი (375PX) */
 
-.lmmaintitle {
-  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
-  font-weight: 700;
-  font-style: 75 Bold;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 23px;
-  letter-spacing: 5%;
-  margin-left: -17px;
-  margin-top: 30px;
-  color: #333333;
-}
-.lmfirstsection p {
-  max-width: 345px;
-  width: 100%;
-  margin-left: -17px;
-  font-family: "Helvetica Neue LT GEO 55 Roman";
-  font-weight: 400;
-  font-style: 55 Roman;
-  font-size: 13px;
-  leading-trim: NONE;
-  line-height: 17px;
-  letter-spacing: 0%;
-  margin-top: -20px;
-  color: #333333;
-}
-.lmfirstbutton {
-  width: 300px;
-  margin-left: -17px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
-  font-weight: 700;
-  font-style: 75 Bold;
-  font-size: 15px;
-  leading-trim: NONE;
-  line-height: 20px;
-  letter-spacing: 5%;
-  vertical-align: bottom;
-}
-.lmfirstsectionright {
-  display: none;
-}
-.lmcategories {
-  display: none;
-}
-.quizsection {
-  display: none;
-}
-.daywrapperright img {
-  width: 324px;
-  margin-left: -17px;
+  .lmmaintitle {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 5%;
+    margin-left: -17px;
+    margin-top: 30px;
+    color: #333333;
+  }
+  .lmfirstsection p {
+    max-width: 375px;
+    width: 100%;
+    margin-left: -17px;
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    margin-top: -20px;
+    color: #333333;
+  }
+  .lmfirstbutton {
+    width: 320px;
+    margin-left: -17px;
+    margin-top: -17px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 5%;
+    vertical-align: bottom;
+  }
+  .lmfirstsectionright {
+    display: none;
+  }
+  .lmcategories {
+    display: none;
+  }
+  .quizsection {
+    display: none;
+  }
+  .daywrapperright img {
+    width: 324px;
+    margin-left: -17px;
+    margin-top: 30px;
+  }
+  .dayprofwrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .lmmaintitle1 {
+    margin-top: 120px;
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 5%;
+    margin-left: 30px;
+    color: #333333;
+  }
+  .lmwrapper-row {
+    display: none;
+  }
+  .lmwrappermob {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+  }
+  .lmwrappermob p {
+    color: black;
+    order: 1;
+    max-width: 344px;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: #333333;
+  }
+  .lmwrappernew {
+    order: 2;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .lmwrappernew2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+    margin-left: 20px;
+  }
+  .lmmobname {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 5%;
+    color: #333333;
+  }
+
+  .lmwrappernew2 h3 {
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #333333;
+  }
+  .lmceepreading {
+    margin-top: 20px;
+    margin-bottom: -70px;
+    order: 3;
+    margin-left: -176px;
+    width: 330px;
+    justify-content: center;
+  }
+  .lm4png img {
+    display: none;
+  }
+  .lmmobicon {
+    display: flex;
+    margin-left: 30px;
+    margin-top: -30px;
+    width: 16px;
+    height: 16px;
+  }
+  .daywrapperleft h1 {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 5%;
+    margin-right: 9px;
+    color: #333333;
+  }
+  .daywrapperleft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .daywrapperleft p {
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    margin-top: -10px;
+    color: #333333;
+  }
+  .dayprof {
+    width: 375px;
+  }
+  .lmprofphotos {
+    width: 164px;
+    height: 145px;
+  }
+  .daywrapperleft button {
+    max-width: 345px;
+    display: flex;
+  }
 }
