@@ -4914,7 +4914,7 @@ for index-Contact.css     END
   }
 
   .PS-section-similar-professions {
-    border: solid green 1px;
+    /* border: solid green 1px; */
     margin: 0 auto;
     width: 376px;
     /* height: 476px; */
@@ -4941,7 +4941,7 @@ for index-Contact.css     END
   }
 
   .PS-section-similar-professions-cards {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     gap: 16px;
     width: 344px;
@@ -5033,7 +5033,7 @@ for index-Contact.css     END
   }
 
   .PS-section-5 {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     background-color: rgba(255, 255, 255, 1);
     /* რეკომენდირებული კურსები */
     margin: 32px auto 0;
@@ -5056,7 +5056,7 @@ for index-Contact.css     END
   }
 
   .PS-cards {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     width: 344px;
     height: 498px;
     /* margin: 0 auto; */
@@ -5083,7 +5083,7 @@ for index-Contact.css     END
   }
 
   .PS-Last-update-time {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     margin: 0 auto;
     width: 376px;
     height: 64px;
