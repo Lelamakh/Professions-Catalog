@@ -457,15 +457,14 @@ nav {
 }
 .lmfirstbutton {
   color: white;
+
   width: 247px;
-  height: 42;
-  angle: 0 deg;
   opacity: 1;
-  gap: 8px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  /* padding top: 10px; */
   border-radius: 8px;
   background-color: #6d5baf;
   border-color: #6d5baf;
@@ -474,9 +473,8 @@ nav {
   font-style: 75 Bold;
   font-size: 16px;
   leading-trim: NONE;
-  line-height: 22px;
+  /* line-height: 22px; */
   letter-spacing: 5%;
-  vertical-align: bottom;
 }
 .lmsecondbutton {
   border-color: #3366cc;
@@ -743,9 +741,9 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 197px;
-  height: 48px;
+  /* height: 48px; */
   border-radius: 12px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 12px 10px 20px;
   margin-top: 20px;
   background-color: #6d5baf;
   border-color: #6d5baf;
@@ -840,6 +838,30 @@ nav {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+}
+.lmknowmore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* max-width: 250px; */
+  /* height: 40px; */
+  border-radius: 12px;
+  padding: 10px 12px 10px 12px;
+  margin-top: 30px;
+  background-color: #6d5baf;
+  border-color: #6d5baf;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  gap: 15px;
+  font-weight: 700;
+  font-style: 75 Bold;
+  line-height: 22px;
+  letter-spacing: 5%;
+  /* vertical-align: bottom; */
 }
 .lmmaintitle1 {
   margin-left: 48px;
@@ -4926,7 +4948,7 @@ for slider END
     color: #333333;
   }
   .lmfirstbutton {
-    width: 320px;
+    width: 330px;
     margin-left: -17px;
     margin-top: -17px;
     border-radius: 8px;
@@ -4938,7 +4960,9 @@ for slider END
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 5%;
-    vertical-align: bottom;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .lmfirstsectionright {
     display: none;
@@ -5079,5 +5103,25 @@ for slider END
   .daywrapperleft button {
     max-width: 345px;
     display: flex;
+  }
+  .lmknowmore {
+    width: 330px;
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  .lmknowmore span {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 5%;
+    vertical-align: bottom;
+    margin-left: 25px;
+  }
+  .lmknowmore img {
+    margin-left: -120px;
   }
 }
