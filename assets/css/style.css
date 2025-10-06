@@ -224,7 +224,7 @@ nav {
 -------- ---------------------------------------------------------------------
 -------- ---------------------------------------------------------------------*/
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,7 +232,7 @@ nav {
   background-color: #3366cc;
   margin-top: 40px;
   height: 69px;
-}
+} */
 /* .lmlogo {
   border: solid red 1px; 
   font-size: 20px;
@@ -4143,7 +4143,7 @@ form button {
     padding: 24px 16px;
     background-color: #6d5baf;
     color: #ffffff;
-    max-width: 376px;
+    max-width: 600px;
     width: 100%;
     height: 206px;
     display: flex;
@@ -4174,7 +4174,7 @@ form button {
 
   .PS-Footer-contact-info {
     /* border: solid red 1px; */
-    max-width: 344px;
+    max-width: 376px;
     width: 100%;
 
     padding-left: 0;
@@ -4185,6 +4185,7 @@ form button {
     gap: 16px;
     font-size: 10px;
     position: absolute;
+    /* margin: 112px auto 0 auto; */
     margin-top: 112px;
   }
 
@@ -4205,6 +4206,7 @@ form button {
 
   .PS-Footer-div-2 {
     /* border: solid red 1px; */
+    margin: 0 auto;
     margin-top: 72px;
     border-top: solid white 1px;
     height: 42px;
@@ -4280,7 +4282,8 @@ for index-Contact.css     END
     /* border: solid black 1px; */
     margin: 0 auto;
     background-color: #6d5baf;
-    width: 376px;
+    max-width: 600px;
+    width: 100%;
     padding: 16px;
     height: 56px;
     align-items: center;
@@ -4383,7 +4386,8 @@ for index-Contact.css     END
   .PS-section-1 {
     padding: 24px 16px;
     margin: 0 auto;
-    width: 377px;
+    max-width: 600px;
+    width: 100%;
     height: 156px;
     display: flex;
     flex-direction: column;
@@ -4456,7 +4460,8 @@ for index-Contact.css     END
     /* საჭირო უნარები: */
     margin: 0 auto;
     background-color: #ffffff;
-    width: 377px;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -4491,12 +4496,15 @@ for index-Contact.css     END
     /* ქვესათაური */
     display: flex;
     margin: 0 auto;
-    width: 377px;
+    max-width: 600px;
+    width: 100%;
   }
 
   .PS-subheaders {
-    width: 376px;
-    margin: 0px auto;
+    /* border: solid red 1px; */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -4504,6 +4512,7 @@ for index-Contact.css     END
   }
 
   .PS-subheader-1 {
+    margin: 0 auto;
     /* border: solid red 1px; */
     display: flex;
     flex-direction: column;
@@ -4674,6 +4683,7 @@ for index-Contact.css     END
 
   .PS-subheader-2 {
     /* border: solid blue 1px; */
+    margin: 0 auto;
     width: 344px;
     display: flex;
     flex-direction: column;
@@ -4717,6 +4727,7 @@ for index-Contact.css     END
 
   .PS-subheader-3 {
     /* border: solid yellow 1px; */
+    margin: 0 auto;
     width: 344px;
     display: flex;
     /* flex-direction: column; */
@@ -4789,17 +4800,22 @@ for index-Contact.css     END
 
   .PS-section-4 {
     /* border: solid red 1px; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 255, 1);
     margin: 0 auto;
-    width: 377px;
+    max-width: 600px;
+    width: 100%;
     height: 471px;
     padding: 12px;
   }
 
   .PS-section-4-name {
+    /* border: solid red 1px; */
+    width: 344px;
+    margin: 0 auto;
     margin-bottom: 32px;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-size: 18px;
@@ -4844,6 +4860,7 @@ for index-Contact.css     END
   .PS-section-4-text-arrow-block {
     width: 344px;
     display: flex;
+    margin: 0 auto;
     /* align-items: center; */
     /* border: solid greenyellow 1px; */
     /* justify-content: space-between; */
@@ -4899,7 +4916,8 @@ for index-Contact.css     END
   .PS-Share-profession-to-others-div {
     /* border: solid red 1px; */
     background-color: #ffffff;
-    width: 377px;
+    max-width: 600px;
+    width: 100%;
     height: 96px;
     margin: 0 auto;
     display: flex;
@@ -4931,7 +4949,8 @@ for index-Contact.css     END
   .PS-section-similar-professions {
     /* border: solid green 1px; */
     margin: 0 auto;
-    width: 376px;
+    max-width: 600px;
+    width: 100%;
     /* height: 476px; */
     background-color: #ffffff;
     padding: 0 16px;
@@ -4945,6 +4964,8 @@ for index-Contact.css     END
 
   .PS-section-similar-professions > h1 {
     /* border: solid green 1px; */
+    width: 376px;
+    margin: 0 auto;
     background-color: #ffffff;
     color: #333333;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -4960,7 +4981,7 @@ for index-Contact.css     END
     display: flex;
     gap: 16px;
     width: 344px;
-
+    margin: 0 auto;
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -5053,7 +5074,8 @@ for index-Contact.css     END
     /* რეკომენდირებული კურსები */
     margin: 0 auto;
     padding: 32px 16px 0 16px;
-    width: 376px;
+    max-width: 600px;
+    width: 100%;
     /* height: 544px; */
     display: flex;
     flex-direction: column;
@@ -5062,6 +5084,7 @@ for index-Contact.css     END
   }
 
   .PS-section-5-name {
+    margin: 0 auto;
     margin-bottom: 0;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-size: 18px;
@@ -5072,6 +5095,7 @@ for index-Contact.css     END
 
   .PS-cards {
     /* border: solid red 1px; */
+    margin: 0 auto;
     width: 344px;
     height: 498px;
     /* margin: 0 auto; */
@@ -5080,6 +5104,11 @@ for index-Contact.css     END
     gap: 24px;
     overflow-x: hidden;
     overflow-y: scroll;
+  }
+
+  .PS-prev-arrow,
+  .PS-next-arrow {
+    display: none;
   }
 
   .PS-card-1 {
@@ -5100,7 +5129,8 @@ for index-Contact.css     END
   .PS-Last-update-time {
     /* border: solid red 1px; */
     margin: 0 auto;
-    width: 376px;
+    max-width: 600px;
+    width: 100%;
     height: 64px;
     padding: 24px 16px 24px 16px;
     background-color: #ffffff;
