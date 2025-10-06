@@ -7,7 +7,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue LT GEO Caps 55 Roman";
   src: url("../Fonts/HelveticaNeueLTGEOCaps-55Rmn.woff2") format("woff2"),
@@ -17,7 +16,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue LT GEO 65";
   src: url("../Fonts/HelveticaNeueLTGEO-65Medium.woff2") format("woff2"),
@@ -27,7 +25,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue LT GEO 75 Roman";
   src: url("../Fonts/HelveticaNeueLTGEO-75Bold.woff2") format("woff2"),
@@ -37,7 +34,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   src: url("../Fonts/HelveticaNeueLTGEOCaps-75Bold.woff2") format("woff2"),
@@ -47,7 +43,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../Fonts/HelveticaNeue-Medium.woff2") format("woff2"),
@@ -57,7 +52,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../Fonts/HelveticaNeue-Roman.woff2") format("woff2"),
@@ -67,7 +61,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../Fonts/HelveticaNeue-Bold.woff2") format("woff2"),
@@ -3214,6 +3207,31 @@ img {
   gap: 24px;
 }
 
+.PS-Spans {
+  margin: 0 auto;
+  /* border: solid green 1px; */
+  width: 54px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.PS-active-span {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #6d5baf;
+}
+
+.PS-Spans-1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e7e4f5;
+}
+
 .PS-section-5 {
   background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
@@ -5016,7 +5034,7 @@ for index-Contact.css     END
     padding: 0 16px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
 
     font-size: 18px;
     line-height: 23px;
