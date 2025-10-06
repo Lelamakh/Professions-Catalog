@@ -2651,7 +2651,7 @@ for index-PDP.css     START
   margin: 0 auto;
   background-color: #ffffff;
   width: 1440px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 
