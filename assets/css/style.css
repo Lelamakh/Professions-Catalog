@@ -457,7 +457,6 @@ nav {
 }
 .lmfirstbutton {
   color: white;
-
   width: 247px;
   opacity: 1;
   padding-top: 12px;
@@ -874,6 +873,22 @@ nav {
   line-height: 36px;
   letter-spacing: 5%;
   color: #333333;
+}
+.lm-next-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  left: 92%;
+  width: 48px;
+  height: 48px;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  background-color: #e7e4f5e5;
+  opacity: 70%;
+  /* position: fixed; */
 }
 .lmmainslider {
   position: relative;
@@ -5257,6 +5272,14 @@ for slider END
   /* main page დასაწყისი (375PX) */
   /* main page დასაწყისი (375PX) */
   /* main page დასაწყისი (375PX) */
+  .lmfirstsection {
+    width: 377px;
+    margin: 0 auto;
+  }
+  .dayprof {
+    width: 377px;
+    margin: 0 auto;
+  }
 
   .lmmaintitle {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -5330,6 +5353,7 @@ for slider END
     letter-spacing: 5%;
     margin-left: 30px;
     color: #333333;
+    padding-left: 44px;
   }
   .lmwrapper-row {
     display: none;
@@ -5338,7 +5362,11 @@ for slider END
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 375px;
+    max-width: 376px;
+    margin: 0 auto;
+  }
+  .lmwrappermob img {
+    border-radius: 8px;
   }
   .lmwrappermob p {
     color: black;
@@ -5393,16 +5421,30 @@ for slider END
     margin-left: -176px;
     width: 330px;
     justify-content: center;
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 5%;
+    vertical-align: bottom;
+  }
+  .lm-next-arrow {
+    left: 82%;
+    margin-top: -50px;
+    width: 40px;
+    height: 40px;
   }
   .lm4png img {
     display: none;
   }
   .lmmobicon {
     display: flex;
-    margin-left: 30px;
     margin-top: -30px;
     width: 16px;
     height: 16px;
+    margin-left: 75px;
   }
   .daywrapperleft h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
