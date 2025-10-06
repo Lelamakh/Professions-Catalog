@@ -3212,7 +3212,7 @@ img {
   /* border: solid green 1px; */
   width: 54px;
   height: 10px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -5062,6 +5062,31 @@ for index-Contact.css     END
     margin: 0 auto;
     overflow-x: scroll;
     overflow-y: hidden;
+  }
+
+  .PS-Spans {
+    margin: 0 auto;
+    /* border: solid green 1px; */
+    width: 54px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .PS-active-span {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #6d5baf;
+  }
+
+  .PS-Spans-1 {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e7e4f5;
   }
 
   .PS-result-card {
