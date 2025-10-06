@@ -1,16 +1,48 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
+const openModalBtn = document.getElementById("PS-openModalBtn");
+const copyLinkModal = document.getElementById("PS-copyLinkModal");
+const closeModalBtn = document.getElementById("PS-closeModalBtn");
+const copyBtn = document.getElementById("PS-copyBtn");
+const linkToCopyInput = document.getElementById("PS-linkToCopy");
+
+openModalBtn.addEventListener("click", () => {
+  copyLinkModal.classList.add("PS-show-modal");
 });
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
+
+closeModalBtn.addEventListener("click", () => {
+  copyLinkModal.classList.remove("PS-show-modal");
+});
+
+// Close modal when clicking outside the content
+copyLinkModal.addEventListener("click", (event) => {
+  if (event.target === copyLinkModal) {
+    copyLinkModal.classList.remove("PS-show-modal");
+  }
+});
+
+copyBtn.addEventListener("click", () => {
+  linkToCopyInput.select(); // Select the text in the input field
+  linkToCopyInput.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text to the clipboard
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard
+      .writeText(linkToCopyInput.value)
+      .then(() => {
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000); // Reset button text after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+        alert("Failed to copy link. Please copy it manually.");
+      });
+  } else {
+    // Fallback for older browsers
+    document.execCommand("copy");
+    copyBtn.textContent = "Copied!";
+    setTimeout(() => {
+      copyBtn.textContent = "Copy";
+    }, 2000);
+  }
 });

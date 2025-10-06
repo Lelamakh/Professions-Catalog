@@ -54,7 +54,7 @@
         <h2>3D გრაფიკოსი</h2>
         <!-- <p>08.07.2025</p> -->
         <div>
-          <div class="PS-Share">
+          <div class="PS-Share" id="PS-openModalBtn">
             <img src="assets/images/Share.svg" alt="Share.svg" />
             <div class="PS-Share-Logos">
               გაუზიარე პროფესია სხვას
@@ -71,6 +71,25 @@
                 alt="LinkedinLogo.svg"
               /> -->
             </div>
+          </div>
+          <div>
+            <!-- <button id="PS-openModalBtn" class="PS-button">Share Link</button> -->
+
+            <div id="PS-copyLinkModal" class="PS-modal-container">
+              <div class="PS-modal-content">
+                <h2>Copy Link</h2>
+                <input
+                  type="text"
+                  id="PS-linkToCopy"
+                  value="https://example.com/your-link"
+                  readonly
+                />
+                <button id="PS-copyBtn" class="PS-button">Copy</button>
+                <button id="PS-closeModalBtn" class="PS-button">Close</button>
+              </div>
+            </div>
+
+            <!-- <script src="assets/js/main - Paata.js"></script> -->
           </div>
         </div>
       </div>
@@ -819,8 +838,9 @@
         </a> -->
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-    <script src="./assets/js/main - Paata.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/main - Paata.js"></script>
   </body>
 </html>

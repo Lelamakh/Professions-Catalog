@@ -127,7 +127,7 @@ body {
 header {
   /* border: solid black 1px; */
   margin: 0 auto;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   background-color: #6d5baf;
   width: 1440px;
   /* align-content: center; */
@@ -2540,9 +2540,15 @@ for index-PDP.css     START
 }
 
 .PS-Share-Logos {
-  width: 131px;
+  /* border: solid red 1px; */
+  background-color: #ffffff;
+  width: 147px;
+  height: 22px;
+  border-radius: 6px;
   display: none;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
@@ -2556,6 +2562,46 @@ for index-PDP.css     START
 .PS-Share:hover .PS-Share-Logos {
   display: flex;
 }
+
+/*     URL copy MODAL START     */
+.PS-modal-container {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.PS-modal-container.PS-show-modal {
+  display: flex; /* Show when this class is added */
+}
+
+.PS-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#PS-linkToCopy {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.PS-button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/*     URL copy MODAL END     */
 
 .PS-sec-1-div-1 h2 {
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -3643,6 +3689,13 @@ form label {
   opacity: 1;
   border-radius: 8px;
   border-width: 1px;
+
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #1a1a1a;
 }
 
 .PS-input-field-message {
@@ -3658,6 +3711,13 @@ form label {
   opacity: 1;
   border-radius: 6px;
   border-width: 1px;
+
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #1a1a1a;
 }
 
 .PS-div-button {
@@ -4722,7 +4782,7 @@ for index-Contact.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
-    padding-left: 0px;
+    padding-left: 2px;
   }
 
   .PS-subheader-3 {
@@ -4782,7 +4842,7 @@ for index-Contact.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
-    padding-left: 28px;
+    padding-left: 12px;
   }
 
   .PS-subheader-3-1 {

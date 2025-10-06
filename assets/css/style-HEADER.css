@@ -1,122 +1,36 @@
-/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
-/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
-/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
-/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
-/*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
-
-.PS-Gallery {
-  width: 560px;
-  height: 459px;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  /* background: #000; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  width: 560px;
-  text-align: center;
-  font-size: 18px;
-  /* background: #444; */
-  display: flex;
+.PS-modal-container {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
   justify-content: center;
   align-items: center;
+  z-index: 1000; /* Ensure it's on top */
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* 
-body {
-  background: #000;
-  color: #000;
-} */
-
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+.PS-modal-container.PS-show-modal {
+  display: flex; /* Show when this class is added */
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
-.mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-
-.mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mySwiper2 img {
-  max-width: 560px;
-  width: 100%;
-  height: 363px;
-  border-radius: 12px;
-}
-
-.mySwiper .swiper-slide,
-img {
-  max-width: 80px;
-  width: 100%;
-  height: 80px;
+.PS-modal-content {
+  background-color: white;
+  padding: 20px;
   border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.swiper-button-next {
-  color: #e7e4f5e5;
-  /* opacity: 50%; */
+#PS-linkToCopy {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
 }
 
-.swiper-button-next > img {
-  width: 48px;
+.PS-button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
 }
-
-/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
-/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
-/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
-/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
-/*--------------------   ფოტო გალერეა დასასრული   -------------------- */
