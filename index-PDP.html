@@ -77,15 +77,36 @@
 
             <div id="PS-copyLinkModal" class="PS-modal-container">
               <div class="PS-modal-content">
-                <h2>Copy Link</h2>
-                <input
-                  type="text"
-                  id="PS-linkToCopy"
-                  value="https://example.com/your-link"
-                  readonly
-                />
-                <button id="PS-copyBtn" class="PS-button">Copy</button>
-                <button id="PS-closeModalBtn" class="PS-button">Close</button>
+                <h3 class="PS-modal-content-header">გაუზიარე მეგობრებს</h3>
+                <div class="PS-modal-content-socmedia">
+                  <a href="#"
+                    ><img
+                      src="assets/images/Facebook-link-copy.svg"
+                      alt="Facebook-link-copy.svg"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/Instagram-link-copy.svg"
+                      alt="Instagram-link-copy.svg"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="assets/images/LinkedIn-link-copy.svg"
+                      alt="LinkedIn-link-copy.svg"
+                  /></a>
+                </div>
+                <div class="PS-linkToCopy-div">
+                  <input
+                    type="text"
+                    id="PS-linkToCopy"
+                    value="https://profesia.com"
+                    readonly
+                  />
+                  <button id="PS-copyBtn" class="PS-button-copy">
+                    <img src="assets/images/Copy.svg" alt="Copy.svg" />
+                  </button>
+                </div>
+                <button id="PS-closeModalBtn" class="PS-button-close">X</button>
               </div>
             </div>
 
