@@ -159,16 +159,52 @@ function clearInput() {
 
 /* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასაწყისი) */
 
-const buttonContainer = document.getElementById("PS-filter-choices");
-const buttons = buttonContainer.querySelectorAll("button");
+const buttonContainer1 = document.getElementById("PS-filter-choices-1");
+const buttonContainer2 = document.getElementById("PS-filter-choices-2");
+const buttonContainer3 = document.getElementById("PS-filter-choices-3");
+const buttonContainer4 = document.getElementById("PS-filter-choices-4");
+const buttons1 = buttonContainer1.querySelectorAll("button");
+const buttons2 = buttonContainer2.querySelectorAll("button");
+const buttons3 = buttonContainer3.querySelectorAll("button");
+const buttons4 = buttonContainer4.querySelectorAll("button");
 
-buttons.forEach((button) => {
+buttons1.forEach((button) => {
   button.addEventListener("click", function () {
     this.classList.toggle("PS-active");
   });
 });
 
+buttons2.forEach((button) => {
+  button.addEventListener("click", function () {
+    this.classList.toggle("PS-active");
+  });
+});
+
+buttons3.forEach((button) => {
+  button.addEventListener("click", function () {
+    this.classList.toggle("PS-active");
+  });
+});
+
+buttons4.forEach((button) => {
+  button.addEventListener("click", function () {
+    this.classList.toggle("PS-active");
+  });
+});
 /* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასასრული) */
+
+/* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასაწყისი) (ნომერი 2)*/
+
+// const buttonContainer2 = document.getElementById("PS-filter-choices-2");
+// const buttons2 = buttonContainer2.querySelectorAll("button");
+
+// buttons2.forEach((button) => {
+//   button.addEventListener("click", function () {
+//     this.classList.toggle("PS-active");
+//   });
+// });
+
+/* ეს კოდი არის ღილაკების ფერის შესაცვლელი (დასასრული) (ნომერი 2) */
 
 /* 
 
@@ -400,6 +436,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ეს კოდი არის ფავორიტების ველისათვის (დასასრული) */
 
+/* ---------- START for LOAD MORE ---------- */
+
+const itemContainer = document.getElementById("PS-result-cards");
+const itemsCards = itemContainer.querySelectorAll(".PS-result-card");
+const loadMoreBtn = document.getElementById("PS-load-more-btn");
+
+const initialItemsToShow = 9;
+const itemsToLoad = 9; // Number of items to show on each click
+let currentVisibleItems = initialItemsToShow;
+
+// Show initial items (already handled by CSS, but good for dynamic scenarios)
+// for (let i = 0; i < initialItemsToShow; i++) {
+//   if (items[i]) {
+//     items[i].style.display = 'block';
+//   }
+// }
+
+loadMoreBtn.addEventListener("click", () => {
+  for (
+    let i = currentVisibleItems;
+    i < currentVisibleItems + itemsToLoad;
+    i++
+  ) {
+    if (itemsCards[i]) {
+      itemsCards[i].style.display = "block"; // Or 'flex', 'grid', etc., depending on your layout
+    }
+  }
+  currentVisibleItems += itemsToLoad;
+
+  if (currentVisibleItems >= itemsCards.length) {
+    loadMoreBtn.style.display = "none"; // Hide button if all items are visible
+  }
+});
+
+// Initial check to hide button if there are no more items to load initially
+if (currentVisibleItems >= itemsCards.length) {
+  loadMoreBtn.style.display = "none";
+}
+/* ---------- END for LOAD MORE ---------- */
+
 /* - - - - - - - -
 
 
@@ -483,54 +559,54 @@ START for index-PDP page
 
 /*     URL copy MODAL START     */
 
-const openModalBtn = document.getElementById("PS-openModalBtn");
-const copyLinkModal = document.getElementById("PS-copyLinkModal");
-const closeModalBtn = document.getElementById("PS-closeModalBtn");
-const copyBtn = document.getElementById("PS-copyBtn");
-const linkToCopyInput = document.getElementById("PS-linkToCopy");
+// const openModalBtn = document.getElementById("PS-openModalBtn");
+// const copyLinkModal = document.getElementById("PS-copyLinkModal");
+// const closeModalBtn = document.getElementById("PS-closeModalBtn");
+// const copyBtn = document.getElementById("PS-copyBtn");
+// const linkToCopyInput = document.getElementById("PS-linkToCopy");
 
-openModalBtn.addEventListener("click", () => {
-  copyLinkModal.classList.add("PS-show-modal");
-});
+// openModalBtn.addEventListener("click", () => {
+//   copyLinkModal.classList.add("PS-show-modal");
+// });
 
-closeModalBtn.addEventListener("click", () => {
-  copyLinkModal.classList.remove("PS-show-modal");
-});
+// closeModalBtn.addEventListener("click", () => {
+//   copyLinkModal.classList.remove("PS-show-modal");
+// });
 
-// Close modal when clicking outside the content
-copyLinkModal.addEventListener("click", (event) => {
-  if (event.target === copyLinkModal) {
-    copyLinkModal.classList.remove("PS-show-modal");
-  }
-});
+// // Close modal when clicking outside the content
+// copyLinkModal.addEventListener("click", (event) => {
+//   if (event.target === copyLinkModal) {
+//     copyLinkModal.classList.remove("PS-show-modal");
+//   }
+// });
 
-copyBtn.addEventListener("click", () => {
-  linkToCopyInput.select(); // Select the text in the input field
-  linkToCopyInput.setSelectionRange(0, 99999); // For mobile devices
+// copyBtn.addEventListener("click", () => {
+//   linkToCopyInput.select(); // Select the text in the input field
+//   linkToCopyInput.setSelectionRange(0, 99999); // For mobile devices
 
-  // Copy the text to the clipboard
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard
-      .writeText(linkToCopyInput.value)
-      .then(() => {
-        copyBtn.textContent = "Copied!";
-        setTimeout(() => {
-          copyBtn.textContent = "Copy";
-        }, 2000); // Reset button text after 2 seconds
-      })
-      .catch((err) => {
-        console.error("Failed to copy text: ", err);
-        alert("Failed to copy link. Please copy it manually.");
-      });
-  } else {
-    // Fallback for older browsers
-    document.execCommand("copy");
-    copyBtn.textContent = "Copied!";
-    setTimeout(() => {
-      copyBtn.textContent = "Copy";
-    }, 2000);
-  }
-});
+//   // Copy the text to the clipboard
+//   if (navigator.clipboard && navigator.clipboard.writeText) {
+//     navigator.clipboard
+//       .writeText(linkToCopyInput.value)
+//       .then(() => {
+//         copyBtn.textContent = "Copied!";
+//         setTimeout(() => {
+//           copyBtn.textContent = "Copy";
+//         }, 2000); // Reset button text after 2 seconds
+//       })
+//       .catch((err) => {
+//         console.error("Failed to copy text: ", err);
+//         alert("Failed to copy link. Please copy it manually.");
+//       });
+//   } else {
+//     // Fallback for older browsers
+//     document.execCommand("copy");
+//     copyBtn.textContent = "Copied!";
+//     setTimeout(() => {
+//       copyBtn.textContent = "Copy";
+//     }, 2000);
+//   }
+// });
 
 /*     URL copy MODAL END     */
 
