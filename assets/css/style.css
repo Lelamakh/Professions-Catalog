@@ -6245,11 +6245,11 @@ for index-List.css     END
   /* main page დასაწყისი (375PX) */
 
   .lmfirstsection {
-    width: 600px;
+    width: 345px;
     margin: 0 auto;
   }
   .dayprof {
-    width: 600px;
+    width: 345px;
     margin: 0 auto;
   }
   .lmmainslider {
@@ -6268,6 +6268,9 @@ for index-List.css     END
     color: #333333;
     width: 100%;
     max-width: 294px;
+  }
+  .lmfirstsecionwrapper {
+    width: 345px;
   }
   .lmfirstsection p {
     width: 344px;
@@ -6310,7 +6313,7 @@ for index-List.css     END
   }
   .quizsection {
     /* display: none; */
-    width: 600px;
+    width: 344px;
     flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 100px;
@@ -6331,7 +6334,7 @@ for index-List.css     END
   .lmwrapper2 {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 344px;
     background-color: #e7e4f5;
   }
   .lmwrapper2right {
@@ -6576,5 +6579,185 @@ for index-List.css     END
   }
   .lmknowmore img {
     margin-left: -180px;
+  }
+
+  /* about us */
+  /* about us */
+  /* about us */
+  /* about us */
+  /* about us */
+  /* about us */
+
+  .lmmissionsection {
+    width: 100%;
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+  }
+  .lmwrapper4 {
+    width: 100%;
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .lmwrapper4left {
+    width: 100%;
+    max-width: 344px;
+  }
+  .lmwrapper4left h1 {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 30px;
+    margin-left: 31px;
+  }
+  .lmwrapper4left p {
+    width: 344px;
+    /* m 344px; */
+    margin-left: 31px;
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: #333333;
+  }
+  .lmwrapper4right {
+    margin-left: 31px;
+    background-color: white;
+    margin-top: -50px;
+    width: 344px;
+    height: 226px;
+  }
+  .lmwrapper4right img {
+    width: 344px;
+    height: 226px;
+    opacity: 1;
+    border-radius: 12px;
+  }
+  .lmvissionsection {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .lmwrapper5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .lmwrapper5left {
+    order: 2;
+    width: 344px;
+    height: 258px;
+    margin-top: -20px;
+  }
+  .lmwrapper5left img {
+    width: 344px;
+    height: 258px;
+    opacity: 1;
+    border-radius: 12px;
+  }
+  .lmwrapper5right {
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
+    margin-left: 31px;
+  }
+  .lmwrapper5right h1 {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    margin-top: -50px;
+    color: #333333;
+  }
+  .lmwrapper5right p {
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: #333333;
+  }
+  .lmteamsection {
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
+  }
+  .lmteamsection h1 {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-top: 30px;
+  }
+  .lmteamwrapper {
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
+    margin-left: 31px;
+    margin-top: 30px;
+    display: flex;
+  }
+  .lmfullcycle {
+    width: 164px;
+  }
+  .lmonlycycle {
+    width: 164px;
+    height: 164px;
+    border-radius: 8px;
+  }
+  .lmonlycycle img {
+    width: 164px;
+    height: 164px;
+  }
+  .lmfullcycle span {
+    font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 11px;
+    leading-trim: NONE;
+    line-height: 15px;
+    letter-spacing: 1px;
+  }
+  .lmiconandprof {
+    margin-top: 2px;
+    gap: 4px;
+  }
+  .lmiconandprof img {
+    width: 16px;
+    height: 16px;
+  }
+  .lmiconandprof h6 {
+    font-family: "Helvetica Neue LT GEO 55 Caps Roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 10px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #333333;
   }
 }
