@@ -5495,7 +5495,7 @@ for index-List.css     START
     /* align-items: center; */
     position: absolute;
     top: 0;
-    right: -250px;
+    right: -245px;
     z-index: 2;
   }
 
@@ -5691,7 +5691,7 @@ for index-List.css     START
     display: none;
     flex-direction: column;
     gap: 16px;
-    padding: 5px 0 24px 0;
+    padding: 6px 6px 24px 6px;
     width: 344px;
     background-color: #ffffff;
     z-index: 1;
