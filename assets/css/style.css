@@ -756,6 +756,7 @@ nav {
   justify-content: space-between;
   /* align-items: center; */
   gap: 40px;
+  margin: 0 auto;
 }
 .lmwrapper2left {
   width: 100%;
@@ -1502,7 +1503,7 @@ footer {
 
 .PS-Footer-contact-info {
   /* border: solid red 1px; */
-  padding-left: 88px;
+  /* padding-left: 88px; */
   display: flex;
   gap: 32px;
   font-size: 14px;
@@ -1794,6 +1795,8 @@ for index-List.css     START
 }
 
 .PS-fing-job-you-love {
+  /* border: solid red 1px; */
+  /* width: 1344px; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-size: 28px;
@@ -1806,6 +1809,9 @@ for index-List.css     START
   /* border: solid red 1px; */
   display: flex;
   /* align-items: center; */
+  position: absolute;
+  top: -90px;
+  right: -1010px;
 }
 
 /* - - - - - - - - */
@@ -1970,6 +1976,7 @@ for index-List.css     START
   display: flex;
   flex-direction: column;
   gap: 32px;
+  position: relative;
 }
 
 .PS-filter-name {
@@ -4327,7 +4334,7 @@ form button {
     color: #ffffff;
     max-width: 600px;
     width: 100%;
-    height: 206px;
+    height: 172px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -4361,14 +4368,15 @@ form button {
 
     padding-left: 0;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
     /* flex-wrap: wrap; */
     gap: 16px;
     font-size: 10px;
     position: absolute;
     /* margin: 112px auto 0 auto; */
-    margin-top: 112px;
+    margin-top: 78px;
   }
 
   .PS-Footer-contact-info-div-1 {
@@ -4389,7 +4397,7 @@ form button {
   .PS-Footer-div-2 {
     /* border: solid red 1px; */
     margin: 0 auto;
-    margin-top: 72px;
+    margin-top: 38px;
     border-top: solid white 1px;
     height: 42px;
     width: 344px;
@@ -4503,6 +4511,7 @@ for index-Contact.css     END
     top: 55px;
     left: -326px;
     padding: 16px;
+    z-index: 1;
 
     font-family: "Helvetica Neue LT GEO Caps 55 Roman";
     font-weight: 500;
@@ -5458,15 +5467,17 @@ for index-List.css     START
   }
 
   .PS-search {
-    margin: 0 auto;
-    max-width: 600px;
+    /* border: solid red 1px; */
+    margin: 0 auto 24px auto;
+    max-width: 376px;
     width: 100%;
-    height: 96px;
+    height: 80px;
     display: flex;
+
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 26px 0 16px;
+    align-items: start;
+    padding: 24px 26px 0 16px;
   }
 
   .PS-fing-job-you-love {
@@ -5482,6 +5493,10 @@ for index-List.css     START
     /* border: solid red 1px; */
     display: flex;
     /* align-items: center; */
+    position: absolute;
+    top: 0;
+    right: -250px;
+    z-index: 2;
   }
 
   /* - - - - - - - - */
@@ -5635,17 +5650,22 @@ for index-List.css     START
 
   .PS-filter-result {
     display: flex;
+    padding-bottom: 24px;
   }
 
   .PS-filter {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     margin: 0 auto;
-    width: 376px;
-    height: 48px;
-    display: none;
+    width: 100px;
+    height: 36px;
+    display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 0 16px;
+    gap: 0;
+    padding: 0;
+    position: absolute;
+    top: 130px;
+    left: 24px;
+    background-color: #ffffff;
   }
 
   .PS-filter.PS-filter-name:hover .PS-filter-buttons {
@@ -5657,7 +5677,8 @@ for index-List.css     START
   }
 
   .PS-filter-name {
-    width: 344px;
+    /* border: solid red 1px; */
+    /* width: 344px; */
     font-family: "Helvetica Neue LT GEO CAPS 75 Roman";
     font-weight: 700;
     font-style: 75 Bold;
@@ -5670,10 +5691,14 @@ for index-List.css     START
     display: none;
     flex-direction: column;
     gap: 16px;
-    padding: 5px;
+    padding: 5px 0 24px 0;
+    width: 344px;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   .PS-filter-sphere {
+    /* width: 376px; */
     font-family: "Helvetica Neue LT GEO 65";
     font-weight: 500;
     font-style: 65 Medium;
@@ -5824,7 +5849,7 @@ for index-List.css     START
     border-radius: 8px;
     width: 120px;
     height: 27px;
-    margin: 0 auto;
+    margin: 24px auto;
     color: #333333;
     cursor: pointer;
 
@@ -5889,7 +5914,7 @@ for index-List.css     START
     width: 164px;
   }
 
-  .PS-result-card:nth-child(n + 9) {
+  .PS-result-card:nth-child(n + 10) {
     display: none;
   }
 
@@ -5900,11 +5925,17 @@ for index-List.css     START
     align-items: center;
     justify-content: center;
     position: absolute;
+    top: 0;
+    right: 0;
 
     /* box-shadow: 0px 2px 4px 0px #0000001a; */
     /* background-color: #ffffff; */
     border-radius: 8px;
     margin: 12px;
+  }
+
+  .PS-heart-div > img {
+    width: 12px;
   }
 
   .PS-card-info {
@@ -5935,6 +5966,10 @@ for index-List.css     START
     line-height: 16px;
     letter-spacing: 5%;
     color: #333333;
+  }
+
+  .PS-name span {
+    display: none;
   }
 
   .PS-card-info h4 {
@@ -6263,7 +6298,7 @@ for index-List.css     END
     leading-trim: NONE;
     line-height: 23px;
     letter-spacing: 1px;
-    margin-left: -17px;
+    /* margin-left: -17px; */
     margin-top: 30px;
     color: #333333;
     width: 100%;
@@ -6271,10 +6306,11 @@ for index-List.css     END
   }
   .lmfirstsecionwrapper {
     width: 345px;
+    margin-left: 0;
   }
   .lmfirstsection p {
     width: 344px;
-    margin-left: -17px;
+    /* margin-left: -17px; */
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
     font-style: 55 Roman;
@@ -6287,7 +6323,7 @@ for index-List.css     END
   }
   .lmfirstbutton {
     width: 344px;
-    margin-left: -17px;
+    /* margin-left: -17px; */
     margin-top: -17px;
     margin-bottom: 40px;
     border-radius: 8px;
@@ -6314,13 +6350,14 @@ for index-List.css     END
   .quizsection {
     /* display: none; */
     width: 344px;
+    margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 24px;
   }
   .lmwrapper2right p {
     width: 344px;
-    margin-left: 31px;
+    /* margin-left: 31px; */
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
     font-style: 55 Roman;
@@ -6332,13 +6369,15 @@ for index-List.css     END
     margin-top: -15px;
   }
   .lmwrapper2 {
+    /* border: solid red 1px; */
     display: flex;
     flex-direction: column;
     width: 344px;
+    margin: 0 auto;
     background-color: #e7e4f5;
   }
   .lmwrapper2right {
-    width: 600px;
+    width: 344px;
     margin: 0 auto;
     order: 2;
     margin-top: -10px;
@@ -6347,7 +6386,7 @@ for index-List.css     END
     max-width: 344px;
     height: auto;
     border-radius: 8px;
-    margin-left: 31px;
+    /* margin-left: 31px; */
     justify-content: center;
     margin-bottom: -30px;
     gap: 10px;
@@ -6379,26 +6418,33 @@ for index-List.css     END
     line-height: 23px;
     letter-spacing: 1px;
     color: #333333;
-    margin-left: 33px;
+    /* margin-left: 33px; */
     margin-top: -30px;
   }
   .lmwrapper2left {
     width: 100%;
     max-width: 344px;
     height: 249px;
-    margin-left: 31px;
+    /* margin-left: 31px; */
   }
   .lmwrapper2left img {
     order: 1;
     margin-top: -60px;
   }
+
+  .daywrapperright {
+    margin-left: 0;
+  }
+
   .daywrapperright img {
     width: 344px;
-    margin-left: -17px;
-    margin-top: -65px;
+    margin-left: 0;
+    margin-top: 0;
   }
   .dayprofwrapper {
-    width: 600px;
+    /* border: solid red 1px; */
+    width: 344px;
+    margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 100px;
@@ -6521,7 +6567,7 @@ for index-List.css     END
     letter-spacing: 1px;
     margin-right: 9px;
     color: #333333;
-    margin-top: -10px;
+    margin-top: 0;
     margin-bottom: 25px;
   }
   .daywrapperleft {
@@ -6529,7 +6575,7 @@ for index-List.css     END
     max-width: 377px;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 0;
   }
   .daywrapperleft p {
     font-family: "Helvetica Neue LT GEO 55 Roman";
@@ -6544,7 +6590,9 @@ for index-List.css     END
     color: #333333;
   }
   .dayprof {
-    width: 600px;
+    /* border: solid red 1px; */
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
   }
   .lmprofphotos {
