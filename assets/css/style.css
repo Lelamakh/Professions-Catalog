@@ -6288,7 +6288,7 @@ for index-List.css     END
   /* main page დასაწყისი (375PX) */
 
   .lmfirstsection {
-    width: 345px;
+    /* width: px; */
     margin: 0 auto;
   }
   .dayprof {
@@ -6313,11 +6313,12 @@ for index-List.css     END
     max-width: 294px;
   }
   .lmfirstsecionwrapper {
-    width: 345px;
-    margin-left: 0;
+    width: 375px;
+    margin: 0 auto;
+    padding-left: 17px;
   }
   .lmfirstsection p {
-    width: 344px;
+    width: 345px;
     /* margin-left: -17px; */
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
@@ -6357,9 +6358,9 @@ for index-List.css     END
   }
   .quizsection {
     /* display: none; */
-    width: 344px;
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
-    flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 24px;
   }
@@ -6380,7 +6381,7 @@ for index-List.css     END
     /* border: solid red 1px; */
     display: flex;
     flex-direction: column;
-    width: 344px;
+    width: 345px;
     margin: 0 auto;
     background-color: #e7e4f5;
   }
