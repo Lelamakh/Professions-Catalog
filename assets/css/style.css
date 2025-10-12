@@ -5490,7 +5490,7 @@ for index-List.css     START
   }
 
   .PS-find {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     /* align-items: center; */
     position: absolute;
