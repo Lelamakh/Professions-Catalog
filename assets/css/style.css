@@ -5490,12 +5490,12 @@ for index-List.css     START
   }
 
   .PS-find {
-    /* border: solid red 1px; */
+    border: solid red 1px;
     display: flex;
     /* align-items: center; */
     position: absolute;
     top: 0;
-    right: -245px;
+    right: -240px;
     z-index: 2;
   }
 
@@ -5664,7 +5664,7 @@ for index-List.css     START
     padding: 0;
     position: absolute;
     top: 130px;
-    left: 24px;
+    left: 20px;
     background-color: #ffffff;
   }
 
