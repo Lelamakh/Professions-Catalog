@@ -3731,7 +3731,7 @@ for index-Contact.css     START
 }
 
 .PS-section-contact-blank {
-  /* border: solid black 1px; */
+  /* border: solid red 1px; */
   margin: 0 auto;
   margin-top: 48px;
   display: flex;
@@ -3759,7 +3759,8 @@ for index-Contact.css     START
   opacity: 1;
 }
 
-.PS-contact-to-us > h1 {
+.PS-contact-to-us h1 {
+  padding: 9px 0;
   /* border: solid #0a22f4 1px; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
@@ -4031,6 +4032,7 @@ form button {
   body {
     width: 100%;
     margin: 0 auto;
+    background-color: #ffffff;
   }
 
   .PS-main {
@@ -4248,9 +4250,9 @@ form button {
     width: 100%;
   }
 
-  .PS-contact-to-us > h1 {
-    /* border: solid #0a22f4 1px; */
-    margin-top: 32px;
+  .PS-contact-to-us h1 {
+    /* border: solid red 1px; */
+    margin-top: 0;
     font-size: 20px;
     line-height: 26px;
     line-height: 100%;
@@ -4511,7 +4513,7 @@ for index-Contact.css     END
     top: 55px;
     left: -326px;
     padding: 16px;
-    z-index: 1;
+    z-index: 3;
 
     font-family: "Helvetica Neue LT GEO Caps 55 Roman";
     font-weight: 500;
@@ -5668,7 +5670,7 @@ for index-List.css     START
     background-color: #ffffff;
   }
 
-  .PS-filter.PS-filter-name:hover .PS-filter-buttons {
+  .PS-filter:hover .PS-filter-buttons {
     display: flex;
   }
 
@@ -5777,10 +5779,16 @@ for index-List.css     START
     background-position: 8px 50%;
   }
 
+  /* .PS-active {
+    color: #ffffff;
+    background-color: #6d5baf;
+  } */
+
   .PS-filter-buttons {
     display: none;
     justify-content: space-between;
     width: 344px;
+    z-index: 1;
   }
 
   .PS-filter-button-1 {
@@ -5804,7 +5812,7 @@ for index-List.css     START
   }
 
   .PS-filter-button-2 {
-    background-color: transparent;
+    background-color: #ffffff;
     border: solid #6d5baf 1px;
     width: 164px;
     height: 32px;
