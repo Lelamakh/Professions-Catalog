@@ -4,6 +4,11 @@ const closeModalBtn = document.getElementById("PS-closeModalBtn");
 const copyBtn = document.getElementById("PS-copyBtn");
 const linkToCopyInput = document.getElementById("PS-linkToCopy");
 
+const removeCopyImage = document.getElementById("PS-CopyImage");
+
+const newImage = document.createElement("img");
+newImage.src = "assets/images/Copied.svg";
+
 openModalBtn.addEventListener("click", () => {
   copyLinkModal.classList.add("PS-show-modal");
 });
@@ -28,21 +33,29 @@ copyBtn.addEventListener("click", () => {
     navigator.clipboard
       .writeText(linkToCopyInput.value)
       .then(() => {
-        copyBtn.textContent = "Copied!";
+        copyBtn.removeChild(removeCopyImage);
+        copyBtn.appendChild(newImage);
+
+        // copyBtn.textContent = "Copied!";
         setTimeout(() => {
-          copyBtn.textContent = "Copy";
+          copyBtn.removeChild(newImage);
+          copyBtn.appendChild(removeCopyImage);
+
+          // copyBtn.textContent = "Copy";
         }, 2000); // Reset button text after 2 seconds
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
         alert("Failed to copy link. Please copy it manually.");
       });
-  } else {
-    // Fallback for older browsers
-    document.execCommand("copy");
-    copyBtn.textContent = "Copied!";
-    setTimeout(() => {
-      copyBtn.textContent = "Copy";
-    }, 2000);
   }
+
+  // else {
+  //   // Fallback for older browsers
+  //   document.execCommand("copy");
+  //   copyBtn.textContent = "Copied!";
+  //   setTimeout(() => {
+  //     copyBtn.textContent = "Copy";
+  //   }, 2000);
+  // }
 });
