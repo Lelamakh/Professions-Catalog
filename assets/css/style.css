@@ -92,6 +92,7 @@ body {
 }
 
 .maincontainer {
+  /* border: solid red 1px; */
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -2220,6 +2221,8 @@ label {
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: 0;
+  right: 0;
 
   /* box-shadow: 0px 2px 4px 0px #0000001a; */
   /* background-color: #ffffff; */
@@ -5578,9 +5581,10 @@ for index-List.css     START
 
   /* The Modal (background) */
   .modal {
+    /* border: solid red 1px; */
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 3; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -5592,13 +5596,14 @@ for index-List.css     START
 
   /* Modal Content/Box */
   .PS-favorites-modal {
-    margin-left: -3px;
+    /* border: solid red 1px; */
+    margin-left: 0px;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    width: 665px;
-    height: 84px;
-    /* border: solid red 1px; */
+    width: 344px;
+    height: 44px;
+
     /* height: 50px; */
     background-color: #ffffff;
     position: fixed;
@@ -5613,9 +5618,9 @@ for index-List.css     START
 
   .modal-content {
     background-color: #fefefe;
-    padding-left: 20px;
+    padding-left: 16px;
     /* border: 1px solid #888; */
-    width: 724px; /* Could be more or less, depending on screen size */
+    width: 376px; /* Could be more or less, depending on screen size */
     /* height: 709px; */
     overflow: scroll;
     position: absolute;
@@ -5642,10 +5647,11 @@ for index-List.css     START
   }
 
   .PS-modal-content-cards {
+    max-width: 376px;
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
   }
 
   /* MODAL END */
@@ -5889,7 +5895,7 @@ for index-List.css     START
     /* background-color: yellow; */
     background-image: url(../images/Card-Heart-Favorite.svg);
     background-position: center;
-    background-size: 12px 12px;
+    background-size: 22px 22px;
   }
 
   .PS-favorite > .PS-heart-div > img {
@@ -5927,8 +5933,8 @@ for index-List.css     START
   }
 
   .PS-heart-div {
-    width: 14px;
-    height: 14px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5943,7 +5949,7 @@ for index-List.css     START
   }
 
   .PS-heart-div > img {
-    width: 12px;
+    width: 20px;
   }
 
   .PS-card-info {
@@ -6663,18 +6669,28 @@ for index-List.css     END
   /* about us */
   /* about us */
 
+  .maincontainer {
+    /* border: solid red 1px; */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 20px 20px 0px 20px; */
+    background-color: white;
+  }
   .lmmissionsection {
     width: 100%;
     max-width: 344px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
   .lmwrapper4 {
+    /* border: solid red 1px; */
     width: 100%;
     max-width: 344px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
   }
   .lmwrapper4left {
     width: 100%;
@@ -6690,12 +6706,12 @@ for index-List.css     END
     letter-spacing: 1px;
     color: #333333;
     margin-top: 30px;
-    margin-left: 31px;
+    margin-left: 0px;
   }
   .lmwrapper4left p {
     width: 344px;
     /* m 344px; */
-    margin-left: 31px;
+    margin-left: 0px;
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
     font-style: 55 Roman;
@@ -6705,7 +6721,7 @@ for index-List.css     END
     color: #333333;
   }
   .lmwrapper4right {
-    margin-left: 31px;
+    margin-left: 0px;
     background-color: white;
     margin-top: -50px;
     width: 344px;
@@ -6728,7 +6744,7 @@ for index-List.css     END
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: px;
+    max-width: 376 px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -6737,7 +6753,7 @@ for index-List.css     END
     order: 2;
     width: 345px;
     height: 258px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin: 0 auto;
     border-radius: 8px;
   }
@@ -6747,12 +6763,12 @@ for index-List.css     END
     opacity: 1;
     border-radius: 12px;
     border-radius: 8px;
+    /* margin: 0 auto; */
   }
   .lmwrapper5right {
     width: 100%;
     max-width: 344px;
     margin: 0 auto;
-    margin-left: 31px;
   }
   .lmwrapper5right h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -6762,7 +6778,7 @@ for index-List.css     END
     leading-trim: NONE;
     line-height: 23px;
     letter-spacing: 1px;
-    margin-top: -50px;
+    margin-top: 0px;
     color: #333333;
   }
   .lmwrapper5right p {
@@ -6778,6 +6794,9 @@ for index-List.css     END
   .lmteamsection {
     width: 100%;
     max-width: 344px;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     margin: 0 auto;
   }
   .lmteamsection h1 {
@@ -6790,14 +6809,15 @@ for index-List.css     END
     letter-spacing: 1px;
     color: #333333;
     margin-top: 30px;
+    margin-left: 0;
   }
   .lmteamwrapper {
     width: 100%;
     max-width: 344px;
-    margin: 0 auto;
-    margin-left: 31px;
-    margin-top: 30px;
+    margin: 24px auto 0 auto;
+
     display: flex;
+    gap: 16px;
   }
   .lmfullcycle {
     width: 164px;
@@ -6829,7 +6849,7 @@ for index-List.css     END
     height: 16px;
   }
   .lmiconandprof h6 {
-    font-family: "Helvetica Neue LT GEO 55 Caps Roman";
+    font-family: "Helvetica Neue LT GEO Caps 55 Roman";
     font-weight: 400;
     font-style: 55 Roman;
     font-size: 10px;
