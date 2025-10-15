@@ -6396,7 +6396,7 @@ for index-List.css     END
     margin: 0 auto;
     background-color: #e7e4f5;
     padding: 16px;
-    padding-top: 40px;
+    /* padding-top: 40px; */
   }
   .lmwrapper2right {
     width: 345px;
