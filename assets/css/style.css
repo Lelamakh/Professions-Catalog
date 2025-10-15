@@ -6368,7 +6368,7 @@ for index-List.css     END
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
-    padding: 16px;
+    padding: 0;
     align-items: center;
     flex-direction: column;
     margin-bottom: 24px;
@@ -6392,7 +6392,7 @@ for index-List.css     END
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
+    max-width: 375px;
     margin: 0 auto;
     background-color: #e7e4f5;
     padding: 16px;
@@ -6405,12 +6405,12 @@ for index-List.css     END
     /* margin-top: -10px; */
   }
   .lmstartquiz {
-    max-width: 345px;
+    max-width: 343px;
     height: auto;
     border-radius: 8px;
     /* margin-left: 31px; */
     justify-content: center;
-    margin-bottom: -30px;
+    margin-bottom: 0px;
     gap: 10px;
     margin-top: 20px;
     align-items: center;
@@ -6432,6 +6432,7 @@ for index-List.css     END
     vertical-align: bottom;
   }
   .lmwrapper2right h1 {
+    width: 344px;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-weight: 700;
     font-style: 75 Bold;
@@ -6445,15 +6446,16 @@ for index-List.css     END
   }
   .lmwrapper2left {
     width: 100%;
-    max-width: 375px;
+    max-width: 344px;
     margin: 0 auto;
     align-items: center;
     height: 249px;
     /* margin-left: 31px; */
   }
   .lmwrapper2left img {
+    width: 343px;
     order: 1;
-    margin-top: -60px;
+    margin-top: 0px;
   }
 
   .daywrapperright {
