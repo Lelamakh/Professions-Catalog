@@ -78,7 +78,7 @@
   /* cursor: pointer; */
   /* font-family: Noto Sans Georgian; */
   border: none;
-  /* outline: solid red 1px; */
+  outline: solid red 1px;
 }
 
 a {
@@ -6320,6 +6320,7 @@ for index-List.css     END
     max-width: 600px;
     width: 100%;
     padding: 16px;
+    justify-content: center;
     align-items: center;
   }
   .lmfirstsection p {
