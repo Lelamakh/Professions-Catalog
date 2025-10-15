@@ -6307,7 +6307,7 @@ for index-List.css     END
     line-height: 23px;
     letter-spacing: 1px;
     /* margin-left: -17px; */
-    margin-top: 30px;
+    margin-top: 0px;
     color: #333333;
     width: 100%;
     max-width: 294px;
@@ -6319,7 +6319,7 @@ for index-List.css     END
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
-    padding: 16px;
+    padding: 0px;
     justify-content: center;
     align-items: center;
   }
@@ -6337,8 +6337,9 @@ for index-List.css     END
     color: #333333;
   }
   .lmfirstbutton {
-    width: 100%;
-    max-width: 345px;
+    /* border: solid blue 1px; */
+    /* width: 100%; */
+    width: 344px;
     /* margin-left: -17px; */
     /* margin-top: -17px; */
     /* margin-bottom: 40px; */
@@ -6352,10 +6353,7 @@ for index-List.css     END
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 8px;
-    padding-right: 74px;
-    padding-bottom: 8px;
-    padding-left: 70px;
+    padding: 6px 12px;
   }
   .lmfirstsectionright {
     display: none;
