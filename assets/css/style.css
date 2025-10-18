@@ -1860,9 +1860,9 @@ for index-List.css     START
   /* border: solid red 1px; */
   display: flex;
   /* align-items: center; */
-  position: absolute;
-  top: -90px;
-  right: -1010px;
+  /* position: absolute; */
+  /* top: -90px; */
+  /* right: -1010px; */
 }
 
 /* - - - - - - - - */
@@ -2031,6 +2031,35 @@ for index-List.css     START
 }
 
 .PS-filter-name {
+  display: none;
+  /* border: solid red 1px; */
+  font-family: "Helvetica Neue LT GEO 75 Roman";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
+.PS-filter-input {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.close2 {
+  display: none;
+  /* color: #333333; */
+  /* float: right; */
+  /* font-size: 28px; */
+  /* font-weight: bold; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 15px; */
+}
+
+.PS-filter-name2 {
+  /* border: solid red 1px; */
   font-family: "Helvetica Neue LT GEO 75 Roman";
   font-weight: 700;
   font-size: 24px;
@@ -5534,6 +5563,7 @@ for index-List.css     START
     width: 100%;
     height: 80px;
     display: flex;
+    position: relative;
 
     flex-direction: column;
     justify-content: space-between;
@@ -5550,13 +5580,29 @@ for index-List.css     START
     color: #333333;
   }
 
+  .PS-filter-name {
+    /* border: solid red 1px; */
+    /* width: 344px; */
+    display: flex;
+    font-family: "Helvetica Neue LT GEO CAPS 75 Roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 5%;
+    position: absolute;
+    top: 70px;
+    left: 14px;
+    z-index: 2;
+  }
+
   .PS-find {
     /* border: solid red 1px; */
     display: flex;
     /* align-items: center; */
     position: absolute;
-    top: 0;
-    right: -240px;
+    top: 70px;
+    right: 14px;
     z-index: 2;
   }
 
@@ -5720,27 +5766,38 @@ for index-List.css     START
   .PS-filter {
     /* border: solid red 1px; */
     margin: 0 auto;
-    width: 100px;
-    height: 36px;
+    max-width: 375px;
+    width: 100%;
+    /* height: 575px; */
     display: flex;
     flex-direction: column;
     gap: 0;
     padding: 0;
     position: absolute;
-    top: 130px;
-    left: 20px;
+    top: 56px;
+    left: 0;
     background-color: #ffffff;
+    z-index: 2;
+    align-items: center;
   }
 
-  .PS-filter:hover .PS-filter-buttons {
+  /* .PS-filter:hover .PS-filter-buttons {
     display: flex;
-  }
+  } */
 
-  .PS-filter:hover .PS-filter-name-content {
+  /* .PS-filter:hover .PS-filter-name-content {
     display: flex;
+  } */
+
+  .PS-filter-name-close {
+    max-width: 344px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .PS-filter-name {
+  .PS-filter-name2 {
     /* border: solid red 1px; */
     /* width: 344px; */
     font-family: "Helvetica Neue LT GEO CAPS 75 Roman";
@@ -5751,11 +5808,36 @@ for index-List.css     START
     letter-spacing: 5%;
   }
 
-  .PS-filter-name-content {
+  .PS-filter-input {
     display: none;
     flex-direction: column;
+    gap: 24px;
+  }
+
+  .close2 {
+    display: flex;
+    color: #333333;
+    /* float: right; */
+    font-size: 28px;
+    font-weight: bold;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 15px; */
+  }
+
+  /* .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+
+  .PS-filter-name-content {
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
     gap: 16px;
-    padding: 6px 6px 24px 6px;
+    padding: 0;
     width: 344px;
     background-color: #ffffff;
     z-index: 1;
@@ -5837,10 +5919,11 @@ for index-List.css     START
   }
 
   .PS-filter-buttons {
-    display: none;
+    display: flex;
     justify-content: space-between;
     width: 344px;
     z-index: 1;
+    padding-bottom: 24px;
   }
 
   .PS-filter-button-1 {

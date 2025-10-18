@@ -95,7 +95,7 @@ START for List page
 
 - - - - - - - -*/
 
-/* MODAL START */
+/* MODAL START ( for FAVORITES ) */
 
 // Get the modal
 var PSmodal = document.getElementById("myModal");
@@ -123,7 +123,37 @@ window.onclick = function (event) {
   }
 };
 
-/* MODAL END */
+/* MODAL END ( for FAVORITES ) */
+
+/* MODAL START ( for FILTER ) */
+
+// Get the modal
+let PSFilterModal = document.getElementById("PS-filter-input");
+
+// Get the button that opens the modal
+let filterBtn = document.getElementById("PS-filter-name");
+
+// Get the <span> element that closes the modal
+let FilterSpan = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal
+filterBtn.onclick = function () {
+  PSFilterModal.style.display = "flex";
+};
+
+// When the user clicks on <span> (x), close the modal
+FilterSpan.onclick = function () {
+  PSFilterModal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == PSFilterModal) {
+    PSFilterModal.style.display = "none";
+  }
+};
+
+/* MODAL END ( for FILTER ) */
 
 /* ეს კოდი არის ძებნის ველისათვის (დასაწყისი) */
 
