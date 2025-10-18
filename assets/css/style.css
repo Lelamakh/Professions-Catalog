@@ -455,11 +455,33 @@ nav {
 }
 .lmbuttons {
   display: flex;
-  gap: 18px;
+  gap: 40px;
+  /* margin-bottom: 40px; */
 }
 .lmfirstbutton {
+  color: black;
+  width: 247px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  /* padding top: 10px; */
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #6d5baf;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  /* line-height: 22px; */
+  letter-spacing: 5%;
+}
+.lmsecondbutton12 {
   color: white;
   width: 247px;
+  margin-left: 30px;
   opacity: 1;
   padding-top: 12px;
   padding-right: 12px;
@@ -476,29 +498,6 @@ nav {
   leading-trim: NONE;
   /* line-height: 22px; */
   letter-spacing: 5%;
-}
-.lmsecondbutton12 {
-  border-color: #6d5baf;
-  background-color: white;
-  width: 164;
-  height: 42;
-  angle: 0 deg;
-  opacity: 1;
-  gap: 8px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 2px;
-  border-radius: 8px;
-  border-width: 1px;
-  font-family: "Helvetica Neue LT GEO Caps 75 roman";
-  font-weight: 700;
-  font-style: 75 Bold;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 5%;
-  vertical-align: bottom;
-  color: #333333;
 }
 .lmdirections {
   display: flex;
@@ -1293,6 +1292,7 @@ nav {
   border-top: 1px solid #ccc;
   padding-top: 50px;
   padding-bottom: 35px;
+
   /* margin-right: 48px;
   margin-left: 48px; */
 }
@@ -1301,6 +1301,14 @@ nav {
   font-size: 28px;
   font-weight: 700;
   margin-left: 48px;
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
 }
 .lmprogressbar {
   display: flex;
@@ -1383,7 +1391,7 @@ nav {
 }
 
 .lmmainquestion h2 {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 48px;
   font-family: "Helvetica Neue LT GEO 75 roman";
@@ -1392,14 +1400,14 @@ nav {
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0%;
+  color: #333333;
 }
 .lmoption {
   box-shadow: 0px 4px 8px 0px #0000001a;
-
   display: block;
   margin: 8px 0;
   padding: 15px;
-  border: 1px solid#ddd;
+  border: 0p 1px 4px 9px solid#ddd;
   /* background-color: white; */
   /* border-color: #f8f2f2; */
   /* border-radius: 10px; */
@@ -1408,24 +1416,36 @@ nav {
   margin-left: 48px;
   display: flex;
   gap: 10px;
-  font-family: "Helvetica Neue LT GEO 65 roman";
-  /* font-weight: 500; */
-  font-style: 65 Medium;
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
   font-size: 20px;
   leading-trim: NONE;
   line-height: 26px;
-  letter-spacing: 0%;
-  color: color/neutral/800;
+  letter-spacing: 0px;
+  color: #333333;
 }
 
 .lmoption input[type="radio"] {
   accent-color: #007b55;
+  width: 20px;
+  height: 20px;
+}
+.quizform {
+  width: 100%;
+  max-width: 940px;
+  margin-left: -22px;
+  border: none;
+  box-shadow: none;
+  background: none;
+
+  /* border: none; */
 }
 .lmquizbuttons {
-  margin-left: 40px;
+  margin-left: 46px;
   margin-top: 30px;
-  margin-bottom: -30px;
+  margin-bottom: 20px;
 }
+
 .screenshotlm {
   margin-left: 48px;
   margin-top: 40px;
