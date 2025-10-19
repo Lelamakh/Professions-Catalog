@@ -5623,6 +5623,7 @@ for index-List.css     START
     z-index: 2;
 
     box-shadow: 0px 1px 3px 0px #0000001a;
+    border-radius: 6px;
   }
 
   .PS-find {
