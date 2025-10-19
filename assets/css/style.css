@@ -458,6 +458,26 @@ nav {
   gap: 40px;
   /* margin-bottom: 40px; */
 }
+.lmfirstbutton12 {
+  color: white;
+  width: 247px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  /* padding top: 10px; */
+  border-radius: 8px;
+  background-color: #6d5baf;
+  border: 1px solid #6d5baf;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 16px;
+  leading-trim: NONE;
+  /* line-height: 22px; */
+  letter-spacing: 5%;
+}
 .lmfirstbutton {
   color: black;
   width: 247px;
@@ -1459,6 +1479,42 @@ nav {
   margin-left: 260px;
 }
 
+/* ///////////privacy styles */ /* ///////////privacy styles */
+/* ///////////privacy styles */
+/* ///////////privacy styles */
+
+.lmcookie1 {
+  margin-left: 46px;
+  margin-right: 46px;
+  /* max-width: 1344px; */
+  /* width: 100%; */
+  flex-wrap: wrap;
+}
+.lmcookie1 h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  color: #333333;
+  font-style: Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+.lmcookie1 p {
+  font-family: Helvetica Neue LT GEO;
+  font-weight: 400;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
+  margin-bottom: 30px;
+}
 /* -----------------fav section ------------------ */
 .lmfavsection {
   margin-left: 48px;
@@ -1786,46 +1842,6 @@ footer {
   border-radius: 50px;
   background-color: #2ca678;
 }
-
-/* COOKIE */
-.lmcookie1 {
-  margin-left: 46px;
-  margin-right: 46px;
-  /* max-width: 1344px; */
-  /* width: 100%; */
-  flex-wrap: wrap;
-}
-.lmcookie1 h1 {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  font-family: Helvetica Neue;
-  font-weight: 700;
-  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
-  color: #333333;
-  font-style: Bold;
-  font-size: 28px;
-  leading-trim: NONE;
-  line-height: 36px;
-  letter-spacing: 5%;
-  text-transform: uppercase;
-}
-.lmcookie1 h3 {
-  font-family: Helvetica Neue LT GEO;
-  font-weight: 400;
-  font-family: "Helvetica Neue LT GEO 55 Roman";
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 23px;
-  letter-spacing: 0%;
-  color: #333333;
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------------
-
 
 პაატას გვერდების სტილების კოდის დასაწყისი 
 პაატას გვერდების სტილების კოდის დასაწყისი 
@@ -7141,5 +7157,39 @@ for index-List.css     END
     line-height: 18px;
     letter-spacing: 0%;
     color: #333333;
+  }
+
+  /* privecy */ /* privecy */
+  /* privecy */
+  /* privecy */
+  .lmcookie1 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .lmcookie1 h1 {
+    font-family: Helvetica Neue LT GEO Caps 75 roman;
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    max-width: 343px;
+    width: 100%;
+    color: #333333;
+  }
+  .lmcookie1 p {
+    font-family: Helvetica Neue LT GEO 55 roman;
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    color: #333333;
+    max-width: 343px;
+    width: 100%;
   }
 }
