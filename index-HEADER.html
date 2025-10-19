@@ -11,24 +11,52 @@
   </head>
 
   <body>
-    <div>
-      <button id="PS-openModalBtn" class="PS-button">Share Link</button>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="PS-Logo-a">
+        <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
+      </a>
 
-      <div id="PS-copyLinkModal" class="PS-modal-container">
-        <div class="PS-modal-content">
-          <h2>Copy Link</h2>
-          <input
-            type="text"
-            id="PS-linkToCopy"
-            value="https://example.com/your-link"
-            readonly
-          />
-          <button id="PS-copyBtn" class="PS-button">Copy</button>
-          <button id="PS-closeModalBtn" class="PS-button">Close</button>
-        </div>
-      </div>
+      <a href="#home">მთავარი</a>
+      <a href="#news">პროფესიები</a>
+      <a href="#contact">ქვიზი</a>
+      <a href="#about">ჩვენ შესახებ</a>
+      <a href="#about">კონტაქტი</a>
 
-      <script src="assets/js/main - Paata.js"></script>
+      <a href="#" class="PS-for-desktop">
+        <img src="assets/images/Heart.svg" alt="Heart.svg" />
+      </a>
+      <a href="index-PDP-ENG.html">
+        <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" />
+      </a>
+
+      <a href="#" class="icon">
+        <img src="assets/images/Heart.svg" alt="Heart.svg" />
+        <img
+          src="assets/images/BurgerMenu.svg"
+          alt="BurgerMenu.svg"
+          onclick="myFunction()"
+        />
+      </a>
+      <!-- <a class="Heart-div" id="PS-myBtn">
+        <img src="assets/images/Heart.svg" alt="Heart.svg" />
+      </a> -->
     </div>
+
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myTopnav");
+        const elementsToRemove = x.getElementsByClassName("PS-for-desktop");
+
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+
+        for (let i = elementsToRemove.length - 1; i >= 0; i--) {
+          x.removeChild(elementsToRemove[i]);
+        }
+      }
+    </script>
   </body>
 </html>
