@@ -6473,8 +6473,15 @@ for index-List.css     END
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
-    padding: 16px;
+    /* padding: 16px; */
     align-items: center;
+  }
+  .lmfirstsectionleft {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: 30px;
   }
   .dayprof {
     width: 345px;
@@ -6572,20 +6579,23 @@ for index-List.css     END
   }
   .lmwrapper2 {
     /* border: solid red 1px; */
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     width: 100%;
-    max-width: 375px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #e7e4f5;
-    padding: 16px;
+    /* padding: 16px; */
     /* padding-top: 40px; */
   }
   .lmwrapper2right {
-    width: 345px;
+    width: 600px;
+    width: 100%;
     margin: 0 auto;
     order: 2;
     /* margin-top: -10px; */
+    margin-left: 30px;
+    margin-top: 30px;
   }
   .lmstartquiz {
     max-width: 343px;
@@ -6630,16 +6640,17 @@ for index-List.css     END
   }
   .lmwrapper2left {
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
     margin: 0 auto;
-    align-items: center;
-    height: 249px;
+    /* align-items: center; */
+    /* height: 249px; */
     /* margin-left: 31px; */
   }
   .lmwrapper2left img {
-    width: 343px;
+    width: 344px;
     order: 1;
     margin-top: 0px;
+    margin: 0 auto;
   }
 
   .daywrapperright {
