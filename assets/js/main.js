@@ -64,26 +64,23 @@ setInterval(() => {
 
 // modal________LM START
 
-// /*
 // const secondButton = document.querySelector(".lmsecondbutton");
 // const modal = document.querySelector(".lmmodaloverlay");
 // const quizSection = document.querySelector(".lmquizsection");
 // const backButton = document.querySelector(".lmbackbutton");
 
-// // Show modal & blur background
+// // // Show modal & blur background
 // secondButton.addEventListener("click", () => {
 //   modal.style.display = "flex";
 //   quizSection.classList.add("blur");
 // });
 
-// // Close modal & remove blur
+// // // Close modal & remove blur
 // backButton.addEventListener("click", (e) => {
 //   e.preventDefault(); // prevent navigation
 //   modal.style.display = "none";
 //   quizSection.classList.remove("blur");
 // });
-
-// */
 
 /* - - - - - - - -
 

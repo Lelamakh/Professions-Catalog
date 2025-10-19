@@ -6989,4 +6989,77 @@ for index-List.css     END
     letter-spacing: 1px;
     color: #333333;
   }
+
+  /* quiz media start  */
+  /* quiz media start */
+  /* quiz media start */
+  /* quiz media start */
+  /* quiz media start */
+
+  .lmprogressbar {
+    display: none;
+  }
+  .lmquizsection {
+    width: 100%;
+    max-width: 600px;
+  }
+  .lmquizsection h1 {
+    font-family: Helvetica Neue LT GEO Caps 75 roman;
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #333333;
+    /* margin-left: 30px; */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+  .lmmainquestion h2 {
+    font-family: Helvetica Neue LT GEO 65;
+    font-weight: 500;
+    font-style: 65 Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 18px;
+    letter-spacing: 0%;
+    /* margin-left: 30px; */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .lmoption input[type="radio"] {
+    accent-color: #007b55;
+  }
+  .lmoption {
+    font-family: Helvetica Neue LT GEO;
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .lmfirstbutton {
+    width: 160px;
+    height: 32px;
+  }
+  .lmsecondbutton12 {
+    width: 160px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
