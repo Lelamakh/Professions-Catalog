@@ -6891,7 +6891,7 @@ for index-List.css     END
   }
   .lmmissionsection {
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -6899,14 +6899,16 @@ for index-List.css     END
   .lmwrapper4 {
     /* border: solid red 1px; */
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
   }
   .lmwrapper4left {
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .lmwrapper4left h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -6918,7 +6920,12 @@ for index-List.css     END
     letter-spacing: 1px;
     color: #333333;
     margin-top: 30px;
-    margin-left: 0px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .lmwrapper4left p {
     width: 344px;
@@ -6931,6 +6938,7 @@ for index-List.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
+    margin-bottom: 30px;
   }
   .lmwrapper4right {
     margin-left: 0px;
@@ -6953,34 +6961,66 @@ for index-List.css     END
     margin: 0 auto;
   }
   .lmwrapper5 {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     width: 100%;
-    max-width: 376 px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+  }
+  .lmwrapper2left {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 249px; */
+    /* margin-left: 31px; */
+    box-sizing: border-box;
+  }
+  .lmwrapper2left img {
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    display: block;
+    order: 1;
+    margin: 0 auto;
+    object-fit: contain;
+    padding-left: 0;
+    margin-left: 0;
+    margin-left: 30px;
   }
   .lmwrapper5left {
     order: 2;
-    width: 345px;
+    width: 100%;
     height: 258px;
-    margin-top: 0px;
-    margin: 0 auto 32px auto;
+    max-width: 600px;
     border-radius: 8px;
+    background-color: white;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
   }
   .lmwrapper5left img {
-    width: 344px;
+    width: 100%;
+    max-width: 344px;
     height: 258px;
     opacity: 1;
-    border-radius: 12px;
     border-radius: 8px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    margin-left: 30px;
+    margin-bottom: 40px;
   }
   .lmwrapper5right {
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
     margin: 0 auto;
+    margin-left: 30px;
   }
   .lmwrapper5right h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -7002,14 +7042,18 @@ for index-List.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
+    width: 100%;
+    max-width: 344px;
   }
   .lmteamsection {
     width: 100%;
-    max-width: 344px;
+    max-width: 600px;
     height: 700px;
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0 auto;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
   .lmteamsection h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -7025,11 +7069,12 @@ for index-List.css     END
   }
   .lmteamwrapper {
     width: 100%;
-    max-width: 344px;
-    margin: 24px auto 0 auto;
-
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
     display: flex;
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 20px;
   }
   .lmfullcycle {
     width: 164px;
