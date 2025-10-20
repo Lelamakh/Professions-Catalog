@@ -6528,10 +6528,10 @@ for index-List.css     END
     margin-top: -20px;
     color: #333333;
   }
-  .lmfirstbutton {
+  .lmfirstbutton12 {
     /* border: solid blue 1px; */
     /* width: 100%; */
-    width: 344px;
+    width: 345px;
     /* margin-left: -17px; */
     /* margin-top: -17px; */
     /* margin-bottom: 40px; */
@@ -6546,6 +6546,7 @@ for index-List.css     END
     align-items: center;
     text-align: center;
     padding: 6px 12px;
+    margin-bottom: 30px;
   }
   .lmfirstsectionright {
     display: none;
@@ -6579,12 +6580,15 @@ for index-List.css     END
   }
   .lmwrapper2 {
     /* border: solid red 1px; */
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     background-color: #e7e4f5;
+    box-sizing: border-box;
     /* padding: 16px; */
     /* padding-top: 40px; */
   }
@@ -6642,19 +6646,31 @@ for index-List.css     END
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* height: 249px; */
     /* margin-left: 31px; */
+    box-sizing: border-box;
   }
   .lmwrapper2left img {
-    width: 344px;
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    display: block;
     order: 1;
-    margin-top: 0px;
     margin: 0 auto;
+    object-fit: contain;
+    padding-left: 0;
+    margin-left: 0;
+    margin-left: 30px;
   }
 
   .daywrapperright {
-    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
   }
 
   .daywrapperright img {
@@ -6664,12 +6680,14 @@ for index-List.css     END
   }
   .dayprofwrapper {
     /* border: solid red 1px; */
+    display: flex;
     width: 100%;
-    max-width: 345px;
+    max-width: 600px;
     margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 100px;
+    margin-left: 30px;
   }
 
   .lmmaintitle1 {
@@ -6791,13 +6809,17 @@ for index-List.css     END
     color: #333333;
     margin-top: 0;
     margin-bottom: 25px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
   }
   .daywrapperleft {
     width: 100%;
-    max-width: 377px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin: 0 auto;
   }
   .daywrapperleft p {
     font-family: "Helvetica Neue LT GEO 55 Roman";
@@ -6816,6 +6838,7 @@ for index-List.css     END
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    display: flex;
   }
   .lmprofphotos {
     width: 164px;
@@ -7060,6 +7083,7 @@ for index-List.css     END
   .lmquizsection {
     width: 100%;
     max-width: 600px;
+    margin: 0 auto;
   }
   .lmquizsection h1 {
     font-family: Helvetica Neue LT GEO Caps 75 roman;
