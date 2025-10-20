@@ -7053,7 +7053,7 @@ for index-List.css     END
     overflow-x: hidden;
     margin: 0 auto;
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .lmteamsection h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -7178,8 +7178,8 @@ for index-List.css     END
     margin-left: 30px;
   }
   .lmfirstbutton {
-    width: 160px;
-    height: 32px;
+    width: 100%;
+    max-width: 160px;
     font-family: Helvetica Neue LT GEO Caps 75 roman;
     font-weight: 700;
     font-style: 75 Bold;
@@ -7187,18 +7187,12 @@ for index-List.css     END
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 1px;
-    vertical-align: bottom;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 7px;
+    padding-top: 7px;
   }
   .lmsecondbutton12 {
-    width: 160px;
-    height: 32px;
-    align-items: center;
-
-    justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
     font-family: Helvetica Neue LT GEO Caps 75 roman;
     font-weight: 700;
     font-style: 75 Bold;
@@ -7206,19 +7200,22 @@ for index-List.css     END
     leading-trim: NONE;
     line-height: 20px;
     letter-spacing: 1px;
-    vertical-align: bottom;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 30px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    display: flex;
   }
   .lmquizbuttons {
+    max-width: 600px;
+    width: 100%;
     margin-bottom: -10px;
     margin-top: 2px;
     margin: 0 auto;
     margin-left: 30px;
     display: flex;
     justify-content: space-between;
-    margin-right: 16px;
+    gap: 0;
   }
   .divfornextmodal {
     display: flex;
