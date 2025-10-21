@@ -503,6 +503,25 @@ if (currentVisibleItems >= itemsCards.length) {
 }
 /* ---------- END for LOAD MORE ---------- */
 
+/* ---------------------- START for NEW HEADER ----------------------- */
+
+function mobileMenu() {
+  let x = document.getElementById("myTopnav");
+  const elementsToRemove = x.getElementsByClassName("PS-for-desktop");
+
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+  for (let i = elementsToRemove.length - 1; i >= 0; i--) {
+    x.removeChild(elementsToRemove[i]);
+  }
+}
+
+/* ---------------------- END for NEW HEADER ----------------------- */
+
 /* - - - - - - - -
 
 
