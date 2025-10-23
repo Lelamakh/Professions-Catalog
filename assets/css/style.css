@@ -2215,6 +2215,7 @@ for index-List.css     START
 }
 
 .PS-filter {
+  /* border: solid red 1px; */
   margin: 0 auto;
   width: 366px;
   display: flex;
@@ -2235,6 +2236,7 @@ for index-List.css     START
 }
 
 .PS-filter-input {
+  /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -4308,7 +4310,7 @@ form button {
   font-size: 14px;
 } */
 
-@media (width<1024px) {
+@media (width<600px) {
   body {
     width: 100%;
     margin: 0 auto;
@@ -4746,7 +4748,7 @@ for index-Contact.css     END
 -------- --------------------------------------------------------------------------------------------------------------------
 -------- --------------------------------------------------------------------------------------------------------------------*/
 
-@media (width<1024px) {
+@media (width<600px) {
   .For-Mobile {
     display: flex;
   }
@@ -4856,7 +4858,7 @@ for index-Contact.css     END
 ----------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------*/
 
-@media (width<1024px) {
+@media (width<600px) {
   .PS-section-1 {
     padding: 24px 16px;
     margin: 0 auto;
@@ -5965,7 +5967,7 @@ for index-List.css     START
   .PS-filter {
     /* border: solid red 1px; */
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 600px;
     width: 100%;
     /* height: 575px; */
     display: flex;
@@ -5997,7 +5999,7 @@ for index-List.css     START
   }
 
   .PS-filter-name2 {
-    /* border: solid red 1px; */
+    border: solid red 1px;
     /* width: 344px; */
     font-family: "Helvetica Neue LT GEO CAPS 75 Roman";
     font-weight: 700;
@@ -6008,9 +6010,10 @@ for index-List.css     START
   }
 
   .PS-filter-input {
+    border: solid red 1px;
     display: none;
     flex-direction: column;
-    gap: 24px;
+    gap: 0;
   }
 
   .close2 {
@@ -6032,11 +6035,11 @@ for index-List.css     START
   } */
 
   .PS-filter-name-content {
-    /* border: solid red 1px; */
+    border: solid red 1px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 0;
+    padding: 12px 0;
     width: 344px;
     background-color: #ffffff;
     z-index: 1;
@@ -6122,7 +6125,7 @@ for index-List.css     START
     justify-content: space-between;
     width: 344px;
     z-index: 1;
-    padding-bottom: 24px;
+    padding: 12px 0 24px 0;
   }
 
   .PS-filter-button-1 {
