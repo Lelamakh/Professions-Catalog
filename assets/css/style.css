@@ -133,11 +133,6 @@ header {
   height: 69px;
 }
 
-.PS-active-page {
-  border: solid #6d5baf 3px;
-  border-bottom: solid #ffffff 3px;
-}
-
 /* .Logo {
   border: solid red 1px;
   height: 36px;
@@ -172,13 +167,19 @@ nav {
 }
 
 .Mobile-Menu > li {
+  border: solid #6d5baf 3px;
   display: flex;
   align-items: center;
   height: 69px;
 }
 
+.Mobile-Menu > li.PS-active-page {
+  border-bottom: solid #ffffff 3px;
+}
+
 .Heart-div {
   /* border: solid red 1px; */
+  margin-left: 16px;
   display: flex;
   align-items: center;
 }
@@ -199,6 +200,41 @@ nav {
   display: none;
   /* border: solid red 1px; */
 }
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* Modal overlay styles (hidden by default) */
+.PS-modal-overlay {
+  /* outline: solid red 1px; */
+  width: 520px;
+  /* width: 100%; */
+  display: flex;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Styles for the modal content */
+.PS-modal-content-menu {
+  /* background: white; */
+  /* padding: 2em; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* width: 80%; */
+  /* max-width: 500px; */
+}
+
+/* The class to make the modal visible */
+.PS-modal-overlay.active {
+  display: flex; /* Or 'block' depending on your needs */
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 /* -------- -------- ---------------------------------------------------------
 -------- ---------------------------------------------------------------------
@@ -4671,15 +4707,16 @@ for index-Contact.css     END
     background-color: #6d5baf;
     max-width: 600px;
     width: 100%;
-    display: none;
+    display: flex;
     align-items: start;
     flex-direction: column;
     gap: 16px;
     position: absolute;
     top: 55px;
     left: 0;
-    padding: 16px;
+    /* padding: 16px; */
     z-index: 33;
+    margin: 0;
 
     font-family: "Helvetica Neue LT GEO Caps 55 Roman";
     font-weight: 500;
@@ -4695,16 +4732,16 @@ for index-Contact.css     END
     padding-left: 16px;
   }
 
-  .PS-active-page {
-    border: solid #6d5baf 1px;
+  .Mobile-Menu > li.PS-active-page {
+    border: none;
     border-left: solid #ffffff 3px;
   }
 
-  .Main-Menu:hover .Mobile-Menu {
+  /* .Main-Menu:hover .Mobile-Menu {
     display: flex;
     align-items: start;
     background-color: #6d5baf;
-  }
+  } */
 
   .Lang-div {
     /* border: solid red 1px; */
@@ -4716,6 +4753,38 @@ for index-Contact.css     END
     margin-left: -87px;
     margin-right: 6px;
   }
+
+  /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+  /* Modal overlay styles (hidden by default) */
+  .PS-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  /* Styles for the modal content */
+  .PS-modal-content-menu {
+    /* background: white; */
+    /* padding: 2em; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* width: 80%; */
+    /* max-width: 500px; */
+  }
+
+  /* The class to make the modal visible */
+  .PS-modal-overlay.active {
+    display: flex; /* Or 'block' depending on your needs */
+  }
+
+  /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------

@@ -1,3 +1,21 @@
+/* XXXXXXXXXXXXXX New HEADER Mobile Menu START XXXXXXXXXXXXXXX */
+
+const toggleModalBtn = document.getElementById("PS-toggleModalBtn");
+const myModal = document.getElementById("PS-myModal");
+
+toggleModalBtn.addEventListener("click", () => {
+  myModal.classList.toggle("active");
+});
+
+// Optional: Close modal by clicking the backdrop
+myModal.addEventListener("click", (e) => {
+  if (e.target === myModal) {
+    myModal.classList.remove("active");
+  }
+});
+
+/* XXXXXXXXXXXXXX New HEADER Mobile Menu END XXXXXXXXXXXXXXX */
+
 const openModalBtn = document.getElementById("PS-openModalBtn");
 const copyLinkModal = document.getElementById("PS-copyLinkModal");
 const closeModalBtn = document.getElementById("PS-closeModalBtn");

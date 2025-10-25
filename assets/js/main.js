@@ -1,3 +1,21 @@
+/* XXXXXXXXXXXXXX New HEADER Mobile Menu START XXXXXXXXXXXXXXX */
+
+const toggleModalBtn = document.getElementById("PS-toggleModalBtn");
+const myModal = document.getElementById("PS-myModal");
+
+toggleModalBtn.addEventListener("click", () => {
+  myModal.classList.toggle("active");
+});
+
+// Optional: Close modal by clicking the backdrop
+myModal.addEventListener("click", (e) => {
+  if (e.target === myModal) {
+    myModal.classList.remove("active");
+  }
+});
+
+/* XXXXXXXXXXXXXX New HEADER Mobile Menu END XXXXXXXXXXXXXXX */
+
 /* - - - - - - - -
 
 
@@ -505,20 +523,28 @@ if (currentVisibleItems >= itemsCards.length) {
 
 /* ---------------------- START for NEW HEADER ----------------------- */
 
-function mobileMenu() {
-  let x = document.getElementById("myTopnav");
-  const elementsToRemove = x.getElementsByClassName("PS-for-desktop");
+// const openModalBtn = document.getElementById("Burger-Menu");
+// const modalOverlay = document.querySelector(".Mobile-Menu");
 
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+// // Function to open the modal
+// const openModal = () => {
+//   modalOverlay.classList.remove("PS-mobile-menu-hidden");
+// };
 
-  for (let i = elementsToRemove.length - 1; i >= 0; i--) {
-    x.removeChild(elementsToRemove[i]);
-  }
-}
+// // Function to close the modal
+// const closeModal = () => {
+//   modalOverlay.classList.add("PS-mobile-menu-hidden");
+// };
+
+// // Open the modal when the button is clicked
+// openModalBtn.addEventListener("click", openModal);
+
+// // Close the modal when clicking outside of the content
+// modalOverlay.addEventListener("click", (e) => {
+//   if (e.target === modalOverlay) {
+//     closeModal();
+//   }
+// });
 
 /* ---------------------- END for NEW HEADER ----------------------- */
 
