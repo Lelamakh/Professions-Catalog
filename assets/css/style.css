@@ -891,7 +891,6 @@ nav {
   font-size: 16px;
   line-height: 150%;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
-
   font-weight: 700;
   font-style: 75 Bold;
   line-height: 22px;
@@ -1345,8 +1344,71 @@ nav {
   width: 204px;
   height: 204px;
 }
+/* newquiz */
+/* newquiznewquiznewquiznewquiznewquiznewquiz */
+.newquizwrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 1344px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.newquizleft {
+  width: 100%;
+  max-width: 636px;
+}
+.newquizleft h1 {
+  font-family: "Helvetica Neue LT GEO Caps 75 roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  font-size: 28px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 5%;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.newquizleft p {
+  font-family: "Helvetica Neue LT GEO roman";
+  font-weight: 400;
+  font-style: 55 Roman;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+.newstartquiz {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 636px;
+  height: 52px;
+  border-radius: 12px;
+  padding: 10px 50px 10px 50px;
+  margin-top: 30px;
+  background-color: #6d5baf;
+  border-color: #6d5baf;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: 75 Bold;
+  line-height: 22px;
+  letter-spacing: 5%;
+  vertical-align: bottom;
+  margin-top: 37px;
+}
+/* ________________new quiz____________________- */
 
 /* ________________quiz____________________- */
+
 .lmquizsection {
   border-top: 1px solid #ccc;
   padding-top: 50px;
@@ -6591,8 +6653,11 @@ for index-List.css     END
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .dayprof {
     width: 345px;
@@ -6613,16 +6678,15 @@ for index-List.css     END
     margin-top: 0px;
     color: #333333;
     width: 100%;
-    max-width: 294px;
+    max-width: 345px;
   }
   .lmfirstsecionwrapper {
     width: 100%;
-    margin: 0 auto;
     /* padding-left: 10px; */
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
-    padding: 0px;
+    /* padding: 0px; */
     justify-content: center;
     align-items: center;
   }
@@ -6671,7 +6735,9 @@ for index-List.css     END
     max-width: 600px;
     width: 100%;
     padding: 0;
+    display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-bottom: 24px;
   }
@@ -6687,14 +6753,14 @@ for index-List.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
-    margin-top: -15px;
+    /* margin-top: 15px; */
   }
   .lmwrapper2 {
     /* border: solid red 1px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -6702,32 +6768,33 @@ for index-List.css     END
     box-sizing: border-box;
     /* padding: 16px; */
     /* padding-top: 40px; */
+    padding-top: 20px;
   }
   .lmwrapper2right {
     width: 600px;
     width: 100%;
     margin: 0 auto;
     order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* margin-top: -10px; */
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 30px;
   }
   .lmstartquiz {
-    max-width: 343px;
-    /* width: 100%; */
+    max-width: 345px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     /* margin-left: 31px; */
-    justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
     gap: 10px;
     margin-top: 20px;
+    display: flex;
     align-items: center;
     text-align: center;
-    padding-top: 8px;
-    padding-right: 12px;
-    padding-bottom: 8px;
-    padding-left: 12px;
+    padding: 6px 95px;
     letter-spacing: 1px;
   }
   .lmstartquiz span {
@@ -6741,7 +6808,7 @@ for index-List.css     END
     vertical-align: bottom;
   }
   .lmwrapper2right h1 {
-    width: 344px;
+    width: 345px;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-weight: 700;
     font-style: 75 Bold;
@@ -6762,24 +6829,26 @@ for index-List.css     END
     justify-content: center;
     /* height: 249px; */
     /* margin-left: 31px; */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   .lmwrapper2left img {
     width: 100%;
-    max-width: 344px;
+    max-width: 345px;
+    display: flex;
+    justify-content: center;
     height: auto;
     display: block;
     order: 1;
     margin: 0 auto;
-    object-fit: contain;
-    padding-left: 0;
-    margin-left: 0;
-    margin-left: 30px;
+    /* object-fit: contain; */
+    /* padding-left: 0; */
   }
 
   .daywrapperright {
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 600px;
   }
@@ -6798,7 +6867,9 @@ for index-List.css     END
     flex-wrap: nowrap;
     flex-direction: column;
     margin-bottom: 100px;
-    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
   }
 
   .lmmaintitle1 {
@@ -6922,7 +6993,7 @@ for index-List.css     END
     margin-bottom: 25px;
     margin: 0 auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 345.8px;
     margin-bottom: 30px;
   }
   .daywrapperleft {
@@ -6931,12 +7002,13 @@ for index-List.css     END
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
   }
   .daywrapperleft p {
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
     width: 100%;
-    max-width: 344px;
+    max-width: 345px;
     font-style: 55 Roman;
     font-size: 13px;
     line-height: 17px;
@@ -6950,6 +7022,8 @@ for index-List.css     END
     width: 100%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .lmprofphotos {
     width: 164px;
@@ -6960,7 +7034,7 @@ for index-List.css     END
     display: flex;
   } */
   .lmknowmore {
-    width: 344px;
+    width: 345px;
     /* height: 40px; */
     justify-content: space-around;
     margin-top: 15px;
@@ -7080,7 +7154,7 @@ for index-List.css     END
     flex-direction: column;
     margin: 0 auto;
   }
-  .lmwrapper2left {
+  /* .lmwrapper2left {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -7088,12 +7162,11 @@ for index-List.css     END
     align-items: center;
     justify-content: center;
     /* height: 249px; */
-    /* margin-left: 31px; */
-    box-sizing: border-box;
-  }
-  .lmwrapper2left img {
+  /* margin-left: 31px; */
+
+  /* .lmwrapper2left img {
     width: 100%;
-    max-width: 344px;
+    max-width: 345px;
     height: auto;
     display: block;
     order: 1;
@@ -7101,8 +7174,7 @@ for index-List.css     END
     object-fit: contain;
     padding-left: 0;
     margin-left: 0;
-    margin-left: 30px;
-  }
+  } */
   .lmwrapper5left {
     order: 2;
     width: 100%;
@@ -7229,7 +7301,52 @@ for index-List.css     END
 
   /* quiz media start  */
   /* quiz media start */
-  /* quiz media start */
+  /* new quiz media start */
+
+  .newquizwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .newquizleft {
+    width: 100%;
+    max-width: 343px;
+    order: 2;
+  }
+  .newquizleft h1 {
+    font-family: "Helvetica Neue LT GEO Caps 75 roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .newquizleft p {
+    font-family: "Helvetica Neue LT GEO roman";
+    font-weight: 400;
+    font-style: 55 Roman;
+    font-size: 13px;
+    leading-trim: NONE;
+    line-height: 17px;
+    letter-spacing: 0%;
+  }
+  .newquizright {
+    order: 1;
+  }
+  .newquizright img {
+    width: 100%;
+    max-width: 343px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   /* quiz media start */
   /* quiz media start */
 
