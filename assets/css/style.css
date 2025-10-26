@@ -4593,7 +4593,7 @@ form button {
 
   .PS-Footer-contact-info {
     /* border: solid red 1px; */
-    max-width: 376px;
+    max-width: 344px;
     width: 100%;
 
     padding-left: 0;
@@ -5424,7 +5424,7 @@ for index-Contact.css     END
 
   .PS-section-similar-professions > h1 {
     /* border: solid green 1px; */
-    width: 376px;
+    width: 344px;
     margin: 0 auto;
     background-color: #ffffff;
     color: #333333;
