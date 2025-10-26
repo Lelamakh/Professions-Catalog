@@ -1,18 +1,18 @@
 /* XXXXXXXXXXXXXX New HEADER Mobile Menu START XXXXXXXXXXXXXXX */
 
-const toggleModalBtn = document.getElementById("PS-toggleModalBtn");
-const myModal = document.getElementById("PS-myModal");
+// const toggleModalBtnMobile = document.getElementById("PS-toggleModalBtn");
+// const myModalMobile = document.getElementById("PS-myModal");
 
-toggleModalBtn.addEventListener("click", () => {
-  myModal.classList.toggle("active");
-});
+// toggleModalBtnMobile.addEventListener("click", () => {
+//   myModalMobile.classList.toggle("active");
+// });
 
-// Optional: Close modal by clicking the backdrop
-myModal.addEventListener("click", (e) => {
-  if (e.target === myModal) {
-    myModal.classList.remove("active");
-  }
-});
+// // Optional: Close modal by clicking the backdrop
+// myModalMobile.addEventListener("click", (e) => {
+//   if (e.target === myModalMobile) {
+//     myModalMobile.classList.remove("active");
+//   }
+// });
 
 /* XXXXXXXXXXXXXX New HEADER Mobile Menu END XXXXXXXXXXXXXXX */
 

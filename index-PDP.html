@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profession detail page</title>
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -24,21 +23,6 @@
             id="PS-toggleModalBtn"
             class="Burger-Menu"
           />
-          <!-- <ul class="Mobile-Menu">
-            <li><a href="index.html">მთავარი</a></li>
-            <li class="PS-active-page">
-              <a href="index-List.html">პროფესიები</a>
-            </li>
-            <li><a href="quiz.html">ქვიზი</a></li>
-            <li><a href="about.html">ჩვენ შესახებ</a></li>
-            <li><a href="index-Contact.html">კონტაქტი</a></li>
-            <li>
-              <a href="#">
-                <div class="For-Mobile">
-                  <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" /></div
-              ></a>
-            </li>
-          </ul> -->
 
           <div id="PS-myModal" class="PS-modal-overlay">
             <div class="PS-modal-content-menu">
@@ -72,32 +56,161 @@
         ></a>
       </nav>
     </header>
+
+    <div id="PS-myModalFavorites" class="PS-modal">
+      <div class="modal-content">
+        <div class="PS-favorites-modal">
+          <p>ფავორიტები</p>
+          <span class="close">&times;</span>
+        </div>
+        <div class="PS-modal-content-cards">
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <a href="index-PDP.html">
+              <img
+                src="assets/images/3d გრაფიკოსი.png"
+                alt="3D გრაფიკოსი.png"
+              />
+            </a>
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>3D გრაფიკოსი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>მაღალი მოთხოვნა</h4>
+                <h4>500 - 3000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/front-end დეველოპერი.png"
+              alt="Front-End დეველოპერი.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>FRONT-END დეველოპერი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>მაღალი/ მოთხოვნა</h4>
+                <h4>500 - 6000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/HR ადმინისტრირების სპეციალისტი.png"
+              alt="HR ადმინისტრირების სპეციალისტი.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>HR ადმინისტრირების სპეციალისტი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>მაღალი მოთხოვნა</h4>
+                <h4>1000 - 3000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/hr მენეჯერი სპეციალისტი.png"
+              alt="hr მენეჯერი სპეციალისტი.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>HR მენეჯერი/ სპეციალისტი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>მაღალი მოთხოვნა</h4>
+                <h4>2500 - 15000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/IT და TECH რეკრუტერი.png"
+              alt="IT და TECH რეკრუტერი.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>IT და Tech რეკრუტერი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>სტაბილური მოთხოვნა</h4>
+                <h4>800 - 4000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/LEARNING & DEVELOPMENT.png"
+              alt="LEARNING & DEVELOPMENT.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>LEARNING & DEVELOPMENT</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>სტაბილური მოთხოვნა</h4>
+                <h4>800 - 4000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="PS-result-card">
+            <div class="PS-heart-div">
+              <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+            </div>
+            <img
+              src="assets/images/seo სპეციალისტი.png"
+              alt="seo სპეციალისტი.png"
+            />
+            <div class="PS-card-info">
+              <div class="PS-name">
+                <h1>SEO სპეციალისტი</h1>
+              </div>
+              <div class="PS-card-info-text-button-V2">
+                <h4>სტაბილური მოთხოვნა</h4>
+                <h4>800 - 3000 ₾+</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="PS-section-1">
       <div class="PS-sec-1-div-1">
         <h2>3D გრაფიკოსი</h2>
-        <!-- <p>08.07.2025</p> -->
         <div>
           <div class="PS-Share" id="PS-openModalBtn">
             <img src="assets/images/Share.svg" alt="Share.svg" />
-            <div class="PS-Share-Logos">
-              გაუზიარე პროფესია სხვას
-              <!-- <img
-                src="assets/images/FacebookLogo.svg"
-                alt="FacebookLogo.svg"
-              /> -->
-              <!-- <img
-                src="assets/images/InstagramLogo.svg"
-                alt="InstagramLogo.svg"
-              /> -->
-              <!-- <img
-                src="assets/images/LinkedinLogo.svg"
-                alt="LinkedinLogo.svg"
-              /> -->
-            </div>
+            <div class="PS-Share-Logos">გაუზიარე პროფესია სხვას</div>
           </div>
           <div>
-            <!-- <button id="PS-openModalBtn" class="PS-button">Share Link</button> -->
-
             <div id="PS-copyLinkModal" class="PS-modal-container">
               <div class="PS-modal-content">
                 <h3 class="PS-modal-content-header">გაუზიარე მეგობრებს</h3>
@@ -133,11 +246,11 @@
                     />
                   </button>
                 </div>
-                <button id="PS-closeModalBtn" class="PS-button-close">X</button>
+                <button id="PS-closeModalBtn" class="PS-button-close">
+                  &times;
+                </button>
               </div>
             </div>
-
-            <!-- <script src="assets/js/main - Paata.js"></script> -->
           </div>
         </div>
       </div>
@@ -186,263 +299,7 @@
             გამოიყენო, მაშინ 3D გრაფიკოსობა შენთვისაა!
           </p>
         </div>
-        <!-- <div class="PS-subheader-1">
-          <img src="assets/images/video.png" alt="video.png" />
-          <h1>ვინ არის 3D გრაფიკოსი?</h1>
-          <p>
-            წარმოიდგინე სამყარო, სადაც შენ შეგიძლია შექმნა ყველაფერი, რასაც შენი
-            ფანტაზია მოისურვებს! სწორედ ამას აკეთებს 3D გრაფიკოსი – ის არის
-            ჯადოქარი, რომელიც ციფრული ხელსაწყოების მეშვეობით ქმნის
-            სამგანზომილებიან სასწაულებს. <br />
-            <br />
-            ეს პროფესია გაძლევს ძალას  გააცოცხლო პერსონაჟები ვიდეოთამაშებში,
-            შექმნა შთამბეჭდავი ვიზუალური ეფექტები ფილმებისთვის, დააპროექტო
-            მომავლის შენობები არქიტექტურული პრეზენტაციებისთვის ან თუნდაც,
-            გაამრავალფეროვნო სარეკლამო კამპანიები უნიკალური ვიზუალით. შენი
-            შექმნილი ნამუშევრები შეიძლება იყოს  ანიმაციებში, მულტიმედიურ
-            პროექტებში და ყველგან, სადაც ვიზუალური ეფექტია საჭირო. <br />
-            <br />
-            3D გრაფიკოსის მთავარი მიზანია შექმნას არა მხოლოდ ლამაზი, არამედ
-            აზრიანი და ეფექტიანი ვიზუალი, რომელიც სრულყოფილად ერგება კონკრეტული
-            პროექტის მიზნებს. თუ გსიამოვნებს რაღაცის შექმნის პროცესი, გაქვს
-            განვითარებული ვიზუალური აღქმა და გსურს შენი ნიჭი ციფრულ სამყაროში
-            გამოიყენო, მაშინ 3D გრაფიკოსობა შენთვისაა!
-          </p>
-        </div> -->
-        <!-- <div class="PS-subheader-1">
-          <img src="assets/images/video.png" alt="video.png" />
-          <h1>ვინ არის 3D გრაფიკოსი?</h1>
-          <p>
-            წარმოიდგინე სამყარო, სადაც შენ შეგიძლია შექმნა ყველაფერი, რასაც შენი
-            ფანტაზია მოისურვებს! სწორედ ამას აკეთებს 3D გრაფიკოსი – ის არის
-            ჯადოქარი, რომელიც ციფრული ხელსაწყოების მეშვეობით ქმნის
-            სამგანზომილებიან სასწაულებს. <br />
-            <br />
-            ეს პროფესია გაძლევს ძალას  გააცოცხლო პერსონაჟები ვიდეოთამაშებში,
-            შექმნა შთამბეჭდავი ვიზუალური ეფექტები ფილმებისთვის, დააპროექტო
-            მომავლის შენობები არქიტექტურული პრეზენტაციებისთვის ან თუნდაც,
-            გაამრავალფეროვნო სარეკლამო კამპანიები უნიკალური ვიზუალით. შენი
-            შექმნილი ნამუშევრები შეიძლება იყოს  ანიმაციებში, მულტიმედიურ
-            პროექტებში და ყველგან, სადაც ვიზუალური ეფექტია საჭირო. <br />
-            <br />
-            3D გრაფიკოსის მთავარი მიზანია შექმნას არა მხოლოდ ლამაზი, არამედ
-            აზრიანი და ეფექტიანი ვიზუალი, რომელიც სრულყოფილად ერგება კონკრეტული
-            პროექტის მიზნებს. თუ გსიამოვნებს რაღაცის შექმნის პროცესი, გაქვს
-            განვითარებული ვიზუალური აღქმა და გსურს შენი ნიჭი ციფრულ სამყაროში
-            გამოიყენო, მაშინ 3D გრაფიკოსობა შენთვისაა!
-          </p>
-        </div> -->
-        <!-- <div class="PS-subheader-1-1">
-          !-- <img src="assets/images/Photo-gallery.png" alt="Photo-gallery.png" /> -->
-        <!-- <div class="PS-container">
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-1-big.png"
-                alt="Gallery-1-big.png"
-              />
-            </div>
 
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-2-big.png"
-                alt="Gallery-2-big.png"
-              />
-            </div>
-
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-3-big.png"
-                alt="Gallery-3-big.png"
-              />
-            </div>
-
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-4-big.png"
-                alt="Gallery-4-big.png"
-              />
-            </div>
-
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-5-big.png"
-                alt="Gallery-5-big.png"
-              />
-            </div>
-
-            <div class="PS-mySlides">
-              <img
-                src="/assets/images/Gallery-6-big.png"
-                alt="Gallery-6-big.png"
-              />
-            </div>
-
-            <a class="PS-prev" onclick="plusSlides(-1)" style="display: none"
-              >❮</a
-            >
-            <a class="PS-next" onclick="plusSlides(1)" style="display: none"
-              >❯</a
-            >
-
-            <div class="PS-caption-container" style="display: none">
-              <p id="PS-caption"></p>
-            </div>
-
-            <div class="PS-row">
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-1-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(1)"
-                  alt="Gallery-1-small.png"
-                />
-              </div>
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-2-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(2)"
-                  alt="Gallery-2-small.png"
-                />
-              </div>
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-3-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(3)"
-                  alt="Gallery-3-small.png"
-                />
-              </div>
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-4-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(4)"
-                  alt="Gallery-4-small.png"
-                />
-              </div>
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-5-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(5)"
-                  alt="Gallery-5-small.png"
-                />
-              </div>
-              <div class="PS-column">
-                <img
-                  class="PS-demo PS-cursor"
-                  src="/assets/images/Gallery-6-small.png"
-                  style="width: 100%"
-                  onclick="currentSlide(6)"
-                  alt="Gallery-6-small.png"
-                />
-              </div>
-            </div>
-          </div> -->
-        <!-- <div class="PS-Gallery">
-            
-
-            <div
-              style="
-                --swiper-navigation-color: #fff;
-                --swiper-pagination-color: #fff;
-              "
-              class="swiper mySwiper2"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div thumbsSlider="" class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-              </div>
-            </div>
-
-           
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script src="assets/js/main - Paata.js"></script>
-
-           
-          </div> -->
-
-        <!-- <div>
-            <h1>ვინ არის 3D გრაფიკოსი?</h1>
-            <p>
-              წარმოიდგინე სამყარო, სადაც შენ შეგიძლია შექმნა ყველაფერი, რასაც
-              შენი ფანტაზია მოისურვებს! სწორედ ამას აკეთებს 3D გრაფიკოსი – ის
-              არის ჯადოქარი, რომელიც ციფრული ხელსაწყოების მეშვეობით ქმნის
-              სამგანზომილებიან სასწაულებს. <br />
-              <br />
-              ეს პროფესია გაძლევს ძალას  გააცოცხლო პერსონაჟები ვიდეოთამაშებში,
-              შექმნა შთამბეჭდავი ვიზუალური ეფექტები ფილმებისთვის, დააპროექტო
-              მომავლის შენობები არქიტექტურული პრეზენტაციებისთვის ან თუნდაც,
-              გაამრავალფეროვნო სარეკლამო კამპანიები უნიკალური ვიზუალით. შენი
-              შექმნილი ნამუშევრები შეიძლება იყოს  ანიმაციებში, მულტიმედიურ
-              პროექტებში და ყველგან, სადაც ვიზუალური ეფექტია საჭირო. <br />
-              <br />
-              3D გრაფიკოსის მთავარი მიზანია შექმნას არა მხოლოდ ლამაზი, არამედ
-              აზრიანი და ეფექტიანი ვიზუალი, რომელიც სრულყოფილად ერგება
-              კონკრეტული პროექტის მიზნებს. თუ გსიამოვნებს რაღაცის შექმნის
-              პროცესი, გაქვს განვითარებული ვიზუალური აღქმა და გსურს შენი ნიჭი
-              ციფრულ სამყაროში გამოიყენო, მაშინ 3D გრაფიკოსობა შენთვისაა!
-            </p>
-          </div> --
-        </div> -->
         <div class="PS-subheader-2">
           <div>
             <div>
@@ -460,29 +317,8 @@
                 <li>მუდმივად ეცნობა ახალ ტექნოლოგიებსა და პროგრამებს</li>
               </ul>
             </div>
-            <!-- <img src="assets/images/Photo-2.png" alt="Photo-2.png" /> -->
           </div>
         </div>
-        <!-- <div class="PS-subheader-2">
-          <div>
-            <div>
-              <h1>რას აკეთებს 3D გრაფიკოსი?</h1>
-              <ul>
-                <li>
-                  ამუშავებს 3D მოდელებს: პერსონაჟებს, ობიექტებსა და გარემოს
-                </li>
-                <li>ქმნის ტექსტურებს და აძლევს მასალებს რეალისტურ ვიზუალს</li>
-                <li>იყენებს სინათლეს, ჩრდილებს და მულტიმედიურ ეფექტებს</li>
-                <li>ამზადებს ანიმაციებს და რენდერებს</li>
-                <li>ქმნის დიზაინის კონცეფციებს და პროტოტიპებს</li>
-                <li>მონაწილეობს პროექტის გრაფიკული ელემენტების დაგეგმვაში</li>
-                <li>ტესტავს და აყალიბებს საბოლოო ვიზუალს</li>
-                <li>მუდმივად ეცნობა ახალ ტექნოლოგიებსა და პროგრამებს</li>
-              </ul>
-            </div>
-            <img src="assets/images/Photo-2.png" alt="Photo-2.png" />
-          </div>
-        </div> -->
         <div class="PS-subheader-3">
           <div class="PS-subheader-3-content">
             <div>
@@ -541,51 +377,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="PS-subheader-3-1">
-          <div class="PS-subheader-3-content">
-            <div class="PS-subheader-3-content-text">
-              <div class="PS-subheader-3-header">
-                რა ცოდნას და უნარებს უნდა ფლობდე წარმატებისთვის?
-              </div>
-              <div class="PS-subheader-3-two-lists">
-                <div>
-                  <h1>ტექნიკური უნარები:</h1>
-                  <ul>
-                    <li>
-                      3D პროგრამების ცოდნა: Blender, 3ds Max, Maya, Cinema 4D
-                    </li>
-                    <li>
-                      ტექსტურირების ინსტრუმენტების ცოდნა: Substance Painter,
-                      Photoshop
-                    </li>
-                    <li>
-                      რენდერინგის სისტემების ცოდნა: Cycles, V-Ray, Arnold,
-                      Redshift
-                    </li>
-                    <li>ანიმაციის ხელსაწყოების ცოდნა: Blender, Maya და სხვა</li>
-                    <li>
-                      თამაშებისა და VR/AR პლატფორმების ცოდნა: Unreal Engine,
-                      Unity
-                    </li>
-                    <li>UV მეფინგი და მოდელირების ტექნიკები</li>
-                    <li>სცენის განათება და პოსტპროცესინგი</li>
-                  </ul>
-                </div>
-                <div>
-                  <h1>რბილი უნარები:</h1>
-                  <ul>
-                    <li>კრეატიული აზროვნება</li>
-                    <li>ყურადღება დეტალებზე</li>
-                    <li>ეფექტური კომუნიკაცია</li>
-                    <li>დროის მართვის უნარი</li>
-                    <li>ინფორმაციის მოძიება</li>
-                    <li>პრობლემების ანალიზი და გადაჭრა</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
     <section class="PS-section-4">
@@ -623,155 +414,78 @@
     <section class="PS-section-similar-professions">
       <h1>მსგავსი პროფესიები</h1>
       <div class="PS-section-similar-professions-cards">
-        <div class="PS-result-card" data-price="3000">
+        <div class="PS-result-card">
           <div class="PS-heart-div">
             <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
           </div>
-          <img
-            src="assets/images/გრაფიკული დიზაინერი.png"
-            alt="გრაფიკული დიზაინერი.png"
-          />
+          <a href="index-PDP.html">
+            <img src="assets/images/3d გრაფიკოსი.png" alt="3D გრაფიკოსი.png" />
+          </a>
           <div class="PS-card-info">
             <div class="PS-name">
-              <h1>გრაფიკული დიზაინერი</h1>
-              <h4>მაღალი მოთხოვნა</h4>
-              <!-- <h4>დიზაინი</h4> -->
+              <h1>3D გრაფიკოსი</h1>
             </div>
             <div class="PS-card-info-text-button-V2">
-              <!-- <h4>მაღალი მოთხოვნა,</h4> -->
+              <h4>მაღალი მოთხოვნა</h4>
               <h4>500 - 3000 ₾+</h4>
             </div>
-            <!-- <div class="PS-card-info-text-button">
-                  <div class="PS-card-info-sub">
-                    <div class="PS-sphere">
-                      <h3>სფერო</h3>
-                      <h4>დიზაინი</h4>
-                    </div>
-                    <div class="PS-request">
-                      <h3>მოთხოვნა</h3>
-                      <h4>მაღალი</h4>
-                    </div>
-                    <div class="PS-salary">
-                      <h3>ანაზღაურება</h3>
-                      <h4>500 - 3000 ₾+</h4>
-                    </div>
-                  </div>
-                  <button class="PS-card-info-button">გაიგე მეტი</button>
-                </div> -->
           </div>
         </div>
 
-        <div class="PS-result-card" data-price="5500">
+        <div class="PS-result-card">
           <div class="PS-heart-div">
             <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
           </div>
           <img
-            src="assets/images/uxui დიზაინერი.png"
-            alt="uxui დიზაინერი.png"
+            src="assets/images/front-end დეველოპერი.png"
+            alt="Front-End დეველოპერი.png"
           />
           <div class="PS-card-info">
             <div class="PS-name">
-              <h1>UX/UI დიზაინერი</h1>
+              <h1>FRONT-END დეველოპერი</h1>
+            </div>
+            <div class="PS-card-info-text-button-V2">
+              <h4>მაღალი/ მოთხოვნა</h4>
+              <h4>500 - 6000 ₾+</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="PS-result-card">
+          <div class="PS-heart-div">
+            <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+          </div>
+          <img
+            src="assets/images/HR ადმინისტრირების სპეციალისტი.png"
+            alt="HR ადმინისტრირების სპეციალისტი.png"
+          />
+          <div class="PS-card-info">
+            <div class="PS-name">
+              <h1>HR ადმინისტრირების სპეციალისტი</h1>
+            </div>
+            <div class="PS-card-info-text-button-V2">
               <h4>მაღალი მოთხოვნა</h4>
-              <!-- <h4>დიზაინი</h4> -->
+              <h4>1000 - 3000 ₾+</h4>
             </div>
-            <div class="PS-card-info-text-button-V2">
-              <!-- <h4>მაღალი მოთხოვნა,</h4> -->
-              <h4>1500 - 5500 ₾+</h4>
-            </div>
-            <!-- <div class="PS-card-info-text-button">
-                  <div class="PS-card-info-sub">
-                    <div class="PS-sphere">
-                      <h3>სფერო</h3>
-                      <h4>დიზაინი</h4>
-                    </div>
-                    <div class="PS-request">
-                      <h3>მოთხოვნა</h3>
-                      <h4>მაღალი</h4>
-                    </div>
-                    <div class="PS-salary">
-                      <h3>ანაზღაურება</h3>
-                      <h4>1500 - 5500 ₾+</h4>
-                    </div>
-                  </div>
-                  <button class="PS-card-info-button">გაიგე მეტი</button>
-                </div> -->
           </div>
         </div>
 
-        <div class="PS-result-card" data-price="5000">
+        <div class="PS-result-card">
           <div class="PS-heart-div">
             <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
           </div>
           <img
-            src="assets/images/კონცეპტ არტისტი.png"
-            alt="კონცეპტ არტისტი.png"
+            src="assets/images/hr მენეჯერი სპეციალისტი.png"
+            alt="hr მენეჯერი სპეციალისტი.png"
           />
           <div class="PS-card-info">
             <div class="PS-name">
-              <h1>კონცეპტ არტისტი</h1>
-              <h4>სტაბილური მოთხოვნა</h4>
-              <!-- <h4>დიზაინი</h4> -->
+              <h1>HR მენეჯერი/ სპეციალისტი</h1>
             </div>
             <div class="PS-card-info-text-button-V2">
-              <!-- <h4>სტაბილური მოთხოვნა,</h4> -->
-              <h4>1500 - 5000 ₾+</h4>
+              <h4>მაღალი მოთხოვნა</h4>
+              <h4>2500 - 15000 ₾+</h4>
             </div>
-            <!-- <div class="PS-card-info-text-button">
-                  <div class="PS-card-info-sub">
-                    <div class="PS-sphere">
-                      <h3>სფერო</h3>
-                      <h4>დიზაინი</h4>
-                    </div>
-                    <div class="PS-request">
-                      <h3>მოთხოვნა</h3>
-                      <h4>სტაბილური</h4>
-                    </div>
-                    <div class="PS-salary">
-                      <h3>ანაზღაურება</h3>
-                      <h4>1500 - 5000 ₾+</h4>
-                    </div>
-                  </div>
-                  <button class="PS-card-info-button">გაიგე მეტი</button>
-                </div> -->
-          </div>
-        </div>
-
-        <div class="PS-result-card" data-price="4000">
-          <div class="PS-heart-div">
-            <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
-          </div>
-          <img
-            src="assets/images/ციფრული მარკეტერი.png"
-            alt="ციფრული მარკეტერი.png"
-          />
-          <div class="PS-card-info">
-            <div class="PS-name">
-              <h1>ციფრული მარკეტერი</h1>
-              <h4>სტაბილური მოთხოვნა</h4>
-              <!-- <h4>მარკეტინგი</h4> -->
-            </div>
-            <div class="PS-card-info-text-button-V2">
-              <!-- <h4>სტაბილური მოთხოვნა,</h4> -->
-              <h4>500 - 4000 ₾+</h4>
-            </div>
-            <!-- <div class="PS-card-info-text-button">
-                  <div class="PS-card-info-sub">
-                    <div class="PS-sphere">
-                      <h3>სფერო</h3>
-                      <h4>მარკეტინგი</h4>
-                    </div>
-                    <div class="PS-request">
-                      <h3>მოთხოვნა</h3>
-                      <h4>სტაბილური</h4>
-                    </div>
-                    <div class="PS-salary">
-                      <h3>ანაზღაურება</h3>
-                      <h4>500 - 4000 ₾+</h4>
-                    </div>
-                  </div>
-                  <button class="PS-card-info-button">გაიგე მეტი</button>
-                </div> -->
           </div>
         </div>
       </div>
@@ -793,13 +507,6 @@
               alt="Rectangle 2-1.png"
             />
           </div>
-          <!-- <div class="PS-card-text">
-            <h3>3D გრაფიკა - BLENDER</h3>
-            <p>6 ოქტომბერი, 2025</p>
-
-            <button class="PS-card-button-1">1190 ₾</button>
-            <button class="PS-card-button-2">გაიგე მეტი</button>
-          </div> -->
         </div>
         <div class="PS-card-1">
           <div>
@@ -808,12 +515,6 @@
               alt="Rectangle 2-2.png"
             />
           </div>
-          <!-- <div class="PS-card-text">
-            <h3>გრაფიკული დიზაინი</h3>
-            <p>1 სექტემბერი, 2025</p>
-            <button class="PS-card-button-1">1390 ₾</button>
-            <button class="PS-card-button-2">გაიგე მეტი</button>
-          </div> -->
         </div>
         <div class="PS-card-1">
           <div>
@@ -822,13 +523,6 @@
               alt="Rectangle 2-3.png"
             />
           </div>
-          <!-- <div class="PS-card-text">
-            <h3>3D გრაფიკა - BLENDER</h3>
-            <p>6 ოქტომბერი, 2025</p>
-
-            <button class="PS-card-button-1">1190 ₾</button>
-            <button class="PS-card-button-2">გაიგე მეტი</button>
-          </div> -->
         </div>
       </div>
       <div>
@@ -852,8 +546,6 @@
       <div class="PS-Footer-div-1">
         <img src="assets/images/Vector.svg" alt="Vector.svg" />
         <div class="PS-Footer-contact-info">
-          <!-- <p>591 67 00 67</p> -->
-          <!-- <p>0322 12 10 25</p> -->
           <p>info@profesia.ge</p>
           <p>FAQ</p>
           <a href="privecy.html">Privacy Policy</a>
@@ -871,27 +563,14 @@
             src="assets/images/LinkedinLogoFooter.svg"
             alt="LinkedinLogoFooter.svg"
           />
-          <!-- <img
-            src="assets/images/YoutubeLogoFooter.svg"
-            alt="YoutubeLogoFooter.svg"
-          /> -->
-
-          <!-- <img
-            src="assets/images/TiktokLogoFooter.svg"
-            alt="TiktokLogoFooter.svg"
-          /> -->
         </div>
       </div>
       <div class="PS-Footer-div-2">
         <p>2025 Profesia. All rights reserved.</p>
-        <!-- <a href="cookies.html">
-          <p>Cookie Settings</p>
-        </a> -->
       </div>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-    <!-- <script src="assets/js/main.js"></script> -->
     <script src="assets/js/main - Paata.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

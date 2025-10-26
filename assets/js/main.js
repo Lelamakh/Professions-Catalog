@@ -1,16 +1,16 @@
 /* XXXXXXXXXXXXXX New HEADER Mobile Menu START XXXXXXXXXXXXXXX */
 
-const toggleModalBtn = document.getElementById("PS-toggleModalBtn");
-const myModal = document.getElementById("PS-myModal");
+const toggleModalBtnMobile = document.getElementById("PS-toggleModalBtn");
+const myModalMobile = document.getElementById("PS-myModal");
 
-toggleModalBtn.addEventListener("click", () => {
-  myModal.classList.toggle("active");
+toggleModalBtnMobile.addEventListener("click", () => {
+  myModalMobile.classList.toggle("active");
 });
 
 // Optional: Close modal by clicking the backdrop
-myModal.addEventListener("click", (e) => {
-  if (e.target === myModal) {
-    myModal.classList.remove("active");
+myModalMobile.addEventListener("click", (e) => {
+  if (e.target === myModalMobile) {
+    myModalMobile.classList.remove("active");
   }
 });
 
@@ -110,16 +110,31 @@ START for List page
 
 - - - - - - - -*/
 
-/* MODAL START ( for FAVORITES ) */
+/* ეს კოდი ამატებს და აცილებს ფავორიტის კლასს */
+document.addEventListener("DOMContentLoaded", function () {
+  const childDivs = document.querySelectorAll(".PS-heart-div"); // Select all child divs
+
+  childDivs.forEach((childDiv) => {
+    childDiv.addEventListener("click", function () {
+      // 'this' refers to the clicked childDiv
+      // .parentNode gets the immediate parent element
+      this.parentNode.classList.toggle("PS-favorite"); // Toggle a class on the parent
+    });
+  });
+});
+
+/* ეს კოდი ითვლის და გვიჩვენებს ფავორიტის კლასს */
+
+/* MODAL START ( for FAVORITES Section ) */
 
 // Get the modal
-var PSmodal = document.getElementById("myModal");
+let PSmodal = document.getElementById("PS-myModalFavorites");
 
 // Get the button that opens the modal
-var btn = document.getElementById("PS-myBtn");
+let btn = document.getElementById("PS-myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
@@ -138,9 +153,16 @@ window.onclick = function (event) {
   }
 };
 
-/* MODAL END ( for FAVORITES ) */
+// Optional: Close modal by clicking the backdrop
+PSmodal.addEventListener("click", (e) => {
+  if (e.target === PSmodal) {
+    PSmodal.classList.remove("active");
+  }
+});
 
-/* MODAL START ( for FILTER ) */
+/* MODAL END ( for FAVORITES Section ) */
+
+/* MODAL START ( for LIST PAGE FILTER ) */
 
 // Get the modal
 let PSFilterModal = document.getElementById("PS-filter-input");
@@ -168,31 +190,26 @@ window.onclick = function (event) {
   }
 };
 
-/* MODAL END ( for FILTER ) */
+/* MODAL END ( for LIST PAGE FILTER ) */
 
 /* ეს კოდი არის ძებნის ველისათვის (დასაწყისი) */
 
-function filterContent() {
-  var input, filter, cards, card, i, txtValue;
-  input = document.getElementById("mySearchInput");
-  filter = input.value.toUpperCase(); // Get input value and convert to uppercase for case-insensitive search
-  cards = document.getElementById("PS-result-cards");
-  card = cards.getElementsByClassName("PS-result-card"); // Get all list items
+// function filterContent() {
+//   var input, filter, cards, card, i, txtValue;
+//   input = document.getElementById("mySearchInput");
+//   filter = input.value.toUpperCase(); // Get input value and convert to uppercase for case-insensitive search
+//   cards = document.getElementById("PS-result-cards");
+//   card = cards.getElementsByClassName("PS-result-card"); // Get all list items
 
-  // Loop through all list items, and hide those that don't match the search query
-  for (i = 0; i < card.length; i++) {
-    txtValue = card[i].textContent || card[i].innerText; // Get the text content of the list item
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      card[i].style.display = ""; // Show the item if it matches
-    } else {
-      card[i].style.display = "none"; // Hide the item if it doesn't match
-    }
-  }
-}
-
-// function resetInput() {
-//   document.getElementById("mySearchInput").value =
-//     document.getElementById("mySearchInput").defaultValue;
+//   // Loop through all list items, and hide those that don't match the search query
+//   for (i = 0; i < card.length; i++) {
+//     txtValue = card[i].textContent || card[i].innerText; // Get the text content of the list item
+//     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//       card[i].style.display = ""; // Show the item if it matches
+//     } else {
+//       card[i].style.display = "none"; // Hide the item if it doesn't match
+//     }
+//   }
 // }
 
 function clearInput() {
@@ -255,171 +272,96 @@ buttons4.forEach((button) => {
 
 
 
-ეს კოდი არის ანაზღაურების ფილტრისათვის (დასაწისი)
+ეს კოდი არის ანაზღაურების სლაიდერის (დასაწისი)
 
 
 
 */
 
-const slider = document.querySelector(".range-slider");
-const progress = slider.querySelector(".progress");
-const minPriceInput = slider.querySelector(".min-price");
-const maxPriceInput = slider.querySelector(".max-price");
-const minInput = slider.querySelector(".min-input");
-const maxInput = slider.querySelector(".max-input");
+const minSlider = document.getElementById("min-slider");
+const maxSlider = document.getElementById("max-slider");
+const minInput = document.getElementById("min-input");
+const maxInput = document.getElementById("max-input");
+const sliderFill = document.querySelector(".slider-fill");
 
-const updateProgress = () => {
-  const minValue = parseInt(minInput.value);
-  const maxValue = parseInt(maxInput.value);
+const min = parseFloat(minSlider.min);
+const max = parseFloat(minSlider.max);
 
-  // get the total range of the slider
-  const range = maxInput.max - minInput.min;
-  // get the selected value range of the progress
-  const valueRange = maxValue - minValue;
-  // calculate the width percentage
-  const width = (valueRange / range) * 100;
-  // calculate the min thumb offset
-  const minOffset = ((minValue - minInput.min) / range) * 100;
+// Updates the position and width of the purple fill section
+const updateSliderFill = () => {
+  const minVal = parseFloat(minSlider.value);
+  const maxVal = parseFloat(maxSlider.value);
+  const leftPercentage = ((minVal - min) / (max - min)) * 100;
+  const rightPercentage = ((max - maxVal) / (max - min)) * 100;
 
-  // update the progress width
-  progress.style.width = width + "%";
-  // update the progress left position
-  progress.style.left = minOffset + "%";
-
-  // update the number inputs
-  minPriceInput.value = minValue;
-  maxPriceInput.value = maxValue;
+  sliderFill.style.left = leftPercentage + "%";
+  sliderFill.style.right = rightPercentage + "%";
 };
 
-const updateRange = (event) => {
-  const input = event.target;
+// Event handler for when a slider thumb is moved
+const handleSliderChange = () => {
+  let minVal = parseFloat(minSlider.value);
+  let maxVal = parseFloat(maxSlider.value);
 
-  let min = parseInt(minPriceInput.value);
-  let max = parseInt(maxPriceInput.value);
-
-  if (input === minPriceInput && min > max) {
-    max = min;
-    maxPriceInput.value = max;
-  } else if (input === maxPriceInput && max < min) {
-    min = max;
-    minPriceInput.value = min;
+  // Prevent the minimum value from exceeding the maximum
+  if (minVal > maxVal) {
+    minSlider.value = maxVal;
+    minVal = maxVal;
   }
 
-  minInput.value = min;
-  maxInput.value = max;
+  // Prevent the maximum value from going below the minimum
+  if (maxVal < minVal) {
+    maxSlider.value = minVal;
+    maxVal = minVal;
+  }
 
-  updateProgress();
+  minInput.value = minVal;
+  maxInput.value = maxVal;
+
+  updateSliderFill();
 };
 
-minPriceInput.addEventListener("input", updateRange);
-maxPriceInput.addEventListener("input", updateRange);
+// Event handler for when a manual input value is changed
+const handleInputChange = () => {
+  let minVal = parseFloat(minInput.value);
+  let maxVal = parseFloat(maxInput.value);
 
-minInput.addEventListener("input", () => {
-  if (parseInt(minInput.value) >= parseInt(maxInput.value)) {
-    maxInput.value = minInput.value;
+  // Clamp values to the defined slider range
+  minVal = Math.min(Math.max(minVal, min), max);
+  maxVal = Math.min(Math.max(maxVal, min), max);
+
+  // Ensure the min value is not greater than the max value
+  if (minVal > maxVal) {
+    minInput.value = maxVal;
+    minVal = maxVal;
   }
-  updateProgress();
-});
 
-maxInput.addEventListener("input", () => {
-  if (parseInt(maxInput.value) <= parseInt(minInput.value)) {
-    minInput.value = maxInput.value;
+  // Ensure the max value is not less than the min value
+  if (maxVal < minVal) {
+    maxInput.value = minVal;
+    maxVal = minVal;
   }
-  updateProgress();
-});
 
-let isDragging = false;
-let startOffsetX;
+  minSlider.value = minVal;
+  maxSlider.value = maxVal;
 
-progress.addEventListener("mousedown", (e) => {
-  e.preventDefault(); // prevent text selection
+  updateSliderFill();
+};
 
-  isDragging = true;
+// Attach event listeners
+minSlider.addEventListener("input", handleSliderChange);
+maxSlider.addEventListener("input", handleSliderChange);
+minInput.addEventListener("input", handleInputChange);
+maxInput.addEventListener("input", handleInputChange);
 
-  startOffsetX = e.clientX - progress.getBoundingClientRect().left;
-
-  slider.classList.toggle("dragging", isDragging);
-});
-
-document.addEventListener("mousemove", (e) => {
-  if (isDragging) {
-    // get the size and position of the slider
-    const sliderRect = slider.getBoundingClientRect();
-    const progressWidth = parseFloat(progress.style.width || 0);
-
-    // calculate the new left position for the progress element
-    let newLeft =
-      ((e.clientX - sliderRect.left - startOffsetX) / sliderRect.width) * 100;
-
-    // ensure the progress is not exceeding the slider boundaries
-    newLeft = Math.min(Math.max(newLeft, 0), 100 - progressWidth);
-
-    // update the progress position
-    progress.style.left = newLeft + "%";
-
-    // calculate the new min thumb position
-    const range = maxInput.max - minInput.min;
-    const newMin = Math.round((newLeft / 100) * range) + parseInt(minInput.min);
-    const newMax = newMin + parseInt(maxInput.value) - parseInt(minInput.value);
-
-    // update the min input
-    minInput.value = newMin;
-    maxInput.value = newMax;
-
-    // update the progress
-    updateProgress();
-  }
-  slider.classList.toggle("dragging", isDragging);
-  filterItems();
-});
-
-document.addEventListener("mouseup", () => {
-  if (isDragging) {
-    isDragging = false;
-  }
-  slider.classList.toggle("dragging", isDragging);
-});
-
-updateProgress();
-
-/* For Search Code */
-
-const minPriceSlider = document.getElementById("min-price-slider");
-const maxPriceSlider = document.getElementById("max-price-slider");
-const minPriceDisplay = document.getElementById("min-price-display");
-const maxPriceDisplay = document.getElementById("max-price-display");
-const itemList = document.getElementById("PS-result-cards");
-const items = itemList.querySelectorAll(".PS-result-card");
-
-function filterItems() {
-  const minPrice = parseInt(minPriceSlider.value);
-  const maxPrice = parseInt(maxPriceSlider.value);
-
-  minPriceDisplay.textContent = minPrice;
-  maxPriceDisplay.textContent = maxPrice;
-
-  items.forEach((item) => {
-    const itemPrice = parseInt(item.dataset.price);
-    if (itemPrice >= minPrice && itemPrice <= maxPrice) {
-      item.classList.remove("hidden");
-    } else {
-      item.classList.add("hidden");
-    }
-  });
-}
-
-minPriceDisplay.addEventListener("input", filterItems);
-minPriceSlider.addEventListener("input", filterItems);
-maxPriceSlider.addEventListener("input", filterItems);
-
-// Initial filter on page load
-filterItems();
+// Initial update to set the fill position on page load
+updateSliderFill();
 
 /* 
 
 
 
-ეს კოდი არის ანაზღაურების ფილტრისათვის (დასასრული) 
+ეს კოდი არის ანაზღაურების სლაიდერის (დასასრული) 
 
 
 
@@ -437,26 +379,11 @@ filterItems();
 //   });
 // });
 
-function updateItemCount() {
-  const items = document.querySelectorAll(".PS-favorite"); // Select all elements with class 'item'
-  const itemCount = items.length; // Get the count of selected elements
-  document.getElementById("countDisplay").textContent = itemCount; // Update the display div
-}
-
-/* ეს კოდი ამატებს და აცილებს ფავორიტის კლასს */
-document.addEventListener("DOMContentLoaded", function () {
-  const childDivs = document.querySelectorAll(".PS-heart-div"); // Select all child divs
-
-  childDivs.forEach((childDiv) => {
-    childDiv.addEventListener("click", function () {
-      // 'this' refers to the clicked childDiv
-      // .parentNode gets the immediate parent element
-      this.parentNode.classList.toggle("PS-favorite"); // Toggle a class on the parent
-    });
-  });
-});
-
-/* ეს კოდი ითვლის და გვიჩვენებს ფავორიტის კლასს */
+// function updateItemCount() {
+//   const items = document.querySelectorAll(".PS-favorite"); // Select all elements with class 'item'
+//   const itemCount = items.length; // Get the count of selected elements
+//   document.getElementById("countDisplay").textContent = itemCount; // Update the display div
+// }
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const items = document.querySelectorAll("PS-favorite");
@@ -628,59 +555,6 @@ START for index-PDP page
 //   ???????
 
 /* ----- Scroll Window START ----- */
-
-/*     URL copy MODAL START     */
-
-// const openModalBtn = document.getElementById("PS-openModalBtn");
-// const copyLinkModal = document.getElementById("PS-copyLinkModal");
-// const closeModalBtn = document.getElementById("PS-closeModalBtn");
-// const copyBtn = document.getElementById("PS-copyBtn");
-// const linkToCopyInput = document.getElementById("PS-linkToCopy");
-
-// openModalBtn.addEventListener("click", () => {
-//   copyLinkModal.classList.add("PS-show-modal");
-// });
-
-// closeModalBtn.addEventListener("click", () => {
-//   copyLinkModal.classList.remove("PS-show-modal");
-// });
-
-// // Close modal when clicking outside the content
-// copyLinkModal.addEventListener("click", (event) => {
-//   if (event.target === copyLinkModal) {
-//     copyLinkModal.classList.remove("PS-show-modal");
-//   }
-// });
-
-// copyBtn.addEventListener("click", () => {
-//   linkToCopyInput.select(); // Select the text in the input field
-//   linkToCopyInput.setSelectionRange(0, 99999); // For mobile devices
-
-//   // Copy the text to the clipboard
-//   if (navigator.clipboard && navigator.clipboard.writeText) {
-//     navigator.clipboard
-//       .writeText(linkToCopyInput.value)
-//       .then(() => {
-//         copyBtn.textContent = "Copied!";
-//         setTimeout(() => {
-//           copyBtn.textContent = "Copy";
-//         }, 2000); // Reset button text after 2 seconds
-//       })
-//       .catch((err) => {
-//         console.error("Failed to copy text: ", err);
-//         alert("Failed to copy link. Please copy it manually.");
-//       });
-//   } else {
-//     // Fallback for older browsers
-//     document.execCommand("copy");
-//     copyBtn.textContent = "Copied!";
-//     setTimeout(() => {
-//       copyBtn.textContent = "Copy";
-//     }, 2000);
-//   }
-// });
-
-/*     URL copy MODAL END     */
 
 /* - - - - - - - -
 
