@@ -1380,6 +1380,14 @@ nav {
   letter-spacing: 0%;
   color: #333333;
 }
+.newquizright img {
+  width: 100%;
+  max-width: 636px;
+  height: 796px;
+}
+.pngmobile {
+  display: none;
+}
 .newstartquiz {
   display: flex;
   /* gap: 10px; */
@@ -7030,7 +7038,6 @@ for index-List.css     END
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
   }
   .lmwrapper4left {
     width: 100%;
@@ -7048,7 +7055,7 @@ for index-List.css     END
     color: #333333;
     margin-top: 30px;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 344px;
     width: 100%;
     display: flex;
     margin-top: 30px;
@@ -7057,7 +7064,6 @@ for index-List.css     END
   .lmwrapper4left p {
     width: 344px;
     /* m 344px; */
-    margin-left: 0px;
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
     font-style: 55 Roman;
@@ -7066,19 +7072,21 @@ for index-List.css     END
     letter-spacing: 0%;
     color: #333333;
     margin-bottom: 30px;
+    margin: 0 auto;
   }
   .lmwrapper4right {
-    margin-left: 0px;
     background-color: white;
     margin-top: -50px;
     width: 344px;
     height: 226px;
+    margin: 0 auto;
   }
   .lmwrapper4right img {
     width: 344px;
     height: 226px;
     opacity: 1;
     border-radius: 12px;
+    margin: 0 auto;
   }
   .lmvissionsection {
     width: 100%;
@@ -7086,6 +7094,7 @@ for index-List.css     END
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 30px;
   }
   .lmwrapper5 {
     /* display: flex; */
@@ -7137,15 +7146,12 @@ for index-List.css     END
     margin: 0 auto;
     display: block;
     padding-left: 0;
-    margin-left: 0;
-    margin-left: 30px;
     margin-bottom: 40px;
   }
   .lmwrapper5right {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    margin-left: 30px;
   }
   .lmwrapper5right h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -7157,6 +7163,10 @@ for index-List.css     END
     letter-spacing: 1px;
     margin-top: 0px;
     color: #333333;
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   .lmwrapper5right p {
     font-family: "Helvetica Neue LT GEO 55 Roman";
@@ -7169,6 +7179,7 @@ for index-List.css     END
     color: #333333;
     width: 100%;
     max-width: 344px;
+    margin: 0 auto;
   }
   .lmteamsection {
     width: 100%;
@@ -7177,7 +7188,6 @@ for index-List.css     END
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0 auto;
-    margin-left: 30px;
     margin-bottom: 0px;
   }
   .lmteamsection h1 {
@@ -7191,15 +7201,17 @@ for index-List.css     END
     color: #333333;
     margin-top: 0px;
     margin-left: 0;
+    max-width: 344px;
+    margin: 0 auto;
   }
   .lmteamwrapper {
     width: 100%;
-    max-width: 600px;
+    max-width: 344px;
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 16px;
   }
   .lmfullcycle {
     width: 164px;
@@ -7271,13 +7283,14 @@ for index-List.css     END
     margin-bottom: 20px;
   }
   .newquizleft p {
-    font-family: "Helvetica Neue LT GEO roman";
+    font-family: "Helvetica Neue LT GEO 55 roman";
     font-weight: 400;
     font-style: 55 Roman;
     font-size: 13px;
     leading-trim: NONE;
     line-height: 17px;
     letter-spacing: 0%;
+    color: #333333;
   }
   .newquizright {
     order: 1;
@@ -7285,10 +7298,28 @@ for index-List.css     END
   .newquizright img {
     width: 100%;
     max-width: 343px;
+    height: 249px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
+  .pngmobile {
+    display: flex;
+  }
+  .pngdesct {
+    display: none;
+  }
+  .newstartquiz {
+    margin-bottom: 30px;
+    height: 32px;
+    font-family: "Helvetica Neue LT GEO Caps 75 roman";
+    font-weight: 700;
+    font-style: 75 Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 5%;
+    vertical-align: bottom;
+  }
   /* quiz media start */
   /* quiz media start */
 
