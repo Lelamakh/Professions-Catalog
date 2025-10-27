@@ -2588,7 +2588,19 @@ label {
 }
 
 .PS-name > h1 {
-  /* height: 90px; */
+  background-color: #ffffff;
+  /* border: solid red 1px; */
+  /* width: 318px; */
+  height: 52px;
+
+  text-overflow: ellipsis;
+
+  overflow: hidden;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2; /* ზღუდავს ტექსტს 2 სტრიქონამდე */
+  -webkit-box-orient: vertical;
+
+  /* white-space: nowrap; */
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
@@ -2596,6 +2608,20 @@ label {
   line-height: 26px;
   letter-spacing: 5%;
   color: #333333;
+  position: relative;
+}
+
+.PS-name > h1:hover {
+  position: absolute;
+  width: 294px;
+  height: auto;
+
+  background-color: #ffffff;
+  overflow: visible;
+
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 6; /* ზღუდავს ტექსტს 2 სტრიქონამდე */
+  -webkit-box-orient: vertical;
 }
 
 .PS-card-info h3 {
@@ -6314,7 +6340,7 @@ for index-List.css     START
   }
 
   .PS-name > h1 {
-    /* height: 90px; */
+    height: 32px;
 
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-weight: 700;
@@ -6322,6 +6348,20 @@ for index-List.css     START
     line-height: 16px;
     letter-spacing: 5%;
     color: #333333;
+  }
+
+  .PS-name > h1:hover {
+    /* border: solid grey 2px; */
+    position: absolute;
+    width: 148px;
+    height: auto;
+
+    background-color: #ffffff;
+    overflow: visible;
+
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 6; /* ზღუდავს ტექსტს 2 სტრიქონამდე */
+    -webkit-box-orient: vertical;
   }
 
   /* .PS-name span {
