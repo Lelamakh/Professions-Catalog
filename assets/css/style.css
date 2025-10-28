@@ -2024,11 +2024,11 @@ for index-List.css     START
 .PS-search {
   margin: 0 auto;
   width: 1440px;
-  height: 96px;
+  height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 26px 0 16px;
+  padding: 48px;
 }
 
 .PS-fing-job-you-love {
@@ -2209,12 +2209,13 @@ for index-List.css     START
 
 .PS-filter {
   /* border: solid red 1px; */
-  margin: 0 auto;
+  margin: 0;
   width: 366px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   position: relative;
+  padding: 0 24px 0 48px;
 }
 
 .PS-filter-name {
@@ -2232,7 +2233,7 @@ for index-List.css     START
   /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
 }
 
 .close2 {
@@ -2254,13 +2255,16 @@ for index-List.css     START
   line-height: 31px;
   letter-spacing: 0%;
   color: #333333;
+  padding-bottom: 16px;
 }
 
 .PS-filter-name-content {
+  /* border: solid red 1px; */
+  margin: 0;
+  padding: 16px 5px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 5px;
 }
 
 .PS-filter-sphere {
@@ -2357,8 +2361,8 @@ label {
 .PS-filter-buttons {
   display: flex;
   justify-content: space-between;
-  width: 304px;
-  padding: 0 5px;
+  width: 294px;
+  padding: 16px 0;
 }
 
 .PS-filter-button-1 {
@@ -2611,7 +2615,7 @@ label {
   position: relative;
 }
 
-.PS-name > h1:hover {
+/* .PS-name > h1:hover {
   position: absolute;
   width: 294px;
   height: auto;
@@ -2620,9 +2624,9 @@ label {
   overflow: visible;
 
   display: -webkit-inline-box;
-  -webkit-line-clamp: 6; /* ზღუდავს ტექსტს 2 სტრიქონამდე */
+  -webkit-line-clamp: 6; /* ზღუდავს ტექსტს 2 სტრიქონამდე 
   -webkit-box-orient: vertical;
-}
+} */
 
 .PS-card-info h3 {
   font-family: "Helvetica Neue LT GEO 65";
@@ -2699,9 +2703,9 @@ footer {
   /* outline: solid red 1px; */
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   /* width: 100%; */
-  width: 294px;
+  width: 284px;
   /* padding: 20px; */
   background: #ffffff;
   /* border-radius: 12px; */
@@ -2823,7 +2827,7 @@ for index-PDP.css     START
 .PS-section-1 {
   background-color: #fbeff7;
   /* პროფესიის სახელი */
-  padding: 20px;
+  padding: 32px 48px;
   margin: 0 auto;
   width: 1440px;
   height: 156px;
@@ -3456,14 +3460,15 @@ img {
 }
 
 .PS-section-4 {
+  /* border: solid red 1px;s */
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255, 255, 255, 1);
   margin: 0 auto;
   width: 1440px;
-  height: 409px;
-  padding: 24px;
+  height: 288px;
+  padding: 0 48px;
 }
 
 .PS-section-4-name {
@@ -3618,10 +3623,11 @@ img {
 }
 
 .PS-section-5 {
+  /* border: solid red 1px; */
   background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
   margin: 0 auto;
-  padding: 0 0 0 24px;
+  padding: 0 48px;
   width: 1440px;
   display: flex;
   flex-direction: column;
@@ -3640,11 +3646,11 @@ img {
 
 .PS-cards {
   /* border: solid red 1px; */
-  width: 1392px;
+  width: 1344px;
   /* margin: 0 auto; */
   display: flex;
   gap: 24px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
@@ -3708,7 +3714,7 @@ for slider START
 
 /* Position the "next button" to the right */
 .PS-next-arrow {
-  right: 16px;
+  right: 48px;
   /*   border-radius: 3px 0 0 3px; */
 }
 
