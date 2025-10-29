@@ -471,7 +471,7 @@ nav {
   font-size: 28px;
   /* leading-trim: NONE; */
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   color: #333333;
 }
 .lmmobicon {
@@ -567,7 +567,7 @@ nav {
 .lmcards {
   width: 100%;
   max-width: 1344px;
-  margin-top: 30px;
+  margin-top: 48px;
   margin-left: 48px;
   margin-right: 48px;
   display: flex;
@@ -752,8 +752,8 @@ nav {
   margin-left: 48px;
 }
 .dayprofwrapper {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 48px;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -781,7 +781,7 @@ nav {
   font-size: 28px;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
 }
 .daywrapperleft p {
   font-family: "Helvetica Neue LT GEO 55 roman";
@@ -861,7 +861,7 @@ nav {
   font-size: 28px;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
 }
 .lmwrapper2right p {
   font-family: "Helvetica Neue LT GEO 55 roman";
@@ -930,7 +930,7 @@ nav {
   font-style: 75 Bold;
   font-size: 28px;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   color: #333333;
 }
 .lm-next-arrow {
@@ -1128,42 +1128,42 @@ nav {
 
 /* --------------page2 ------------------------------------------- */
 
-.lmmissionsection {
-  margin-bottom: 50px;
-}
 .lmwrapper4 {
   display: flex;
   width: 100%;
   max-width: 1344px;
   margin-left: 48px;
   justify-content: space-between;
-  margin-top: 100px;
-  gap: 40px;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 72px;
+  align-items: center;
+  gap: 70px;
 }
 .lmwrapper4left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  margin-bottom: 40px;
+  justify-content: center;
+  /* align-items: center; */
 }
 .lmwrapper4left h1 {
   font-size: 28px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   font-weight: 700;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
 }
 
 .lmwrapper4left p {
   width: 100%;
-  max-width: 722px;
+  max-width: 724px;
   color: #333333;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
   letter-spacing: 0%;
 }
 .lmwrapper4left button {
@@ -1181,7 +1181,7 @@ nav {
 .lmwrapper4right {
   width: 100%;
   max-width: 548px;
-  height: 395px;
+  height: 367px;
   background-color: #ececec;
   margin-left: 40px;
   margin-bottom: 40px;
@@ -1197,14 +1197,14 @@ nav {
   align-items: center;
 }
 .lmwrapper5 {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 72px;
 }
 .lmvissionsection {
-  margin-bottom: 100px;
+  margin-bottom: 72px;
   /* display: flex; */
 }
 .lmwrapper5left {
@@ -1238,7 +1238,7 @@ nav {
 .lmwrapper5right h1 {
   font-size: 28px;
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: 75 Bold;
@@ -1268,7 +1268,6 @@ nav {
 .lmteamsection {
   width: 100%;
   max-width: 1344px;
-  margin-bottom: 30px;
 }
 .lmteamsection h1 {
   margin-left: 46px;
@@ -1279,7 +1278,8 @@ nav {
   font-style: 75 Bold;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
+  margin-bottom: 32px;
 }
 .lmteamwrapper {
   flex-wrap: wrap;
@@ -1288,7 +1288,6 @@ nav {
   max-width: 1344px;
   margin-left: 48px;
   justify-content: space-between;
-  margin-top: 60px;
 }
 .lmfullcycle {
   display: flex;
@@ -1352,8 +1351,8 @@ nav {
   width: 1344px;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 .newquizleft {
   width: 100%;
@@ -1368,7 +1367,7 @@ nav {
   line-height: 36px;
   letter-spacing: 5%;
   color: #333333;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .newquizleft p {
   font-family: "Helvetica Neue LT GEO roman";
@@ -1412,7 +1411,6 @@ nav {
   height: 52px;
   border-radius: 12px;
   padding: 10px 50px 10px 50px;
-  margin-top: 30px;
   background-color: #6d5baf;
   border-color: #6d5baf;
   color: white;
@@ -1422,9 +1420,9 @@ nav {
   font-weight: 700;
   font-style: 75 Bold;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   vertical-align: bottom;
-  margin-top: 37px;
+  margin-top: 58px;
 }
 /* ________________new quiz____________________- */
 
@@ -6730,7 +6728,8 @@ for index-List.css     END
     align-items: center;
     text-align: center;
     padding: 6px 12px;
-    margin-bottom: 30px;
+    margin-bottom: 56px;
+    margin-top: -30px;
   }
   .lmfirstsectionright {
     display: none;
@@ -6762,7 +6761,7 @@ for index-List.css     END
     line-height: 17px;
     letter-spacing: 0%;
     color: #333333;
-    /* margin-top: 15px; */
+    margin-top: -15px;
   }
   .lmwrapper2 {
     /* border: solid red 1px; */
@@ -6827,7 +6826,7 @@ for index-List.css     END
     letter-spacing: 1px;
     color: #333333;
     /* margin-left: 33px; */
-    margin-top: -30px;
+    margin-top: -45px;
   }
   .lmwrapper2left {
     width: 100%;
@@ -6836,16 +6835,14 @@ for index-List.css     END
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 249px; */
-    /* margin-left: 31px; */
-    /* box-sizing: border-box; */
   }
   .lmwrapper2left img {
     width: 100%;
     max-width: 345px;
+    height: 249px;
+    /* box-sizing: border-box; */
     display: flex;
     justify-content: center;
-    height: auto;
     display: block;
     order: 1;
     margin: 0 auto;
@@ -6858,12 +6855,12 @@ for index-List.css     END
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 600px;
   }
 
   .daywrapperright img {
-    width: 345px;
+    max-width: 345px;
+    width: 100%;
+    height: 249px;
     margin-left: 0;
     margin-top: 0;
   }
@@ -7135,7 +7132,6 @@ for index-List.css     END
   }
   .lmwrapper4right {
     background-color: white;
-    margin-top: -50px;
     width: 344px;
     height: 226px;
     margin: 0 auto;
@@ -7146,6 +7142,7 @@ for index-List.css     END
     opacity: 1;
     border-radius: 12px;
     margin: 0 auto;
+    margin-top: -80px;
   }
   .lmvissionsection {
     width: 100%;
@@ -7153,7 +7150,6 @@ for index-List.css     END
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 30px;
   }
   .lmwrapper5 {
     /* display: flex; */
@@ -7164,27 +7160,7 @@ for index-List.css     END
     flex-direction: column;
     margin: 0 auto;
   }
-  /* .lmwrapper2left {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 249px; */
-  /* margin-left: 31px; */
 
-  /* .lmwrapper2left img {
-    width: 100%;
-    max-width: 345px;
-    height: auto;
-    display: block;
-    order: 1;
-    margin: 0 auto;
-    object-fit: contain;
-    padding-left: 0;
-    margin-left: 0;
-  } */
   .lmwrapper5left {
     order: 2;
     width: 100%;
@@ -7205,7 +7181,8 @@ for index-List.css     END
     margin: 0 auto;
     display: block;
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    margin-top: -50px;
   }
   .lmwrapper5right {
     width: 100%;
@@ -7225,7 +7202,7 @@ for index-List.css     END
     width: 100%;
     max-width: 344px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   .lmwrapper5right p {
     font-family: "Helvetica Neue LT GEO 55 Roman";
@@ -7339,7 +7316,7 @@ for index-List.css     END
     line-height: 23px;
     letter-spacing: 1px;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   .newquizleft p {
     font-family: "Helvetica Neue LT GEO 55 roman";
@@ -7367,8 +7344,8 @@ for index-List.css     END
     width: 100%;
     max-width: 343px;
     height: 249px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   .pngmobile {
     display: flex;
@@ -7377,7 +7354,8 @@ for index-List.css     END
     display: none;
   }
   .newstartquiz {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    margin-top: 16px;
     height: 32px;
     font-family: "Helvetica Neue LT GEO Caps 75 roman";
     font-weight: 700;
@@ -7385,7 +7363,7 @@ for index-List.css     END
     font-size: 15px;
     leading-trim: NONE;
     line-height: 20px;
-    letter-spacing: 5%;
+    letter-spacing: 0.8px;
     vertical-align: bottom;
   }
   /* quiz media start */
