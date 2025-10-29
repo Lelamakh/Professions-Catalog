@@ -512,7 +512,7 @@ nav {
   font-size: 16px;
   leading-trim: NONE;
   /* line-height: 22px; */
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 .lmfirstbutton {
   color: black;
@@ -532,7 +532,7 @@ nav {
   font-size: 16px;
   leading-trim: NONE;
   /* line-height: 22px; */
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 .lmsecondbutton12 {
   display: inline-block;
@@ -556,7 +556,7 @@ nav {
   font-size: 16px;
   leading-trim: NONE;
   /* line-height: 22px; */
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 .lmdirections {
   display: flex;
@@ -581,7 +581,7 @@ nav {
   margin-top: 40px;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   color: #333333;
 }
 .lmcategories img {
@@ -655,7 +655,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -675,7 +675,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -692,7 +692,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -726,7 +726,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -743,7 +743,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -894,7 +894,7 @@ nav {
   font-weight: 700;
   font-style: 75 Bold;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   vertical-align: bottom;
 }
 .lmknowmore {
@@ -918,7 +918,7 @@ nav {
   font-weight: 700;
   font-style: 75 Bold;
   line-height: 22px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   /* vertical-align: bottom; */
 }
 .lmmaintitle1 {
@@ -1000,7 +1000,7 @@ nav {
   font-size: 18px;
   leading-trim: NONE;
   line-height: 23px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   color: #333333;
   margin-bottom: 20px;
 }
@@ -1060,7 +1060,7 @@ nav {
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 
 .lmwrapper3left p {
@@ -1243,7 +1243,7 @@ nav {
   font-weight: 700;
   font-style: 75 Bold;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 .lmwrapper5right p {
   line-height: 24px;
@@ -1311,7 +1311,7 @@ nav {
   font-style: 75 Bold;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   color: #333333;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #1a1a1a;
@@ -1332,7 +1332,7 @@ nav {
   font-size: 12px;
   leading-trim: NONE;
   line-height: 16px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
 }
 .lmiconandprof img {
   width: 20px;
@@ -1365,7 +1365,7 @@ nav {
   font-size: 28px;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   color: #333333;
   margin-bottom: 32px;
 }
@@ -1447,7 +1447,7 @@ nav {
   font-size: 28px;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 5%;
+  letter-spacing: 0.8px;
   color: #333333;
 }
 .lmprogressbar {
