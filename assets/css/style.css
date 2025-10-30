@@ -4973,7 +4973,7 @@ for index-Contact.css     END
     background-color: #ffffff;
     max-width: 600px;
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
   }
 
@@ -5016,7 +5016,7 @@ for index-Contact.css     END
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px 0;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -5553,7 +5553,7 @@ for index-Contact.css     END
 
   .PS-section-5-name {
     margin: 0 auto;
-    margin-bottom: 0;
+    width: 344px;
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-size: 18px;
     line-height: 23px;
