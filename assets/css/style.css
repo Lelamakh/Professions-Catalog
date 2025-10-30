@@ -1370,7 +1370,7 @@ nav {
   margin-bottom: 32px;
 }
 .newquizleft p {
-  font-family: "Helvetica Neue LT GEO roman";
+  font-family: "Helvetica Neue LT GEO 55 roman";
   font-weight: 400;
   font-style: 55 Roman;
   font-size: 18px;
@@ -3317,14 +3317,14 @@ img {
   border-radius: 8px;
 } */
 
-.swiper-button-next {
+/* .swiper-button-next {
   color: #e7e4f5e5;
-  /* opacity: 50%; */
+  /* opacity: 50%; 
 }
 
 .swiper-button-next > img {
   width: 48px;
-}
+} */
 
 /*--------------------   ფოტო გალერეა დასასრული   -------------------- */
 /*--------------------   ფოტო გალერეა დასასრული   -------------------- */
@@ -3729,6 +3729,11 @@ for slider START
 
 .PS-next-arrow:active {
   background-color: #6d5baf;
+}
+
+.hidden {
+  display: none !important;
+  /* or visibility: hidden; */
 }
 
 /* 
