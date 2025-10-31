@@ -2152,7 +2152,7 @@ for index-List.css     START
   /* border: solid red 1px; */
   /* height: 50px; */
   background-color: #ffffff;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
 
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -3590,6 +3590,39 @@ img {
   letter-spacing: 5%;
 }
 
+/* For Swiper Slider START */
+
+.swiper-container {
+  /* border: solid red 1px; */
+  width: 100%;
+  height: 410px !important;
+  overflow: hidden;
+  /* height: 200px; Adjust height as needed */
+  position: relative;
+  gap: 24px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+/* Style for the pagination dots */
+.swiper-pagination-bullet-active {
+  width: 20px;
+  background-color: #6d5baf; /* Customize active dot color */
+}
+
+/* For Swiper Slider END */
+
 .PS-section-similar-professions-cards {
   display: flex;
   gap: 24px;
@@ -3645,8 +3678,10 @@ img {
 .PS-cards {
   /* border: solid red 1px; */
   width: 1344px;
+  height: 316px;
   /* margin: 0 auto; */
   display: flex;
+  align-items: center;
   gap: 24px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -4754,6 +4789,7 @@ for index-Contact.css     END
 
   header {
     /* border: solid black 1px; */
+    position: fixed;
     margin: 0 auto;
     background-color: #6d5baf;
     max-width: 600px;
@@ -4761,6 +4797,7 @@ for index-Contact.css     END
     padding: 16px;
     height: 56px;
     align-items: center;
+    z-index: 30;
   }
 
   /* nav {
@@ -4858,6 +4895,7 @@ for index-Contact.css     END
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    animation: slideFromTop 0.5s ease-out forwards;
   }
 
   /* Styles for the modal content */
@@ -4873,6 +4911,17 @@ for index-Contact.css     END
   /* The class to make the modal visible */
   .PS-modal-overlay.active {
     display: flex; /* Or 'block' depending on your needs */
+  }
+
+  @keyframes slideFromTop {
+    from {
+      transform: translate(100%, -100%); /* Start above the viewport */
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0); /* End in the center */
+      opacity: 1;
+    }
   }
 
   /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -5492,6 +5541,52 @@ for index-Contact.css     END
     letter-spacing: 5%;
   }
 
+  /* For Swiper Slider START */
+
+  .swiper-container {
+    /* border: solid red 1px; */
+    width: 344px;
+    height: 254px !important;
+    margin: 0 auto;
+    overflow: hidden;
+    /* height: 200px; Adjust height as needed */
+    position: relative;
+    display: flex;
+    gap: 16px;
+  }
+
+  .swiper-slide {
+    /* border: solid red 1px; */
+    width: 164px !important;
+    height: 230px;
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    /* border: solid red 1px; */
+    position: absolute;
+    padding: 0;
+    bottom: 1px !important;
+    /* height: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Style for the pagination dots */
+  .swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 4px;
+    background-color: #6d5baf; /* Customize active dot color */
+  }
+
+  /* For Swiper Slider END */
+
   .PS-section-similar-professions-cards {
     /* border: solid red 1px; */
     display: flex;
@@ -5930,27 +6025,31 @@ for index-List.css     START
     position: fixed; /* Stay in place */
     z-index: 3; /* Sit on top */
     left: 0;
-    top: 0;
+    top: 56px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    z-index: 20;
+    animation: slideFromTop 0.5s ease-out forwards;
   }
 
   /* Modal Content/Box */
   .PS-favorites-modal {
     /* border: solid red 1px; */
-    margin-left: 0px;
+    margin: 0 auto;
+    padding: 16px;
     display: flex;
-    justify-content: space-between;
-    align-items: end;
-    width: 344px;
-    height: 44px;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    height: 64px;
 
     /* height: 50px; */
     background-color: #ffffff;
     position: fixed;
+
     z-index: 1;
 
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -5961,15 +6060,18 @@ for index-List.css     START
   }
 
   .modal-content {
+    display: flex;
+    flex-direction: column;
     background-color: #fefefe;
-    padding-left: 16px;
+    padding: 0;
     /* border: 1px solid #888; */
-    width: 376px; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
     /* height: 709px; */
     overflow: scroll;
-    position: absolute;
-    top: 0;
-    right: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    margin: 0 auto;
   }
 
   /* The Close Button */
@@ -5991,8 +6093,9 @@ for index-List.css     START
   }
 
   .PS-modal-content-cards {
-    max-width: 376px;
-    margin-top: 100px;
+    margin: 0 auto;
+    max-width: 344px;
+    margin-top: 74px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;

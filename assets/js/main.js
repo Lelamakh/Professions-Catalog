@@ -573,6 +573,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* მსგავსი პროფესიების სლაიდერის დასაწყისი */
+
+let mySwiper = new Swiper(".my-slider", {
+  // Default settings for screens less than 600px (mobile-first approach)
+  slidesPerView: 2,
+  spaceBetween: 16,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 600px
+    600: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+/* მსგავსი პროფესიების სლაიდერის დასასრული */
+
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
 
 // Select the necessary elements from the DOM

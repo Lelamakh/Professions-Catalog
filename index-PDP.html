@@ -6,6 +6,10 @@
     <title>Profession detail page</title>
     <link
       rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -413,7 +417,8 @@
 
     <section class="PS-section-similar-professions">
       <h1>მსგავსი პროფესიები</h1>
-      <div class="PS-section-similar-professions-cards">
+
+      <!-- <div class="PS-section-similar-professions-cards">
         <div class="PS-result-card">
           <div class="PS-heart-div">
             <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
@@ -496,6 +501,99 @@
         <span class="PS-Spans-1"></span>
 
         <span class="PS-Spans-1"></span>
+      </div> -->
+
+      <!-- Slider main container -->
+      <div class="swiper-container my-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <a href="index-PDP.html">
+                <img
+                  src="assets/images/3d გრაფიკოსი.png"
+                  alt="3D გრაფიკოსი.png"
+                />
+              </a>
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>3D გრაფიკოსი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>500 - 3000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/front-end დეველოპერი.png"
+                alt="Front-End დეველოპერი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>FRONT-END დეველოპერი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი/ მოთხოვნა</h4>
+                  <h4>500 - 6000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/HR ადმინისტრირების სპეციალისტი.png"
+                alt="HR ადმინისტრირების სპეციალისტი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>HR ადმინისტრირების სპეციალისტი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>1000 - 3000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/hr მენეჯერი სპეციალისტი.png"
+                alt="hr მენეჯერი სპეციალისტი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>HR მენეჯერი/ სპეციალისტი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>2500 - 15000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="PS-section-5">
@@ -594,6 +692,7 @@
         <p>2025 Profesia. All rights reserved.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
