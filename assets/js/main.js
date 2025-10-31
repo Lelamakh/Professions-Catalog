@@ -572,72 +572,78 @@ document.addEventListener("DOMContentLoaded", function () {
     // }
   });
 });
+
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Select the necessary elements from the DOM
-  const scrollContainer = document.querySelector(".PS-cards");
-  const nextBtn = document.querySelector(".PS-next-arrow");
-  const prevBtn = document.querySelector(".PS-prev-arrow");
+// Select the necessary elements from the DOM
+const scrollContainer = document.querySelector(".PS-cards");
+const nextBtn = document.querySelector(".PS-next-arrow");
+const prevBtn = document.querySelector(".PS-prev-arrow");
 
-  // Define the scroll amount
-  const scrollAmount = 600; // This controls how far the slider moves with each click
+// Define the scroll amount
+const scrollAmount = 624; // This controls how far the slider moves with each click
 
-  // Function to check scroll position and toggle button visibility
-  const checkScrollPosition = () => {
-    if (!scrollContainer || !nextBtn || !prevBtn) return;
+// Function to check scroll position and toggle button visibility
+const checkScrollPosition = () => {
+  if (!scrollContainer || !nextBtn || !prevBtn) return;
 
-    const maxScrollLeft =
-      scrollContainer.scrollWidth - scrollContainer.clientWidth;
-    const currentScrollLeft = scrollContainer.scrollLeft;
-    // A small buffer for floating point inaccuracies
-    const buffer = 1;
+  const maxScrollLeft =
+    scrollContainer.scrollWidth - scrollContainer.clientWidth;
+  const currentScrollLeft = scrollContainer.scrollLeft;
+  // A small buffer for floating point inaccuracies
+  const buffer = 1;
 
-    // Hide prevBtn if at the very start
-    if (currentScrollLeft <= buffer) {
-      prevBtn.classList.add("hidden");
-    } else {
-      prevBtn.classList.remove("hidden");
-    }
-
-    // Hide nextBtn if at or very near the end
-    if (currentScrollLeft >= maxScrollLeft - buffer) {
-      nextBtn.classList.add("hidden");
-    } else {
-      nextBtn.classList.remove("hidden");
-    }
-  };
-
-  // Add a click event listener to the "next" button
-  if (nextBtn && scrollContainer) {
-    nextBtn.addEventListener("click", () => {
-      scrollContainer.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
-      // check position after scroll completes (using a timeout for smooth behavior)
-      setTimeout(checkScrollPosition, 500); // Adjust timeout based on your smooth duration
-    });
+  // Hide prevBtn if at the very start
+  if (currentScrollLeft <= buffer) {
+    prevBtn.classList.add("hidden");
+  } else {
+    prevBtn.classList.remove("hidden");
   }
 
-  // Add a click event listener to the "previous" button
-  if (prevBtn && scrollContainer) {
-    prevBtn.addEventListener("click", () => {
-      scrollContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
-      // check position after scroll completes
-      setTimeout(checkScrollPosition, 500); // Adjust timeout based on your smooth duration
-    });
+  // Hide nextBtn *only* if the user is at the very end of the content
+  if (currentScrollLeft >= maxScrollLeft - buffer) {
+    nextBtn.classList.add("hidden");
+  } else {
+    nextBtn.classList.remove("hidden");
   }
+};
 
-  // Also check position when the page loads (initial state)
+// Add a click event listener to the "next" button
+if (nextBtn && scrollContainer) {
+  nextBtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth", // Added smooth behavior for consistency
+    });
+    // Removed setTimeout, relying on the scroll event listener below
+  });
+}
+
+// Add a click event listener to the "previous" button
+if (prevBtn && scrollContainer) {
+  prevBtn.addEventListener("click", () => {
+    scrollContainer.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth",
+    });
+    // Removed setTimeout, relying on the scroll event listener below
+  });
+}
+
+// *********** MODIFICATION ***********
+// Check position when the page loads *except* for the next button's hiding logic
+
+const initialCheck = () => {
   checkScrollPosition();
+  // Force the next button to be visible initially, even if there's no room to scroll
+  nextBtn.classList.remove("hidden");
+};
 
-  // And check position when the user manually scrolls (e.g., using mouse wheel or drag)
-  scrollContainer.addEventListener("scroll", checkScrollPosition);
-});
+initialCheck();
+
+// And check position when the user manually scrolls (e.g., using mouse wheel or drag)
+// The standard scroll listener keeps all logic active during user interaction
+scrollContainer.addEventListener("scroll", checkScrollPosition);
 
 /* ============ შენთვის საინტერესო კურსები SLIDER END ============ */
 
