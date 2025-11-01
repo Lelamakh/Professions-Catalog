@@ -5687,7 +5687,7 @@ for index-Contact.css     END
     /* border: solid blue 1px; */
     height: 100%;
     width: 32px;
-    background-image: url(/assets/images/Roadmap-module-mobile.png);
+    background-image: url(../images/Roadmap-module-mobile.png);
     background-size: 20px auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -5715,7 +5715,7 @@ for index-Contact.css     END
     /* border: solid blue 1px; */
     height: 53px;
     width: 32px;
-    background-image: url(/assets/images/Roadmap-module-Arrow-tip-mobile.png);
+    background-image: url(../images/Roadmap-module-Arrow-tip-mobile.png);
     background-size: 20px auto;
     background-repeat: no-repeat;
     background-position: bottom;
