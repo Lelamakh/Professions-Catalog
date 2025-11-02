@@ -2822,8 +2822,50 @@ for index-PDP.css     START
 ----------------------------------------------------------------------------------------------
 */
 
+.designer {
+  background-color: #fbeff7 !important;
+}
+.designer-p {
+  border: 2px solid #cc33a1 !important;
+}
+
+.it-development {
+  background-color: #dceeff !important;
+}
+.it-development-p {
+  border: 2px solid #3366cc !important;
+}
+
+.marketing {
+  background-color: #fbf7ef !important;
+}
+.marketing-p {
+  border: 2px solid #ffc229 !important;
+}
+
+.sellings {
+  background-color: #daf3ec !important;
+}
+.sellings-p {
+  border: 2px solid #2ca678 !important;
+}
+
+.photo-video {
+  background-color: #fbf4ef !important;
+}
+.photo-video-p {
+  border: 2px solid #fe8b3f !important;
+}
+
+.management {
+  background-color: #fbefef !important;
+}
+.management-p {
+  border: 2px solid #ff5555 !important;
+}
+
 .PS-section-1 {
-  background-color: #fbeff7;
+  background-color: aqua;
   /* პროფესიის სახელი */
   padding: 32px 48px;
   margin: 0 auto;
@@ -3007,7 +3049,7 @@ for index-PDP.css     START
   font-size: 20px;
   font-weight: 700;
   padding: 32px;
-  background-color: #fbeff7;
+  background-color: transparent;
   border-radius: 12px;
   width: 204px;
   height: 92px;
@@ -3017,7 +3059,7 @@ for index-PDP.css     START
   justify-content: center;
   color: #1a1a1a;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05);
-  border: 2px solid #cc33a1;
+  border: 2px dashed red;
 }
 
 .PS-sec-1-div-2-span {
