@@ -6352,7 +6352,7 @@ for index-List.css     START
   }
 
   .PS-filter {
-    /* border: solid red 1px; */
+    border: solid red 1px;
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
@@ -6360,7 +6360,7 @@ for index-List.css     START
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 0;
+    padding: 24px 0;
     position: absolute;
     top: 56px;
     left: 0;
