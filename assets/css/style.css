@@ -2193,7 +2193,7 @@ for index-List.css     START
 }
 
 .PS-modal-content-cards {
-  margin-top: 100px;
+  margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -6352,7 +6352,7 @@ for index-List.css     START
   }
 
   .PS-filter {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
@@ -6360,7 +6360,7 @@ for index-List.css     START
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 24px 0;
+    padding: 0;
     position: absolute;
     top: 56px;
     left: 0;
@@ -6388,6 +6388,7 @@ for index-List.css     START
   .PS-filter-name2 {
     /* border: solid red 1px; */
     /* width: 344px; */
+    padding-top: 24px;
     font-family: "Helvetica Neue LT GEO CAPS 75 Roman";
     font-weight: 700;
     font-style: 75 Bold;

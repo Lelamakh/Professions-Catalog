@@ -208,31 +208,43 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the modal
+  // Check if the current page title is "index-List"
+  if (document.title !== "List") {
+    return; // Exit the function if the title doesn't match
+  }
+
+  // Get the modal element
   let PSFilterModal = document.getElementById("PS-filter-input");
 
   // Get the button that opens the modal
   let filterBtn = document.getElementById("PS-filter-name");
 
-  // Get the <span> element that closes the modal
+  // Get the first <span> element with class "close2" that closes the modal
   let FilterSpan = document.getElementsByClassName("close2")[0];
 
-  // When the user clicks on the button, open the modal
-  filterBtn.onclick = function () {
-    PSFilterModal.style.display = "flex";
-  };
+  // Only proceed if all necessary elements are found
+  if (PSFilterModal && filterBtn && FilterSpan) {
+    // When the user clicks on the button, open the modal
+    filterBtn.onclick = function () {
+      // Use 'flex' for better centering on both desktop and mobile
+      PSFilterModal.style.display = "flex";
+    };
 
-  // When the user clicks on <span> (x), close the modal
-  FilterSpan.onclick = function () {
-    PSFilterModal.style.display = "none";
-  };
+    // When the user clicks on <span> (x), close the modal
+    FilterSpan.onclick = function () {
+      PSFilterModal.style.display = "none";
+    };
 
-  // When the user clicks anywhere outside of the modal, close it
-  // window.onclick = function (event) {
-  //   if (event.target == PSFilterModal) {
-  //     PSFilterModal.style.display = "none";
-  //   }
-  // };
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target === PSFilterModal) {
+        PSFilterModal.style.display = "none";
+      }
+    };
+  } else {
+    // Optional: Log a warning if elements are missing, useful for debugging
+    console.warn("One or more modal elements were not found on the page.");
+  }
 });
 
 /* 
@@ -283,6 +295,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "List") {
+    return; // Exit the function if the title doesn't match
+  }
+
   const buttonContainer1 = document.getElementById("PS-filter-choices-1");
   const buttonContainer2 = document.getElementById("PS-filter-choices-2");
   const buttonContainer3 = document.getElementById("PS-filter-choices-3");
@@ -338,6 +355,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "List") {
+    return; // Exit the function if the title doesn't match
+  }
+
   const minSlider = document.getElementById("min-slider");
   const maxSlider = document.getElementById("max-slider");
   const minInput = document.getElementById("min-input");
@@ -440,6 +462,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ---------- */
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "List") {
+    return; // Exit the function if the title doesn't match
+  }
+
   const itemContainer = document.getElementById("PS-result-cards");
   const itemsCards = itemContainer.querySelectorAll(".PS-result-card");
   const loadMoreBtn = document.getElementById("PS-load-more-btn");
@@ -505,6 +532,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "Profession detail page") {
+    return; // Exit the function if the title doesn't match
+  }
+
   const openModalBtn = document.getElementById("PS-openModalBtn");
   const openModalButton = document.getElementById("PS-openModalButton");
   const copyLinkModal = document.getElementById("PS-copyLinkModal");
@@ -575,98 +607,112 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* მსგავსი პროფესიების სლაიდერის დასაწყისი */
 
-let mySwiper = new Swiper(".my-slider", {
-  // Default settings for screens less than 600px (mobile-first approach)
-  slidesPerView: 2,
-  spaceBetween: 16,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "Profession detail page") {
+    return; // Exit the function if the title doesn't match
+  }
 
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 600px
-    600: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+  let mySwiper = new Swiper(".my-slider", {
+    // Default settings for screens less than 600px (mobile-first approach)
+    slidesPerView: 2,
+    spaceBetween: 16,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-  },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 600px
+      600: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
 });
 
 /* მსგავსი პროფესიების სლაიდერის დასასრული */
 
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
 
-// Select the necessary elements from the DOM
-const scrollContainer = document.querySelector(".PS-cards");
-const nextBtn = document.querySelector(".PS-next-arrow");
-const prevBtn = document.querySelector(".PS-prev-arrow");
-
-// Define the scroll amount
-const scrollAmount = 624; // This controls how far the slider moves with each click
-
-// Function to check scroll position and toggle button visibility
-const checkScrollPosition = () => {
-  if (!scrollContainer || !nextBtn || !prevBtn) return;
-
-  const maxScrollLeft =
-    scrollContainer.scrollWidth - scrollContainer.clientWidth;
-  const currentScrollLeft = scrollContainer.scrollLeft;
-  // A small buffer for floating point inaccuracies
-  const buffer = 1;
-
-  // Hide prevBtn if at the very start
-  if (currentScrollLeft <= buffer) {
-    prevBtn.classList.add("hidden");
-  } else {
-    prevBtn.classList.remove("hidden");
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "Profession detail page") {
+    return; // Exit the function if the title doesn't match
   }
 
-  // Hide nextBtn *only* if the user is at the very end of the content
-  if (currentScrollLeft >= maxScrollLeft - buffer) {
-    nextBtn.classList.add("hidden");
-  } else {
+  // Select the necessary elements from the DOM
+  const scrollContainer = document.querySelector(".PS-cards");
+  const nextBtn = document.querySelector(".PS-next-arrow");
+  const prevBtn = document.querySelector(".PS-prev-arrow");
+
+  // Define the scroll amount
+  const scrollAmount = 624; // This controls how far the slider moves with each click
+
+  // Function to check scroll position and toggle button visibility
+  const checkScrollPosition = () => {
+    if (!scrollContainer || !nextBtn || !prevBtn) return;
+
+    const maxScrollLeft =
+      scrollContainer.scrollWidth - scrollContainer.clientWidth;
+    const currentScrollLeft = scrollContainer.scrollLeft;
+    // A small buffer for floating point inaccuracies
+    const buffer = 1;
+
+    // Hide prevBtn if at the very start
+    if (currentScrollLeft <= buffer) {
+      prevBtn.classList.add("hidden");
+    } else {
+      prevBtn.classList.remove("hidden");
+    }
+
+    // Hide nextBtn *only* if the user is at the very end of the content
+    if (currentScrollLeft >= maxScrollLeft - buffer) {
+      nextBtn.classList.add("hidden");
+    } else {
+      nextBtn.classList.remove("hidden");
+    }
+  };
+
+  // Add a click event listener to the "next" button
+  if (nextBtn && scrollContainer) {
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth", // Added smooth behavior for consistency
+      });
+      // Removed setTimeout, relying on the scroll event listener below
+    });
+  }
+
+  // Add a click event listener to the "previous" button
+  if (prevBtn && scrollContainer) {
+    prevBtn.addEventListener("click", () => {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth",
+      });
+      // Removed setTimeout, relying on the scroll event listener below
+    });
+  }
+
+  // *********** MODIFICATION ***********
+  // Check position when the page loads *except* for the next button's hiding logic
+
+  const initialCheck = () => {
+    checkScrollPosition();
+    // Force the next button to be visible initially, even if there's no room to scroll
     nextBtn.classList.remove("hidden");
-  }
-};
+  };
 
-// Add a click event listener to the "next" button
-if (nextBtn && scrollContainer) {
-  nextBtn.addEventListener("click", () => {
-    scrollContainer.scrollBy({
-      left: scrollAmount,
-      behavior: "smooth", // Added smooth behavior for consistency
-    });
-    // Removed setTimeout, relying on the scroll event listener below
-  });
-}
+  initialCheck();
 
-// Add a click event listener to the "previous" button
-if (prevBtn && scrollContainer) {
-  prevBtn.addEventListener("click", () => {
-    scrollContainer.scrollBy({
-      left: -scrollAmount,
-      behavior: "smooth",
-    });
-    // Removed setTimeout, relying on the scroll event listener below
-  });
-}
-
-// *********** MODIFICATION ***********
-// Check position when the page loads *except* for the next button's hiding logic
-
-const initialCheck = () => {
-  checkScrollPosition();
-  // Force the next button to be visible initially, even if there's no room to scroll
-  nextBtn.classList.remove("hidden");
-};
-
-initialCheck();
-
-// And check position when the user manually scrolls (e.g., using mouse wheel or drag)
-// The standard scroll listener keeps all logic active during user interaction
-scrollContainer.addEventListener("scroll", checkScrollPosition);
+  // And check position when the user manually scrolls (e.g., using mouse wheel or drag)
+  // The standard scroll listener keeps all logic active during user interaction
+  scrollContainer.addEventListener("scroll", checkScrollPosition);
+});
 
 /* ============ შენთვის საინტერესო კურსები SLIDER END ============ */
 
