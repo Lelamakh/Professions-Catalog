@@ -2085,7 +2085,7 @@ for index-List.css     START
   letter-spacing: 0%;
 }
 
-.PS-clearInput-button {
+.PS-clearInput-button-holder {
   height: 37px;
   width: 37px;
   font-size: 20px;
@@ -2098,6 +2098,25 @@ for index-List.css     START
   /* display: flex; */
   /* align-content: center; */
   justify-content: center;
+}
+
+.PS-clearInput-button {
+  height: 37px;
+  width: 37px;
+  font-size: 20px;
+  /* border: solid #808080 1px; */
+  border-left: none;
+  /* border-top-right-radius: 8px; */
+  /* border-bottom-right-radius: 8px; */
+  background-color: transparent;
+  /* padding-bottom: 8px; */
+  /* display: flex; */
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.PS-clearInput-button.hidden {
+  display: none;
 }
 
 .PS-clearInput-button > img {
@@ -6261,11 +6280,26 @@ for index-List.css     START
     letter-spacing: 0%;
   }
 
-  .PS-clearInput-button {
+  .PS-clearInput-button-holder {
     height: 28px;
     width: 28px;
     font-size: 12px;
     border: solid #808080 1px;
+    border-left: none;
+    /* border-top-right-radius: 8px; */
+    /* border-bottom-right-radius: 8px; */
+    background-color: transparent;
+    /* padding-bottom: 8px; */
+    /* display: flex; */
+    /* align-content: center; */
+    justify-content: center;
+  }
+
+  .PS-clearInput-button {
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
+    /* border: solid #808080 1px; */
     border-left: none;
     /* border-top-right-radius: 8px; */
     /* border-bottom-right-radius: 8px; */

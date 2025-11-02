@@ -269,11 +269,48 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 //ეს კოდი ასუფთავებს ძებნის ველს
 
-function clearInput() {
-  document.getElementById("mySearchInput").value = "";
-  filterContent();
-}
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page title is "index-List"
+  if (document.title !== "List") {
+    return; // Exit the function if the title doesn't match
+  }
 
+  const searchInput = document.getElementById("mySearchInput");
+  const clearButton = document.querySelector(".PS-clearInput-button");
+
+  // Function to toggle the visibility of the clear button
+  const toggleClearButton = () => {
+    if (searchInput.value.length > 0) {
+      clearButton.classList.remove("hidden");
+    } else {
+      clearButton.classList.add("hidden");
+    }
+  };
+
+  // Show/hide the button when the user types
+  searchInput.addEventListener("input", toggleClearButton);
+
+  // Show/hide the button when the input gains or loses focus
+  searchInput.addEventListener("focus", toggleClearButton);
+  searchInput.addEventListener("blur", () => {
+    // Hide the button on blur if the input is empty
+    if (searchInput.value.length === 0) {
+      clearButton.classList.add("hidden");
+    }
+  });
+
+  // Clear the input field when the clear button is clicked
+  clearButton.addEventListener("click", () => {
+    searchInput.value = "";
+    clearButton.classList.add("hidden");
+    searchInput.focus(); // Keep focus on the input after clearing
+  });
+
+  // function clearInput() {
+  //   document.getElementById("mySearchInput").value = "";
+  //   filterContent();
+  // }
+});
 /* 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
