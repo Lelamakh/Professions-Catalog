@@ -673,7 +673,6 @@ document.addEventListener("DOMContentLoaded", function () {
 /* მსგავსი პროფესიების სლაიდერის დასასრული */
 
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
-
 document.addEventListener("DOMContentLoaded", function () {
   // Check if the current page title is "index-List"
   if (document.title !== "Profession detail page") {
@@ -687,6 +686,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define the scroll amount
   const scrollAmount = 624; // This controls how far the slider moves with each click
+
+  // --- DRAG FUNCTIONALITY VARIABLES ---
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
 
   // Function to check scroll position and toggle button visibility
   const checkScrollPosition = () => {
@@ -718,9 +722,8 @@ document.addEventListener("DOMContentLoaded", function () {
     nextBtn.addEventListener("click", () => {
       scrollContainer.scrollBy({
         left: scrollAmount,
-        behavior: "smooth", // Added smooth behavior for consistency
+        behavior: "smooth",
       });
-      // Removed setTimeout, relying on the scroll event listener below
     });
   }
 
@@ -731,13 +734,46 @@ document.addEventListener("DOMContentLoaded", function () {
         left: -scrollAmount,
         behavior: "smooth",
       });
-      // Removed setTimeout, relying on the scroll event listener below
     });
   }
 
-  // *********** MODIFICATION ***********
-  // Check position when the page loads *except* for the next button's hiding logic
+  // *********** NEW DRAG FUNCTION IMPLEMENTATION ***********
 
+  // 1. Mouse Down Event: Start the drag process
+  scrollContainer.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    // Add a CSS class for visual feedback (e.g., cursor: grabbing)
+    scrollContainer.classList.add("dragging");
+    // Get the initial X position of the mouse
+    startX = e.pageX - scrollContainer.offsetLeft;
+    // Get the initial scroll position of the container
+    scrollLeft = scrollContainer.scrollLeft;
+    // Prevent default browser drag behavior (like selecting text)
+    e.preventDefault();
+  });
+
+  // 2. Mouse Up Event: End the drag process
+  // We listen on the window/document so if the user releases the mouse outside the container, it still stops dragging.
+  window.addEventListener("mouseup", () => {
+    isDragging = false;
+    scrollContainer.classList.remove("dragging");
+  });
+
+  // 3. Mouse Move Event: Handle the actual scrolling while dragging
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return; // Only run if currently dragging
+
+    // Calculate how far the mouse has moved from the start point
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 1.5; // Multiplier (1.5) makes the scroll faster/slower than mouse movement
+
+    // Set the new scroll position
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  });
+
+  // *********** END NEW DRAG FUNCTION IMPLEMENTATION ***********
+
+  // Check position when the page loads *except* for the next button's hiding logic
   const initialCheck = () => {
     checkScrollPosition();
     // Force the next button to be visible initially, even if there's no room to scroll
