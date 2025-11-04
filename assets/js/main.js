@@ -673,43 +673,38 @@ document.addEventListener("DOMContentLoaded", function () {
 /* მსგავსი პროფესიების სლაიდერის დასასრული */
 
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
   if (document.title !== "Profession detail page") {
-    return; // Exit the function if the title doesn't match
+    return;
   }
 
-  // Select the necessary elements from the DOM
   const scrollContainer = document.querySelector(".PS-cards");
   const nextBtn = document.querySelector(".PS-next-arrow");
   const prevBtn = document.querySelector(".PS-prev-arrow");
+  const scrollAmount = 624;
 
-  // Define the scroll amount
-  const scrollAmount = 624; // This controls how far the slider moves with each click
-
-  // --- DRAG FUNCTIONALITY VARIABLES ---
   let isDragging = false;
   let startX;
   let scrollLeft;
+  let didDrag = false;
+  // NEW: Flag to temporarily disable clicks
+  let isClickDisabled = false;
 
-  // Function to check scroll position and toggle button visibility
   const checkScrollPosition = () => {
+    // ... (rest of the checkScrollPosition logic remains the same) ...
     if (!scrollContainer || !nextBtn || !prevBtn) return;
-
     const maxScrollLeft =
       scrollContainer.scrollWidth - scrollContainer.clientWidth;
     const currentScrollLeft = scrollContainer.scrollLeft;
-    // A small buffer for floating point inaccuracies
     const buffer = 1;
 
-    // Hide prevBtn if at the very start
     if (currentScrollLeft <= buffer) {
       prevBtn.classList.add("hidden");
     } else {
       prevBtn.classList.remove("hidden");
     }
 
-    // Hide nextBtn *only* if the user is at the very end of the content
     if (currentScrollLeft >= maxScrollLeft - buffer) {
       nextBtn.classList.add("hidden");
     } else {
@@ -717,7 +712,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // Add a click event listener to the "next" button
+  // Add click listeners for buttons (remain the same)
   if (nextBtn && scrollContainer) {
     nextBtn.addEventListener("click", () => {
       scrollContainer.scrollBy({
@@ -727,7 +722,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Add a click event listener to the "previous" button
   if (prevBtn && scrollContainer) {
     prevBtn.addEventListener("click", () => {
       scrollContainer.scrollBy({
@@ -737,53 +731,68 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // *********** NEW DRAG FUNCTION IMPLEMENTATION ***********
+  // *********** DRAG AND CLICK LOGIC REFINEMENT ***********
+
+  // Add a permanent click listener to the container
+  scrollContainer.addEventListener("click", (e) => {
+    if (isClickDisabled) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      // Reset the flag immediately after blocking the event
+      isClickDisabled = false;
+      return false;
+    }
+    // If isClickDisabled is false, the event proceeds normally to the link
+  });
 
   // 1. Mouse Down Event: Start the drag process
   scrollContainer.addEventListener("mousedown", (e) => {
     isDragging = true;
-    // Add a CSS class for visual feedback (e.g., cursor: grabbing)
+    didDrag = false; // Reset drag flag
     scrollContainer.classList.add("dragging");
-    // Get the initial X position of the mouse
     startX = e.pageX - scrollContainer.offsetLeft;
-    // Get the initial scroll position of the container
     scrollLeft = scrollContainer.scrollLeft;
-    // Prevent default browser drag behavior (like selecting text)
     e.preventDefault();
   });
 
-  // 2. Mouse Up Event: End the drag process
-  // We listen on the window/document so if the user releases the mouse outside the container, it still stops dragging.
+  // 2. Mouse Up Event: End the drag process and handle links
   window.addEventListener("mouseup", () => {
     isDragging = false;
     scrollContainer.classList.remove("dragging");
+
+    if (didDrag) {
+      // Temporarily disable clicks immediately following this mouseup event
+      isClickDisabled = true;
+      // We rely on the permanent 'click' listener above to catch and prevent the event
+    }
+    // Note: We don't use the temporary listener/timeout method from the previous suggestion here.
   });
 
   // 3. Mouse Move Event: Handle the actual scrolling while dragging
   window.addEventListener("mousemove", (e) => {
-    if (!isDragging) return; // Only run if currently dragging
+    if (!isDragging) return;
 
-    // Calculate how far the mouse has moved from the start point
     const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 1.5; // Multiplier (1.5) makes the scroll faster/slower than mouse movement
+    const walk = (x - startX) * 1.5;
 
-    // Set the new scroll position
+    // Define a small threshold (e.g., 5 pixels)
+    if (Math.abs(walk) > 5) {
+      didDrag = true;
+    }
+
     scrollContainer.scrollLeft = scrollLeft - walk;
   });
 
-  // *********** END NEW DRAG FUNCTION IMPLEMENTATION ***********
+  // *********** END DRAG AND CLICK LOGIC REFINEMENT ***********
 
-  // Check position when the page loads *except* for the next button's hiding logic
+  // Check position when the page loads
   const initialCheck = () => {
     checkScrollPosition();
-    // Force the next button to be visible initially, even if there's no room to scroll
     nextBtn.classList.remove("hidden");
   };
 
   initialCheck();
 
-  // And check position when the user manually scrolls (e.g., using mouse wheel or drag)
-  // The standard scroll listener keeps all logic active during user interaction
   scrollContainer.addEventListener("scroll", checkScrollPosition);
 });
 

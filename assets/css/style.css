@@ -2319,7 +2319,7 @@ label {
 
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 21px;
   letter-spacing: 0%;
 }
@@ -5064,8 +5064,13 @@ for index-Contact.css     END
   }
 
   .Heart-div {
+    /* border: solid red 1px; */
     margin-left: -87px;
     margin-right: 6px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
   /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -5081,7 +5086,7 @@ for index-Contact.css     END
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: slideFromTop 0.5s ease-out forwards;
+    animation: slideFromTop 0.3s ease-out forwards;
   }
 
   /* Styles for the modal content */
@@ -6364,7 +6369,7 @@ for index-List.css     START
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     z-index: 20;
-    animation: slideFromTop 0.5s ease-out forwards;
+    animation: slideFromTop 0.3s ease-out forwards;
   }
 
   /* Modal Content/Box */
@@ -6551,7 +6556,7 @@ for index-List.css     START
 
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 21px;
     letter-spacing: 0%;
   }
