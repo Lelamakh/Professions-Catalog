@@ -208,9 +208,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "List") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   // Get the modal element
@@ -270,9 +272,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 //ეს კოდი ასუფთავებს ძებნის ველს
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "List") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   const searchInput = document.getElementById("mySearchInput");
@@ -332,9 +336,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "List") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   const buttonContainer1 = document.getElementById("PS-filter-choices-1");
@@ -392,9 +398,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "List") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   const minSlider = document.getElementById("min-slider");
@@ -499,9 +507,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ---------- */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "List") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesiia-List")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   const itemContainer = document.getElementById("PS-result-cards");
@@ -569,9 +579,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "Profession detail page") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-Internal")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   const openModalBtn = document.getElementById("PS-openModalBtn");
@@ -645,9 +657,11 @@ document.addEventListener("DOMContentLoaded", function () {
 /* მსგავსი პროფესიების სლაიდერის დასაწყისი */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if the current page title is "index-List"
-  if (document.title !== "Profession detail page") {
-    return; // Exit the function if the title doesn't match
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-Internal")) {
+    // Exit the function if the class is not present
+    return;
   }
 
   let mySwiper = new Swiper(".my-slider", {
@@ -675,7 +689,10 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.title !== "Profession detail page") {
+  // Select the body element and check if it has the class "forJavascript"
+  const bodyElement = document.body;
+  if (!bodyElement || !bodyElement.classList.contains("Profesia-Internal")) {
+    // Exit the function if the class is not present
     return;
   }
 
