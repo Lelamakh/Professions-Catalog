@@ -505,16 +505,27 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ---------- */
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the body element and check if it has the class "forJavascript"
-  const bodyElement = document.body;
-  if (!bodyElement || !bodyElement.classList.contains("Profesiia-List")) {
+  // Select the body element and check if it has the class "Profesia-List"
+  const body = document.body;
+
+  if (!body.classList.contains("Profesia-List")) {
     // Exit the function if the class is not present
     return;
   }
 
+  // The original title check has been replaced with the body class check
+  /* if (document.title !== "List") {
+    return;
+  } */
+
   const itemContainer = document.getElementById("PS-result-cards");
+  // Ensure the container exists before proceeding
+  if (!itemContainer) {
+    console.error("Item container #PS-result-cards not found.");
+    return;
+  }
+
   const itemsCards = itemContainer.querySelectorAll(".PS-result-card");
   const loadMoreBtn = document.getElementById("PS-load-more-btn");
 
@@ -522,28 +533,32 @@ document.addEventListener("DOMContentLoaded", function () {
   const itemsToLoad = 9; // Number of items to show on each click
   let currentVisibleItems = initialItemsToShow;
 
-  loadMoreBtn.addEventListener("click", () => {
-    for (
-      let i = currentVisibleItems;
-      i < currentVisibleItems + itemsToLoad;
-      i++
-    ) {
-      if (itemsCards[i]) {
-        itemsCards[i].style.display = "block"; // Or 'flex', 'grid', etc., depending on your layout
+  // Ensure the button and items exist before adding listeners
+  if (loadMoreBtn && itemsCards.length > 0) {
+    loadMoreBtn.addEventListener("click", () => {
+      for (
+        let i = currentVisibleItems;
+        i < currentVisibleItems + itemsToLoad;
+        i++
+      ) {
+        if (itemsCards[i]) {
+          itemsCards[i].style.display = "block"; // Or 'flex', 'grid', etc., depending on your layout
+        }
       }
-    }
-    currentVisibleItems += itemsToLoad;
+      currentVisibleItems += itemsToLoad;
 
+      if (currentVisibleItems >= itemsCards.length) {
+        loadMoreBtn.style.display = "none"; // Hide button if all items are visible
+      }
+    });
+
+    // Initial check to hide button if there are no more items to load initially
     if (currentVisibleItems >= itemsCards.length) {
-      loadMoreBtn.style.display = "none"; // Hide button if all items are visible
+      loadMoreBtn.style.display = "none";
     }
-  });
-
-  // Initial check to hide button if there are no more items to load initially
-  if (currentVisibleItems >= itemsCards.length) {
-    loadMoreBtn.style.display = "none";
   }
 });
+
 /* ---------- 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
