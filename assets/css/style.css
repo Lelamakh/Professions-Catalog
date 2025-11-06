@@ -640,6 +640,7 @@ nav {
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
   font-style: 75 Bold;
+  cursor: pointer;
 }
 .lmname2 {
   width: 204px;
@@ -659,6 +660,7 @@ nav {
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
+  cursor: pointer;
 }
 .lmname3 {
   width: 204px;
@@ -676,6 +678,7 @@ nav {
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
+  cursor: pointer;
 }
 .lmname4 {
   width: 204px;
@@ -693,6 +696,7 @@ nav {
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
+  cursor: pointer;
 }
 .lmname5 {
   width: 204px;
@@ -710,6 +714,7 @@ nav {
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
+  cursor: pointer;
 }
 .lmname6 {
   width: 204px;
@@ -727,6 +732,7 @@ nav {
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
+  cursor: pointer;
 }
 
 .dayprof {
