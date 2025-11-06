@@ -6900,8 +6900,9 @@ for index-List.css     START
   }
 
   .PS-favorite > .PS-heart-div:hover {
-    background-image: none;
-    background-size: 22px, 22px;
+    background-image: url(../images/Card-Heart-Favorite.svg);
+    background-position: center;
+    background-size: 20px;
   }
 
   .PS-favorite > .PS-heart-div > img {
