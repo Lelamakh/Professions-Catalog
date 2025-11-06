@@ -1608,6 +1608,11 @@ nav {
 /* ///////////privacy styles */
 /* ///////////privacy styles */
 
+.lmallcookies {
+  max-width: 100%;
+  width: 1440px;
+  margin: 0 auto;
+}
 .lmcookie1 {
   margin-left: 46px;
   margin-right: 46px;
