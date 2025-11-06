@@ -91,15 +91,6 @@ body {
   background-color: #f4f0f0;
 }
 
-.maincontainer {
-  /* border: solid red 1px; */
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  /* padding: 20px 20px 0px 20px; */
-  background-color: white;
-}
-
 /* -------- -------- ---------------------------------------------------------
 -------- ---------------------------------------------------------------------
 -------- ---------------------------------------------------------------------
@@ -352,23 +343,29 @@ nav {
   opacity: 0.5;
   transition-duration: 0.2s;
 }
-
+.maincontainer {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  /* width: 1440px; */
+}
 .lmfirstsection {
   background: linear-gradient(
     180deg,
     #eadafc 0%,
     rgba(249, 231, 255, 0.1) 100%
   );
-
-  /* padding: 176px 48px; */
+  /* padding-left: 48px; */
 }
 .lmfirstsecionwrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: 48px;
-  /* margin-right: 20px; */
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 48px;
 }
 .lmfirstsectionright {
   flex: 1;
@@ -427,45 +424,6 @@ nav {
     transform: translateX(-600%);
   }
 }
-
-/* @keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  16% {
-    transform: translateX(0%);
-  }
-  17% {
-    transform: translateX(-100%);
-  }
-  36% {
-    transform: translateX(-100%);
-  }
-  37% {
-    transform: translateX(-200%);
-  }
-  56% {
-    transform: translateX(-200%);
-  }
-  57% {
-    transform: translateX(-300%);
-  }
-  76% {
-    transform: translateX(-300%);
-  }
-  77% {
-    transform: translateX(-400%);
-  }
-  96% {
-    transform: translateX(-400%);
-  }
-  100% {
-    transform: translateX(-500%);
-  }
-  100% {
-    transform: translateX(-500%);
-  }
-} */
 
 .lmmonslide {
   flex: 0 0 100%;
@@ -582,13 +540,13 @@ nav {
 }
 .lmcards {
   width: 100%;
-  max-width: 1344px;
+  max-width: 1440px;
   margin-top: 48px;
-  margin-left: 48px;
-  margin-right: 48px;
   display: flex;
-  gap: 23px;
+  gap: 24px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 48px;
 }
 .lmcatname {
   font-weight: 700;
@@ -599,6 +557,11 @@ nav {
   line-height: 36px;
   letter-spacing: 0.8px;
   color: #333333;
+}
+.lmcategories {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 .lmcategories img {
   width: 30px;
@@ -663,15 +626,15 @@ nav {
   border-radius: 8px;
   /* border-radius: 15px; */
   background-color: white;
-  border: solid #cc33a1 1.5px; /* ამ ფორმით გაუწერე საზღვრის კოდები :) */
+  border: solid #cc33a1 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 1px 20px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -691,7 +654,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -708,7 +671,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -742,7 +705,7 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
@@ -759,13 +722,17 @@ nav {
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   vertical-align: bottom;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
 }
-.daywrapperright {
-  margin-left: 48px;
+
+.dayprof {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 48px;
 }
 .dayprofwrapper {
   margin-top: 60px;
@@ -774,7 +741,10 @@ nav {
   justify-content: space-between;
   /* align-items: center; */
   gap: 40px;
-  margin-right: 48px;
+  /* margin-right: 48px; */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 48px;
 }
 .daywrapperleft {
   width: 100%;
@@ -828,6 +798,8 @@ nav {
 }
 .quizsection {
   background-color: #e7e4f5;
+  width: 100%;
+  margin: 0 auto;
 }
 .lmwrapper2 {
   padding-top: 50px;
@@ -839,6 +811,7 @@ nav {
   /* align-items: center; */
   gap: 40px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 .lmwrapper2left {
   width: 100%;
@@ -912,7 +885,9 @@ nav {
   line-height: 22px;
   letter-spacing: 0.8px;
   vertical-align: bottom;
+  cursor: pointer;
 }
+
 .lmknowmore {
   display: flex;
   justify-content: space-between;
@@ -936,6 +911,7 @@ nav {
   line-height: 22px;
   letter-spacing: 0.8px;
   /* vertical-align: bottom; */
+  cursor: pointer;
 }
 .lmmaintitle1 {
   margin-left: 48px;
@@ -7243,6 +7219,7 @@ for index-List.css     END
     width: 100%;
     /* padding: 16px; */
     align-items: center;
+    justify-content: center;
   }
   .lmfirstsectionleft {
     width: 100%;
@@ -7284,6 +7261,7 @@ for index-List.css     END
     /* padding: 0px; */
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .lmfirstsection p {
     width: 345px;
@@ -7464,6 +7442,7 @@ for index-List.css     END
     justify-content: center;
     align-items: center;
     /* display: flex; */
+    padding: 0;
   }
 
   .lmmaintitle1 {
