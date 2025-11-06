@@ -2547,11 +2547,14 @@ label {
   position: absolute;
   top: 0;
   right: 0;
-
+  cursor: pointer;
   /* box-shadow: 0px 2px 4px 0px #0000001a; */
   /* background-color: #ffffff; */
   border-radius: 8px;
   margin: 12px;
+}
+
+.PS-heart-div:hover {
 }
 
 .PS-card-info {
@@ -4328,11 +4331,14 @@ for index-Contact.css     START
 }
 
 .PS-map-div {
+  /* border: solid red 1px; */
   height: auto;
+  border-radius: 12px;
 }
 .PS-map-div > img {
   width: 752px;
   height: 412px;
+  border-radius: 12px;
 }
 
 .PS-contact-to-us {
@@ -5235,6 +5241,18 @@ for index-Contact.css     END
 
 @media (width<600px) {
   .PS-section-1 {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .PS-section-1 > div {
+    background-color: aqua;
     padding: 80px 16px 24px 16px;
     margin: 0 auto;
     max-width: 600px;
@@ -6335,6 +6353,16 @@ for index-List.css     START
     background-color: white;
     margin: 0 auto;
     padding-top: 56px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .PS-section-list > div {
+    background-color: white;
+    margin: 0 auto;
+
     max-width: 600px;
     width: 100%;
     display: flex;

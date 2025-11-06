@@ -132,13 +132,24 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  const childDivs = document.querySelectorAll(".PS-heart-div"); // Select all child divs
+  // Select all elements with the class "PS-heart-div"
+  const childDivs = document.querySelectorAll(".PS-heart-div");
 
+  // Iterate over each selected div to attach an event listener
   childDivs.forEach((childDiv) => {
-    childDiv.addEventListener("click", function () {
+    childDiv.addEventListener("click", function (event) {
+      // --- Prevent Link Action ---
+      // Stop the click from triggering the parent <a> tag's navigation
+      event.preventDefault();
+      // Stop the event from bubbling up the DOM tree further
+      event.stopPropagation();
+
+      // --- Your Custom Logic ---
       // 'this' refers to the clicked childDiv
-      // .parentNode gets the immediate parent element
-      this.parentNode.classList.toggle("PS-favorite"); // Toggle a class on the parent
+      // .parentNode gets the immediate parent element (which is .PS-result-card in your HTML)
+      this.parentNode.classList.toggle("PS-favorite");
+
+      // console.log("Favorite class toggled on card, link action prevented.");
     });
   });
 });
@@ -208,43 +219,49 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the body element and check if it has the class "forJavascript"
   const bodyElement = document.body;
   if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
-    // Exit the function if the class is not present
     return;
   }
 
-  // Get the modal element
   let PSFilterModal = document.getElementById("PS-filter-input");
-
-  // Get the button that opens the modal
   let filterBtn = document.getElementById("PS-filter-name");
-
-  // Get the first <span> element with class "close2" that closes the modal
+  // The close button span (using getElementsByClassName correctly here)
   let FilterSpan = document.getElementsByClassName("close2")[0];
 
-  // Only proceed if all necessary elements are found
+  // Define the breakpoint (e.g., 768px for tablet/desktop boundary)
+  const DESKTOP_MIN_WIDTH = 768;
+
   if (PSFilterModal && filterBtn && FilterSpan) {
-    // When the user clicks on the button, open the modal
+    // Open Modal
     filterBtn.onclick = function () {
-      // Use 'flex' for better centering on both desktop and mobile
       PSFilterModal.style.display = "flex";
     };
 
-    // When the user clicks on <span> (x), close the modal
+    // Close Modal via 'X' button
     FilterSpan.onclick = function () {
       PSFilterModal.style.display = "none";
     };
 
-    // When the user clicks anywhere outside of the modal, close it
+    // --- Prevent Hiding on Desktop ---
+
     window.onclick = function (event) {
+      // Check if the current window width is greater than or equal to the desktop breakpoint
+      const isDesktop = window.innerWidth >= DESKTOP_MIN_WIDTH;
+
+      if (isDesktop) {
+        // In desktop mode, we EXIT early and DO NOT close the modal on outside click.
+        return;
+      }
+
+      // This part only runs if NOT in desktop mode (mobile/tablet)
       if (event.target === PSFilterModal) {
         PSFilterModal.style.display = "none";
       }
     };
+
+    // --- End Logic ---
   } else {
-    // Optional: Log a warning if elements are missing, useful for debugging
     console.warn("One or more modal elements were not found on the page.");
   }
 });
