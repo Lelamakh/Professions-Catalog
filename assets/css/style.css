@@ -6886,13 +6886,22 @@ for index-List.css     START
 
   .PS-favorite {
     /* background-color: greenyellow; */
+    /* background-size: 22px 22px; */
   }
 
   .PS-favorite > .PS-heart-div {
+    margin: 8px;
+    height: 24px;
+    width: 24px;
     /* background-color: yellow; */
     background-image: url(../images/Card-Heart-Favorite.svg);
     background-position: center;
-    background-size: 22px 22px;
+    background-size: 20px 20px;
+  }
+
+  .PS-favorite > .PS-heart-div:hover {
+    background-image: none;
+    background-size: 22px, 22px;
   }
 
   .PS-favorite > .PS-heart-div > img {
@@ -6942,7 +6951,13 @@ for index-List.css     START
     /* box-shadow: 0px 2px 4px 0px #0000001a; */
     /* background-color: #ffffff; */
     border-radius: 8px;
-    margin: 12px;
+    margin: 8px;
+  }
+  .PS-heart-div:hover {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: 32px;
   }
 
   .PS-heart-div > img {
