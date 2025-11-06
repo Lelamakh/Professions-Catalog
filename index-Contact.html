@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div>
         <a href="index.html">
           <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
@@ -203,41 +203,44 @@
     </div>
 
     <div class="PS-main">
-      <section class="PS-section-contact-info">
-        <div class="PS-Contact-header">საკონტაქტო ინფორმაცია</div>
-        <div class="PS-Contact-info">
-          <div class="PS-Contact-info-text">
-            <div>
-              <img src="assets/images/Envelope.svg" alt="Envelope.svg" />
-              <h4>info@profesia.ge</h4>
+      <div class="PS-section-contact-info-parent">
+        <section class="PS-section-contact-info">
+          <div class="PS-Contact-header">საკონტაქტო ინფორმაცია</div>
+          <div class="PS-Contact-info">
+            <div class="PS-Contact-info-text">
+              <div>
+                <img src="assets/images/Envelope.svg" alt="Envelope.svg" />
+                <h4><a href="mailto:info@profesia.ge">info@profesia.ge</a></h4>
+              </div>
+
+              <div>
+                <img src="assets/images/Phone.svg" alt="Phone.svg" />
+                <h4>
+                  <a href="tel:+995 599 99 99 99">+995 599 99 99 99</a>
+                </h4>
+              </div>
             </div>
 
             <div>
-              <img src="assets/images/Phone.svg" alt="Phone.svg" />
-              <h4>
-                <a href="tel:+995 599 99 99 99">+995 599 99 99 99</a>
-              </h4>
+              <div class="PS-social-networks">
+                <img
+                  src="assets/images/FacebookLogo.png"
+                  alt="FacebookLogo.png"
+                />
+                <img
+                  src="assets/images/InstagramLogo.png"
+                  alt="InstagramLogo.png"
+                />
+                <img
+                  src="assets/images/LinkedinLogo.png"
+                  alt="LinkedinLogo.png"
+                />
+              </div>
             </div>
           </div>
+        </section>
+      </div>
 
-          <div>
-            <div class="PS-social-networks">
-              <img
-                src="assets/images/FacebookLogo.png"
-                alt="FacebookLogo.png"
-              />
-              <img
-                src="assets/images/InstagramLogo.png"
-                alt="InstagramLogo.png"
-              />
-              <img
-                src="assets/images/LinkedinLogo.png"
-                alt="LinkedinLogo.png"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="PS-section-contact-blank">
         <div class="PS-map-div">
           <img src="assets/images/empty.jpg" alt="empty.jpg" />
@@ -347,7 +350,7 @@
         </div>
       </section>
     </div>
-    <footer>
+    <footer id="footer">
       <div class="PS-Footer-div-1">
         <img src="assets/images/Vector.svg" alt="Vector.svg" />
         <div class="PS-Footer-contact-info">

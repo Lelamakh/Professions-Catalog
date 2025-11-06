@@ -858,3 +858,29 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
+
+// Get the header element
+const header = document.getElementById("header");
+// Get the height of the header dynamically
+const headerHeight = header.offsetHeight;
+// Store the previous scroll position
+let lastScrollTop = 0;
+
+// Listen for the scroll event on the window
+window.addEventListener("scroll", () => {
+  // Get the current scroll position
+  const currentScrollTop =
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  // Check scroll direction
+  if (currentScrollTop > lastScrollTop) {
+    // Scrolling Down: Add the hide class
+    header.classList.add("hide-header");
+  } else {
+    // Scrolling Up: Remove the hide class
+    header.classList.remove("hide-header");
+  }
+
+  // Update the previous scroll position for the next scroll event
+  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+});
