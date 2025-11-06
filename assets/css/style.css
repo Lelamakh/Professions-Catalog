@@ -2512,11 +2512,18 @@ label {
 }
 
 .PS-favorite > .PS-heart-div {
+  width: 32px;
+  height: 32px;
   /* background-color: yellow; */
   background-image: url(../images/Card-Heart-Favorite.svg);
   background-position: center;
   background-size: 27px;
   background-repeat: no-repeat;
+}
+.PS-favorite > .PS-heart-div:hover {
+  background-image: url(../images/Heart-Hover.svg),
+    url(../images/Card-Heart-Favorite.svg);
+  background-size: 32px, 30px;
 }
 
 .PS-favorite > .PS-heart-div > img {
@@ -2539,6 +2546,7 @@ label {
 }
 
 .PS-heart-div {
+  /* border: solid red 1px; */
   width: 32px;
   height: 32px;
   display: flex;
@@ -2555,6 +2563,10 @@ label {
 }
 
 .PS-heart-div:hover {
+  background-image: url(../images/Heart-Hover.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-size: 32px;
 }
 
 .PS-card-info {
