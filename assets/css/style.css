@@ -487,6 +487,7 @@ nav {
   leading-trim: NONE;
   /* line-height: 22px; */
   letter-spacing: 0.8px;
+  cursor: pointer;
 }
 .lmfirstbutton {
   color: black;
@@ -1123,14 +1124,15 @@ nav {
 .lmwrapper4 {
   display: flex;
   width: 100%;
-  max-width: 1344px;
-  margin-left: 48px;
+  max-width: 1440px;
+  padding-left: 48px;
   justify-content: space-between;
   justify-content: center;
   margin-top: 48px;
   margin-bottom: 72px;
   align-items: center;
   gap: 70px;
+  margin: 0 auto;
 }
 .lmwrapper4left {
   display: flex;
@@ -1176,7 +1178,7 @@ nav {
   height: 367px;
   background-color: #ececec;
   margin-left: 40px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1194,6 +1196,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 72px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.lmmissionsection {
+  margin-top: 48px;
+  margin-bottom: 72px;
 }
 .lmvissionsection {
   margin-bottom: 72px;
@@ -1259,10 +1267,12 @@ nav {
 }
 .lmteamsection {
   width: 100%;
-  max-width: 1344px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 48px;
 }
 .lmteamsection h1 {
-  margin-left: 46px;
+  /* margin-left: 46px; */
   font-size: 28px;
   color: #333333;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
@@ -1270,15 +1280,15 @@ nav {
   font-style: 75 Bold;
   leading-trim: NONE;
   line-height: 36px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   margin-bottom: 32px;
 }
 .lmteamwrapper {
   flex-wrap: wrap;
   display: flex;
   width: 100%;
-  max-width: 1344px;
-  margin-left: 48px;
+  max-width: 1440px;
+  /* margin-left: 48px; */
   justify-content: space-between;
 }
 .lmfullcycle {
@@ -7662,6 +7672,7 @@ for index-List.css     END
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-left: 0;
   }
   .lmwrapper4left {
     width: 100%;
@@ -7793,6 +7804,7 @@ for index-List.css     END
     overflow-x: hidden;
     margin: 0 auto;
     margin-bottom: 0px;
+    padding-left: 0;
   }
   .lmteamsection h1 {
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
