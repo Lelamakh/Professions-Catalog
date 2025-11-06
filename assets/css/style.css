@@ -640,13 +640,13 @@ nav {
   border: solid #cc33a1 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 1px 20px;
+  padding: 10px 20px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
   line-height: 22px;
   letter-spacing: 5%;
-  vertical-align: bottom;
+  vertical-align: center;
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
   color: #333333;
   font-style: 75 Bold;
@@ -661,7 +661,7 @@ nav {
   border-color: #ff944d;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 16px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
