@@ -4884,6 +4884,7 @@ form button {
     line-height: 100%;
     letter-spacing: 5%;
     color: #333333;
+    text-align: center;
   }
 
   .PS-input-field {
