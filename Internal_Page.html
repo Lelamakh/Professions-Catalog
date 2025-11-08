@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profession detail page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body class="Profesia-Internal">
+    <header id="header">
+      <div>
+        <a href="Home.html" class="PS-Logo">
+          <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
+        </a>
+        <nav>
+          <div class="Main-Menu">
+            <img
+              src="assets/images/BurgerMenu.svg"
+              alt="BurgerMenu.svg"
+              id="PS-toggleModalBtn"
+              class="Burger-Menu"
+            />
+
+            <div id="PS-myModal" class="PS-modal-overlay">
+              <div class="PS-modal-content-menu">
+                <ul class="Mobile-Menu">
+                  <li>
+                    <a href="Home.html">მთავარი</a>
+                  </li>
+                  <li class="PS-active-page">
+                    <a href="List.html">პროფესიები</a>
+                  </li>
+                  <li><a href="Quiz.html">ქვიზი</a></li>
+                  <li><a href="About.html">ჩვენ შესახებ</a></li>
+                  <li><a href="Contact.html">კონტაქტი</a></li>
+                  <li>
+                    <a href="#">
+                      <div class="For-Mobile">
+                        <img
+                          src="assets/images/EN-icon.svg"
+                          alt="EN-icon.svg"
+                        /></div
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Heart-div" id="PS-myBtn">
+            <img src="assets/images/Heart.svg" alt="Heart.svg" />
+          </div>
+          <a href="Internal_Page_ENG.html">
+            <div class="Lang-div">
+              <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" /></div
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="PS-For-View">
+      <div id="PS-myModalFavorites" class="PS-modal">
+        <div class="modal-content">
+          <div class="PS-favorites-modal">
+            <p>ფავორიტები</p>
+            <span class="close"
+              ><img
+                src="assets/images/Favorits-Close.svg"
+                alt="Favorits-Close.svg"
+            /></span>
+          </div>
+          <div class="PS-modal-content-cards">
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <a href="index-PDP.html">
+                <img
+                  src="assets/images/3d გრაფიკოსი.png"
+                  alt="3D გრაფიკოსი.png"
+                />
+              </a>
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>3D გრაფიკოსი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>500 - 3000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/front-end დეველოპერი.png"
+                alt="Front-End დეველოპერი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>FRONT-END დეველოპერი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი/ მოთხოვნა</h4>
+                  <h4>500 - 6000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/HR ადმინისტრირების სპეციალისტი.png"
+                alt="HR ადმინისტრირების სპეციალისტი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>HR ადმინისტრირების სპეციალისტი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>1000 - 3000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/hr მენეჯერი სპეციალისტი.png"
+                alt="hr მენეჯერი სპეციალისტი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>HR მენეჯერი/ სპეციალისტი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>მაღალი მოთხოვნა</h4>
+                  <h4>2500 - 15000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/IT და TECH რეკრუტერი.png"
+                alt="IT და TECH რეკრუტერი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>IT და Tech რეკრუტერი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>სტაბილური მოთხოვნა</h4>
+                  <h4>800 - 4000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/LEARNING & DEVELOPMENT.png"
+                alt="LEARNING & DEVELOPMENT.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>LEARNING & DEVELOPMENT</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>სტაბილური მოთხოვნა</h4>
+                  <h4>800 - 4000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-result-card">
+              <div class="PS-heart-div">
+                <img src="assets/images/Card-Heart.svg" alt="Card-Heart.svg" />
+              </div>
+              <img
+                src="assets/images/seo სპეციალისტი.png"
+                alt="seo სპეციალისტი.png"
+              />
+              <div class="PS-card-info">
+                <div class="PS-name">
+                  <h1>SEO სპეციალისტი</h1>
+                </div>
+                <div class="PS-card-info-text-button-V2">
+                  <h4>სტაბილური მოთხოვნა</h4>
+                  <h4>800 - 3000 ₾+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="PS-section-1" style="background-color: #fbeff7">
+        <div>
+          <div class="PS-sec-1-div-1">
+            <h2>3D გრაფიკოსი</h2>
+            <div>
+              <div class="PS-Share" id="PS-openModalBtn">
+                <img src="assets/images/Share.svg" alt="Share.svg" />
+                <div class="PS-Share-Logos">გაუზიარე პროფესია სხვას</div>
+              </div>
+              <div>
+                <div id="PS-copyLinkModal" class="PS-modal-container">
+                  <div class="PS-modal-content">
+                    <h3 class="PS-modal-content-header">გაუზიარე მეგობრებს</h3>
+                    <div class="PS-modal-content-socmedia">
+                      <a href="#"
+                        ><img
+                          src="assets/images/Facebook-link-copy.svg"
+                          alt="Facebook-link-copy.svg"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="assets/images/Instagram-link-copy.svg"
+                          alt="Instagram-link-copy.svg"
+                      /></a>
+                      <a href="#"
+                        ><img
+                          src="assets/images/LinkedIn-link-copy.svg"
+                          alt="LinkedIn-link-copy.svg"
+                      /></a>
+                    </div>
+                    <div class="PS-linkToCopy-div">
+                      <input
+                        type="text"
+                        id="PS-linkToCopy"
+                        value="https://profesia.com"
+                        readonly
+                      />
+                      <button id="PS-copyBtn" class="PS-button-copy">
+                        <img
+                          id="PS-CopyImage"
+                          src="assets/images/Copy.svg"
+                          alt="Copy.svg"
+                        />
+                      </button>
+                    </div>
+                    <button id="PS-closeModalBtn" class="PS-button-close">
+                      &times;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="PS-sec-1-div-2">
+            <p style="border: 2px solid #cc33a1">დიზაინი</p>
+            <p style="border: 2px solid #cc33a1">
+              მაღალი <span class="PS-sec-1-div-2-span">მოთხოვნა</span>
+            </p>
+            <p style="border: 2px solid #cc33a1">500 - 3000 ₾+</p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="PS-section-2">
+      <div>
+        <div>საჭირო უნარები:</div>
+        <p>3D პროგრამები</p>
+        <p>ტექსტურირება</p>
+        <p>UV მეფინგი</p>
+        <p>რენდერინგი</p>
+        <p>პოსტპროცესინგი</p>
+        <p>კრეატიულობა</p>
+        <p>დროის მართვა</p>
+        <p>გუნდური მუშაობა</p>
+        <p>ანალიზის უნარი</p>
+      </div>
+    </section> -->
+      <section class="PS-section-3">
+        <div>
+          <div class="PS-subheaders">
+            <div class="PS-subheader-1">
+              <img src="assets/images/Photo-1.png" alt="Photo-1.png" />
+              <h1>ვინ არის 3D გრაფიკოსი?</h1>
+              <p>
+                წარმოიდგინე სამყარო, სადაც შენ შეგიძლია შექმნა ყველაფერი, რასაც
+                შენი ფანტაზია მოისურვებს! სწორედ ამას აკეთებს 3D გრაფიკოსი – ის
+                არის ჯადოქარი, რომელიც ციფრული ხელსაწყოების მეშვეობით ქმნის
+                სამგანზომილებიან სასწაულებს. <br />
+                <br />
+                ეს პროფესია გაძლევს ძალას  გააცოცხლო პერსონაჟები ვიდეოთამაშებში,
+                შექმნა შთამბეჭდავი ვიზუალური ეფექტები ფილმებისთვის, დააპროექტო
+                მომავლის შენობები არქიტექტურული პრეზენტაციებისთვის ან თუნდაც,
+                გაამრავალფეროვნო სარეკლამო კამპანიები უნიკალური ვიზუალით. შენი
+                შექმნილი ნამუშევრები შეიძლება იყოს  ანიმაციებში, მულტიმედიურ
+                პროექტებში და ყველგან, სადაც ვიზუალური ეფექტია საჭირო. <br />
+                <br />
+                3D გრაფიკოსის მთავარი მიზანია შექმნას არა მხოლოდ ლამაზი, არამედ
+                აზრიანი და ეფექტიანი ვიზუალი, რომელიც სრულყოფილად ერგება
+                კონკრეტული პროექტის მიზნებს. თუ გსიამოვნებს რაღაცის შექმნის
+                პროცესი, გაქვს განვითარებული ვიზუალური აღქმა და გსურს შენი ნიჭი
+                ციფრულ სამყაროში გამოიყენო, მაშინ 3D გრაფიკოსობა შენთვისაა!
+              </p>
+            </div>
+
+            <div class="PS-subheader-2">
+              <div>
+                <div>
+                  <h1>რას აკეთებს 3D გრაფიკოსი?</h1>
+                  <ul>
+                    <li>
+                      ამუშავებს 3D მოდელებს: პერსონაჟებს, ობიექტებსა და გარემოს
+                    </li>
+                    <li>
+                      ქმნის ტექსტურებს და აძლევს მასალებს რეალისტურ ვიზუალს
+                    </li>
+                    <li>იყენებს სინათლეს, ჩრდილებს და მულტიმედიურ ეფექტებს</li>
+                    <li>ამზადებს ანიმაციებს და რენდერებს</li>
+                    <li>ქმნის დიზაინის კონცეფციებს და პროტოტიპებს</li>
+                    <li>
+                      მონაწილეობს პროექტის გრაფიკული ელემენტების დაგეგმვაში
+                    </li>
+                    <li>ტესტავს და აყალიბებს საბოლოო ვიზუალს</li>
+                    <li>მუდმივად ეცნობა ახალ ტექნოლოგიებსა და პროგრამებს</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="PS-subheader-3">
+              <div class="PS-subheader-3-content">
+                <div>
+                  <img src="assets/images/Photo-3.png" alt="Photo-3.png" />
+                </div>
+                <div class="PS-subheader-3-content-text">
+                  <div class="PS-subheader-3-header">
+                    რა ცოდნას და უნარებს უნდა ფლობდე წარმატებისთვის?
+                  </div>
+                  <div>
+                    <h1>რბილი უნარები:</h1>
+                    <ul>
+                      <li>კრეატიული აზროვნება</li>
+                      <li>ყურადღება დეტალებზე</li>
+                      <li>ეფექტური კომუნიკაცია</li>
+                      <li>დროის მართვის უნარი</li>
+                      <li>ინფორმაციის მოძიება</li>
+                      <li>პრობლემების ანალიზი და გადაჭრა</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="PS-subheader-3">
+              <div
+                class="PS-subheader-3-content PS-subheader-3-content-reverse"
+              >
+                <div class="PS-subheader-3-content-text">
+                  <div class="PS-subheader-3-header">
+                    რა ცოდნას და უნარებს უნდა ფლობდე წარმატებისთვის?
+                  </div>
+                  <div>
+                    <h1>ტექნიკური უნარები:</h1>
+                    <ul>
+                      <li>
+                        3D პროგრამების ცოდნა: Blender, 3ds Max, Maya, Cinema 4D
+                      </li>
+                      <li>
+                        ტექსტურირების ინსტრუმენტების ცოდნა: Substance Painter,
+                        Photoshop
+                      </li>
+                      <li>
+                        რენდერინგის სისტემების ცოდნა: Cycles, V-Ray, Arnold,
+                        Redshift
+                      </li>
+                      <li>
+                        ანიმაციის ხელსაწყოების ცოდნა: Blender, Maya და სხვა
+                      </li>
+                      <li>
+                        თამაშებისა და VR/AR პლატფორმების ცოდნა: Unreal Engine,
+                        Unity
+                      </li>
+                      <li>UV მეფინგი და მოდელირების ტექნიკები</li>
+                      <li>სცენის განათება და პოსტპროცესინგი</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <img src="assets/images/Photo-4.png" alt="Photo-4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="PS-section-4">
+        <div>
+          <div class="PS-section-4-name">როგორ დავიწყოთ?</div>
+          <div class="PS-section-4-text-arrow-block">
+            <div class="PS-text-arrow-module-1">
+              <div class="PS-text-arrow-text-1">
+                <div>დაიწყე 3D დიზაინის საფუძვლების შესწავლა</div>
+              </div>
+              <div class="PS-text-arrow-arrow"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+            <div class="PS-text-arrow-module-2">
+              <div class="PS-text-arrow-text-2">
+                <div>აირჩიე პროგრამა (მაგ. Blender) და ივარჯიშე ყოველდღე</div>
+              </div>
+              <div class="PS-text-arrow-arrow"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+            <div class="PS-text-arrow-module-1">
+              <div class="PS-text-arrow-text-1">
+                <div>გაიარე კურსი და ისწავლე შენთვის საინტერესო პროგრამა</div>
+              </div>
+              <div class="PS-text-arrow-arrow"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+            <div class="PS-text-arrow-module-2">
+              <div class="PS-text-arrow-text-2">
+                <div>დაიწყე მცირე პროექტებით და შექმენი პორტფოლიო</div>
+              </div>
+              <div class="PS-text-arrow-arrow"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+            <div class="PS-text-arrow-module-1">
+              <div class="PS-text-arrow-text-1">
+                <div>ეძებე სტაჟირების ან პრაქტიკის შესაძლებლობები</div>
+              </div>
+              <div class="PS-text-arrow-arrow"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+            <div class="PS-text-arrowtip-module">
+              <div class="PS-text-arrow-text-tip"></div>
+              <div class="PS-text-arrow-arrow-tip"></div>
+              <div class="PS-text-arrow-buffer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="PS-Share-profession-to-others-div">
+        <button id="PS-openModalButton" class="PS-Share-profession-to-others">
+          გაუზიარე <span>პროფესია</span> სხვას
+        </button>
+      </div>
+      <div class="PS-section-similar-professions-parent">
+        <section class="PS-section-similar-professions">
+          <h1>მსგავსი პროფესიები</h1>
+
+          <!-- Slider main container -->
+          <div class="swiper-container my-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="PS-result-card">
+                  <div class="PS-heart-div">
+                    <img
+                      src="assets/images/Card-Heart.svg"
+                      alt="Card-Heart.svg"
+                    />
+                  </div>
+                  <a href="index-PDP.html">
+                    <img
+                      src="assets/images/3d გრაფიკოსი.png"
+                      alt="3D გრაფიკოსი.png"
+                    />
+                  </a>
+                  <div class="PS-card-info">
+                    <div class="PS-name">
+                      <h1>3D გრაფიკოსი</h1>
+                    </div>
+                    <div class="PS-card-info-text-button-V2">
+                      <h4>მაღალი მოთხოვნა</h4>
+                      <h4>500 - 3000 ₾+</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="PS-result-card">
+                  <div class="PS-heart-div">
+                    <img
+                      src="assets/images/Card-Heart.svg"
+                      alt="Card-Heart.svg"
+                    />
+                  </div>
+                  <img
+                    src="assets/images/front-end დეველოპერი.png"
+                    alt="Front-End დეველოპერი.png"
+                  />
+                  <div class="PS-card-info">
+                    <div class="PS-name">
+                      <h1>FRONT-END დეველოპერი</h1>
+                    </div>
+                    <div class="PS-card-info-text-button-V2">
+                      <h4>მაღალი/ მოთხოვნა</h4>
+                      <h4>500 - 6000 ₾+</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="PS-result-card">
+                  <div class="PS-heart-div">
+                    <img
+                      src="assets/images/Card-Heart.svg"
+                      alt="Card-Heart.svg"
+                    />
+                  </div>
+                  <img
+                    src="assets/images/HR ადმინისტრირების სპეციალისტი.png"
+                    alt="HR ადმინისტრირების სპეციალისტი.png"
+                  />
+                  <div class="PS-card-info">
+                    <div class="PS-name">
+                      <h1>HR ადმინისტრირების სპეციალისტი</h1>
+                    </div>
+                    <div class="PS-card-info-text-button-V2">
+                      <h4>მაღალი მოთხოვნა</h4>
+                      <h4>1000 - 3000 ₾+</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="PS-result-card">
+                  <div class="PS-heart-div">
+                    <img
+                      src="assets/images/Card-Heart.svg"
+                      alt="Card-Heart.svg"
+                    />
+                  </div>
+                  <img
+                    src="assets/images/hr მენეჯერი სპეციალისტი.png"
+                    alt="hr მენეჯერი სპეციალისტი.png"
+                  />
+                  <div class="PS-card-info">
+                    <div class="PS-name">
+                      <h1>HR მენეჯერი/ სპეციალისტი</h1>
+                    </div>
+                    <div class="PS-card-info-text-button-V2">
+                      <h4>მაღალი მოთხოვნა</h4>
+                      <h4>2500 - 15000 ₾+</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
+      <div class="PS-section-5-parent">
+        <section class="PS-section-5">
+          <div class="PS-section-5-name">შენთვის საინტერესო კურსები</div>
+          <div class="PS-cards">
+            <div class="PS-card-1">
+              <div>
+                <a
+                  href="https://smartacademy.ge/trainings/24-3D-Graphics-Blender"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/Rectangle 2-1.png"
+                    alt="Rectangle 2-1.png"
+                /></a>
+              </div>
+            </div>
+            <div class="PS-card-1">
+              <div>
+                <a
+                  href="https://smartacademy.ge/trainings/370-Graphic-Design"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/Rectangle 2-2.png"
+                    alt="Rectangle 2-2.png"
+                /></a>
+              </div>
+            </div>
+            <div class="PS-card-1">
+              <div>
+                <img
+                  src="assets/images/Rectangle 2-3.png"
+                  alt="Rectangle 2-3.png"
+                />
+              </div>
+            </div>
+            <div class="PS-card-1">
+              <div>
+                <img
+                  src="assets/images/Rectangle 2-1.png"
+                  alt="Rectangle 2-1.png"
+                />
+              </div>
+            </div>
+            <div class="PS-card-1">
+              <div>
+                <img
+                  src="assets/images/Rectangle 2-2.png"
+                  alt="Rectangle 2-2.png"
+                />
+              </div>
+            </div>
+            <div class="PS-card-1">
+              <div>
+                <img
+                  src="assets/images/Rectangle 2-3.png"
+                  alt="Rectangle 2-3.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="PS-prev-arrow">
+              <img
+                src="assets/images/previous-arrow.svg"
+                alt="previous-arrow.svg"
+              />
+            </button>
+            <button class="PS-next-arrow">
+              <img src="assets/images/next-arrow.svg" alt="next-arrow.svg" />
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="PS-Last-update-time-parent">
+        <div class="PS-Last-update-time">
+          ინფორმაცია ბოლოს დარედაქტირდა: 12 სექტემბერი, 2025
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="PS-Footer-div-1">
+        <img src="assets/images/Vector.svg" alt="Vector.svg" />
+        <div class="PS-Footer-contact-info">
+          <p>info@profesia.ge</p>
+          <p>FAQ</p>
+          <a href="privecy.html">Privacy Policy</a>
+        </div>
+        <div class="PS-Footer-social-networks">
+          <img
+            src="assets/images/FacebookLogoFooter.svg"
+            alt="FacebookLogoFooter.svg"
+          />
+          <img
+            src="assets/images/InstagramLogoFooter.svg"
+            alt="InstagramLogoFooter.svg"
+          />
+          <img
+            src="assets/images/LinkedinLogoFooter.svg"
+            alt="LinkedinLogoFooter.svg"
+          />
+        </div>
+      </div>
+      <div class="PS-Footer-div-2">
+        <p>2025 Profesia. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

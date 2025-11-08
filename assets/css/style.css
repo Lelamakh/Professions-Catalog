@@ -89,6 +89,9 @@ a {
 
 body {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* Or 100vh for older browser support */
 }
 
 /* -------- -------- ---------------------------------------------------------
@@ -124,7 +127,7 @@ header {
   height: 69px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   transition: top 0.3s ease-in-out;
 }
 
@@ -286,6 +289,30 @@ nav {
   color: #333333;
 } */
 
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+გვერდის მიერ 100% ვერტიკალური გაშლისთვის (დასაწყისი)
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+.PS-For-View {
+  flex-grow: 1;
+}
+
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+გვერდის მიერ 100% ვერტიკალური გაშლისთვის (დასასრული)
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------*/
+
 .navbar {
   display: flex;
   align-items: center;
@@ -358,6 +385,9 @@ nav {
   max-width: 100%;
   width: 100%;
   /* width: 1440px; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* Or 100vh for older browser support */
 }
 .lmfirstsection {
   background: linear-gradient(
@@ -2051,7 +2081,7 @@ for index-List.css     START
   /* width: 1440px; */
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .PS-search {
@@ -2197,6 +2227,20 @@ for index-List.css     START
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  animation: slideFromRight 0.3s ease-out;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translate(100%, 0); /* Start right of the viewport */
+    opacity: 0;
+    background-color: rgb(0, 0, 0, 0.05);
+  }
+  to {
+    transform: translate(0, 0); /* End in the center */
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
 }
 
 /* Modal Content/Box */
@@ -2228,7 +2272,7 @@ for index-List.css     START
   /* height: 709px; */
   overflow: scroll;
   position: absolute;
-  top: 0;
+  top: 69px;
   right: 0;
 }
 
@@ -2384,12 +2428,13 @@ label {
   border: none;
   background-color: #ffffff;
   opacity: 1;
-  padding: 4px 8px;
+  padding: 6px 12px;
 
   gap: 10px;
   border-radius: 4px;
   font-size: 12px;
   cursor: pointer;
+  text-transform: uppercase;
 
   font-family: "Helvetica Neue LT GEO Caps 55 Roman";
   font-weight: 400;
@@ -2397,6 +2442,14 @@ label {
   line-height: 16px;
   letter-spacing: 5%;
   color: #808080;
+}
+
+.PS-filter-choice-space {
+  width: 294px;
+}
+
+.PS-more {
+  margin-top: -18px;
 }
 
 /* .PS-active {
@@ -2416,6 +2469,7 @@ label {
 
 .PS-filter-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 294px;
   padding: 16px 0;
@@ -2493,7 +2547,7 @@ label {
   border-radius: 8px;
   width: 220px;
   height: 43px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   color: #333333;
   cursor: pointer;
 
@@ -2527,14 +2581,13 @@ label {
   /* background-color: yellow; */
   background-image: url(../images/Card-Heart-Favorite.svg);
   background-position: center;
-  background-size: 27px;
+  background-size: 29px;
   background-repeat: no-repeat;
 }
-.PS-favorite > .PS-heart-div:hover {
-  background-image: url(../images/Heart-Hover.svg),
-    url(../images/Card-Heart-Favorite.svg);
-  background-size: 32px, 30px;
-}
+/* .PS-favorite > .PS-heart-div:hover {
+  background-image: url(../images/Heart-Hover.svg);
+  background-size: 29px;
+} */
 
 .PS-favorite > .PS-heart-div > img {
   display: none;
@@ -2576,7 +2629,7 @@ label {
   background-image: url(../images/Heart-Hover.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 32px;
+  background-size: 29px;
 }
 
 .PS-card-info {
@@ -2610,7 +2663,7 @@ label {
   display: flex;
   flex-direction: column;
   padding: 0 12px;
-  gap: 12px;
+  gap: 8px;
 }
 
 .PS-card-info-sub {
@@ -2785,7 +2838,7 @@ footer {
 }
 
 .range-input {
-  width: 53px;
+  width: auto;
   height: 37px;
   text-align: center;
   font-size: 16px;
@@ -3241,6 +3294,7 @@ for index-PDP.css     START
   gap: 24px;
 }
 
+/*
 /* ------------
 
 გალერეა START
@@ -3251,19 +3305,19 @@ img {
   vertical-align: middle;
 } */
 
-/* Position the image container (needed to position the left and right arrows) */
+/* Position the image container (needed to position the left and right arrows) 
 .PS-container {
   width: 560px;
   border: solid red 1px;
   position: relative;
 }
 
-/* Hide the images by default */
+/* Hide the images by default 
 .PS-mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
+/* Add a pointer when hovering over the thumbnail images 
 .PS-cursor {
   cursor: pointer;
 }
@@ -3286,19 +3340,19 @@ img {
 } 
 */
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/3 etc) 
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -3307,7 +3361,7 @@ img {
   top: 0;
 }
 
-/* Container for image text */
+/* Container for image text 
 .PS-caption-container {
   text-align: center;
   background-color: #222;
@@ -3321,13 +3375,13 @@ img {
   clear: both;
 }
 
-/* Six columns side by side */
+/* Six columns side by side 
 .PS-column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumnbail images 
 .PS-demo {
   opacity: 0.6;
 }
@@ -3341,7 +3395,9 @@ img {
 
 გალერეა END
 
--------------- */
+-------------- *
+
+*/
 
 /*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
 /*--------------------   ფოტო გალერეა დასაწყისი   -------------------- */
@@ -3834,10 +3890,9 @@ img {
   width: 100%;
   /* height: 476px; */
   background-color: #ffffff;
-  padding: 0 48px 72px 48px;
+
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 .PS-section-similar-professions {
   /* border: solid green 1px; */
@@ -3931,7 +3986,7 @@ img {
   background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
   margin: 0 auto;
-  padding: 0 48px;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -3947,7 +4002,7 @@ img {
   width: 1440px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* gap: 24px; */
   position: relative;
 }
 
@@ -4479,7 +4534,7 @@ form label {
   padding: 16px 0 0 0;
   display: flex;
   flex-direction: row-reverse;
-  width: 300px;
+  width: 498px;
   /* height: 48px; */
   gap: 8px;
   /* angle: 0 deg; */
@@ -4538,8 +4593,11 @@ form button {
 
 .PS-section-FAQ-item {
   /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   border-radius: 6px;
-  padding: 16px 24px;
+  padding: 16px 48px;
   box-shadow: 0px 4px 8px 0px #0000001a;
 }
 
@@ -4549,7 +4607,7 @@ form button {
   width: 100%;
   text-align: left;
   cursor: pointer;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4564,7 +4622,7 @@ form button {
 
 .PS-section-FAQ-answer {
   display: none;
-  padding: 20px;
+  /* padding: 20px; */
 
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
@@ -4591,10 +4649,6 @@ form button {
   color: #000000;
   /* padding: 20px; */
 }
-
-/* .PS-section-FAQ-question.active .PS-icon {
-  content: "-";
-} */
 
 /* footer {
   /* border: solid black 1px; 
@@ -4919,21 +4973,25 @@ form button {
   }
 
   .PS-section-FAQ-header {
+    /* border: solid red 1px; */
     font-size: 20px;
     line-height: 26px;
     margin: 0 auto;
+    width: 344px;
   }
 
   .PS-section-FAQ-items-group {
     gap: 16px;
   }
 
-  /* .PS-section-FAQ-item {
- 
+  .PS-section-FAQ-item {
     border-radius: 6px;
-    padding: 16px 24px;
+    padding: 8px 16px;
     box-shadow: 0px 4px 8px 0px #0000001a;
-  } */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
   .PS-icon {
     display: none;
@@ -4943,7 +5001,11 @@ form button {
     font-size: 14px;
     line-height: 18px;
     height: auto;
-    padding: 16px 0px;
+    padding: 0;
+  }
+
+  .active-contact {
+    gap: 12px;
   }
 
   .PS-section-FAQ-answer {
@@ -5102,10 +5164,10 @@ for index-Contact.css     END
     background-color: #6d5baf;
     max-width: 600px;
     width: 100%;
-    padding: 16px;
+    padding: 16px 16px 16px 0;
     height: 56px;
     align-items: center;
-    z-index: 30;
+    z-index: 50 !important;
   }
   header > div {
     /* border: solid black 1px; */
@@ -5117,7 +5179,17 @@ for index-Contact.css     END
     padding: 16px 16px 16px 0;
     height: 56px;
     align-items: center;
-    z-index: 30;
+    z-index: 50 !important;
+  }
+
+  .PS-Logo {
+    /* border: solid red 1px; */
+    background-color: #6d5baf;
+    height: 56px;
+    width: 120px;
+    padding: 0 16px;
+    align-content: center;
+    z-index: 50 !important;
   }
 
   /* nav {
@@ -5132,6 +5204,7 @@ for index-Contact.css     END
     height: 24px;
     /* margin-left: 16px; */
     padding-top: 2px;
+    z-index: 50 !important;
   }
 
   .Main-Menu {
@@ -5139,7 +5212,7 @@ for index-Contact.css     END
     display: flex;
     align-content: center;
     /* margin-top: -2px; */
-    margin-right: 10px;
+    /* margin-right: 10px; */
     width: 52px;
     height: 56px;
   }
@@ -5148,7 +5221,8 @@ for index-Contact.css     END
     display: flex;
     position: absolute;
     top: 16px;
-    right: 32px;
+    right: 22px;
+    z-index: 50;
   }
 
   .Mobile-Menu {
@@ -5159,18 +5233,18 @@ for index-Contact.css     END
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 16px;
+    gap: 0;
     position: absolute;
     top: 55px;
     left: 0;
     /* padding: 16px; */
-    z-index: 33;
+    z-index: 30;
     margin: 0;
 
     font-family: "Helvetica Neue LT GEO Caps 55 Roman";
     font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 5%;
   }
 
@@ -5179,6 +5253,7 @@ for index-Contact.css     END
     align-items: center;
     height: 52px;
     padding-left: 16px;
+    z-index: 30;
   }
 
   .Mobile-Menu > li.PS-active-page {
@@ -5206,6 +5281,7 @@ for index-Contact.css     END
     justify-items: center;
     justify-content: center;
     padding: 0;
+    z-index: 50;
   }
 
   /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -5220,8 +5296,8 @@ for index-Contact.css     END
     /* background-color: rgba(0, 0, 0, 0.7); */
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    animation: slideFromTop 0.3s ease-out forwards;
+    z-index: 30;
+    animation: slideFromTop 0.3s ease-out;
   }
 
   /* Styles for the modal content */
@@ -5286,7 +5362,7 @@ for index-Contact.css     END
     justify-content: space-between;
   }
   .PS-section-1 > div {
-    background-color: aqua;
+    background-color: transparent;
     padding: 80px 16px 24px 16px;
     margin: 0 auto;
     max-width: 600px;
@@ -5347,7 +5423,7 @@ for index-Contact.css     END
     line-height: 17px;
     font-weight: 700;
     padding: 8px 10px;
-    background-color: #f1e6fa;
+    background-color: transparent;
     border-radius: 6px;
     width: auto;
     height: 33px;
@@ -5997,10 +6073,9 @@ for index-Contact.css     END
     width: 100%;
     /* height: 476px; */
     background-color: #ffffff;
-    padding: 0 16px;
+
     display: flex;
     flex-direction: column;
-    gap: 16px;
 
     font-size: 18px;
     line-height: 23px;
@@ -6135,13 +6210,13 @@ for index-Contact.css     END
     background-color: rgba(255, 255, 255, 1);
     /* რეკომენდირებული კურსები */
     margin: 0 auto;
-    padding: 32px 16px 0 16px;
+
     max-width: 600px;
     width: 100%;
     /* height: 544px; */
     display: flex;
     flex-direction: column;
-    gap: 24px;
+
     position: relative;
   }
   .PS-section-5 {
@@ -6496,7 +6571,7 @@ for index-List.css     START
   }
 
   .PS-clearInput-button-holder {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     height: 28px;
     width: 28px;
     font-size: 12px;
@@ -6562,9 +6637,9 @@ for index-List.css     START
     /* border: solid red 1px; */
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
     left: 0;
-    top: 56px;
+    top: 0;
+    /* top: 56px; */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -6578,10 +6653,11 @@ for index-List.css     START
   .PS-favorites-modal {
     /* border: solid red 1px; */
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px 0;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+    max-width: 344px;
     width: 100%;
     height: 64px;
 
@@ -6601,6 +6677,7 @@ for index-List.css     START
   .modal-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #fefefe;
     padding: 0;
     /* border: 1px solid #888; */
@@ -6608,7 +6685,7 @@ for index-List.css     START
     /* height: 709px; */
     overflow: scroll;
     /* position: absolute; */
-    /* top: 0; */
+    top: 56px;
     /* right: 0; */
     margin: 0 auto;
   }
@@ -6652,12 +6729,12 @@ for index-List.css     START
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
-    /* height: 575px; */
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     gap: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 56px;
     left: 0;
     background-color: #ffffff;
@@ -6696,8 +6773,14 @@ for index-List.css     START
   .PS-filter-input {
     /* border: solid red 1px; */
     display: none;
+    align-items: center;
     flex-direction: column;
     gap: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-bottom: 60px;
   }
 
   .close2 {
@@ -6732,6 +6815,9 @@ for index-List.css     START
     width: 344px;
     background-color: #ffffff;
     z-index: 1;
+  }
+  .PS-filter-name-content-scroll {
+    overflow-y: scroll;
   }
 
   .PS-filter-sphere {
@@ -6810,7 +6896,9 @@ for index-List.css     START
   }
 
   .PS-filter-buttons {
+    /* border: solid red 1px; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 344px;
     z-index: 1;
@@ -7058,7 +7146,7 @@ for index-List.css     START
     display: flex;
     flex-direction: column;
     padding: 0 8px;
-    gap: 0px;
+    gap: 4px;
   }
 
   .PS-card-info-sub {
@@ -7199,7 +7287,7 @@ footer {
     align-items: center;
     gap: 15px;
     /* width: 100%; */
-    width: 294px;
+    width: 344px;
     /* padding: 20px; */
     background: #ffffff;
     /* border-radius: 12px; */
@@ -7207,11 +7295,13 @@ footer {
   }
 
   .range-input {
-    width: 53px;
-    height: 37px;
+    width: auto;
+    height: 25px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0%;
     color: #808080;
     border: 1px solid #808080;
     border-radius: 8px;
@@ -7228,7 +7318,7 @@ footer {
 
   .slider-wrapper {
     position: relative;
-    max-width: 156px;
+    max-width: 214px;
     width: 100%;
     height: 8px;
     background: #cccccc;
@@ -8164,12 +8254,17 @@ for index-List.css     END
   /* privecy */ /* privecy */
   /* privecy */
   /* privecy */
+  .lmallcookies {
+    padding-top: 48px;
+  }
+
   .lmcookie1 {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
   }
   .lmcookie1 h1 {
+    /* border: solid red 1px; */
     font-family: "Helvetica Neue LT GEO Caps 75 roman";
     font-weight: 700;
     font-style: 75 Bold;

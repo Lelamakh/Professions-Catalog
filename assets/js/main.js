@@ -32,16 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const questions = document.querySelectorAll(".PS-section-FAQ-question");
   questions.forEach((question) => {
     question.addEventListener("click", () => {
-      question.classList.toggle("active");
+      question.classList.toggle("active-contact");
       const answer = question.nextElementSibling;
       const icon = question.querySelector(".PS-icon");
 
+      // Define the HTML for both the Plus and Minus icons
+      const plusIconHTML = `<img src="assets/images/Plus.svg" alt="Plus.svg" />`;
+      const minusIconHTML = `<img src="assets/images/Minus.svg" alt="Minus.svg" />`; // Assumes you have a Minus SVG
+
       if (answer.style.display == "block") {
         answer.style.display = "none";
-        icon.textContent = "+";
+        // Use innerHTML to insert the image HTML for "Plus"
+        icon.innerHTML = plusIconHTML;
       } else {
         answer.style.display = "block";
-        icon.textContent = "-";
+        // Use innerHTML to insert the image HTML for "Minus"
+        icon.innerHTML = minusIconHTML;
       }
     });
   });
@@ -859,21 +865,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
 
+/* ========================= დამალვადი ჰედერი დესკტოპისათვის (დასაწყისი) ========================= */
 // Get the header element
 const header = document.getElementById("header");
-// Get the height of the header dynamically
-const headerHeight = header.offsetHeight;
-// Store the previous scroll position
-let lastScrollTop = 0;
 
-// Listen for the scroll event on the window
-window.addEventListener("scroll", () => {
+// Function to handle the header visibility logic during scroll
+function handleScroll() {
   // Get the current scroll position
   const currentScrollTop =
     window.pageYOffset || document.documentElement.scrollTop;
 
   // Check scroll direction
-  if (currentScrollTop > lastScrollTop) {
+  if (currentScrollTop > window.lastScrollTop) {
     // Scrolling Down: Add the hide class
     header.classList.add("hide-header");
   } else {
@@ -882,5 +885,30 @@ window.addEventListener("scroll", () => {
   }
 
   // Update the previous scroll position for the next scroll event
-  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-});
+  // Use a window property to persist lastScrollTop across function calls
+  window.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+}
+
+// Function to attach or remove the scroll listener based on screen width
+function toggleScrollListener() {
+  if (window.innerWidth >= 600) {
+    // Screen is 600px or wider: Attach the scroll listener
+    window.addEventListener("scroll", handleScroll);
+    // Initialize lastScrollTop when the listener is attached
+    window.lastScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+  } else {
+    // Screen is less than 600px: Remove the scroll listener (if it exists)
+    window.removeEventListener("scroll", handleScroll);
+    // Ensure the header is visible by removing the hide class if it exists
+    header.classList.remove("hide-header");
+  }
+}
+
+// Initial call to set the correct state on page load
+toggleScrollListener();
+
+// Add an event listener to re-evaluate when the window is resized
+window.addEventListener("resize", toggleScrollListener);
+
+/* ========================= დამალვადი ჰედერი დესკტოპისათვის (დასასრული) ========================= */

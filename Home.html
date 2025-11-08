@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professions Catalog</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" /> -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="maincontainer">
@@ -26,15 +27,13 @@
               <div id="PS-myModal" class="PS-modal-overlay">
                 <div class="PS-modal-content-menu">
                   <ul class="Mobile-Menu">
-                    <li>
+                    <li class="PS-active-page">
                       <a href="Home.html">მთავარი</a>
                     </li>
                     <li>
                       <a href="List.html">პროფესიები</a>
                     </li>
-                    <li class="PS-active-page">
-                      <a href="Quiz.html">ქვიზი</a>
-                    </li>
+                    <li><a href="Quiz.html">ქვიზი</a></li>
                     <li><a href="About.html">ჩვენ შესახებ</a></li>
                     <li><a href="Contact.html">კონტაქტი</a></li>
                     <li>
@@ -60,6 +59,7 @@
           </nav>
         </div>
       </header>
+
       <div class="PS-For-View">
         <div id="PS-myModalFavorites" class="PS-modal">
           <div class="modal-content">
@@ -79,7 +79,7 @@
                     alt="Card-Heart.svg"
                   />
                 </div>
-                <a href="index-PDP.html">
+                <a href="Internal_Page.html">
                   <img
                     src="assets/images/3d გრაფიკოსი.png"
                     alt="3D გრაფიკოსი.png"
@@ -230,159 +230,149 @@
             </div>
           </div>
         </div>
-        <div class="newquizwrapper">
-          <div class="newquizleft">
-            <h1>აღმოაჩინე შენი პროფესია</h1>
-            <p>
-              პროფესიის არჩევა არც ისე მარტივი პროცესია განსაკუთრებით მაშინ,
-              როცა გარშემო უამრავი ინფორმაციაა და ტექნოლოგიურ განვითარებასთან
-              ერთად, პროფესიების არჩევანი კიდევ უფრო მრავალფეროვანი ხდება.
-              <br />
-              <br />
-              ინფორმაცია, რომელსაც პროფესიების შესახებ იღებ, ხშირად გაფანტულია
-              სხვადასხვა პლატფორმაზე, ასევე, ზოგადია და არ ერგება შენს პირად
-              ინტერესებს ან შესაძლებლობებს. სწორედ ამიტომ, შევქმენით ქვიზი,
-              რომელიც აანალიზებს შენს ინტერესებს, უნარებს და სამუშაო სტილს. ჩვენ
-              გისვამთ კითხვებს, რომ გავიგოთ:
-            </p>
-            <br />
-            <ul>
-              <li>რა გიზიდავს</li>
-              <li>რა გამოგდის კარგად</li>
-              <li>რა გიქმნის კომფორტს</li>
-            </ul>
 
-            <p>
-              <br />შენი პასუხები მუშავდება ხელოვნური ინტელექტის ალგორითმით,
-              რომელიც უამრავ მონაცემსა და კარიერულ პროფილზეა დაფუძნებული. ეს
-              უზრუნველყოფს, რომ მიღებული რეკომენდაცია იყოს მაქსიმალურად ზუსტი და
-              შენზე მორგებული. <br />
-              <br />
-              ქვიზის შესავსებად დაგჭირდება 3–5 წუთი. დასრულებისთანავე გაიგებ,
-              რომელი სფეროა თანხვედრაში შენს ინტერესებთან და უნარებთან ყველაზე
-              მეტად და რატომ. <br />
-              შემდეგ, კი გაეცნობი შენთვის შესაფერისი პროფესიების ჩამონათვალს,
-              რომელიც შეესაბამება იმ სამუშაო გარემოს, სადაც თავს ყველაზე
-              კომფორტულად გრძნობ და გაიგებ, როგორ არის ესა თუ ის მათგანი
-              დაკავშირებული შენს შესაძლებლობებთან.
-            </p>
-            <button class="newstartquiz">
-              <span>დაიწყე ქვიზი</span>
+        <section class="lmfirstsection">
+          <div class="lmfirstsecionwrapper">
+            <div class="lmfirstsectionleft">
+              <span class="lmmaintitle">აღმოაჩინე შენი მომავლის პროფესია</span>
+              <p class="lmloremtext">
+                გაინტერესებს, რომელი პროფესია შეგეფერება? მონიშნე შენი
+                ინტერესები, უნარები, სახელფასო მოლოდინები ინტერაქტიულ ფილტრზე,
+                და ჩვენ გაგაცნობთ პროფესიებს, რომლებიც თანამედროვე ბაზარზე
+                კარიერული განვითარების რეალურ პერსპექტივას ქმნის. გადადგი
+                პირველი ნაბიჯი ახალი პროფესიისკენ, დაიწყე ძიება.
+              </p>
+              <div class="lmbuttons">
+                <!-- "დაიწყე ძებნა" ღილაკზე მე დავლინკე List-ის გვერდი :). პაატა -->
 
-              <img src="assets/images/Soc media icons.svg" alt="" />
-            </button>
-          </div>
-
-          <div class="newquizright">
-            <img class="pngdesct" src="assets/images/Photo (7).png" alt="" />
-            <img class="pngmobile" src="assets/images/Photo (6).png" alt="" />
-          </div>
-        </div>
-
-        <!-- <section class="lmquizsection">
-        <h1>დაიწყე კარიერული ქვიზი</h1>
-        <div class="lmprogressbar">
-          <div class="lmstep">
-            <div class="lmlabel1">ინტერესები</div>
-            <div class="lmcircle1"></div>
-          </div>
-          <div class="lmstep">
-            <div class="lmlabel">უნარები</div>
-            <div class="lmcircle"></div>
-          </div>
-          <div class="lmstep">
-            <div class="lmlabel">სამუშაო სტილი</div>
-            <div class="lmcircle"></div>
-          </div>
-          <div class="lmstep">
-            <div class="lmlabel">მოტივაცია</div>
-            <div class="lmcircle"></div>
-          </div>
-          <div class="lmstep">
-            <div class="lmlabel">შედეგი</div>
-            <div class="lmcircle"></div>
-          </div>
-        </div>
-        <div class="lmmainquestion">
-          <h2>რა საქმიანობა გაფიქრებინებს: „ეს ჩემი საქმეა!"</h2>
-        </div>
-        <form class="quizform" id="quizform">
-          <label class="lmoption">
-            <input type="radio" name="answer" value="1" />ვიზუალური იდეების
-            ციფრულ სამყაროდ ქცევა
-          </label>
-          <label class="lmoption">
-            <input type="radio" name="answer" value="2" />კოდის წერა და
-            სისტემების აწყობა
-          </label>
-          <label class="lmoption">
-            <input type="radio" name="answer" value="3" />ბრენდის პოპულარიზაცია
-            და აუდიტორიასთან კომუნიკაცია
-          </label>
-          <label class="lmoption">
-            <input type="radio" name="answer" value="4" />მომხმარებლის
-            საჭიროებების ცოდნა და გაყიდვები
-          </label>
-          <label class="lmoption">
-            <input type="radio" name="answer" value="5" />ადამიანების მართვა და
-            გუნდური გარემოს შექმნა
-          </label>
-
-          <label class="lmoption">
-            <input type="radio" name="answer" value="6" />პროექტების დაგეგმვა და
-            გუნდის მართვა
-          </label>
-        </form>
-        <div class="lmquizbuttons">
-          <a href="index.html">
-            <button class="lmfirstbutton">დაბრუნდი</button>
-          </a>
-          <a href="#lmmodal" class="lmsecondbutton12">გააგრძელე</a>
-        </div>
-        <div class="divfornextmodal">
-          <h6>შემდეგი მოდული: უნარები</h6>
-          <img src="assets/images/nextmodalicon.png" alt="" />
-        </div>
-      </section> -->
-
-        <!-- მოდალი მაქვს გამოსატანი----------------------------------------------------- -->
-        <!-- <section id="lmmodal" class="lmmodaloverlay">
-        <div class="lmmodal">
-          <a href="quiz.html">
-            <img class="lmbackbutton" src="assets/images/Group 13.png" alt="" />
-          </a>
-          <h1>ნახე შედეგები</h1>
-          <p>
-            შენთვის ყველაზე შესაფერისია — დიზაინი შენ სამყაროს ფერებით,
-            ფორმებითა და შთაგონებით აღიქვამ. გიყვარს იდეების ვიზუალურად
-            გაცოცხლება და ხედავ იმ დეტალებს, რასაც სხვები ვერ ამჩნევენ. შენი
-            სტიქიაა კრეატიულობა და ინდივიდუალობა — სწორედ ამიტომ, დიზაინის სფერო
-            შენთვის საუკეთესო გზაა საკუთარი თავის სრულად გამოსახატად.
-          </p>
-          <div class="lmresultpercentages">
-            <div class="lmpurple">57%</div>
-            <div class="lmblue">32%</div>
-            <div class="lmgreen">11%</div>
-          </div>
-          <div class="lmlistwithbuttons">
-            <div class="lmlist1">
-              <div class="lmpurplebutton"></div>
-              <h3 class="lmlistdesign">დიზაინი</h3>
+                <a href="index-List.html"
+                  ><button class="lmfirstbutton12">
+                    იპოვე შენი პროფესია
+                  </button></a
+                >
+              </div>
             </div>
-            <div class="lmlist2">
-              <div class="lmbluebutton"></div>
-              <h3 class="lmlistdesign">მარკეტინგი</h3>
-            </div>
-            <div class="lmlist3">
-              <div class="lmgreenbutton"></div>
-              <h3 class="lmlistdesign">გაყიდვები</h3>
+            <div class="lmfirstsectionright">
+              <div class="lmfirstsectionimage">
+                <img
+                  class="lmframe"
+                  src="assets/images/Monitor.png"
+                  alt="Monitor Frame"
+                />
+              </div>
+              <div class="lmscreen">
+                <div class="lmmonitorslider">
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=3D Graphic Designer.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=Corporate Salesman.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=Front-end Developer.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=General Manager (2).png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=IT & Tech Recruiter.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="lmmonslide">
+                    <img
+                      src="assets/images/Profession=Marketing Specialist.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <h2 class="lmlefttitle">
-            პროფესიები, რომელმაც შეიძლება დაგაინტერესოს
-          </h2>
-        </div>
-      </section> -->
+        </section>
+        <section class="lmcategories">
+          <div class="lmcards">
+            <button class="lmname1">დიზაინი</button>
+
+            <button class="lmname2">IT & DEVELOPMENT</button>
+
+            <button class="lmname3">მარკეტინგი</button>
+
+            <button class="lmname4">გაყიდვები</button>
+
+            <button class="lmname5">ფოტო/ვიდეო</button>
+
+            <button class="lmname6">მენეჯმენტი</button>
+          </div>
+        </section>
+        <section class="quizsection">
+          <div class="lmwrapper2">
+            <div class="lmwrapper2right">
+              <h1>კარიერული გზამკვლევი</h1>
+              <p class="quizp">
+                დაგვეხმარე უკეთ გაგიცნოთ — უპასუხე რამდენიმე მარტივ კითხვას,
+                შენს ინტერესებზე, უნარებზე და პროფესიულ მოლოდინებზე.
+                <br /><br />
+                ჩვენ კი გირჩევთ პროფესიას, რომელიც შენს ტემპს, მიზნებსა და
+                შესაძლებლობებს შეეფერება.
+              </p>
+              <a href="quiz.html">
+                <button class="lmstartquiz">
+                  <span>დაიწყე ქვიზი</span>
+
+                  <img
+                    src="assets/images/Soc media icons.svg"
+                    alt="Soc media icons"
+                  />
+                </button>
+              </a>
+            </div>
+            <div class="lmwrapper2left">
+              <img src="assets/images/Photo (1).png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="dayprof">
+          <div class="dayprofwrapper">
+            <div class="daywrapperright">
+              <img src="assets/images/Photo.png" alt="" />
+            </div>
+            <div class="daywrapperleft">
+              <h1>დღის პროფესია - 3D გრაფიკოსი</h1>
+              <p>
+                3D გრაფიკოსის მთავარი მიზანია შექმნას არა მხოლოდ ლამაზი, არამედ
+                აზრიანი და ეფექტიანი ვიზუალი, რომელიც სრულყოფილად ერგება
+                კონკრეტული პროექტის მიზნებს. <br /><br />
+                თუ გსიამოვნებს რაღაცის შექმნის პროცესი, გაქვს განვითარებული
+                ვიზუალური აღქმა და გსურს შენი ნიჭი ციფრულ სამყაროში გამოიყენო,
+                მაშინ 3D გრაფიკოსობა შენთვისაა!
+              </p>
+              <!-- <div class="lmknowmorenicon">
+          <button class="dayprofbtn">გაიგე მეტი</button>
+          <img src="assets/images/ArrowRight.png" alt="" />
+        </div> -->
+              <a href="">
+                <button class="lmknowmore">
+                  <span>გაიგე მეტი</span>
+                  <img src="assets/images/Soc media icons.svg" alt="" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
 
       <footer>
@@ -391,7 +381,7 @@
           <div class="PS-Footer-contact-info">
             <!-- <p>591 67 00 67</p> -->
             <!-- <p>0322 12 10 25</p> -->
-            <p>info@profesia.ge</p>
+            <p><a href="mailto:info@profesia.ge">info@profesia.ge</a></p>
             <p>FAQ</p>
             <a href="privecy.html">Privacy Policy</a>
           </div>
@@ -420,7 +410,7 @@
           </div>
         </div>
         <div class="PS-Footer-div-2">
-          <a href="cookies.html"> 2025 Profesia. All rights reserved. </a>
+          <a href="Cookies.html"> 2025 Profesia. All rights reserved. </a>
           <!-- <a href="cookies.html">
           <p>Cookie Settings</p>
         </a> -->

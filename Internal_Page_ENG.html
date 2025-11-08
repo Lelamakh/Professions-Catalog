@@ -8,42 +8,54 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
-      </a>
-      <nav>
-        <div class="Main-Menu">
-          <img
-            src="assets/images/BurgerMenu.svg"
-            alt="BurgerMenu.svg"
-            class="Burger-Menu"
-          />
-          <ul class="Mobile-Menu">
-            <li><a href="index.html">მთავარი</a></li>
-            <li class="PS-active-page">
-              <a href="index-List.html">პროფესიები</a>
-            </li>
-            <li><a href="quiz.html">ქვიზი</a></li>
-            <li><a href="about.html">ჩვენ შესახებ</a></li>
-            <li><a href="index-Contact.html">კონტაქტი</a></li>
-            <li><a href="#" class="For-Mobile">ფავორიტები</a></li>
-            <li>
-              <a href="index-PDP.html">
-                <div class="For-Mobile">
-                  <img src="assets/images/GE-icon.svg" alt="GE-icon.svg" /></div
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="Heart-div">
-          <img src="assets/images/Heart.svg" alt="Heart.svg" />
-        </div>
-        <a href="index-PDP.html">
-          <div class="Lang-div">
-            <img src="assets/images/GE-icon.svg" alt="GE-icon.svg" /></div
-        ></a>
-      </nav>
+    <header id="header">
+      <div>
+        <a href="Home.html" class="PS-Logo">
+          <img src="assets/images/Vector.svg" alt="Vector.svg" class="Logo" />
+        </a>
+        <nav>
+          <div class="Main-Menu">
+            <img
+              src="assets/images/BurgerMenu.svg"
+              alt="BurgerMenu.svg"
+              id="PS-toggleModalBtn"
+              class="Burger-Menu"
+            />
+
+            <div id="PS-myModal" class="PS-modal-overlay">
+              <div class="PS-modal-content-menu">
+                <ul class="Mobile-Menu">
+                  <li>
+                    <a href="Home.html">მთავარი</a>
+                  </li>
+                  <li class="PS-active-page">
+                    <a href="List.html">პროფესიები</a>
+                  </li>
+                  <li><a href="Quiz.html">ქვიზი</a></li>
+                  <li><a href="About.html">ჩვენ შესახებ</a></li>
+                  <li><a href="Contact.html">კონტაქტი</a></li>
+                  <li>
+                    <a href="#">
+                      <div class="For-Mobile">
+                        <img
+                          src="assets/images/EN-icon.svg"
+                          alt="EN-icon.svg"
+                        /></div
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Heart-div" id="PS-myBtn">
+            <img src="assets/images/Heart.svg" alt="Heart.svg" />
+          </div>
+          <a href="Internal_Page_ENG.html">
+            <div class="Lang-div">
+              <img src="assets/images/EN-icon.svg" alt="EN-icon.svg" /></div
+          ></a>
+        </nav>
+      </div>
     </header>
     <section class="PS-section-1">
       <div class="PS-sec-1-div-1">
