@@ -7424,6 +7424,7 @@ for index-List.css     END
   .dayprof {
     width: 345px;
     margin: 0 auto;
+    /* margin-bottom: 30px; */
   }
   .lmmainslider {
     height: 460px;
@@ -7628,7 +7629,7 @@ for index-List.css     END
     margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
     justify-content: center;
     align-items: center;
     /* display: flex; */
@@ -7983,7 +7984,6 @@ for index-List.css     END
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0 auto;
-    margin-bottom: 0px;
     padding-left: 0;
   }
   .lmteamsection h1 {
