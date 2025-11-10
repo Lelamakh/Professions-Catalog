@@ -785,9 +785,9 @@ nav {
   margin-top: 60px;
   margin-bottom: 48px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* align-items: center; */
-  gap: 40px;
+  gap: 72px;
   /* margin-right: 48px; */
   max-width: 1440px;
   margin: 0 auto;
@@ -797,7 +797,7 @@ nav {
   width: 100%;
   max-width: 832px;
   height: 181px;
-  margin-left: 48px;
+  /* margin-left: 48px; */
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -936,30 +936,35 @@ nav {
 }
 
 .lmknowmore {
+  /* outline: solid red 1px; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 172px;
   /* max-width: 250px; */
-  /* height: 40px; */
-  border-radius: 12px;
-  padding: 10px 12px 10px 12px;
+  height: 42px;
+  border-radius: 8px;
+  /* padding: 10px 20px; */
   margin-top: 30px;
   background-color: #6d5baf;
   border-color: #6d5baf;
-  border-radius: 8px;
   color: white;
-  font-size: 16px;
-  line-height: 150%;
+  /* font-size: 16px; */
+  /* line-height: 150%; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
-  gap: 15px;
+  gap: 8px;
   font-weight: 700;
   font-style: 75 Bold;
+  font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   /* vertical-align: bottom; */
   cursor: pointer;
 }
+.lmknowmore > img {
+  width: 20px;
+}
+
 .lmmaintitle1 {
   margin-left: 48px;
   margin-top: 55px;
@@ -1295,8 +1300,13 @@ nav {
   line-height: 24px;
   margin-bottom: 20px;
   color: #333333;
+  font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
+  font-style: 55 Roman;
   font-size: 18px;
+  leading-trim: NONE;
+  line-height: 23px;
+  letter-spacing: 0%;
 }
 
 .lmwrapper5right button {
@@ -6849,8 +6859,8 @@ for index-List.css     START
 
     font-family: "Helvetica Neue LT GEO 55 Roman";
     font-weight: 400;
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 18px;
     letter-spacing: 0%;
   }
 

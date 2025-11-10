@@ -172,6 +172,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 document.addEventListener("DOMContentLoaded", function () {
   // Get the modal
   let PSmodal = document.getElementById("PS-myModalFavorites");
+  const bodyElement = document.body; // Reference to the body element
 
   // Get the button that opens the modal
   let btn = document.getElementById("PS-myBtn");
@@ -179,27 +180,46 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get the <span> element that closes the modal
   let span = document.getElementsByClassName("close")[0];
 
+  // Function to disable background scroll
+  function disableBackgroundScroll() {
+    if (bodyElement) {
+      bodyElement.style.overflow = "hidden"; // Prevents scrolling
+    }
+  }
+
+  // Function to enable background scroll
+  function enableBackgroundScroll() {
+    if (bodyElement) {
+      bodyElement.style.overflow = ""; // Resets overflow to default (usually visible)
+    }
+  }
+
   // When the user clicks on the button, open the modal
   btn.onclick = function () {
     PSmodal.style.display = "flex";
+    disableBackgroundScroll(); // Disable scroll when modal opens
   };
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
     PSmodal.style.display = "none";
+    enableBackgroundScroll(); // Enable scroll when modal closes
   };
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == PSmodal) {
       PSmodal.style.display = "none";
+      enableBackgroundScroll(); // Enable scroll when modal closes via outside click
     }
   };
 
   // Optional: Close modal by clicking the backdrop
+  // (This handler is redundant given the window.onclick handler above, but safe to keep)
   PSmodal.addEventListener("click", (e) => {
     if (e.target === PSmodal) {
       PSmodal.style.display = "none";
+      enableBackgroundScroll(); // Enable scroll when modal closes via backdrop
     }
   });
 });
@@ -223,34 +243,45 @@ MODAL START ( for LIST PAGE FILTER )
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
-
 document.addEventListener("DOMContentLoaded", function () {
   const bodyElement = document.body;
   if (!bodyElement || !bodyElement.classList.contains("Profesia-List")) {
     return;
   }
-
   let PSFilterModal = document.getElementById("PS-filter-input");
   let filterBtn = document.getElementById("PS-filter-name");
   // The close button span (using getElementsByClassName correctly here)
   let FilterSpan = document.getElementsByClassName("close2")[0];
-
   // Define the breakpoint (e.g., 768px for tablet/desktop boundary)
   const DESKTOP_MIN_WIDTH = 768;
 
   if (PSFilterModal && filterBtn && FilterSpan) {
+    // Function to disable background scroll
+    function disableBackgroundScroll() {
+      // Check if we are NOT in desktop mode before disabling scroll
+      if (window.innerWidth < DESKTOP_MIN_WIDTH) {
+        bodyElement.style.overflow = "hidden";
+      }
+    }
+
+    // Function to enable background scroll
+    function enableBackgroundScroll() {
+      bodyElement.style.overflow = ""; // Resets to default (usually 'visible')
+    }
+
     // Open Modal
     filterBtn.onclick = function () {
       PSFilterModal.style.display = "flex";
+      disableBackgroundScroll(); // Disable scroll when modal opens
     };
 
-    // Close Modal via 'X' button
+    // Close Modal via X button
     FilterSpan.onclick = function () {
       PSFilterModal.style.display = "none";
+      enableBackgroundScroll(); // Enable scroll when modal closes
     };
 
-    // --- Prevent Hiding on Desktop ---
-
+    // --- Prevent Hiding on Desktop and Close via Outside Click (Mobile Only) ---
     window.onclick = function (event) {
       // Check if the current window width is greater than or equal to the desktop breakpoint
       const isDesktop = window.innerWidth >= DESKTOP_MIN_WIDTH;
@@ -263,10 +294,28 @@ document.addEventListener("DOMContentLoaded", function () {
       // This part only runs if NOT in desktop mode (mobile/tablet)
       if (event.target === PSFilterModal) {
         PSFilterModal.style.display = "none";
+        enableBackgroundScroll(); // Enable scroll when modal closes via outside click
       }
     };
-
     // --- End Logic ---
+
+    // Optional: Add a listener for window resize to handle orientation changes
+    // in case the user resizes while the modal is open in mobile view.
+    window.addEventListener("resize", function () {
+      if (
+        window.innerWidth >= DESKTOP_MIN_WIDTH &&
+        PSFilterModal.style.display === "flex"
+      ) {
+        // If it becomes desktop size while open, ensure scroll is enabled
+        enableBackgroundScroll();
+      } else if (
+        window.innerWidth < DESKTOP_MIN_WIDTH &&
+        PSFilterModal.style.display === "flex"
+      ) {
+        // If it becomes mobile size while open, ensure scroll is disabled
+        disableBackgroundScroll();
+      }
+    });
   } else {
     console.warn("One or more modal elements were not found on the page.");
   }
