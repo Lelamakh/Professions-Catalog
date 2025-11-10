@@ -4992,6 +4992,7 @@ form button {
     font-size: 20px;
     line-height: 26px;
     margin: 0 auto;
+    text-align: center;
     width: 344px;
   }
 
@@ -8146,8 +8147,9 @@ for index-List.css     END
     font-size: 15px;
     leading-trim: NONE;
     line-height: 20px;
-    letter-spacing: 0.8px;
+    letter-spacing: 5%;
     vertical-align: bottom;
+    gap: 8px;
   }
   /* quiz media start */
   /* quiz media start */
