@@ -6831,9 +6831,9 @@ for index-List.css     START
     background-color: #ffffff;
     z-index: 1;
   }
-  .PS-filter-name-content-scroll {
+  /* .PS-filter-name-content-scroll {
     overflow-y: scroll;
-  }
+  } */
 
   .PS-filter-sphere {
     /* width: 376px; */
@@ -6911,7 +6911,7 @@ for index-List.css     START
   }
 
   .PS-filter-buttons {
-    /* border: solid red 1px; */
+    outline: solid red 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
