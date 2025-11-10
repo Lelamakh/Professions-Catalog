@@ -6786,14 +6786,14 @@ for index-List.css     START
   }
 
   .PS-filter-input {
-    /* border: solid red 1px; */
+    border: solid red 1px;
     display: none;
     align-items: center;
     flex-direction: column;
     gap: 0;
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     box-sizing: border-box;
     padding-bottom: 60px;
   }
@@ -6831,9 +6831,6 @@ for index-List.css     START
     background-color: #ffffff;
     z-index: 1;
   }
-  /* .PS-filter-name-content-scroll {
-    overflow-y: scroll;
-  } */
 
   .PS-filter-sphere {
     /* width: 376px; */
