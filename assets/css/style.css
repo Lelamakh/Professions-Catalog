@@ -6914,7 +6914,8 @@ for index-List.css     START
     justify-content: space-between;
     width: 344px;
     z-index: 1;
-    padding: 12px 0 24px 0;
+    padding: 12px 0 12px 0;
+    margin-bottom: 100px;
   }
 
   .PS-filter-button-1 {
