@@ -6575,6 +6575,8 @@ for index-List.css     START
     border: solid #808080 1px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-right: none;
     outline: none;
 
