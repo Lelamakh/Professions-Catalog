@@ -191,6 +191,10 @@ nav {
   height: 69px;
 }
 
+.Mobile-Menu > li:hover {
+  color: #e7e4f5;
+}
+
 .Mobile-Menu > li.PS-active-page {
   border-bottom: solid #ffffff 3px;
 }
@@ -511,24 +515,30 @@ nav {
 .lmfirstbutton12 {
   color: white;
   width: 247px;
+  height: 42px;
   opacity: 1;
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  padding: 10px 19px;
+
   /* padding top: 10px; */
   border-radius: 8px;
   background-color: #6d5baf;
-  border: 1px solid #6d5baf;
+  /* border: 1px solid #6d5baf; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: 75 Bold;
   font-size: 16px;
   leading-trim: NONE;
-  /* line-height: 22px; */
-  letter-spacing: 0.8px;
+  line-height: 22px;
+  letter-spacing: 5%;
   cursor: pointer;
 }
+.lmfirstbutton12:hover {
+  opacity: 80%;
+}
+.lmfirstbutton12:active {
+  background-color: #4a3c82;
+}
+
 .lmfirstbutton {
   color: black;
   width: 247px;
@@ -917,7 +927,7 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 197px;
-  height: 48px;
+  height: 42px;
   border-radius: 12px;
   padding: 10px 20px 10px 20px;
   margin-top: 30px;
@@ -933,6 +943,14 @@ nav {
   letter-spacing: 0.8px;
   vertical-align: bottom;
   cursor: pointer;
+}
+
+.lmstartquiz:hover {
+  opacity: 80%;
+}
+
+.lmstartquiz:active {
+  background-color: #4a3c82;
 }
 
 .lmknowmore {
@@ -961,6 +979,13 @@ nav {
   /* vertical-align: bottom; */
   cursor: pointer;
 }
+.lmknowmore:hover {
+  opacity: 80%;
+}
+.lmknowmore:active {
+  background-color: #4a3c82;
+}
+
 .lmknowmore > img {
   width: 20px;
 }
@@ -2224,6 +2249,14 @@ for index-List.css     START
   letter-spacing: 5%;
 }
 
+.PS-find-button:hover {
+  opacity: 80%;
+}
+
+.PS-find-button:active {
+  background-color: #4a3c82;
+}
+
 .PS-find-button > img {
   height: 24px;
 }
@@ -2458,6 +2491,9 @@ label {
   letter-spacing: 5%;
   color: #808080;
 }
+.PS-filter-choice:hover {
+  background-color: #e7e4f5;
+}
 
 .PS-filter-choice-space {
   width: 294px;
@@ -2511,6 +2547,14 @@ label {
   line-height: 20px;
   letter-spacing: 5%;
   color: #ffffff;
+}
+
+.PS-filter-button-1:hover {
+  opacity: 80%;
+}
+
+.PS-filter-button-1:active {
+  background-color: #4a3c82;
 }
 
 .PS-filter-button-2 {
@@ -2609,6 +2653,7 @@ label {
 }
 
 .PS-result-card {
+  background-color: #ffffff;
   width: 318px;
   height: 408px;
   display: flex;
@@ -2617,6 +2662,14 @@ label {
   box-shadow: 0px 2px 4px 0px #0000001a;
   border-radius: 12px;
   position: relative;
+}
+
+.PS-result-card:hover:not(:has(.PS-heart-div:hover)) {
+  background-color: #f2f2f2;
+}
+
+.PS-result-card:active:not(:has(.PS-heart-div:active)) {
+  background-color: #e5e5e5;
 }
 
 .PS-result-card:nth-child(n + 10) {
@@ -2661,6 +2714,7 @@ label {
   /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
+  /* align-items: start; */
   /* justify-content: space-between; */
   padding: 0 12px;
   gap: 12px;
@@ -2732,7 +2786,7 @@ label {
 }
 
 .PS-name > h1 {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /* border: solid red 1px; */
   /* width: 318px; */
   height: 52px;
@@ -2753,6 +2807,7 @@ label {
   letter-spacing: 5%;
   color: #333333;
   position: relative;
+  text-align: start;
 }
 
 /* .PS-name > h1:hover {
@@ -2779,12 +2834,13 @@ label {
 
 .PS-card-info h4 {
   /* border: solid red 1px; */
-  font-family: "Helvetica Neue LT GEO 55 Roman";
-  font-weight: 400;
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0%;
   color: #333333;
+  text-align: start;
 }
 /* 
 footer {
@@ -2853,15 +2909,16 @@ footer {
 }
 
 .range-input {
-  width: auto;
-  height: 37px;
+  width: 62px;
+  height: 29px;
   text-align: center;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 500;
   color: #808080;
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 0 5px;
+  padding: 4px 8px;
   outline: none;
   -moz-appearance: textfield; /* Remove number input spinners in Firefox */
 }
@@ -2885,7 +2942,7 @@ footer {
 .slider-fill {
   position: absolute;
   height: 100%;
-  background: #6a5acd; /* Purple color */
+  background: #6d5baf; /* Purple color */
   border-radius: 5px;
   z-index: 1;
 }
@@ -2896,7 +2953,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 10px;
+  height: 8px;
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
@@ -2916,16 +2973,16 @@ footer {
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
   pointer-events: auto;
-  margin-top: -2px; /* Centers thumb vertically on the track */
+  margin-top: -3px; /* Centers thumb vertically on the track */
 }
 
 .slider-wrapper input[type="range"]::-moz-range-thumb {
   /* outline: solid red 1px; */
   -moz-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #6a5acd;
+  width: 12px;
+  height: 12px;
+  background: #4a3c82;
   /* border: solid red 1px; */
   border-radius: 50%;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
@@ -3794,6 +3851,10 @@ img {
   letter-spacing: 0%;
 }
 
+.PS-text-arrow-text-1 > div:hover {
+  background-color: #daf3ec;
+}
+
 .PS-text-arrow-module-2 {
   /* border: solid red 1px; */
   height: 225px;
@@ -3830,6 +3891,10 @@ img {
   font-size: 13px;
   line-height: 17px;
   letter-spacing: 0%;
+}
+
+.PS-text-arrow-text-2 > div:hover {
+  background-color: #daf3ec;
 }
 
 .PS-text-arrow-arrow {
@@ -3897,6 +3962,14 @@ img {
   line-height: 22px;
   letter-spacing: 5%;
   vertical-align: bottom;
+}
+
+.PS-Share-profession-to-others:hover {
+  opacity: 80%;
+}
+
+.PS-Share-profession-to-others:active {
+  background-color: #4a3c82;
 }
 
 .PS-section-similar-professions-parent {
@@ -4329,7 +4402,7 @@ for index-Contact.css     START
   /* height: 121px; */
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .PS-section-contact-info {
@@ -4337,7 +4410,7 @@ for index-Contact.css     START
   background-color: #e7e4f5;
   max-width: 1440px;
   width: 100%;
-  height: 121px;
+  height: 84px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -4390,7 +4463,7 @@ for index-Contact.css     START
 
 .PS-Contact-info > div > div > img {
   /* border: solid red 1px; */
-  width: 16px;
+  width: 20px;
 }
 
 .PS-Contact-info h2 {
@@ -4572,6 +4645,14 @@ form button {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 5%;
+}
+
+form button:hover {
+  opacity: 80%;
+}
+
+form button:active {
+  background-color: #4a3c82;
 }
 
 /* - - - - - - - - - - - - - - - - - - - */
@@ -4831,15 +4912,27 @@ form button {
     display: flex;
   } */
 
+  .PS-section-contact-info-parent {
+    /* border: solid black 1px; */
+    background-color: #f5e4e4;
+
+    width: 100%;
+    height: 181px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
   .PS-section-contact-info {
     /* border: solid red 1px; */
     max-width: 600px;
     width: 100%;
-    height: auto;
-
+    height: 181px;
+    /* gap: 24px; */
     padding: 24px 16px;
     display: flex;
     flex-direction: column;
+    gap: 24px;
   }
 
   .PS-Contact-header {
@@ -4856,8 +4949,8 @@ form button {
 
     font-family: "Helvetica Neue LT GEO Caps 75 Roman";
     font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 23px;
     letter-spacing: 5%;
   }
 
@@ -4866,8 +4959,16 @@ form button {
     display: flex;
     flex-direction: column-reverse;
     align-items: start;
-    padding: 24px 0;
+    padding: 0;
     gap: 24px;
+  }
+
+  .PS-Contact-info > div > div {
+    /* border: solid green 1px; */
+    height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   .PS-Contact-info-text {
@@ -4892,8 +4993,8 @@ form button {
     font-family: "Helvetica Neue LT GEO 55 Roman";
     color: #1a1a1a;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 17px;
     letter-spacing: 0%;
   }
 
@@ -4959,11 +5060,20 @@ form button {
   .PS-input-field {
     max-width: 312px;
     width: 100%;
+    font-family: "Helvetica Neue LT GEO 55 Roman";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0%;
   }
 
   .PS-input-field-message {
     max-width: 312px;
     width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0%;
   }
 
   .PS-div-button {
@@ -5001,6 +5111,8 @@ form button {
   }
 
   .PS-section-FAQ-item {
+    width: 344px;
+    margin: 0 auto;
     border-radius: 6px;
     padding: 8px 16px;
     box-shadow: 0px 4px 8px 0px #0000001a;
@@ -5292,7 +5404,7 @@ for index-Contact.css     END
   .Heart-div {
     /* border: solid red 1px; */
     margin-left: -87px;
-    margin-right: 26px;
+    margin-right: 14px;
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -7487,6 +7599,7 @@ for index-List.css     END
     /* border: solid blue 1px; */
     /* width: 100%; */
     width: 345px;
+    height: 32px;
     /* margin-left: -17px; */
     /* margin-top: -17px; */
     /* margin-bottom: 40px; */
@@ -7566,7 +7679,7 @@ for index-List.css     END
   .lmstartquiz {
     max-width: 345px;
     width: 100%;
-    height: auto;
+    height: 32px;
     border-radius: 8px;
     /* margin-left: 31px; */
     margin-bottom: -20px;
@@ -7815,7 +7928,7 @@ for index-List.css     END
   } */
   .lmknowmore {
     width: 345px;
-    /* height: 40px; */
+    height: 32px;
     justify-content: space-around;
     margin-top: 15px;
     padding-top: 8px;
@@ -7997,7 +8110,7 @@ for index-List.css     END
   .lmteamsection {
     width: 100%;
     max-width: 600px;
-    height: 700px;
+    height: 633px;
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0 auto;
@@ -8029,6 +8142,7 @@ for index-List.css     END
   .lmteamwrapper {
     width: 100%;
     max-width: 344px;
+    /* height: 500px; */
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
