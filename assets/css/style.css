@@ -1512,6 +1512,15 @@ nav {
   vertical-align: bottom;
   margin-top: 58px;
 }
+
+.newstartquiz:hover {
+  opacity: 80%;
+}
+
+.newstartquiz:active {
+  background-color: #4a3c82;
+}
+
 /* ________________new quiz____________________- */
 
 /* ________________quiz____________________- */
@@ -2493,7 +2502,12 @@ label {
 }
 .PS-filter-choice:hover {
   background-color: #e7e4f5;
+  color: #808080;
 }
+
+/* .PS-filter-choice:active {
+  background-color: #6d5baf;
+} */
 
 .PS-filter-choice-space {
   width: 294px;
@@ -2643,6 +2657,11 @@ label {
   background-size: 29px;
   background-repeat: no-repeat;
 }
+
+.PS-favorite > .PS-heart-div:hover {
+  background-image: url(../images/Card-Heart-Favorite.svg);
+}
+
 /* .PS-favorite > .PS-heart-div:hover {
   background-image: url(../images/Heart-Hover.svg);
   background-size: 29px;
@@ -4124,6 +4143,10 @@ img {
   box-shadow: 0px 1px 3px 0px #0000001a;
 }
 
+.PS-card-1:hover {
+  opacity: 80%;
+}
+
 .PS-Last-update-time-parent {
   margin: 0 auto;
   width: 100%;
@@ -4604,7 +4627,7 @@ form label {
   padding-bottom: 10px;
   padding-left: 8px;
   gap: 8px;
-
+  resize: none;
   opacity: 1;
   border-radius: 6px;
   border-width: 1px;
