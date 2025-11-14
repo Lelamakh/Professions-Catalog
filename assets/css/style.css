@@ -2550,9 +2550,9 @@ label {
   color: #808080;
 }
 
-/* .PS-filter-choice:active {
+.PS-filter-choice:active {
   background-color: #6d5baf;
-} */
+}
 
 .PS-filter-choice-space {
   width: 294px;
@@ -3031,21 +3031,21 @@ footer {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #6a5acd;
+  background: #4a3c82;
   border: none;
   border-radius: 50%;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
   pointer-events: auto;
-  margin-top: -3px; /* Centers thumb vertically on the track */
+  margin-top: 0px; /* Centers thumb vertically on the track */
 }
 
 .slider-wrapper input[type="range"]::-moz-range-thumb {
   /* outline: solid red 1px; */
   -moz-appearance: none;
   appearance: none;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   background: #4a3c82;
   /* border: solid red 1px; */
   border-radius: 50%;
@@ -7525,7 +7525,7 @@ footer {
   .slider-fill {
     position: absolute;
     height: 100%;
-    background: #6a5acd; /* Purple color */
+    background: #6d5baf; /* Purple color */
     border-radius: 5px;
     z-index: 1;
   }
@@ -7550,7 +7550,7 @@ footer {
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #6a5acd;
+    background: #4a3c82;
     border: none;
     border-radius: 50%;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
@@ -7565,7 +7565,7 @@ footer {
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #6a5acd;
+    background: #4a3c82;
     /* border: solid red 1px; */
     border-radius: 50%;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
