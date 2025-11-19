@@ -4571,21 +4571,27 @@ for index-Contact.css     START
   margin: 0 auto;
   margin-top: 48px;
   display: flex;
-
-  width: 1154px;
+  gap: 12px;
+  max-width: 1154px;
+  width: 100%;
   height: auto;
   justify-content: space-between;
   opacity: 1;
 }
 
 .PS-map-div {
-  /* border: solid red 1px; */
-  height: auto;
+  /* border: solid blue 1px; */
+  max-width: 562px;
+  width: 100%;
+  max-height: 412px;
+  height: 100%;
   border-radius: 12px;
 }
 .PS-map-div > img {
-  width: 562px;
+  /* max-width: 562px; */
+  width: 100%;
   height: 412px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -4626,8 +4632,9 @@ form {
   /* border: solid red 1px; */
   display: flex;
   flex-direction: column;
-  width: 546px;
-  height: auto;
+  max-width: 546px;
+  width: 100%;
+  /* height: auto; */
   gap: 16px;
   /* angle: 0 deg; */
   opacity: 1;
@@ -4647,7 +4654,8 @@ form label {
 
 .PS-input-field {
   border: solid #808080 1px;
-  width: 498px;
+  max-width: 498px;
+  width: 100%;
   height: 39px;
   padding-top: 10px;
   padding-right: 12px;
@@ -4669,7 +4677,8 @@ form label {
 
 .PS-input-field-message {
   border: solid #808080 1px;
-  width: 498px;
+  max-width: 498px;
+  width: 100%;
   height: 116px;
   padding-top: 10px;
   padding-right: 8px;
@@ -4694,7 +4703,9 @@ form label {
   padding: 16px 0 0 0;
   display: flex;
   flex-direction: row-reverse;
-  width: 498px;
+  max-width: 498px;
+  /* min-width: 300px; */
+  width: 100%;
   /* height: 48px; */
   gap: 8px;
   /* angle: 0 deg; */
