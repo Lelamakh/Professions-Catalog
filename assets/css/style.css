@@ -4548,6 +4548,7 @@ for index-Contact.css     START
 }
 
 .PS-Contact-info h4 {
+  width: 135px;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
   font-size: 16px;
