@@ -78,7 +78,7 @@
   /* cursor: pointer; */
   /* font-family: Noto Sans Georgian; */
   border: none;
-  /* outline: solid red 1px; */
+  outline: solid red 1px;
 }
 
 a {
@@ -123,7 +123,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 48px;
+  padding: 0;
   height: 69px;
   position: sticky;
   top: 0;
@@ -148,7 +148,7 @@ header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 48px;
+  padding: 0;
   height: 69px;
 }
 
@@ -395,6 +395,9 @@ nav {
   min-height: 100dvh; /* Or 100vh for older browser support */
 }
 .lmfirstsection {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
   background: linear-gradient(
     180deg,
     #eadafc 0%,
@@ -408,9 +411,9 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1250x;
   margin: 0 auto;
-  padding-left: 48px;
+  padding: 0;
 }
 .lmfirstsectionright {
   flex: 1;
@@ -592,13 +595,14 @@ nav {
 }
 .lmcards {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1250px;
   margin-top: 48px;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-left: 48px;
+  padding-left: 0;
+  justify-content: center;
 }
 .lmcatname {
   font-weight: 700;
@@ -611,6 +615,7 @@ nav {
   color: #333333;
 }
 .lmcategories {
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -674,14 +679,14 @@ nav {
   align-items: center;
 }
 .lmname1 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   /* border-radius: 15px; */
   background-color: white;
   border: solid #cc33a1 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -701,14 +706,14 @@ nav {
   background-color: #cc33a1;
 }
 .lmname2 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   border: solid #3366cc 1.5px;
 
   background-color: white;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 16px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -726,13 +731,13 @@ nav {
   background-color: #3366cc;
 }
 .lmname3 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   background-color: white;
   border: solid #ffc229 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -750,13 +755,13 @@ nav {
   background-color: #ffc229;
 }
 .lmname4 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   background-color: white;
   border: solid #2ca678 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -774,13 +779,13 @@ nav {
   background-color: #2ca678;
 }
 .lmname5 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   background-color: white;
   border: solid #fe8b3f 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -798,13 +803,13 @@ nav {
   background-color: #ff5555;
 }
 .lmname6 {
-  width: 204px;
+  width: 196px;
   border-radius: 8px;
   background-color: white;
   border: solid #ff5555 1.5px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 12px;
   line-height: 22px;
   margin-top: 12px;
   margin-bottom: 50px;
@@ -836,14 +841,22 @@ nav {
   /* align-items: center; */
   gap: 72px;
   /* margin-right: 48px; */
-  max-width: 1440px;
+  max-width: 1250px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 48px;
+  padding-left: 0;
+}
+.daywrapperright > img {
+  max-width: 440px;
+  width: 100%;
+  height: 249px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 .daywrapperleft {
   width: 100%;
   max-width: 832px;
-  height: 181px;
+  /* height: 181px; */
   /* margin-left: 48px; */
   display: flex;
   flex-direction: column;
@@ -905,13 +918,13 @@ nav {
   /* align-items: center; */
   gap: 40px;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1250px;
 }
 .lmwrapper2left {
   width: 100%;
   max-width: 440px;
   /* background-color: #ececec; */
-  margin-right: 48px;
+  margin-right: 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -921,8 +934,10 @@ nav {
   width: 100%;
   max-width: 440px;
   height: 249px;
+  object-fit: cover;
   display: flex;
   align-items: center;
+  border-radius: 12px;
 }
 .lmwrapper2right {
   display: flex;
@@ -930,7 +945,7 @@ nav {
   justify-content: flex-end;
   width: 100%;
   max-width: 832px;
-  margin-left: 48px;
+  margin-left: 0;
   margin-bottom: 0px;
 }
 .lmwrapper2right h1 {
@@ -1236,9 +1251,9 @@ nav {
 
 .lmwrapper4 {
   display: flex;
+  max-width: 1250px;
   width: 100%;
-  max-width: 1440px;
-  padding-left: 48px;
+  padding: 0;
   justify-content: space-between;
   justify-content: center;
   margin-top: 48px;
@@ -1290,7 +1305,7 @@ nav {
   max-width: 548px;
   height: 367px;
   background-color: #ececec;
-  margin-left: 40px;
+  margin: 0;
   /* margin-bottom: 40px; */
   display: flex;
   justify-content: center;
@@ -1300,6 +1315,8 @@ nav {
   max-width: 548px;
   width: 100%;
   height: 367px;
+  object-fit: cover;
+  border-radius: 12px;
   display: flex;
   align-items: center;
 }
@@ -1308,8 +1325,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 72px;
-  max-width: 1440px;
+  gap: 32px;
+  max-width: 1250px;
+  width: 100%;
   margin: 0 auto;
 }
 .lmmissionsection {
@@ -1325,7 +1343,7 @@ nav {
   max-width: 548px;
   height: 367px;
   background-color: #ececec;
-  margin-left: 48px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1333,8 +1351,11 @@ nav {
   align-items: center;
 }
 .lmwrapper5left img {
-  width: 548px;
+  max-width: 548px;
+  width: 100%;
   height: 367px;
+  object-fit: cover;
+  border-radius: 12px;
   display: flex;
   align-items: center;
 }
@@ -1344,14 +1365,13 @@ nav {
   justify-content: flex-end;
   width: 100%;
   max-width: 722px;
-  margin-right: 48px;
+  margin: 0;
   /* margin-bottom: 0px; */
-  margin-top: 28px;
 }
 .lmwrapper5right h1 {
   font-size: 28px;
   color: #333333;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
   font-weight: 700;
   font-style: 75 Bold;
@@ -1360,7 +1380,7 @@ nav {
 }
 .lmwrapper5right p {
   line-height: 24px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #333333;
   font-family: "Helvetica Neue LT GEO 55 Roman";
   font-weight: 400;
@@ -1385,9 +1405,9 @@ nav {
 }
 .lmteamsection {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding-left: 48px;
+  /* padding-left: 48px; */
 }
 .lmteamheader {
   /* margin-left: 46px; */
@@ -1400,9 +1420,9 @@ nav {
   line-height: 36px;
   letter-spacing: 0.8px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding-left: 48px;
+  padding: 0;
   margin-bottom: 32px;
   margin-top: -20px;
 }
@@ -1482,7 +1502,8 @@ nav {
 .newquizwrapper {
   display: flex;
   margin: 0 auto;
-  width: 1344px;
+  max-width: 1250px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
@@ -1490,7 +1511,7 @@ nav {
 }
 .newquizleft {
   width: 100%;
-  max-width: 636px;
+  max-width: 600px;
 }
 .newquizleft h1 {
   font-family: "Helvetica Neue LT GEO Caps 75 roman";
@@ -1528,8 +1549,10 @@ nav {
 }
 .newquizright img {
   width: 100%;
-  max-width: 636px;
+  max-width: 600px;
+  object-fit: cover;
   height: 796px;
+  border-radius: 12px;
 }
 .pngmobile {
   display: none;
@@ -1853,7 +1876,7 @@ nav {
 
 footer {
   margin: 0 auto;
-  padding: 24px 48px;
+  padding: 24px 0;
   background-color: #6d5baf;
   color: #ffffff;
   width: 100%;
@@ -1873,7 +1896,7 @@ footer {
 .PS-Footer-div-1 {
   /* border: solid red 1px; */
   margin: 0 auto;
-  max-width: 1154px;
+  max-width: 1250px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1907,7 +1930,7 @@ footer {
   border-top: solid white 1px;
   margin: 0 auto;
   height: 52px;
-  max-width: 1154px;
+  max-width: 1250px;
   width: 100%;
   display: flex;
   gap: 24px;
@@ -3133,7 +3156,7 @@ for index-PDP.css     START
 
 .PS-section-1 {
   /* პროფესიის სახელი */
-  padding: 32px 48px;
+  padding: 32px 0;
   margin: 0 auto;
   width: 100%;
   height: 156px;
@@ -3144,9 +3167,9 @@ for index-PDP.css     START
 .PS-section-1 > div {
   background-color: transparent;
   /* პროფესიის სახელი */
-  padding: 32px 48px;
+  padding: 32px 0;
   margin: 0 auto;
-  width: 1440px;
+  width: 1250px;
   height: 156px;
   display: flex;
   align-items: center;
@@ -3392,12 +3415,14 @@ for index-PDP.css     START
   /* ქვესათაური */
   display: flex;
   margin: 0 auto;
-  width: 1440px;
+  width: 1250px;
 }
 
 .PS-subheaders {
+  max-width: 1250px;
+  width: 100%;
   margin: 0px auto;
-  padding: 48px;
+  padding: 48px 0;
   display: flex;
   flex-direction: column;
   gap: 38px;
@@ -3405,9 +3430,22 @@ for index-PDP.css     START
 
 .PS-subheader-1 {
   /* border: solid red 1px; */
+  max-width: 1250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.PS-subheader-1 > img {
+  /* border: solid red 1px; */
+  max-width: 1250px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 12px;
 }
 
 .PS-subheader-1 > h1 {
@@ -3690,7 +3728,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 1344px;
+  max-width: 1250px;
+  width: 100%;
 }
 
 .PS-subheader-2 > div {
@@ -3731,6 +3770,8 @@ img {
   flex-direction: column;
   gap: 32px;
   align-items: start;
+  max-width: 1250px;
+  width: 100%;
 }
 
 .PS-subheader-3-header {
@@ -3742,13 +3783,24 @@ img {
 }
 
 .PS-subheader-3-content {
-  width: 1344px;
+  max-width: 1250px;
+  width: 100%;
   padding: 20px 0;
   display: flex;
   gap: 72px;
 }
 
+.PS-subheader-3-content > div > img {
+  max-width: 620px;
+  width: 100%;
+  height: 289px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .PS-subheader-3-content-text {
+  max-width: 692px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -3794,11 +3846,13 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 1);
   margin: 0 auto;
+  max-width: 1250px;
   width: 100%;
   height: 293px;
-  padding: 0 48px;
+  padding: 0;
   gap: 28px;
 }
+
 .PS-section-4 > div {
   /* border: solid red 1px; */
   display: flex;
@@ -3806,9 +3860,10 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 1);
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1250px;
+  width: 100%;
   height: 293px;
-  padding: 0 48px;
+  padding: 0;
   gap: 28px;
 }
 
@@ -4053,10 +4108,11 @@ img {
 .PS-section-similar-professions {
   /* border: solid green 1px; */
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1250px;
+  width: 100%;
   /* height: 476px; */
   background-color: #ffffff;
-  padding: 0 48px 72px 48px;
+  padding: 0 0 72px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -4154,8 +4210,9 @@ img {
   background-color: rgba(255, 255, 255, 1);
   /* რეკომენდირებული კურსები */
   margin: 0 auto;
-  padding: 0 48px;
-  width: 1440px;
+  padding: 0;
+  max-width: 1250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* gap: 24px; */
@@ -4173,7 +4230,8 @@ img {
 
 .PS-cards {
   /* border: solid red 1px; */
-  width: 1344px;
+  max-width: 1250px;
+  width: 100%;
   height: 316px;
   /* margin: 0 auto; */
   display: flex;
@@ -4203,9 +4261,11 @@ img {
 
   background-color: #ffffff;
 }
+
 .PS-Last-update-time {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1250px;
+  width: 100%;
   /* height: 87px; */
   padding: 48px;
   background-color: #ffffff;
@@ -4254,7 +4314,7 @@ for slider START
 
 /* Position the "next button" to the right */
 .PS-next-arrow {
-  right: 48px;
+  right: 0;
   /*   border-radius: 3px 0 0 3px; */
 }
 
@@ -4491,10 +4551,7 @@ for index-Contact.css     START
 .PS-Contact-header {
   /* border: solid red 1px; */
   align-content: center;
-  padding-top: 24px;
-  padding-right: 48px;
-  padding-bottom: 24px;
-  padding-left: 48px;
+  padding: 24px 0;
   /* angle: 0 deg; */
   opacity: 1;
   border-right-width: 1px;
@@ -4574,7 +4631,7 @@ for index-Contact.css     START
   margin-top: 48px;
   display: flex;
   gap: 12px;
-  max-width: 1154px;
+  max-width: 1250px;
   width: 100%;
   height: auto;
   justify-content: space-between;
@@ -4583,7 +4640,7 @@ for index-Contact.css     START
 
 .PS-map-div {
   /* border: solid blue 1px; */
-  max-width: 562px;
+  max-width: 752px;
   width: 100%;
   max-height: 412px;
   height: 100%;
@@ -4748,7 +4805,7 @@ form button:active {
   margin-top: 48px;
   padding-bottom: 48px;
 
-  max-width: 1154px;
+  max-width: 1250px;
   width: 100%;
   /* height: 461px; */
   display: flex;
