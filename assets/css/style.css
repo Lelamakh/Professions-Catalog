@@ -78,7 +78,7 @@
   /* cursor: pointer; */
   /* font-family: Noto Sans Georgian; */
   border: none;
-  outline: solid red 1px;
+  /* outline: solid red 1px; */
 }
 
 a {
@@ -395,7 +395,6 @@ nav {
   min-height: 100dvh; /* Or 100vh for older browser support */
 }
 .lmfirstsection {
-  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(
@@ -410,6 +409,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1250px;
   width: 100%;
   max-width: 1250x;
   margin: 0 auto;
@@ -2197,8 +2197,8 @@ for index-List.css     START
 .PS-section-list > div {
   background-color: white;
   margin: 0 auto;
-  max-width: 100%;
-  /* width: 1440px; */
+  max-width: 1250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* gap: 24px; */
@@ -2206,12 +2206,13 @@ for index-List.css     START
 
 .PS-search {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1250px;
+  width: 100%;
   height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 48px;
+  padding: 48px 0;
 }
 
 .PS-fing-job-you-love {
@@ -2434,17 +2435,18 @@ for index-List.css     START
 
 .PS-filter-result {
   display: flex;
+  gap: 8px;
 }
 
 .PS-filter {
   /* border: solid red 1px; */
   margin: 0;
-  width: 366px;
+  width: 294px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   position: relative;
-  padding: 0 24px 0 48px;
+  padding: 0;
 }
 
 .PS-filter-name {
@@ -2712,7 +2714,7 @@ label {
 .PS-result-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   font-size: 10px;
 }
 
@@ -2745,7 +2747,7 @@ label {
 
 .PS-result-card {
   background-color: #ffffff;
-  width: 318px;
+  width: 308px;
   height: 408px;
   display: flex;
   flex-direction: column;
@@ -2765,6 +2767,14 @@ label {
 
 .PS-result-card:nth-child(n + 10) {
   display: none;
+}
+
+.PS-result-card > img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  max-width: 308px !important;
+  width: 100%;
+  object-fit: cover;
 }
 
 .PS-heart-div {
@@ -2793,10 +2803,12 @@ label {
 
 .PS-card-info {
   /* border: solid green 1px; */
+  /* border-bottom-left-radius: 12px; */
+  /* border-bottom-right-radius: 12px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 318px;
+  width: 308px;
   height: 148px;
   padding: 12px 0;
 }
@@ -2915,10 +2927,11 @@ label {
 } */
 
 .PS-card-info h3 {
-  font-family: "Helvetica Neue LT GEO 65";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  /* background-color: #007b55; */
+  font-family: "Helvetica Neue LT GEO 55 roman";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   letter-spacing: 0%;
   color: #333333;
 }
@@ -4135,11 +4148,11 @@ img {
 .swiper-container {
   /* border: solid red 1px; */
   width: 100%;
-  height: 410px !important;
+  height: 414px !important;
   overflow: hidden;
   /* height: 200px; Adjust height as needed */
   position: relative;
-  gap: 24px;
+  justify-items: space-around;
 }
 
 .swiper-slide {
@@ -4149,6 +4162,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 308px !important;
+  margin-right: 5px !important;
+  border-radius: 12px !important;
 }
 
 .swiper-pagination {
