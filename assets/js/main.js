@@ -28,30 +28,135 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
 
+/* ========== კითხვა-პასუხის ღილაკების დასაწყისი ========== */
+
 document.addEventListener("DOMContentLoaded", () => {
-  const questions = document.querySelectorAll(".PS-section-FAQ-question");
-  questions.forEach((question) => {
-    question.addEventListener("click", () => {
-      question.classList.toggle("active-contact");
-      const answer = question.nextElementSibling;
-      const icon = question.querySelector(".PS-icon");
+  // Check if the body element has the required class
+  if (document.body.classList.contains("Profesia-Contact")) {
+    const questions = document.querySelectorAll(".PS-section-FAQ-question");
+    questions.forEach((question) => {
+      question.addEventListener("click", () => {
+        question.classList.toggle("active-contact");
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector(".PS-icon");
 
-      // Define the HTML for both the Plus and Minus icons
-      const plusIconHTML = `<img src="assets/images/Plus.svg" alt="Plus.svg" />`;
-      const minusIconHTML = `<img src="assets/images/Minus.svg" alt="Minus.svg" />`; // Assumes you have a Minus SVG
+        // Define the HTML for both the Plus and Minus icons
+        const plusIconHTML = `<img src="assets/images/Plus.svg" alt="Plus.svg" />`;
+        const minusIconHTML = `<img src="assets/images/Minus.svg" alt="Minus.svg" />`; // Assumes you have a Minus SVG
 
-      if (answer.style.display == "block") {
-        answer.style.display = "none";
-        // Use innerHTML to insert the image HTML for "Plus"
-        icon.innerHTML = plusIconHTML;
-      } else {
-        answer.style.display = "block";
-        // Use innerHTML to insert the image HTML for "Minus"
-        icon.innerHTML = minusIconHTML;
+        if (answer.style.display == "block") {
+          answer.style.display = "none";
+          // Use innerHTML to insert the image HTML for "Plus"
+          icon.innerHTML = plusIconHTML;
+        } else {
+          answer.style.display = "block";
+          // Use innerHTML to insert the image HTML for "Minus"
+          icon.innerHTML = minusIconHTML;
+        }
+      });
+    });
+  }
+});
+
+/* ========== კითხვა-პასუხის ღილაკების დასასრული ========== */
+
+/* ========== გაგზავნის მოდალის დასაწყისი ========== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Check if the body element has the required class
+  if (document.body.classList.contains("Profesia-Contact")) {
+    // Get the modal element
+    const modal = document.getElementById("PS-Modal-Sent");
+
+    // If modal doesn't exist on the page, stop the script here
+    if (!modal) return;
+
+    // Get the specific button that opens the modal by its ID
+    const openModalBtn = document.getElementById("PS-openSentModalBtn");
+
+    // Get the button that closes the modal
+    const closeModalBtn = document.getElementById("PS-closeSentModalBtn");
+
+    // Function to open the modal by adding the class
+    const openModal = () => {
+      modal.classList.add("PS-show-modal");
+    };
+
+    // Function to close the modal by removing the class
+    const closeModal = () => {
+      modal.classList.remove("PS-show-modal");
+    };
+
+    // Use the specific trigger ID to open the modal
+    if (openModalBtn) {
+      openModalBtn.addEventListener("click", openModal);
+    }
+
+    // When the user clicks on the close button, close the modal
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener("click", closeModal);
+    }
+
+    // Optional: Close the modal if the user clicks anywhere outside of the content
+    window.addEventListener("click", (event) => {
+      if (event.target == modal) {
+        closeModal();
       }
     });
-  });
+  }
 });
+
+/* ========== გაგზავნის მოდალის დასასრული ========== */
+
+/* ========== არ გაგზავნის (NOT SENT) მოდალის დასაწყისი ========== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Check if the body element has the required class
+  if (document.body.classList.contains("Profesia-Contact")) {
+    // Get the modal element
+    const modal = document.getElementById("PS-Modal-NotSent");
+
+    // If modal doesn't exist on the page, stop the script here
+    if (!modal) return;
+
+    // Get the specific button that opens the modal by its ID
+    const openModalBtn = document.getElementById("PS-openNotSentModalBtn");
+    // ^^^ THIS LINE GETS YOUR TRIGGER ELEMENT ^^^
+
+    // Get the button that closes the modal
+    const closeModalBtn = document.getElementById("PS-closeNotSentModalBtn");
+
+    // Function to open the modal by adding the class
+    const openModal = () => {
+      modal.classList.add("PS-show-modal");
+    };
+
+    // Function to close the modal by removing the class
+    const closeModal = () => {
+      modal.classList.remove("PS-show-modal");
+    };
+
+    // Use the specific trigger ID to open the modal
+    if (openModalBtn) {
+      openModalBtn.addEventListener("click", openModal);
+      // ^^^ THIS ADDS THE CLICK LISTENER TO THE TRIGGER ^^^
+    }
+
+    // When the user clicks on the close button, close the modal
+    if (closeModalBtn) {
+      closeModalBtn.addEventListener("click", closeModal);
+    }
+
+    // Optional: Close the modal if the user clicks anywhere outside of the content
+    window.addEventListener("click", (event) => {
+      if (event.target == modal) {
+        closeModal();
+      }
+    });
+  }
+});
+
+/* ========== არ გაგზავნის (NOT SENT) მოდალის დასასრული ========== */
 
 /* - - - - - - - -
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

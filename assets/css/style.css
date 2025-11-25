@@ -1301,6 +1301,7 @@ nav {
   line-height: 150%;
 }
 .lmwrapper4right {
+  /* outline: solid red 1px; */
   width: 100%;
   max-width: 548px;
   height: 367px;
@@ -1310,6 +1311,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 .lmwrapper4right img {
   max-width: 548px;
@@ -1349,8 +1351,10 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
+  border-radius: 12px;
 }
 .lmwrapper5left img {
+  /* outline: solid red 1px; */
   max-width: 548px;
   width: 100%;
   height: 367px;
@@ -1358,6 +1362,7 @@ nav {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  border-radius: 12px;
 }
 .lmwrapper5right {
   display: flex;
@@ -1562,7 +1567,7 @@ nav {
   /* gap: 10px; */
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 8px;
   width: 100%;
   max-width: 636px;
   height: 52px;
@@ -2574,7 +2579,7 @@ label {
   letter-spacing: 5%;
   color: #808080;
 }
-.PS-filter-choice:hover {
+.PS-filter-choice:not(.PS-active):hover {
   background-color: #e7e4f5;
   color: #808080;
 }
@@ -4680,6 +4685,7 @@ for index-Contact.css     START
 }
 
 .PS-contact-to-us h1 {
+  background-color: #fbefef;
   padding: 9px 0;
   /* border: solid #0a22f4 1px; */
   font-family: "Helvetica Neue LT GEO Caps 75 Roman";
@@ -4814,6 +4820,138 @@ form button:active {
 }
 
 /* - - - - - - - - - - - - - - - - - - - */
+
+/*     წარმატებით გაგზავნის MODAL START     */
+
+.PS-modal-sent {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.PS-modal-sent.PS-show-modal {
+  display: flex; /* Show when this class is added */
+}
+
+.PS-Sent-modal-content {
+  /* outline: solid red 1px; */
+  width: 199px;
+  height: 157px;
+  background-color: #ffffff;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+  position: relative;
+}
+
+.PS-Sent-modal-content-header {
+  width: 151px;
+  /* border: solid red 1px; */
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  margin: 12px 0 16px 0;
+}
+
+.PS-Sent-button-close {
+  /* border: solid red 1px; */
+  background-color: #6d5baf;
+  color: #ffffff;
+  width: 151px;
+  height: 37px;
+  /* padding: 10px 20px; */
+  /* margin: 5px; */
+  cursor: pointer;
+  /* position: absolute; */
+  border-radius: 8px;
+
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 5%;
+}
+
+/*     წარმატებით გაგზავნის MODAL END     */
+
+/*     წარუმატებელი გაგზავნის (NOT SENT) MODAL START     */
+
+.PS-modal-Notsent {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.PS-modal-Notsent.PS-show-modal {
+  display: flex; /* Show when this class is added */
+}
+
+.PS-NotSent-modal-content {
+  /* outline: solid red 1px; */
+  width: 199px;
+  height: 143px;
+  background-color: #fbefef;
+
+  padding: 18px 24px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+  position: relative;
+}
+
+.PS-NotSent-modal-content-header {
+  width: 151px;
+  /* border: solid red 1px; */
+  font-family: "Helvetica Neue LT GEO 65";
+  font-weight: 500;
+  font-style: 65 Medium;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  margin: 16px 0 16px 0;
+}
+
+.PS-NotSent-button-close {
+  /* border: solid red 1px; */
+  background-color: #6d5baf;
+  color: #ffffff;
+  width: 151px;
+  height: 37px;
+  /* padding: 10px 20px; */
+  /* margin: 5px; */
+  cursor: pointer;
+  /* position: absolute; */
+  border-radius: 8px;
+
+  font-family: "Helvetica Neue LT GEO Caps 75 Roman";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 5%;
+}
+
+/*     წარუმატებელი გაგზავნის (NOT SENT) MODAL END     */
 
 .PS-section-FAQ {
   /* border: solid black 1px; */

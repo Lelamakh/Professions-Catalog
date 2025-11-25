@@ -6,7 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="Profesia-Contact">
     <header id="header">
       <div>
         <a href="index.html" class="PS-Logo">
@@ -162,7 +162,7 @@
           <div class="PS-contact-to-us">
             <div class="PS-contact-form">
               <form action="#" method="get">
-                <h1>დაგვიკავშირდი</h1>
+                <h1 id="PS-openNotSentModalBtn">დაგვიკავშირდი</h1>
                 <input
                   type="text"
                   name="user-name"
@@ -186,8 +186,43 @@
                   rows="10"
                   class="PS-input-field-message"
                 ></textarea>
-                <div class="PS-div-button"><button>გაგზავნა</button></div>
+                <div class="PS-div-button">
+                  <button id="PS-openSentModalBtn">გაგზავნა</button>
+                </div>
               </form>
+            </div>
+          </div>
+
+          <div>
+            <div id="PS-Modal-Sent" class="PS-modal-sent">
+              <div class="PS-Sent-modal-content">
+                <img src="assets/images/Sent.svg" alt="Sent.svg" />
+                <h3 class="PS-Sent-modal-content-header">
+                  მესიჯი წარმატებით გაიგზავნა
+                </h3>
+
+                <button id="PS-closeSentModalBtn" class="PS-Sent-button-close">
+                  ჩახურვა
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div id="PS-Modal-NotSent" class="PS-modal-Notsent">
+              <div class="PS-NotSent-modal-content">
+                <img src="assets/images/Not-Sent.svg" alt="Not-Sent.svg" />
+                <h3 class="PS-NotSent-modal-content-header">
+                  მესიჯი არ გაიგზავნა
+                </h3>
+
+                <button
+                  id="PS-closeNotSentModalBtn"
+                  class="PS-NotSent-button-close"
+                >
+                  ცადე ხელახლა
+                </button>
+              </div>
             </div>
           </div>
         </section>
