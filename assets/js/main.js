@@ -98,11 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Optional: Close the modal if the user clicks anywhere outside of the content
-    window.addEventListener("click", (event) => {
-      if (event.target == modal) {
-        closeModal();
-      }
-    });
+    // window.addEventListener("click", (event) => {
+    //   if (event.target == modal) {
+    //     closeModal();
+    //   }
+    // });
   }
 });
 
@@ -148,11 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Optional: Close the modal if the user clicks anywhere outside of the content
-    window.addEventListener("click", (event) => {
-      if (event.target == modal) {
-        closeModal();
-      }
-    });
+    // window.addEventListener("click", (event) => {
+    //   if (event.target == modal) {
+    //     closeModal();
+    //   }
+    // });
   }
 });
 
