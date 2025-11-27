@@ -441,11 +441,10 @@ nav {
 .lmscreen {
   position: absolute;
   margin-left: 46px;
-  /* left: 100px; */
   top: 285px;
   max-width: 259px;
   width: 100%;
-  height: 204px;
+  height: 204.5px;
   overflow: hidden;
   border-radius: 26px;
   display: block;
@@ -453,31 +452,20 @@ nav {
 
 .lmmonitorslider {
   display: flex;
+  height: 100%;
+}
+
+.lmmonslide {
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
-  animation: slide 12s steps(6, end) infinite;
-  /* margin-bottom: 30px; */
+  max-width: 259px;
 }
 
 .lmmonslide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@keyframes slide {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-600%);
-  }
-}
-
-.lmmonslide {
-  flex: 0 0 100%;
-  width: 100%;
-  max-width: 300px;
-  height: 100%;
 }
 
 .lmfirstsectionleft {

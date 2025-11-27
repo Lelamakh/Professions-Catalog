@@ -182,31 +182,47 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - - - - - */
 
-const slides = document.querySelectorAll(".lmslide");
-const dots = document.querySelectorAll(".lmdots .lmdot");
-let current = 0;
+const sliderContainer = document.querySelector(".lmmonitorslider");
 
-function updateSlides() {
-  slides.forEach((slide, index) => {
-    slide.classList.toggle("lmslideactive", index === current);
-  });
+const originalSlides = Array.from(document.querySelectorAll(".lmmonslide"));
+const totalOriginalSlides = originalSlides.length;
+let currentSlideIndex = 0;
 
-  dots.forEach((dot, index) => {
-    dot.classList.toggle("lmactivedot", index === current);
-  });
+const firstSlideClone = originalSlides[0].cloneNode(true);
+sliderContainer.appendChild(firstSlideClone);
+
+const allSlides = document.querySelectorAll(".lmmonslide");
+const totalSlidesInDom = allSlides.length;
+
+function updateSliderPosition(instant = false) {
+  const offset = -currentSlideIndex * 100;
+
+  if (instant) {
+    sliderContainer.style.transition = "none";
+  } else {
+  }
+
+  sliderContainer.style.transform = `translateX(${offset}%)`;
+
+  setTimeout(() => {
+    sliderContainer.style.transition = "";
+  }, 50);
 }
 
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    current = index;
-    updateSlides();
-  });
-});
+function nextSlide() {
+  currentSlideIndex++;
+  updateSliderPosition(false);
 
-setInterval(() => {
-  current = (current + 1) % slides.length;
-  updateSlides();
-}, 5000);
+  if (currentSlideIndex === totalOriginalSlides) {
+    setTimeout(() => {
+      currentSlideIndex = 0;
+      updateSliderPosition(true);
+    }, 0);
+  }
+}
+
+updateSliderPosition(true);
+setInterval(nextSlide, 2000);
 
 /* - - - - - - - - - - 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
