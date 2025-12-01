@@ -182,47 +182,64 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - - - - - */
 
-const sliderContainer = document.querySelector(".lmmonitorslider");
+// Check if the body has the specific class "Profesia-Index"
+if (document.body.classList.contains("Profesia-Index")) {
+  const sliderContainer = document.querySelector(".lmmonitorslider");
 
-const originalSlides = Array.from(document.querySelectorAll(".lmmonslide"));
-const totalOriginalSlides = originalSlides.length;
-let currentSlideIndex = 0;
+  // Ensure the slider container actually exists on the page before proceeding
+  if (sliderContainer) {
+    const originalSlides = Array.from(document.querySelectorAll(".lmmonslide"));
+    const totalOriginalSlides = originalSlides.length;
+    let currentSlideIndex = 0;
 
-const firstSlideClone = originalSlides[0].cloneNode(true);
-sliderContainer.appendChild(firstSlideClone);
+    // Only proceed if there are actual slides to work with
+    if (totalOriginalSlides > 0) {
+      const firstSlideClone = originalSlides[0].cloneNode(true);
+      sliderContainer.appendChild(firstSlideClone);
 
-const allSlides = document.querySelectorAll(".lmmonslide");
-const totalSlidesInDom = allSlides.length;
+      // Note: allSlides will be a NodeList and totalSlidesInDom is technically not used later in the original snippet,
+      // but we keep it for completeness if you wanted to reference it elsewhere.
+      const allSlides = document.querySelectorAll(".lmmonslide");
+      const totalSlidesInDom = allSlides.length;
 
-function updateSliderPosition(instant = false) {
-  const offset = -currentSlideIndex * 100;
+      function updateSliderPosition(instant = false) {
+        const offset = -currentSlideIndex * 100;
 
-  if (instant) {
-    sliderContainer.style.transition = "none";
-  } else {
-  }
+        if (instant) {
+          sliderContainer.style.transition = "none";
+        } else {
+          // You could optionally set a default transition duration here if needed
+          // sliderContainer.style.transition = "transform 0.5s ease-in-out";
+        }
 
-  sliderContainer.style.transform = `translateX(${offset}%)`;
+        sliderContainer.style.transform = `translateX(${offset}%)`;
 
-  setTimeout(() => {
-    sliderContainer.style.transition = "";
-  }, 50);
-}
+        setTimeout(() => {
+          // This setTimeout ensures the transition property is restored shortly after the instant jump
+          sliderContainer.style.transition = "";
+        }, 50);
+      }
 
-function nextSlide() {
-  currentSlideIndex++;
-  updateSliderPosition(false);
+      function nextSlide() {
+        currentSlideIndex++;
+        updateSliderPosition(false);
 
-  if (currentSlideIndex === totalOriginalSlides) {
-    setTimeout(() => {
-      currentSlideIndex = 0;
+        if (currentSlideIndex === totalOriginalSlides) {
+          // Wait for the transition to the clone to finish, then instantly jump back to the start
+          setTimeout(() => {
+            currentSlideIndex = 0;
+            updateSliderPosition(true);
+          }, 0); // A 0ms delay just pushes this to the end of the current task queue
+        }
+      }
+
+      // Initialize the slider position instantly on load
       updateSliderPosition(true);
-    }, 0);
+      // Start the automatic sliding interval
+      setInterval(nextSlide, 2000);
+    }
   }
 }
-
-updateSliderPosition(true);
-setInterval(nextSlide, 2000);
 
 /* - - - - - - - - - - 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
