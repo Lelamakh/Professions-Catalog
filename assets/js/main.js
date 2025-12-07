@@ -265,6 +265,94 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - -*/
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ტექნიკური უნარების ჩვენება-დამალვა დასაწყისი
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", (event) => {
+  // Check if the body element has the required class
+  if (document.body.classList.contains("Profesia-List")) {
+    // Select the main container element
+    const container = document.getElementById("PS-filter-choices-2");
+
+    // Check if the container exists before proceeding
+    if (container) {
+      // Select all the filter buttons within that container
+      const buttons = container.querySelectorAll(".PS-filter-choice");
+      // Select the label which will act as our toggle switch
+      const toggleLabel = container.querySelector(".PS-less");
+
+      const limit = 6; // Number of buttons to show initially
+
+      // Function to initialize the state (hiding extra buttons)
+      function initializeButtonVisibility() {
+        buttons.forEach((button, index) => {
+          if (index >= limit) {
+            button.style.display = "none"; // Hide buttons after the 6th
+          }
+        });
+        // Set initial label text to "See more"
+        if (toggleLabel) {
+          toggleLabel.textContent = "ნახე მეტი";
+        }
+      }
+
+      // Function to handle the toggle logic
+      function toggleVisibility() {
+        let isShowingAll = true;
+        if (toggleLabel && toggleLabel.textContent === "ნახე მეტი") {
+          isShowingAll = false;
+        }
+
+        buttons.forEach((button, index) => {
+          if (index >= limit) {
+            if (isShowingAll) {
+              button.style.display = "none";
+            } else {
+              // Use an empty string or 'inline-block' to revert to default button display
+              button.style.display = "";
+            }
+          }
+        });
+
+        // Update the label text based on the new state
+        if (toggleLabel) {
+          if (isShowingAll) {
+            toggleLabel.textContent = "ნახე მეტი"; // Change back to "See more"
+          } else {
+            toggleLabel.textContent = "ნახე ნაკლები"; // Change to "Show less"
+          }
+        }
+      }
+
+      // Initialize the display state when the script runs
+      initializeButtonVisibility();
+
+      // Add an event listener to the label to trigger the toggle function
+      if (toggleLabel) {
+        toggleLabel.addEventListener("click", toggleVisibility);
+      }
+    }
+  }
+});
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ტექნიკური უნარების ჩვენება-დამალვა დასასრული
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
 /* 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
