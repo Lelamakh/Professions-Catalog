@@ -182,64 +182,150 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - - - - - */
 
-// Check if the body has the specific class "Profesia-Index"
-if (document.body.classList.contains("Profesia-Index")) {
-  const sliderContainer = document.querySelector(".lmmonitorslider");
+document.addEventListener("DOMContentLoaded", () => {
+  // CONFIG
+  const intervalMs = 2000; // change to control speed (milliseconds)
 
-  // Ensure the slider container actually exists on the page before proceeding
-  if (sliderContainer) {
-    const originalSlides = Array.from(document.querySelectorAll(".lmmonslide"));
-    const totalOriginalSlides = originalSlides.length;
-    let currentSlideIndex = 0;
-
-    // Only proceed if there are actual slides to work with
-    if (totalOriginalSlides > 0) {
-      const firstSlideClone = originalSlides[0].cloneNode(true);
-      sliderContainer.appendChild(firstSlideClone);
-
-      // Note: allSlides will be a NodeList and totalSlidesInDom is technically not used later in the original snippet,
-      // but we keep it for completeness if you wanted to reference it elsewhere.
-      const allSlides = document.querySelectorAll(".lmmonslide");
-      const totalSlidesInDom = allSlides.length;
-
-      function updateSliderPosition(instant = false) {
-        const offset = -currentSlideIndex * 100;
-
-        if (instant) {
-          sliderContainer.style.transition = "none";
-        } else {
-          // You could optionally set a default transition duration here if needed
-          // sliderContainer.style.transition = "transform 0.5s ease-in-out";
-        }
-
-        sliderContainer.style.transform = `translateX(${offset}%)`;
-
-        setTimeout(() => {
-          // This setTimeout ensures the transition property is restored shortly after the instant jump
-          sliderContainer.style.transition = "";
-        }, 50);
-      }
-
-      function nextSlide() {
-        currentSlideIndex++;
-        updateSliderPosition(false);
-
-        if (currentSlideIndex === totalOriginalSlides) {
-          // Wait for the transition to the clone to finish, then instantly jump back to the start
-          setTimeout(() => {
-            currentSlideIndex = 0;
-            updateSliderPosition(true);
-          }, 0); // A 0ms delay just pushes this to the end of the current task queue
-        }
-      }
-
-      // Initialize the slider position instantly on load
-      updateSliderPosition(true);
-      // Start the automatic sliding interval
-      setInterval(nextSlide, 2000);
-    }
+  // ELEMENTS
+  const wrapper = document.querySelector(".lmscreen"); // visible viewport
+  const track = document.querySelector(".lmmonitorslider"); // sliding track
+  if (!wrapper || !track) {
+    console.error("Slider: .lmscreen or .lmmonitorslider not found");
+    return;
   }
-}
+
+  // Wait for images inside slides to load (so widths are consistent)
+  const imgs = Array.from(track.querySelectorAll("img"));
+  const imgsLoaded = Promise.all(
+    imgs.map((img) =>
+      img.complete
+        ? Promise.resolve()
+        : new Promise((r) => img.addEventListener("load", r, { once: true }))
+    )
+  ).catch(() => {
+    /* ignore image load errors */
+  });
+
+  imgsLoaded.then(init).catch(init);
+
+  function init() {
+    // remove any previous clones we created earlier
+    track.querySelectorAll(".__slider-clone").forEach((n) => n.remove());
+
+    let slides = Array.from(track.querySelectorAll(".lmmonslide"));
+    const realCount = slides.length;
+    if (realCount <= 1) {
+      // nothing to auto-slide
+      return;
+    }
+
+    // create clone of first slide for seamless loop
+    const clone = slides[0].cloneNode(true);
+    clone.classList.add("__slider-clone");
+    track.appendChild(clone);
+
+    // refresh slides list (includes clone)
+    slides = Array.from(track.querySelectorAll(".lmmonslide"));
+    const totalWithClone = slides.length; // realCount + 1
+
+    let current = 0;
+    let timer = null;
+    let isTransitioning = false;
+
+    // enforce pixel widths so layout never breaks
+    function setPixelWidths() {
+      const w = Math.round(wrapper.clientWidth);
+      slides.forEach((sl) => {
+        sl.style.minWidth = w + "px";
+        sl.style.maxWidth = w + "px";
+        sl.style.boxSizing = "border-box";
+      });
+      track.style.width = totalWithClone * w + "px";
+      track.style.display = "flex";
+      // ensure no accidental offsets from margins/padding
+      track.style.margin = "0";
+      track.style.padding = "0";
+      // debug
+      // console.log("slider.layout -> slideW:", w, "trackW:", track.style.width);
+    }
+
+    // move to index (0..realCount). instant = no transition
+    function moveTo(index, instant = false) {
+      const w = Math.round(wrapper.clientWidth);
+      if (instant) track.style.transition = "none";
+      // else track.style.transition = "transform 0.45s ease-in-out";
+
+      // translate by wrapper width
+      track.style.transform = `translateX(${-index * w}px)`;
+
+      if (instant) {
+        // restore transition next frame
+        requestAnimationFrame(() => {
+          track.style.transition = "";
+        });
+      }
+    }
+
+    function nextSlide() {
+      if (isTransitioning) return;
+      isTransitioning = true;
+
+      current++;
+      moveTo(current, false);
+
+      const onEnd = () => {
+        track.removeEventListener("transitionend", onEnd);
+
+        if (current === realCount) {
+          // we hit the clone; snap to 0 instantly
+          current = 0;
+          moveTo(current, true);
+        }
+        isTransitioning = false;
+      };
+
+      // use transitionend; fallback timeout if it doesn't fire
+      track.addEventListener("transitionend", onEnd, { once: true });
+      setTimeout(() => {
+        if (isTransitioning) onEnd();
+      }, 700);
+    }
+
+    function startAuto() {
+      stopAuto();
+      timer = setInterval(nextSlide, intervalMs);
+    }
+    function stopAuto() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    // init layout and start
+    setPixelWidths();
+    moveTo(0, true);
+    startAuto();
+
+    // recalc sizes on resize (throttled)
+    let resizeTimer = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        // recompute widths (slides list may be same) and jump to current
+        setPixelWidths();
+        moveTo(current, true);
+      }, 80);
+    });
+
+    // pause on hover (optional; keeps your design)
+    wrapper.addEventListener("mouseenter", stopAuto);
+    wrapper.addEventListener("mouseleave", startAuto);
+
+    // expose for debugging if needed
+    window.__profesiaSlider = { startAuto, stopAuto, moveTo, setPixelWidths };
+  }
+});
 
 /* - - - - - - - - - - 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
