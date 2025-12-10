@@ -2506,10 +2506,10 @@ for index-List.css     START
 .PS-filter-name-content {
   /* border: solid red 1px; */
   margin: 0;
-  padding: 16px 5px;
+  padding: 16px 5px 32px 5px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .PS-filter-sphere {
@@ -3018,7 +3018,7 @@ footer {
 .PS-slider-complex {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .range-slider-container {
