@@ -210,9 +210,9 @@ nav {
 }
 
 .Heart-div-numbers {
-  width: 12px;
-  height: 10px;
-  background-color: rgb(209, 80, 80);
+  width: 14px;
+  height: 11px;
+  background-color: #ff5555;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -221,12 +221,12 @@ nav {
   font-family: "Helvetica Neue LT GEO 65";
   font-weight: 500;
   font-size: 8px;
-  line-height: 8px;
+  line-height: 14px;
   letter-spacing: 0%;
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -3px;
+  right: -7px;
 }
 
 .Lang-div {
