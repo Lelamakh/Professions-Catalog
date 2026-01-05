@@ -1100,7 +1100,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 2. Element Selectors
   const scrollContainer = document.querySelector(".PS-cards");
-  // We look for the wrapper to apply gradient classes
   const galleryWrapper = document.querySelector(".PS-gallery-wrapper");
   const nextBtn = document.querySelector(".PS-next-arrow");
   const prevBtn = document.querySelector(".PS-prev-arrow");
@@ -1116,32 +1115,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /**
    * REFINED: Controls Arrow Visibility AND Gradient Overlay
-   * This logic toggles classes on the wrapper based on scroll position.
+   * Adjusted for Vertical Mobile (under 600px) and Horizontal Desktop.
    */
   const checkScrollPosition = () => {
     if (!scrollContainer || !galleryWrapper) return;
 
-    const maxScrollLeft =
-      scrollContainer.scrollWidth - scrollContainer.clientWidth;
-    const currentScrollLeft = scrollContainer.scrollLeft;
-    const buffer = 10; // Tolerance for fractional pixels
+    const isMobile = window.innerWidth <= 600;
+    const buffer = 10;
 
-    // Left Side Logic (Previous Arrow & Left Gradient)
-    if (currentScrollLeft <= buffer) {
+    if (isMobile) {
+      // --- MOBILE VERTICAL LOGIC ---
+      const currentScrollTop = scrollContainer.scrollTop;
+      const maxScrollTop =
+        scrollContainer.scrollHeight - scrollContainer.clientHeight;
+
+      // Top Gradient
+      if (currentScrollTop <= buffer) {
+        galleryWrapper.classList.remove("show-top");
+      } else {
+        galleryWrapper.classList.add("show-top");
+      }
+
+      // Bottom Gradient
+      if (currentScrollTop >= maxScrollTop - buffer) {
+        galleryWrapper.classList.remove("show-bottom");
+      } else {
+        galleryWrapper.classList.add("show-bottom");
+      }
+
+      // Hide arrows and clean up desktop classes on mobile
       if (prevBtn) prevBtn.classList.add("hidden");
-      galleryWrapper.classList.remove("show-left");
-    } else {
-      if (prevBtn) prevBtn.classList.remove("hidden");
-      galleryWrapper.classList.add("show-left");
-    }
-
-    // Right Side Logic (Next Arrow & Right Gradient)
-    if (currentScrollLeft >= maxScrollLeft - buffer) {
       if (nextBtn) nextBtn.classList.add("hidden");
-      galleryWrapper.classList.remove("show-right");
+      galleryWrapper.classList.remove("show-left", "show-right");
     } else {
-      if (nextBtn) nextBtn.classList.remove("hidden");
-      galleryWrapper.classList.add("show-right");
+      // --- DESKTOP HORIZONTAL LOGIC ---
+      const maxScrollLeft =
+        scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      const currentScrollLeft = scrollContainer.scrollLeft;
+
+      // Left Side Logic (Arrows Only)
+      if (currentScrollLeft <= buffer) {
+        if (prevBtn) prevBtn.classList.add("hidden");
+      } else {
+        if (prevBtn) prevBtn.classList.remove("hidden");
+      }
+
+      // Right Side Logic (Arrows Only)
+      if (currentScrollLeft >= maxScrollLeft - buffer) {
+        if (nextBtn) nextBtn.classList.add("hidden");
+      } else {
+        if (nextBtn) nextBtn.classList.remove("hidden");
+      }
+
+      // Clean up all gradient classes for Desktop
+      galleryWrapper.classList.remove(
+        "show-left",
+        "show-right",
+        "show-top",
+        "show-bottom"
+      );
     }
   };
 
@@ -1163,7 +1195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isClickDisabled) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      isClickDisabled = false; // Reset for next interaction
+      isClickDisabled = false;
       return false;
     }
   });
@@ -1174,7 +1206,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollContainer.classList.add("dragging");
     startX = e.pageX - scrollContainer.offsetLeft;
     scrollLeft = scrollContainer.scrollLeft;
-    e.preventDefault(); // Prevents image ghosting/selection
+    e.preventDefault();
   });
 
   window.addEventListener("mouseup", () => {
@@ -1182,7 +1214,6 @@ document.addEventListener("DOMContentLoaded", function () {
     isDragging = false;
     scrollContainer.classList.remove("dragging");
 
-    // If the user actually moved the mouse, block the next 'click' event
     if (didDrag) {
       isClickDisabled = true;
     }
@@ -1191,7 +1222,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
     const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 1.5; // Drag speed multiplier
+    const walk = (x - startX) * 1.5;
 
     if (Math.abs(walk) > 5) {
       didDrag = true;
@@ -1202,8 +1233,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // 6. Initialization
   const init = () => {
     checkScrollPosition();
-    // Listen for scroll events to update UI dynamically
     scrollContainer.addEventListener("scroll", checkScrollPosition);
+    // Important: Re-check on resize to switch between vertical/horizontal logic
+    window.addEventListener("resize", checkScrollPosition);
   };
 
   init();

@@ -4299,54 +4299,26 @@ img {
   position: relative;
   max-width: 1250px;
   margin: 0 auto;
-  overflow: hidden; /* Clips the gradients to the container */
 }
 
 .PS-cards {
   display: flex;
+  flex-direction: row; /* Horizontal on desktop */
   align-items: center;
   gap: 24px;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-width: none; /* Hide scrollbar */
+  scrollbar-width: none;
 }
 
 .PS-cards::-webkit-scrollbar {
   display: none;
 }
 
-/* The Black Gradients */
+/* DISABLE Gradients on Desktop by default */
 .PS-gallery-wrapper::before,
 .PS-gallery-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 200px;
-  z-index: 5; /* Sit on top of cards */
-  pointer-events: none; /* Click through to links */
-  transition: opacity 0.3s ease;
-  opacity: 0; /* Default hidden */
-}
-
-/* Left side black fade */
-.PS-gallery-wrapper::before {
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
-}
-
-/* Right side black fade */
-.PS-gallery-wrapper::after {
-  right: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
-}
-
-/* Logic classes triggered by JS */
-.PS-gallery-wrapper.show-left::before {
-  opacity: 0.3;
-}
-.PS-gallery-wrapper.show-right::after {
-  opacity: 0.3;
+  content: none; /* Gradients do not exist on desktop */
 }
 
 .PS-card-1 {
@@ -6777,6 +6749,40 @@ for index-Contact.css     END
     gap: 24px;
     overflow-x: hidden;
     overflow-y: scroll;
+  }
+
+  /* ENABLE Gradients for Mobile only */
+  .PS-gallery-wrapper::before,
+  .PS-gallery-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 80px; /* Gradient height */
+    z-index: 5;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  /* Top Gradient */
+  .PS-gallery-wrapper::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  }
+
+  /* Bottom Gradient */
+  .PS-gallery-wrapper::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  }
+
+  /* Visibility logic classes */
+  .PS-gallery-wrapper.show-top::before {
+    opacity: 0.3;
+  }
+  .PS-gallery-wrapper.show-bottom::after {
+    opacity: 0.3;
   }
 
   .PS-prev-arrow,
