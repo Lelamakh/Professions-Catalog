@@ -181,8 +181,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - - - - - - - - - - - */
-
 document.addEventListener("DOMContentLoaded", () => {
+  // LOCK: Check for class on body
+  if (!document.body.classList.contains("Profesia-Index")) {
+    return;
+  }
+
   // CONFIG
   const intervalMs = 2000; // change to control speed (milliseconds)
 
@@ -1088,128 +1092,121 @@ document.addEventListener("DOMContentLoaded", function () {
 /* ============ შენთვის საინტერესო კურსები SLIDER START ============ */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the body element and check if it has the class "forJavascript"
+  // 1. Setup and Security Check
   const bodyElement = document.body;
   if (!bodyElement || !bodyElement.classList.contains("Profesia-Internal")) {
-    // Exit the function if the class is not present
     return;
   }
 
+  // 2. Element Selectors
   const scrollContainer = document.querySelector(".PS-cards");
+  // We look for the wrapper to apply gradient classes
+  const galleryWrapper = document.querySelector(".PS-gallery-wrapper");
   const nextBtn = document.querySelector(".PS-next-arrow");
   const prevBtn = document.querySelector(".PS-prev-arrow");
+
   const scrollAmount = 624;
 
+  // 3. State Variables for Dragging
   let isDragging = false;
   let startX;
   let scrollLeft;
   let didDrag = false;
-  // NEW: Flag to temporarily disable clicks
   let isClickDisabled = false;
 
+  /**
+   * REFINED: Controls Arrow Visibility AND Gradient Overlay
+   * This logic toggles classes on the wrapper based on scroll position.
+   */
   const checkScrollPosition = () => {
-    // ... (rest of the checkScrollPosition logic remains the same) ...
-    if (!scrollContainer || !nextBtn || !prevBtn) return;
+    if (!scrollContainer || !galleryWrapper) return;
+
     const maxScrollLeft =
       scrollContainer.scrollWidth - scrollContainer.clientWidth;
     const currentScrollLeft = scrollContainer.scrollLeft;
-    const buffer = 1;
+    const buffer = 10; // Tolerance for fractional pixels
 
+    // Left Side Logic (Previous Arrow & Left Gradient)
     if (currentScrollLeft <= buffer) {
-      prevBtn.classList.add("hidden");
+      if (prevBtn) prevBtn.classList.add("hidden");
+      galleryWrapper.classList.remove("show-left");
     } else {
-      prevBtn.classList.remove("hidden");
+      if (prevBtn) prevBtn.classList.remove("hidden");
+      galleryWrapper.classList.add("show-left");
     }
 
+    // Right Side Logic (Next Arrow & Right Gradient)
     if (currentScrollLeft >= maxScrollLeft - buffer) {
-      nextBtn.classList.add("hidden");
+      if (nextBtn) nextBtn.classList.add("hidden");
+      galleryWrapper.classList.remove("show-right");
     } else {
-      nextBtn.classList.remove("hidden");
+      if (nextBtn) nextBtn.classList.remove("hidden");
+      galleryWrapper.classList.add("show-right");
     }
   };
 
-  // Add click listeners for buttons (remain the same)
+  // 4. Button Navigation
   if (nextBtn && scrollContainer) {
     nextBtn.addEventListener("click", () => {
-      scrollContainer.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
+      scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
     });
   }
 
   if (prevBtn && scrollContainer) {
     prevBtn.addEventListener("click", () => {
-      scrollContainer.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
+      scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     });
   }
 
-  // *********** DRAG AND CLICK LOGIC REFINEMENT ***********
-
-  // Add a permanent click listener to the container
+  // 5. Drag-to-Scroll & Link Blocking Logic
   scrollContainer.addEventListener("click", (e) => {
     if (isClickDisabled) {
       e.preventDefault();
       e.stopImmediatePropagation();
-      // Reset the flag immediately after blocking the event
-      isClickDisabled = false;
+      isClickDisabled = false; // Reset for next interaction
       return false;
     }
-    // If isClickDisabled is false, the event proceeds normally to the link
   });
 
-  // 1. Mouse Down Event: Start the drag process
   scrollContainer.addEventListener("mousedown", (e) => {
     isDragging = true;
-    didDrag = false; // Reset drag flag
+    didDrag = false;
     scrollContainer.classList.add("dragging");
     startX = e.pageX - scrollContainer.offsetLeft;
     scrollLeft = scrollContainer.scrollLeft;
-    e.preventDefault();
+    e.preventDefault(); // Prevents image ghosting/selection
   });
 
-  // 2. Mouse Up Event: End the drag process and handle links
   window.addEventListener("mouseup", () => {
+    if (!isDragging) return;
     isDragging = false;
     scrollContainer.classList.remove("dragging");
 
+    // If the user actually moved the mouse, block the next 'click' event
     if (didDrag) {
-      // Temporarily disable clicks immediately following this mouseup event
       isClickDisabled = true;
-      // We rely on the permanent 'click' listener above to catch and prevent the event
     }
-    // Note: We don't use the temporary listener/timeout method from the previous suggestion here.
   });
 
-  // 3. Mouse Move Event: Handle the actual scrolling while dragging
   window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
-
     const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 1.5;
+    const walk = (x - startX) * 1.5; // Drag speed multiplier
 
-    // Define a small threshold (e.g., 5 pixels)
     if (Math.abs(walk) > 5) {
       didDrag = true;
     }
-
     scrollContainer.scrollLeft = scrollLeft - walk;
   });
 
-  // *********** END DRAG AND CLICK LOGIC REFINEMENT ***********
-
-  // Check position when the page loads
-  const initialCheck = () => {
+  // 6. Initialization
+  const init = () => {
     checkScrollPosition();
-    nextBtn.classList.remove("hidden");
+    // Listen for scroll events to update UI dynamically
+    scrollContainer.addEventListener("scroll", checkScrollPosition);
   };
 
-  initialCheck();
-
-  scrollContainer.addEventListener("scroll", checkScrollPosition);
+  init();
 });
 
 /* ============ შენთვის საინტერესო კურსები SLIDER END ============ */
