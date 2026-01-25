@@ -8541,15 +8541,86 @@ for index-List.css     END
     /* margin-top: -10px;
     margin-bottom: 24px; */
   }
-  .lmteamwrapper {
+  /* .lmteamwrapper {
     width: 100%;
     max-width: 344px;
-    /* height: 500px; */
+   
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+  } */
+
+  /*==============================================================*/
+
+  /* 1. The Outer Container (Holds the gradients) */
+  .lm-gradient-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 24px auto;
   }
+
+  /* 2. The Scrollable Section */
+  .lmteamsection {
+    width: 100%;
+    height: 633px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-left: 0;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+  }
+
+  .lmteamsection::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome/Safari */
+  }
+
+  /* 3. The Inner Flex Wrapper */
+  .lmteamwrapper {
+    width: 100%;
+    max-width: 344px;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; Vertical layout */
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  /* 4. Gradient Pseudo-elements */
+  .lm-gradient-container::before,
+  .lm-gradient-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 10;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  /* Top Shadow */
+  .lm-gradient-container::before {
+    top: 0;
+    background: linear-gradient(to bottom, black 0%, transparent 100%);
+  }
+
+  /* Bottom Shadow */
+  .lm-gradient-container::after {
+    bottom: 0;
+    background: linear-gradient(to top, black 0%, transparent 100%);
+  }
+
+  /* Visibility Classes controlled by JS */
+  .lm-gradient-container.show-top::before {
+    opacity: 0.3;
+  }
+  .lm-gradient-container.show-bottom::after {
+    opacity: 0.3;
+  }
+
+  /*==============================================================*/
+
   .lmfullcycle {
     width: 164px;
   }

@@ -1302,3 +1302,37 @@ toggleScrollListener();
 window.addEventListener("resize", toggleScrollListener);
 
 /* ========================= დამალვადი ჰედერი დესკტოპისათვის (დასასრული) ========================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".lm-gradient-container");
+  const scrollArea = document.querySelector(".lmteamsection");
+
+  if (!container || !scrollArea) return;
+
+  const checkGradients = () => {
+    const scrollTop = scrollArea.scrollTop;
+    const maxScroll = scrollArea.scrollHeight - scrollArea.clientHeight;
+    const buffer = 10; // sensitivity
+
+    // Show/Hide Top Gradient
+    if (scrollTop > buffer) {
+      container.classList.add("show-top");
+    } else {
+      container.classList.remove("show-top");
+    }
+
+    // Show/Hide Bottom Gradient
+    if (scrollTop < maxScroll - buffer) {
+      container.classList.add("show-bottom");
+    } else {
+      container.classList.remove("show-bottom");
+    }
+  };
+
+  // Listeners
+  scrollArea.addEventListener("scroll", checkGradients);
+  window.addEventListener("resize", checkGradients);
+
+  // Initial Check
+  checkGradients();
+});
