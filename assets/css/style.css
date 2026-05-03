@@ -3312,7 +3312,10 @@ for index-PDP.css     START
 .PS-modal-content {
   width: 314px;
   height: 204px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-image: url(/assets/images/Photo-1.png);
+  background-position: center;
+  background-size: cover;
 
   padding: 32px;
   border-radius: 8px;
